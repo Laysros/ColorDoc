@@ -1,0 +1,49 @@
+1
+00:00:00,420 --> 00:00:04,660
+We are now seeing notation to represent
+an impressive number of things,
+
+2
+00:00:04,660 --> 00:00:07,530
+relationships, properties,
+and constraints among them.
+
+3
+00:00:08,610 --> 00:00:13,120
+The question is, how do we really
+know whether something is a thing,
+
+4
+00:00:13,120 --> 00:00:15,020
+a relationship, or a property?
+
+5
+00:00:15,020 --> 00:00:18,850
+How much does that depend on
+the context in which we perceive them?
+
+6
+00:00:20,070 --> 00:00:24,700
+A second good question is,
+is the EER Model supporting
+
+7
+00:00:24,700 --> 00:00:28,370
+all the fundamental types of
+abstraction that we would expect,
+
+8
+00:00:28,370 --> 00:00:32,130
+including classification,
+aggregation and generalization?
+
+9
+00:00:32,130 --> 00:00:34,770
+And finally,
+why haven't we seen any queries?
+
+10
+00:00:35,850 --> 00:00:39,560
+What would the type of
+a query on the EER Model be?
+

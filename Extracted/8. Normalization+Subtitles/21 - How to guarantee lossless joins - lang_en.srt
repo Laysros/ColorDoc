@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:04,050
+Question now is how do we guarantee lossless
+
+2
+00:00:04,050 --> 00:00:07,785
+joins when we decompose a relation into smaller relations?
+
+3
+00:00:07,785 --> 00:00:11,775
+Here's a very easy way to remember that and to check it.
+
+4
+00:00:11,775 --> 00:00:16,195
+The join field must be a key in at least one of the two relations.
+
+5
+00:00:16,195 --> 00:00:21,440
+So when you look at this decomposition here of relation in two relations,
+
+6
+00:00:21,440 --> 00:00:26,235
+then the join field between these two relations, obviously, is email.
+
+7
+00:00:26,235 --> 00:00:30,870
+If email is a key in one of the two relations as it is here,
+
+8
+00:00:30,870 --> 00:00:36,100
+then we are guaranteed not to lose information from doing this decomposition.
+
+9
+00:00:36,100 --> 00:00:40,945
+In other words, when we join these two relations together again over email,
+
+10
+00:00:40,945 --> 00:00:43,305
+then we are guaranteed to not create
+
+11
+00:00:43,305 --> 00:00:47,040
+additional tuples that were not there in the relation we started out with.
+
+12
+00:00:47,040 --> 00:00:51,235
+The simple way to understand why this is the case is that when
+
+13
+00:00:51,235 --> 00:00:53,805
+the join field is a key as it is here in
+
+14
+00:00:53,805 --> 00:00:56,615
+this one relation when the join field is the key,
+
+15
+00:00:56,615 --> 00:01:03,670
+there's no way of blowing duplicates in this column up with duplicates in this column,
+
+16
+00:01:03,670 --> 00:01:06,280
+and that was exactly what created the lossy
+
+17
+00:01:06,280 --> 00:01:10,170
+join that we saw in example of earlier in this lesson.
+

@@ -1,0 +1,258 @@
+1
+00:00:00,450 --> 00:00:03,090
+Let's now turn our
+attention to architecture.
+
+2
+00:00:03,090 --> 00:00:06,310
+We'll be talking about
+the architecture of a database and
+
+3
+00:00:06,310 --> 00:00:09,660
+the architecture of the database
+management system that's used to
+
+4
+00:00:09,660 --> 00:00:11,680
+create and maintain the database.
+
+5
+00:00:11,680 --> 00:00:15,185
+The architecture we're going to look
+at is called is the ANSI/SPARC.
+
+6
+00:00:15,185 --> 00:00:17,420
+3-Level architecture.
+
+7
+00:00:17,420 --> 00:00:20,640
+A database is a model of
+structures of reality.
+
+8
+00:00:20,640 --> 00:00:23,540
+It's divided into schema and data.
+
+9
+00:00:23,540 --> 00:00:26,330
+The schema describes the intention or
+
+10
+00:00:26,330 --> 00:00:30,450
+the type of the data, and
+the data describes the extension.
+
+11
+00:00:30,450 --> 00:00:32,640
+This separation between schema and
+
+12
+00:00:32,640 --> 00:00:38,150
+data is done because it makes data
+access more effective and efficient.
+
+13
+00:00:38,150 --> 00:00:41,540
+So, for example,
+when we want to search for some data,
+
+14
+00:00:41,540 --> 00:00:46,540
+we write a query against the schema and
+that query will bring back a result of
+
+15
+00:00:46,540 --> 00:00:52,200
+all the data that fits the structure of
+the schema that were used in the query.
+
+16
+00:00:52,200 --> 00:00:57,140
+The separation into a single schema and
+data however is not the end of it.
+
+17
+00:00:57,140 --> 00:01:00,150
+If the database only
+consisted of schema and
+
+18
+00:01:00,150 --> 00:01:04,769
+data, then the schema would have to
+describe aspects of what the meaning of
+
+19
+00:01:04,769 --> 00:01:09,920
+data is how it's used and
+how it's internally organized.
+
+20
+00:01:09,920 --> 00:01:13,700
+This would mean that queries against
+the database through that schema
+
+21
+00:01:13,700 --> 00:01:17,400
+would be able to reference how
+the data is physically organized.
+
+22
+00:01:17,400 --> 00:01:22,530
+The implication of that is If we decide
+to change how data is physically
+
+23
+00:01:22,530 --> 00:01:27,240
+organized, then the application of
+the database would be affected.
+
+24
+00:01:27,240 --> 00:01:31,900
+Therefore, the ANSI/SPARC 3-level
+architecture separates out aspects
+
+25
+00:01:31,900 --> 00:01:36,990
+of how data is physically organized into
+what is known as an internal schema.
+
+26
+00:01:36,990 --> 00:01:41,460
+And data now sits under the internal
+schema, such that database access,
+
+27
+00:01:41,460 --> 00:01:45,040
+it will appear that it goes through
+the schema to access the data, but
+
+28
+00:01:45,040 --> 00:01:49,100
+instead what happens is that it goes
+through the schema, and the request, or
+
+29
+00:01:49,100 --> 00:01:53,060
+chains, is translated to one at
+the internal schema level and
+
+30
+00:01:53,060 --> 00:01:55,830
+data's accessed and
+an answer is sent back.
+
+31
+00:01:55,830 --> 00:01:58,490
+The benefit of this is
+that now it's actually
+
+32
+00:01:58,490 --> 00:02:01,330
+plausible to change
+the way data is stored
+
+33
+00:02:01,330 --> 00:02:05,400
+without affecting the applications
+that run against the schema.
+
+34
+00:02:05,400 --> 00:02:10,030
+However, a database is used by many
+different applications with different
+
+35
+00:02:10,030 --> 00:02:11,580
+needs to display data.
+
+36
+00:02:11,580 --> 00:02:15,740
+Therefore for each need, for
+each application of the database,
+
+37
+00:02:15,740 --> 00:02:18,346
+we could create an external schema.
+
+38
+00:02:18,346 --> 00:02:21,410
+Therefore the ANSI/SPARC
+3-level architecture
+
+39
+00:02:21,410 --> 00:02:25,900
+prescribes a third level named
+the external schema level that separates
+
+40
+00:02:25,900 --> 00:02:30,530
+out aspects of how data is used
+by individual applications.
+
+41
+00:02:30,530 --> 00:02:34,410
+So now you have applications
+running against external schema
+
+42
+00:02:34,410 --> 00:02:38,910
+that represents data in the preferred
+format for those applications
+
+43
+00:02:38,910 --> 00:02:43,330
+requests through the external schema
+are then translated to requests through
+
+44
+00:02:43,330 --> 00:02:47,210
+the conceptual schema, translated to
+requests through the internal schema.
+
+45
+00:02:47,210 --> 00:02:50,720
+Data is accessed and
+the response is translated up and
+
+46
+00:02:50,720 --> 00:02:54,930
+presented to the application
+in the format that it needs.
+
+47
+00:02:54,930 --> 00:02:59,530
+Turn this illustration 90 degrees,
+and you get the three level ANSI/SPARC
+
+48
+00:02:59,530 --> 00:03:03,860
+database architecture that
+people normally see depicted.
+
+49
+00:03:03,860 --> 00:03:06,600
+You have a conceptual
+schema in the middle,
+
+50
+00:03:06,600 --> 00:03:09,870
+you have an internal schema
+implementing that and
+
+51
+00:03:09,870 --> 00:03:15,080
+you have a number of external schemata,
+one for each major application.
+
+52
+00:03:15,080 --> 00:03:19,930
+The conceptual schema concentrates on
+the meaning of data, the internal schema
+
+53
+00:03:19,930 --> 00:03:24,060
+on the storage of data, and the external
+schemata on the use of data.
+

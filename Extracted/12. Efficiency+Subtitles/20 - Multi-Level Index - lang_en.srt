@@ -1,0 +1,196 @@
+1
+00:00:00,000 --> 00:00:02,715
+So, we've seen a couple of good ideas now.
+
+2
+00:00:02,715 --> 00:00:05,640
+We have seen the idea that sorting things and being
+
+3
+00:00:05,640 --> 00:00:09,045
+smart about how we search and sort of things is really helpful.
+
+4
+00:00:09,045 --> 00:00:14,040
+We have seen that reducing the size of the search space by building indices,
+
+5
+00:00:14,040 --> 00:00:16,770
+and then pay a slight extra penalty for
+
+6
+00:00:16,770 --> 00:00:20,425
+accessing the data lever that that is a smart way to proceed.
+
+7
+00:00:20,425 --> 00:00:22,265
+But if it's a good idea once,
+
+8
+00:00:22,265 --> 00:00:24,105
+maybe it's a good idea twice.
+
+9
+00:00:24,105 --> 00:00:25,905
+So, if you look at this index here,
+
+10
+00:00:25,905 --> 00:00:27,225
+that's a sorted file.
+
+11
+00:00:27,225 --> 00:00:32,580
+So, why don't we build an index on the index and an index on the index of the index,
+
+12
+00:00:32,580 --> 00:00:37,530
+etc, until we end up at the root with just a single index page.
+
+13
+00:00:37,530 --> 00:00:40,080
+So, searching through this index would now
+
+14
+00:00:40,080 --> 00:00:43,060
+work as follows: we look at the top level block,
+
+15
+00:00:43,060 --> 00:00:46,420
+we know that block has have fanout of up to 60.
+
+16
+00:00:46,420 --> 00:00:49,500
+So, among those 60 different key values,
+
+17
+00:00:49,500 --> 00:00:52,920
+we pick the place where the key we are searching for
+
+18
+00:00:52,920 --> 00:00:56,575
+either is equal to one of them or fits between two of them,
+
+19
+00:00:56,575 --> 00:01:00,120
+and we follow the appropriate pointer to the next level.
+
+20
+00:01:00,120 --> 00:01:02,675
+At that next level we have one data block,
+
+21
+00:01:02,675 --> 00:01:04,535
+it has a fanout of 60,
+
+22
+00:01:04,535 --> 00:01:06,985
+we fit in the key value where it fits,
+
+23
+00:01:06,985 --> 00:01:10,560
+and follow the pointer to the index plug at the next level.
+
+24
+00:01:10,560 --> 00:01:14,085
+Eventually, we come down to the bottom of the index level
+
+25
+00:01:14,085 --> 00:01:17,950
+and we need to add one in order to get to the data level.
+
+26
+00:01:17,950 --> 00:01:19,250
+So, in this case here,
+
+27
+00:01:19,250 --> 00:01:22,560
+the search time is locked but the base is not too,
+
+28
+00:01:22,560 --> 00:01:25,005
+the base is the fanout of the index.
+
+29
+00:01:25,005 --> 00:01:28,200
+That fanout is substantially higher than the
+
+30
+00:01:28,200 --> 00:01:31,800
+two we used for binary search in a data file.
+
+31
+00:01:31,800 --> 00:01:35,970
+The larger the base of the lock function is the flatter is the log function.
+
+32
+00:01:35,970 --> 00:01:38,710
+So, we can expect the cost here to be smaller,
+
+33
+00:01:38,710 --> 00:01:41,620
+and smaller, and smaller the higher the fanout is.
+
+34
+00:01:41,620 --> 00:01:44,310
+Using the exact numbers of our example here,
+
+35
+00:01:44,310 --> 00:01:51,320
+we actually see that log base 60 to 3334 is actually just two,
+
+36
+00:01:51,320 --> 00:01:52,775
+we add the one to it,
+
+37
+00:01:52,775 --> 00:01:56,020
+that's three axes at 10 milliseconds each.
+
+38
+00:01:56,020 --> 00:02:03,315
+That's 0.03 seconds to access a data block through this multilevel index.
+
+39
+00:02:03,315 --> 00:02:06,180
+The more complicated construct like this becomes,
+
+40
+00:02:06,180 --> 00:02:09,130
+the more levels of indices we put on top,
+
+41
+00:02:09,130 --> 00:02:12,315
+the more sensitive we are to overflow.
+
+42
+00:02:12,315 --> 00:02:13,740
+So, if we for example,
+
+43
+00:02:13,740 --> 00:02:16,140
+are trying to insert data at the bottom level,
+
+44
+00:02:16,140 --> 00:02:19,920
+and although we started out with some slot space at the end,
+
+45
+00:02:19,920 --> 00:02:23,320
+once we come to the point where blog actually needs to be broken up,
+
+46
+00:02:23,320 --> 00:02:27,815
+then the question is, is that going to have any impact on the first level index?
+
+47
+00:02:27,815 --> 00:02:31,650
+If it does, how far is the ripple effect going to be?
+
+48
+00:02:31,650 --> 00:02:35,430
+It would be important to keep the ripple effect smaller,
+
+49
+00:02:35,430 --> 00:02:39,800
+and that's exactly why we have some slot space built in at the end.
+

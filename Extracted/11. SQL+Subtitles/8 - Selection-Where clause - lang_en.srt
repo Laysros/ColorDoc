@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:03,550
+Let's now try a selection that actually has a WHERE clause.
+
+2
+00:00:03,550 --> 00:00:07,935
+Let's say we want to find all RegularUser's with a Hometown equal Atlanta.
+
+3
+00:00:07,935 --> 00:00:10,210
+Queries as follows, select everything,
+
+4
+00:00:10,210 --> 00:00:15,995
+in other words all the columns FROM RegularUser WHERE the Hometown equals Atlanta.
+
+5
+00:00:15,995 --> 00:00:20,310
+So from the RegularUser table WHERE is Hometown equal to Atlanta.
+
+6
+00:00:20,310 --> 00:00:22,270
+So it is here for you user one,
+
+7
+00:00:22,270 --> 00:00:24,105
+so that row is part of the table,
+
+8
+00:00:24,105 --> 00:00:25,800
+it is for user four,
+
+9
+00:00:25,800 --> 00:00:29,320
+which will appear in the result and is for user six,
+
+10
+00:00:29,320 --> 00:00:30,780
+which is part of the result.
+
+11
+00:00:30,780 --> 00:00:36,690
+What I'm trying to do in these examples and examples to follow is I'm trying to tie
+
+12
+00:00:36,690 --> 00:00:42,965
+my English text very close to the names used in relations,
+
+13
+00:00:42,965 --> 00:00:45,400
+in attributes, in columns etc.
+
+14
+00:00:45,400 --> 00:00:51,375
+etc. So, when I write something like this "Find all RegularUsers with hometown Atlanta",
+
+15
+00:00:51,375 --> 00:00:54,690
+this is not of course correct English,
+
+16
+00:00:54,690 --> 00:00:58,080
+I'm doing it because at the same time I want to point to
+
+17
+00:00:58,080 --> 00:01:01,770
+the RegularUser table so I had a choice between doing something like
+
+18
+00:01:01,770 --> 00:01:09,350
+this RegularUser's or just say find all RegularUser with Hometown Atlanta,
+
+19
+00:01:09,350 --> 00:01:11,385
+but that wouldn't sound right in English either.
+
+20
+00:01:11,385 --> 00:01:13,880
+So this is what I chose.
+

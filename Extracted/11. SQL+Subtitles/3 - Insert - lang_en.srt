@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,165
+So let's first look at an example of insert.
+
+2
+00:00:03,165 --> 00:00:10,595
+So this insertion here inserts into user interests a table with the values user12@gt.edu,
+
+3
+00:00:10,595 --> 00:00:15,645
+reading and five as the values of e-mail interest and the since age.
+
+4
+00:00:15,645 --> 00:00:19,085
+So if you start out with a user interest table like this,
+
+5
+00:00:19,085 --> 00:00:20,680
+then after the insertion,
+
+6
+00:00:20,680 --> 00:00:25,935
+the user12@gt.edu reading and five will have been added.
+
+7
+00:00:25,935 --> 00:00:29,220
+It's interesting to observe that inserting into
+
+8
+00:00:29,220 --> 00:00:33,210
+the database will only insert a single row at a time,
+
+9
+00:00:33,210 --> 00:00:38,420
+unless the insertion contains a clear expression on the database that identifies
+
+10
+00:00:38,420 --> 00:00:45,280
+some data from the database itself and insert it in one of the tables in the database.
+

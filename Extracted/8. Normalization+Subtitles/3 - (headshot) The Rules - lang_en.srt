@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:04,285
+Here are the rules you must obey when you normalize a relation.
+
+2
+00:00:04,285 --> 00:00:07,630
+First, no redundancy of facts.
+
+3
+00:00:07,630 --> 00:00:11,410
+Second, no cluttering of facts.
+
+4
+00:00:11,410 --> 00:00:14,580
+Third, you must preserve information.
+
+5
+00:00:14,580 --> 00:00:19,210
+And fourth, you must preserve functional dependencies.
+

@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:02,670
+So, as I hinted at when I showed you
+
+2
+00:00:02,670 --> 00:00:06,400
+the Venn diagram of the sets of different normal formulations,
+
+3
+00:00:06,400 --> 00:00:08,595
+third normal formulations are
+
+4
+00:00:08,595 --> 00:00:13,010
+a proper subset of the set of Boyce-Codd normal formulations.
+
+5
+00:00:13,010 --> 00:00:15,900
+That means that there does exist relations,
+
+6
+00:00:15,900 --> 00:00:20,490
+which using lossless and dependency preserving decompositions,
+
+7
+00:00:20,490 --> 00:00:23,200
+can only be normalized to third normal form,
+
+8
+00:00:23,200 --> 00:00:25,625
+not also to Boyce-Codd normal form.
+
+9
+00:00:25,625 --> 00:00:30,880
+This only happens in cases where relation has overlapping keys.
+

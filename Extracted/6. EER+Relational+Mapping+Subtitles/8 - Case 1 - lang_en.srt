@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:04,935
+Mapping super subtype relationships is a little bit more complicated.
+
+2
+00:00:04,935 --> 00:00:07,925
+There are four cases I would like to consider.
+
+3
+00:00:07,925 --> 00:00:09,435
+In the first case,
+
+4
+00:00:09,435 --> 00:00:13,990
+the relationship between ET and the two subtypes is mandatory.
+
+5
+00:00:13,990 --> 00:00:22,305
+That means that every single instance of ET needs to be hooked up to ET1 or ET2 or both.
+
+6
+00:00:22,305 --> 00:00:25,260
+However, in this particular situation,
+
+7
+00:00:25,260 --> 00:00:28,270
+we are looking at mandatory and disjoint.
+
+8
+00:00:28,270 --> 00:00:33,850
+So, the constraint here is that ET1 and ET2 are disjoint.
+
+9
+00:00:33,850 --> 00:00:37,140
+So, the semantics of this case is the following,
+
+10
+00:00:37,140 --> 00:00:41,265
+every single ET instance will have an A value and a B value.
+
+11
+00:00:41,265 --> 00:00:46,620
+But we also know that every single instance of ET is hooked up either to
+
+12
+00:00:46,620 --> 00:00:52,095
+ET1 or to ET2 as the case might be it's only going to be one of them.
+
+13
+00:00:52,095 --> 00:00:55,710
+Furthermore, we know that when we look ET1,
+
+14
+00:00:55,710 --> 00:00:58,950
+it will inherit attributes A and B,
+
+15
+00:00:58,950 --> 00:01:01,240
+and have C as immediate attribute.
+
+16
+00:01:01,240 --> 00:01:06,690
+When you look at ET2, all values of that will inherit attribute A and B,
+
+17
+00:01:06,690 --> 00:01:09,130
+and have D as immediate attribute.
+
+18
+00:01:09,130 --> 00:01:11,640
+So, in case one, we actually cheat a little bit.
+
+19
+00:01:11,640 --> 00:01:14,870
+We only create a relation for ET1.
+
+20
+00:01:14,870 --> 00:01:18,990
+For ET2, we do not also create a relation for ET.
+
+21
+00:01:18,990 --> 00:01:22,350
+So, ET1 will inherit attributes A and B,
+
+22
+00:01:22,350 --> 00:01:26,060
+and have immediate attribute C that states relation here, of course,
+
+23
+00:01:26,060 --> 00:01:30,060
+the identifier is still A. ET2, similarly,
+
+24
+00:01:30,060 --> 00:01:34,350
+will inherit attribute B and have D as an immediate attribute here.
+
+25
+00:01:34,350 --> 00:01:39,020
+What then you might ask happens to the ET instead are not related to any of those?
+
+26
+00:01:39,020 --> 00:01:42,180
+Well, that can happen because it's mandatory.
+
+27
+00:01:42,180 --> 00:01:44,110
+So, we will in other words,
+
+28
+00:01:44,110 --> 00:01:49,795
+find every single ET instance with a corresponding A and B value,
+
+29
+00:01:49,795 --> 00:01:54,610
+either in ET1 or in ET2.
+

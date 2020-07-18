@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:03,105
+Let's first look at the View Profile text,
+
+2
+00:00:03,105 --> 00:00:07,140
+and concentrate on the subtext that retrieves the personal information.
+
+3
+00:00:07,140 --> 00:00:08,520
+So, in other words,
+
+4
+00:00:08,520 --> 00:00:11,110
+we are looking at how to retrieve first name,
+
+5
+00:00:11,110 --> 00:00:12,780
+last name, rest of
+
+6
+00:00:12,780 --> 00:00:17,190
+these personal information items to display on the View Profile screen.
+
+7
+00:00:17,190 --> 00:00:20,105
+We are making the assumption that the email of
+
+8
+00:00:20,105 --> 00:00:22,930
+the current user is managed by the application.
+
+9
+00:00:22,930 --> 00:00:26,770
+So, we are going to retrieve first name, last name, sex,
+
+10
+00:00:26,770 --> 00:00:28,485
+birth date, current city,
+
+11
+00:00:28,485 --> 00:00:32,280
+and hometown for the particular user in question.
+
+12
+00:00:32,280 --> 00:00:37,125
+We do that as follows: here's your SELECT, FROM, WHERE statement.
+
+13
+00:00:37,125 --> 00:00:39,670
+So, we select first name and last name,
+
+14
+00:00:39,670 --> 00:00:41,920
+birth date, sex, current city,
+
+15
+00:00:41,920 --> 00:00:48,055
+and hometown from the user table which contains the first name and the last name.
+
+16
+00:00:48,055 --> 00:00:52,780
+INNER JOIN RegularUser, which of course contains the birth date,
+
+17
+00:00:52,780 --> 00:00:54,630
+sex, current city, and hometown.
+
+18
+00:00:54,630 --> 00:00:57,190
+The INNER JOIN condition is that
+
+19
+00:00:57,190 --> 00:01:02,864
+user email which the application remembers is equal to RegularUser.Email,
+
+20
+00:01:02,864 --> 00:01:08,090
+and that email is the one that the application remembers.
+
+21
+00:01:08,090 --> 00:01:11,785
+That leaves us with the multi-valued attribute interests,
+
+22
+00:01:11,785 --> 00:01:15,420
+and we simply find that with select from interests
+
+23
+00:01:15,420 --> 00:01:19,345
+where the email matches the one that the application remembers.
+
+24
+00:01:19,345 --> 00:01:21,560
+We display those on the form.
+

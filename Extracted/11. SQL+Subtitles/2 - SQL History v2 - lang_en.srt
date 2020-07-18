@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:04,780
+Let me give you a brief history of SQL or Sequel as many people call it.
+
+2
+00:00:04,780 --> 00:00:10,165
+SQL was actually the original name standing for Structured English Query Language.
+
+3
+00:00:10,165 --> 00:00:13,140
+SQL was part of System R which was
+
+4
+00:00:13,140 --> 00:00:18,480
+a research relation database prototype released by IBM in 1973.
+
+5
+00:00:18,480 --> 00:00:21,500
+SQL was created by Chamberlin and Boyce.
+
+6
+00:00:21,500 --> 00:00:26,690
+So, name was changed to SQL which stands for Structured Query Language.
+
+7
+00:00:26,690 --> 00:00:31,115
+SQL is based on relational tuple calculus and some algebra.
+
+8
+00:00:31,115 --> 00:00:33,780
+By the way, do you know what mermaid's square?
+
+9
+00:00:33,780 --> 00:00:36,120
+Algebra.
+
+10
+00:00:44,080 --> 00:00:48,740
+They are both ANSI and ISO standards for SQL.
+
+11
+00:00:48,740 --> 00:00:53,820
+SQL1, first version was standardized in '86,
+
+12
+00:00:53,820 --> 00:00:56,570
+and then a revision in '89,
+
+13
+00:00:56,570 --> 00:00:59,420
+what is now we referred to as SQL2,
+
+14
+00:00:59,420 --> 00:01:02,170
+was published in '92,
+
+15
+00:01:02,170 --> 00:01:04,945
+and in '99 followed SQL3.
+
+16
+00:01:04,945 --> 00:01:09,200
+There have been a number of revisions here every two to three years since then.
+
+17
+00:01:09,200 --> 00:01:10,630
+In most of the cases,
+
+18
+00:01:10,630 --> 00:01:15,035
+the fundamental part of SQL is as good with a standard is the same,
+
+19
+00:01:15,035 --> 00:01:19,980
+but these revisions have added a lot of functionality for temporal queries,
+
+20
+00:01:19,980 --> 00:01:22,005
+spatial queries, and other things.
+
+21
+00:01:22,005 --> 00:01:24,420
+SQL is supported by a large,
+
+22
+00:01:24,420 --> 00:01:26,355
+large number of database products.
+
+23
+00:01:26,355 --> 00:01:32,970
+IBMs, DB2 which was actually a commercial version of System R,
+
+24
+00:01:32,970 --> 00:01:35,140
+Oracle, Sybase, SQL Server,
+
+25
+00:01:35,140 --> 00:01:37,730
+MySQL, and many, many more,
+
+26
+00:01:37,730 --> 00:01:44,770
+and they all support the standard SQL or they do that. We'll get back to that.
+

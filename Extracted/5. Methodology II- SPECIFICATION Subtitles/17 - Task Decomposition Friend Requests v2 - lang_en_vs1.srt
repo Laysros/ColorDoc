@@ -1,0 +1,90 @@
+1
+00:00:00,410 --> 00:00:03,460
+Without going into the same
+level of detail as I did
+
+2
+00:00:03,460 --> 00:00:04,840
+with the first two examples.
+
+3
+00:00:04,840 --> 00:00:08,580
+Let's take a look at test
+decomposition for friend requests.
+
+4
+00:00:08,580 --> 00:00:11,480
+The idea gain is that we have the forms
+
+5
+00:00:11,480 --> 00:00:14,060
+that are the interface
+to the application.
+
+6
+00:00:14,060 --> 00:00:17,340
+And our job is to now talk
+about the decomposition
+
+7
+00:00:17,340 --> 00:00:21,090
+of the tests that are necessary
+in order to tie these forms
+
+8
+00:00:21,090 --> 00:00:23,430
+through the task into the database.
+
+9
+00:00:23,430 --> 00:00:28,330
+If we did a closer analysis using the
+rule of thumb for task decomposition for
+
+10
+00:00:28,330 --> 00:00:31,330
+this task we would arrive
+at the following result.
+
+11
+00:00:31,330 --> 00:00:34,730
+The request friend test would
+be separate from the others.
+
+12
+00:00:34,730 --> 00:00:39,760
+This task would update the database with
+a request and would support this form.
+
+13
+00:00:39,760 --> 00:00:44,480
+The view, cancel, accept, and
+reject request task is the one that
+
+14
+00:00:44,480 --> 00:00:49,690
+supports this form, and supports actions
+taken to the requests that are pending.
+
+15
+00:00:49,690 --> 00:00:54,320
+It would end up being decomposed in
+two subtasks, view the request and
+
+16
+00:00:54,320 --> 00:00:58,230
+then support the accept,
+reject, and cancel options.
+
+17
+00:00:58,230 --> 00:01:01,810
+This subtask would update
+the friendship relationship type.
+
+18
+00:01:01,810 --> 00:01:06,030
+This task would support the reading
+of user and regular user and
+
+19
+00:01:06,030 --> 00:01:07,360
+friendship information.

@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:03,270
+In Case Four, there is a relationship type,
+
+2
+00:00:03,270 --> 00:00:06,225
+is not mandatory and disjoint.
+
+3
+00:00:06,225 --> 00:00:09,450
+An elegant solution to that is this one.
+
+4
+00:00:09,450 --> 00:00:13,640
+You generate your relations for ET, ET1 and ET2,
+
+5
+00:00:13,640 --> 00:00:19,065
+and of course, ET1 and ET2 will inherit A as an identifying attribute.
+
+6
+00:00:19,065 --> 00:00:22,390
+The reason to this is really a beautiful solution is,
+
+7
+00:00:22,390 --> 00:00:24,530
+that since this is not mandatory,
+
+8
+00:00:24,530 --> 00:00:30,970
+you can have instances of ET that have no corresponding tables in ET1 and ET2.
+
+9
+00:00:30,970 --> 00:00:38,010
+However, when there are tables in ET1 or in ET2 because of the disjointness,
+
+10
+00:00:38,010 --> 00:00:40,940
+a table will only be in one of them.
+
+11
+00:00:40,940 --> 00:00:43,200
+So for an instance here,
+
+12
+00:00:43,200 --> 00:00:48,250
+an instance with a corresponding value will either be an ET1 or an ET2.
+
+13
+00:00:48,250 --> 00:00:55,400
+So there's not even a replication of an A value in the other one that it's not in.
+

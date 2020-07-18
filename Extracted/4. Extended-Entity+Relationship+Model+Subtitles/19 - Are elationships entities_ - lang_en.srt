@@ -1,0 +1,160 @@
+1
+00:00:00,460 --> 00:00:04,120
+So the first question is,
+are relationships entities, or
+
+2
+00:00:04,120 --> 00:00:07,560
+are they just glue that
+tie together entities?
+
+3
+00:00:07,560 --> 00:00:11,230
+So in this example we have two
+entity types, employer, and
+
+4
+00:00:11,230 --> 00:00:15,970
+regular user, and a relationship type,
+current job between them.
+
+5
+00:00:15,970 --> 00:00:19,520
+And, it's a one to
+many relationship type.
+
+6
+00:00:19,520 --> 00:00:20,775
+Now as you notice,
+
+7
+00:00:20,775 --> 00:00:25,620
+this relationship type has a property
+type current job since date.
+
+8
+00:00:25,620 --> 00:00:28,310
+But, if the relationship
+type has a property type,
+
+9
+00:00:28,310 --> 00:00:30,600
+isn't it then an entity type?
+
+10
+00:00:30,600 --> 00:00:34,340
+If we can accept that relationship
+types have properties,
+
+11
+00:00:34,340 --> 00:00:40,070
+then fortunately in this one to many
+case, there is an acceptable solution.
+
+12
+00:00:40,070 --> 00:00:43,690
+Take a look at these two
+instances of employer.
+
+13
+00:00:43,690 --> 00:00:47,810
+So in this case here, this employer
+here has two regular users,
+
+14
+00:00:47,810 --> 00:00:49,000
+this one and this one.
+
+15
+00:00:50,090 --> 00:00:53,730
+This second employer here has
+three regular users that have
+
+16
+00:00:53,730 --> 00:00:58,700
+current jobs under that employer,
+this one, and this one, and this one.
+
+17
+00:00:58,700 --> 00:01:04,480
+You can think about the values of
+the properties of the relationship type,
+
+18
+00:01:04,480 --> 00:01:10,068
+as values that label the connection
+between employer and regular user.
+
+19
+00:01:10,068 --> 00:01:15,470
+So this d1 would be the date,
+the current job since date,
+
+20
+00:01:15,470 --> 00:01:19,388
+of this regular user,
+under that employer.
+
+21
+00:01:19,388 --> 00:01:23,830
+And likewise,
+d2 would be the current job since date
+
+22
+00:01:23,830 --> 00:01:27,340
+between that employer and
+that regular user.
+
+23
+00:01:27,340 --> 00:01:29,500
+Since these are hierarchies,
+
+24
+00:01:29,500 --> 00:01:33,950
+instead of actually labeling
+the relationship instances between them,
+
+25
+00:01:33,950 --> 00:01:38,730
+we could simply move the date d1 down
+here, and the date d2 down here.
+
+26
+00:01:39,810 --> 00:01:43,100
+It would not be possible
+to move the current job
+
+27
+00:01:43,100 --> 00:01:47,680
+since date up to be
+a property of employer.
+
+28
+00:01:47,680 --> 00:01:52,620
+The reason that would not be possible
+is then all the regular users employed
+
+29
+00:01:52,620 --> 00:01:55,700
+by that employer would have
+to have the same date.
+
+30
+00:01:55,700 --> 00:02:00,010
+So the solution in this case,
+as mentioned here,
+
+31
+00:02:00,010 --> 00:02:05,300
+is that the current job since date
+becomes a property of regular user.
+
+32
+00:02:05,300 --> 00:02:07,750
+So basically, this one disappears, and
+
+33
+00:02:07,750 --> 00:02:10,490
+instead it becomes
+a property of regular user.
+

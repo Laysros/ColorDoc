@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:06,265
+Three so-called information packages are important when digital data is archived.
+
+2
+00:00:06,265 --> 00:00:09,650
+The first one is the submission information package.
+
+3
+00:00:09,650 --> 00:00:11,890
+It is the information that's submitted
+
+4
+00:00:11,890 --> 00:00:14,854
+together with the data that's going to be archived,
+
+5
+00:00:14,854 --> 00:00:16,290
+at the point in time,
+
+6
+00:00:16,290 --> 00:00:19,325
+that the archive receives this information.
+
+7
+00:00:19,325 --> 00:00:22,865
+Then, an archived information package is prepared,
+
+8
+00:00:22,865 --> 00:00:25,630
+that's the information package that is used by
+
+9
+00:00:25,630 --> 00:00:29,510
+the archive during the period of time the data is in the archive.
+
+10
+00:00:29,510 --> 00:00:32,950
+Finally, there's a dissemination information package.
+
+11
+00:00:32,950 --> 00:00:35,860
+Which is the meta data package that is used,
+
+12
+00:00:35,860 --> 00:00:40,600
+as portions of the information in the archive is shared with others.
+
+13
+00:00:40,600 --> 00:00:44,860
+Each one of these information packages consists of three things;
+
+14
+00:00:44,860 --> 00:00:48,440
+content information, preservation description information,
+
+15
+00:00:48,440 --> 00:00:52,030
+packaging information and descriptive information.
+
+16
+00:00:52,030 --> 00:00:54,590
+I'm going to show you some additional detail,
+
+17
+00:00:54,590 --> 00:00:57,310
+of the archived information package.
+
+18
+00:00:57,310 --> 00:01:00,040
+So, looking first at the content information,
+
+19
+00:01:00,040 --> 00:01:02,320
+here are the details of them.
+

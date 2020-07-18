@@ -1,0 +1,180 @@
+1
+00:00:00,000 --> 00:00:02,570
+Let me use the same example I just used for
+
+2
+00:00:02,570 --> 00:00:06,940
+natural inner join to show you the important concept of aliases.
+
+3
+00:00:06,940 --> 00:00:09,290
+So as before, you want to find Email,
+
+4
+00:00:09,290 --> 00:00:12,390
+BirthYear, and Salary for RegularUsers who have a Salary.
+
+5
+00:00:12,390 --> 00:00:16,770
+We want to do that by combining the RegularUser data with the YearSalary data.
+
+6
+00:00:16,770 --> 00:00:20,610
+So, an alternative way of writing that query is as follows:
+
+7
+00:00:20,610 --> 00:00:24,570
+We're going to involve two tables, RegularUser and YearSalary.
+
+8
+00:00:24,570 --> 00:00:28,500
+But notice here that for the purpose of this query,
+
+9
+00:00:28,500 --> 00:00:30,875
+for the scope of this query,
+
+10
+00:00:30,875 --> 00:00:33,170
+instead of calling it RegularUser,
+
+11
+00:00:33,170 --> 00:00:36,660
+we are using the alias R instead.
+
+12
+00:00:36,660 --> 00:00:38,735
+Instead of calling it YearSalary,
+
+13
+00:00:38,735 --> 00:00:41,135
+we are using the alias Y.
+
+14
+00:00:41,135 --> 00:00:44,880
+Now, within this query from the first SELECT,
+
+15
+00:00:44,880 --> 00:00:49,970
+we can now use R and Y instead of RegularUser and YearSalary.
+
+16
+00:00:49,970 --> 00:00:51,879
+So up here in the SELECT line,
+
+17
+00:00:51,879 --> 00:00:55,105
+we're going to select Email and R.BirthYear,
+
+18
+00:00:55,105 --> 00:01:01,425
+Salary, and the condition is that R.BirthYear equals Y.BirthYear.
+
+19
+00:01:01,425 --> 00:01:04,610
+So the idea here behind the query then is as follows,
+
+20
+00:01:04,610 --> 00:01:09,480
+and this is why this is a very interesting query and why aliases are important.
+
+21
+00:01:09,480 --> 00:01:11,710
+So remember in the Tuple calculus,
+
+22
+00:01:11,710 --> 00:01:13,600
+we worked with Tuple variables.
+
+23
+00:01:13,600 --> 00:01:15,900
+R and Y, in this case,
+
+24
+00:01:15,900 --> 00:01:18,575
+are exactly Tuple variables.
+
+25
+00:01:18,575 --> 00:01:22,820
+So when we introduce R here to range over RegularUser,
+
+26
+00:01:22,820 --> 00:01:26,340
+think about it as R taking on the value of each
+
+27
+00:01:26,340 --> 00:01:30,235
+one of these rows in turn joined the query evaluation.
+
+28
+00:01:30,235 --> 00:01:35,565
+Similarly with Y, we'll take on these row values one at a time,
+
+29
+00:01:35,565 --> 00:01:39,830
+and then for each pair starts S. For example,
+
+30
+00:01:39,860 --> 00:01:44,440
+user1@gt.edu, '85, male is one instantiation of that,
+
+31
+00:01:44,440 --> 00:01:48,005
+here's an instantiation of the YearSalary alias
+
+32
+00:01:48,005 --> 00:01:52,370
+Y they combine here and therefore they create this Tuple here.
+
+33
+00:01:52,370 --> 00:01:54,010
+So that's the whole idea,
+
+34
+00:01:54,010 --> 00:01:56,865
+R and Y are Tuple variables.
+
+35
+00:01:56,865 --> 00:01:58,960
+There are some other advantages, of course,
+
+36
+00:01:58,960 --> 00:02:02,540
+it saves typing; some SQL queries get really, really long.
+
+37
+00:02:02,540 --> 00:02:03,700
+If you have ROLLUP queries,
+
+38
+00:02:03,700 --> 00:02:06,900
+they could be several pages of print out text.
+
+39
+00:02:06,900 --> 00:02:12,715
+One important thing that aliases are also used for is to disambiguate table references.
+
+40
+00:02:12,715 --> 00:02:18,390
+In particular, aliases must be used if you join a table with itself so you can
+
+41
+00:02:18,390 --> 00:02:21,510
+disambiguate between the first of two tables
+
+42
+00:02:21,510 --> 00:02:24,780
+in the join and the second one of the tables in the join.
+
+43
+00:02:24,780 --> 00:02:28,470
+I strongly recommend using aliases when you write queries.
+
+44
+00:02:28,470 --> 00:02:30,280
+it's just a great way to think,
+
+45
+00:02:30,280 --> 00:02:35,200
+and you are then aided in your understanding by thinking Tuple calculus.
+

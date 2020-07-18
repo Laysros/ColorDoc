@@ -1,0 +1,94 @@
+1
+00:00:00,530 --> 00:00:03,880
+The first symbol of the Extended
+Entity-Relationship Model I'm going to
+
+2
+00:00:03,880 --> 00:00:07,250
+introduce to you is
+that of an entity type.
+
+3
+00:00:07,250 --> 00:00:13,110
+This is a time-invarying
+representation of a set of users.
+
+4
+00:00:13,110 --> 00:00:16,410
+For each one of the symbols that
+I'm going to introduce to you,
+
+5
+00:00:16,410 --> 00:00:19,940
+I'm also going to show you
+what the semantics is.
+
+6
+00:00:19,940 --> 00:00:24,580
+This symbol is part of
+the Extended Entity-Relationship Model.
+
+7
+00:00:24,580 --> 00:00:25,660
+This is not.
+
+8
+00:00:25,660 --> 00:00:30,440
+This is just my attempt at
+explaining to you what it means.
+
+9
+00:00:30,440 --> 00:00:34,870
+So at any given point in
+time there is a set of users
+
+10
+00:00:34,870 --> 00:00:37,450
+that we have captured in our model.
+
+11
+00:00:37,450 --> 00:00:40,840
+Each one of these dots
+represents such a user.
+
+12
+00:00:40,840 --> 00:00:43,410
+We have previously
+talked about surrogates.
+
+13
+00:00:43,410 --> 00:00:45,220
+Think about these as surrogates.
+
+14
+00:00:45,220 --> 00:00:48,420
+They are the substance inside the system
+
+15
+00:00:48,420 --> 00:00:51,680
+that represent users
+out in the real world.
+
+16
+00:00:51,680 --> 00:00:56,200
+So, here, I got four, seven,
+nine users represented.
+
+17
+00:00:56,200 --> 00:01:01,330
+It is important that within one
+entity-relationship diagram,
+
+18
+00:01:01,330 --> 00:01:03,618
+All entity type names must be unique.
+
+19
+00:01:03,618 --> 00:01:08,370
+So it is not plausible to have
+multiple entity types, for
+
+20
+00:01:08,370 --> 00:01:09,880
+example, with the name user.
+

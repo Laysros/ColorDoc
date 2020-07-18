@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:06,100
+Most tables will be read from by some of the tests and written to by some tests.
+
+2
+00:00:06,100 --> 00:00:08,050
+So, here's an example here again,
+
+3
+00:00:08,050 --> 00:00:09,990
+continuing to use RegularUser.
+
+4
+00:00:09,990 --> 00:00:12,724
+So, in View Profile we do a selection,
+
+5
+00:00:12,724 --> 00:00:14,910
+that's a read from RegularUser.
+
+6
+00:00:14,910 --> 00:00:17,270
+In Edit Profile of RegularUser,
+
+7
+00:00:17,270 --> 00:00:19,450
+we clearly are updating, thus,
+
+8
+00:00:19,450 --> 00:00:25,150
+writing back to the database the new state of that RegularUser we are updating and here,
+
+9
+00:00:25,150 --> 00:00:30,345
+we actually, initially do an insertion of RegularUser into the RegularUser table.
+
+10
+00:00:30,345 --> 00:00:33,830
+So, you see here reading, writing, and writing.
+
+11
+00:00:33,830 --> 00:00:37,650
+In general, reads are faster if a table is indexed.
+
+12
+00:00:37,650 --> 00:00:41,005
+If there are multiple indices on a table, however,
+
+13
+00:00:41,005 --> 00:00:44,520
+then writing is slow because not only will we have
+
+14
+00:00:44,520 --> 00:00:48,415
+to write the updated data or insert the data in the table,
+
+15
+00:00:48,415 --> 00:00:50,700
+but we are also going to have to maintain
+
+16
+00:00:50,700 --> 00:00:54,045
+any additional indices that are defined on that table.
+
+17
+00:00:54,045 --> 00:00:55,560
+On the other hand,
+
+18
+00:00:55,560 --> 00:00:59,775
+many writes will require that we first find what we need to write.
+
+19
+00:00:59,775 --> 00:01:02,775
+So, for example, in an update we are clearly first
+
+20
+00:01:02,775 --> 00:01:07,045
+identifying and finding the RegularUser tuple that needs to be updated,
+
+21
+00:01:07,045 --> 00:01:08,745
+and then we are updating it.
+
+22
+00:01:08,745 --> 00:01:10,920
+So, although writes are slower,
+
+23
+00:01:10,920 --> 00:01:15,680
+if we don't have an index to find what we need to write fast, then we are in trouble.
+
+24
+00:01:15,680 --> 00:01:20,280
+Of course, in insertion there is nothing to find because it's a new tuple.
+
+25
+00:01:20,280 --> 00:01:25,145
+But what if we need to find the proper place to insert it in some order table?
+
+26
+00:01:25,145 --> 00:01:28,830
+So, we're having a mixture of reads and writes will make it more
+
+27
+00:01:28,830 --> 00:01:33,440
+complicated to decide whether additional indices are needed on the table or not.
+

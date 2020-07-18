@@ -1,0 +1,124 @@
+1
+00:00:00,510 --> 00:00:02,685
+Let us look at super subtypes or
+
+2
+00:00:02,685 --> 00:00:06,150
+is-a relationship types
+as they are also called.
+
+3
+00:00:06,150 --> 00:00:09,320
+Here we have the entity type of user and
+
+4
+00:00:09,320 --> 00:00:13,940
+we have two subtypes of user,
+regular user and admin user.
+
+5
+00:00:14,950 --> 00:00:20,780
+A RegularUser is a User and
+an AdminUser is a User.
+
+6
+00:00:20,780 --> 00:00:25,480
+We also have Female users and
+a Female User is a User and
+
+7
+00:00:25,480 --> 00:00:28,030
+a Male User is a User.
+
+8
+00:00:28,030 --> 00:00:31,610
+Let's look at the instance diagram
+to understand the semantics
+
+9
+00:00:31,610 --> 00:00:33,810
+of this relationship type.
+
+10
+00:00:33,810 --> 00:00:39,150
+So here we have two instances of Male
+Users, three instances of Female Users.
+
+11
+00:00:39,150 --> 00:00:42,240
+As you can see,
+everyone of the Male Users and
+
+12
+00:00:42,240 --> 00:00:45,910
+everyone of the Female Users
+is also a User.
+
+13
+00:00:45,910 --> 00:00:48,560
+In other words there are no
+instances of Male and
+
+14
+00:00:48,560 --> 00:00:52,960
+Female Users that are not also a User.
+
+15
+00:00:52,960 --> 00:00:59,630
+None of these users are both in the set
+of Female Users and Male Users.
+
+16
+00:00:59,630 --> 00:01:01,130
+Why is that the case?
+
+17
+00:01:01,130 --> 00:01:06,390
+That's because we have insisted on
+enforcing a disjointness constraint.
+
+18
+00:01:06,390 --> 00:01:10,320
+And that means that the two
+subtypes cannot overlap.
+
+19
+00:01:10,320 --> 00:01:15,700
+Now let's look at the instances in the
+Subtype of RegularUser and AdminUser.
+
+20
+00:01:15,700 --> 00:01:19,180
+Again you see that you
+cannot have a user
+
+21
+00:01:19,180 --> 00:01:21,770
+who's a regular user
+without also being a user.
+
+22
+00:01:21,770 --> 00:01:25,330
+So every single one of
+these also appear up here.
+
+23
+00:01:25,330 --> 00:01:30,460
+Neither can you have an AdminUser who
+does not appear as a User up here.
+
+24
+00:01:30,460 --> 00:01:35,070
+But notice that it is actually
+possible to have a user
+
+25
+00:01:35,070 --> 00:01:39,980
+who is both a RegularUser and
+an AdminUser reflecting
+
+26
+00:01:39,980 --> 00:01:44,640
+that this constraint here allows
+that the two subtypes overlap.
+

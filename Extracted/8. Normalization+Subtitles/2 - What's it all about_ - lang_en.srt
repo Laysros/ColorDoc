@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:02,050
+So, what is it all about?
+
+2
+00:00:02,050 --> 00:00:04,485
+The idea is that you are given a relation
+
+3
+00:00:04,485 --> 00:00:07,200
+and a set of functional dependencies like these.
+
+4
+00:00:07,200 --> 00:00:09,965
+Here's a relation; it has a number of columns,
+
+5
+00:00:09,965 --> 00:00:12,790
+Email, Interests, SinceAge, et cetera.
+
+6
+00:00:12,790 --> 00:00:18,170
+And there are some dependencies among these columns so-called functional dependencies,
+
+7
+00:00:18,170 --> 00:00:19,680
+we will define them a little bit later.
+
+8
+00:00:19,680 --> 00:00:23,790
+So, for example, it could be that one functional dependency is that given
+
+9
+00:00:23,790 --> 00:00:28,760
+an Email like here that would determine for you what the BirthYear,
+
+10
+00:00:28,760 --> 00:00:30,520
+CurrentCity, and Salary are.
+
+11
+00:00:30,520 --> 00:00:33,745
+So, given the email that would determine birth year,
+
+12
+00:00:33,745 --> 00:00:39,360
+current city and salary could also be that Email and Interest together would determine,
+
+13
+00:00:39,360 --> 00:00:44,295
+so these two together would determine the age since when you had that interest.
+
+14
+00:00:44,295 --> 00:00:49,140
+The big question, is this relation laid out in such a manner that it
+
+15
+00:00:49,140 --> 00:00:54,560
+is easy to enforce the functional dependencies that we want to enforce in the database?
+
+16
+00:00:54,560 --> 00:00:56,030
+An additional question is,
+
+17
+00:00:56,030 --> 00:01:00,465
+how do we normalize the relation or decompose it into smaller relations
+
+18
+00:01:00,465 --> 00:01:06,290
+without losing information and without losing functional dependencies?
+

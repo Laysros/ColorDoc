@@ -1,0 +1,53 @@
+1
+00:00:00,430 --> 00:00:05,630
+On the register screen the new user
+first provides first name and last name,
+
+2
+00:00:05,630 --> 00:00:11,650
+and then an email and password, together
+with a confirmation of that password.
+
+3
+00:00:11,650 --> 00:00:15,980
+If that email is not previously
+used by another user, and
+
+4
+00:00:15,980 --> 00:00:20,500
+if the password and the confirmed
+password are identical, then the result
+
+5
+00:00:20,500 --> 00:00:25,770
+of this will be that a new user is
+created with that email and password.
+
+6
+00:00:25,770 --> 00:00:27,750
+Should the user join this process,
+
+7
+00:00:27,750 --> 00:00:30,350
+remember that he has been
+previously registered.
+
+8
+00:00:30,350 --> 00:00:34,180
+They can push cancel, which would
+send them back to the login screen.
+
+9
+00:00:34,180 --> 00:00:39,140
+Notice that the register document is
+an input document to the system, and
+
+10
+00:00:39,140 --> 00:00:43,180
+as a result of interacting
+with that registration task,
+
+11
+00:00:43,180 --> 00:00:46,240
+the information will be
+written into the database.

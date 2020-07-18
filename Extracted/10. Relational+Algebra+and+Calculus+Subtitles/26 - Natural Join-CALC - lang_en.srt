@@ -1,0 +1,200 @@
+1
+00:00:00,000 --> 00:00:02,280
+Next comes Natural Join.
+
+2
+00:00:02,280 --> 00:00:06,295
+Let's say we want to combine attributes from two different relations.
+
+3
+00:00:06,295 --> 00:00:08,515
+So, let's say we want to find e-mail,
+
+4
+00:00:08,515 --> 00:00:10,460
+year, sex, and event.
+
+5
+00:00:10,460 --> 00:00:14,130
+When the birth year of the regular user is the same as
+
+6
+00:00:14,130 --> 00:00:19,695
+the event year of the major 60s events from which these four attributes are poured.
+
+7
+00:00:19,695 --> 00:00:22,020
+So in this case, let's actually take a look at
+
+8
+00:00:22,020 --> 00:00:25,345
+the example instead of looking at the queer expression first.
+
+9
+00:00:25,345 --> 00:00:27,120
+So, what do we want to do here?
+
+10
+00:00:27,120 --> 00:00:28,995
+We want to take the regular user table.
+
+11
+00:00:28,995 --> 00:00:31,540
+We want to take the major 60s event table.
+
+12
+00:00:31,540 --> 00:00:34,650
+Both of those have an attribute year.
+
+13
+00:00:34,650 --> 00:00:37,845
+So, the Natural Join will combine these two tables,
+
+14
+00:00:37,845 --> 00:00:41,105
+we'll just keep a single copy of the column year.
+
+15
+00:00:41,105 --> 00:00:43,475
+When we turn the e-ma-il,
+
+16
+00:00:43,475 --> 00:00:46,980
+the year, the sex, and the event.
+
+17
+00:00:46,980 --> 00:00:49,245
+Now, when is that going to take place?
+
+18
+00:00:49,245 --> 00:00:51,740
+It's going to take place where the year after
+
+19
+00:00:51,740 --> 00:00:56,120
+the regular user matches the year of the major 60s event.
+
+20
+00:00:56,120 --> 00:00:59,105
+So, let's take a look here at the queer expression.
+
+21
+00:00:59,105 --> 00:01:03,870
+So, we are interested in a result that contains: e-mail, year,
+
+22
+00:01:03,870 --> 00:01:06,605
+sex, and event, as you can see here,
+
+23
+00:01:06,605 --> 00:01:08,785
+e-mail, year, sex and event.
+
+24
+00:01:08,785 --> 00:01:13,845
+What must be true for us to generate a tuple in that result?
+
+25
+00:01:13,845 --> 00:01:18,275
+Number one, there must exist a tuple r in regular user.
+
+26
+00:01:18,275 --> 00:01:21,225
+So, down here in this regular use ration,
+
+27
+00:01:21,225 --> 00:01:25,765
+and there must exist a tuple s in the major 60s event.
+
+28
+00:01:25,765 --> 00:01:28,880
+So in other words, our ranges or regular user,
+
+29
+00:01:28,880 --> 00:01:31,815
+and s ranges all major events.
+
+30
+00:01:31,815 --> 00:01:34,595
+The join condition for the natural join is that,
+
+31
+00:01:34,595 --> 00:01:38,190
+the year of r is the same as the year of s,
+
+32
+00:01:38,190 --> 00:01:39,945
+so these two must match.
+
+33
+00:01:39,945 --> 00:01:41,430
+But in addition to that,
+
+34
+00:01:41,430 --> 00:01:46,155
+the email address comes from the email r. The year,
+
+35
+00:01:46,155 --> 00:01:49,290
+we picked that from the year of r. The sex,
+
+36
+00:01:49,290 --> 00:01:52,480
+we picked that from the sex of r. The event,
+
+37
+00:01:52,480 --> 00:01:55,900
+we picked from the event of s. Let's take
+
+38
+00:01:55,900 --> 00:01:59,840
+a look at the first tuple in the result user two.
+
+39
+00:01:59,840 --> 00:02:03,030
+So, user two has birth year 69.
+
+40
+00:02:03,030 --> 00:02:07,365
+Sixty-nine matches, let's see, The moon landing.
+
+41
+00:02:07,365 --> 00:02:12,040
+So, those two tuples get combined in the first tuple in the result.
+
+42
+00:02:12,040 --> 00:02:15,940
+Let's take a look at user three born in 67.
+
+43
+00:02:15,940 --> 00:02:19,530
+Sixty-seven matches this event.
+
+44
+00:02:19,530 --> 00:02:22,530
+The Doors recording of the Alabama Song.
+
+45
+00:02:22,530 --> 00:02:24,340
+So, that becomes part of the tuple.
+
+46
+00:02:24,340 --> 00:02:29,755
+User eight, 68 matches, several tuples.
+
+47
+00:02:29,755 --> 00:02:32,490
+It matches the Tet Offensive year,
+
+48
+00:02:32,490 --> 00:02:35,189
+it matches the Bloody Sunday year,
+
+49
+00:02:35,189 --> 00:02:38,315
+and it matches the MLK assassination year.
+
+50
+00:02:38,315 --> 00:02:43,180
+So, user eight gets combined with all those three events.
+

@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:01,980
+Let us now look at Union.
+
+2
+00:00:01,980 --> 00:00:08,440
+Let us find all cities that are either a CurrentCity or HomeTown for some RegularUser.
+
+3
+00:00:08,440 --> 00:00:12,290
+So, the cities we're interested in are the following cities.
+
+4
+00:00:12,290 --> 00:00:17,175
+If there exists a tuple r in RegularUser with a CurrentCity,
+
+5
+00:00:17,175 --> 00:00:19,700
+then that's part of the result.
+
+6
+00:00:19,700 --> 00:00:25,530
+Alternatively, if there exists a tuple in RegularUser with a HomeTown,
+
+7
+00:00:25,530 --> 00:00:27,425
+then that's one of the cities.
+
+8
+00:00:27,425 --> 00:00:29,525
+Let's first look at the current cities.
+
+9
+00:00:29,525 --> 00:00:31,805
+So, San Francisco is a current city,
+
+10
+00:00:31,805 --> 00:00:34,005
+so it's clearly part of the result.
+
+11
+00:00:34,005 --> 00:00:37,015
+Las Vegas is part of the result.
+
+12
+00:00:37,015 --> 00:00:38,850
+Dallas is part of the result.
+
+13
+00:00:38,850 --> 00:00:41,135
+College Park, part of the result.
+
+14
+00:00:41,135 --> 00:00:44,590
+What about Atlanta? Yes, part of the result.
+
+15
+00:00:44,590 --> 00:00:46,165
+What about Atlanta?
+
+16
+00:00:46,165 --> 00:00:50,085
+Well, Atlanta is already there and the result is a set, of course.
+
+17
+00:00:50,085 --> 00:00:51,590
+What about Austin?
+
+18
+00:00:51,590 --> 00:00:55,520
+Yeah. Austin is there and part of the result.
+

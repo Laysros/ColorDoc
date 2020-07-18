@@ -1,0 +1,112 @@
+1
+00:00:00,490 --> 00:00:03,730
+In process modeling we aim at fixing and
+
+2
+00:00:03,730 --> 00:00:08,310
+representing a perception
+of processes of reality.
+
+3
+00:00:08,310 --> 00:00:14,380
+As opposed to the structures processes
+are not represented inside the database,
+
+4
+00:00:14,380 --> 00:00:18,700
+rather they are reflected in
+a way we use the database
+
+5
+00:00:18,700 --> 00:00:21,110
+through the database management system.
+
+6
+00:00:21,110 --> 00:00:25,110
+There are two ways in which we can
+use the database through the database
+
+7
+00:00:25,110 --> 00:00:26,280
+management system.
+
+8
+00:00:26,280 --> 00:00:31,190
+One is to embed data manipulation
+language code inside a program,
+
+9
+00:00:31,190 --> 00:00:35,360
+the other one is to use the data
+manipulation language directly
+
+10
+00:00:35,360 --> 00:00:38,310
+to issue ad-hoc queries on the database.
+
+11
+00:00:38,310 --> 00:00:40,970
+Let's take a look at what that means.
+
+12
+00:00:40,970 --> 00:00:45,730
+If we have program that builds,
+for example, a user interface,
+
+13
+00:00:45,730 --> 00:00:50,800
+if you have a program that builds
+an interface for an application,
+
+14
+00:00:50,800 --> 00:00:55,330
+then inside of that program it is
+possible to have data manipulation link
+
+15
+00:00:55,330 --> 00:01:00,060
+with statements that accesses a data
+base, either to up take the data, or
+
+16
+00:01:00,060 --> 00:01:04,629
+to retrieve the data and to display
+it back through the interface.
+
+17
+00:01:04,629 --> 00:01:09,710
+Alternatively, it is plausible to use
+the data manipulation language directly
+
+18
+00:01:09,710 --> 00:01:14,450
+to do ad hoc queries on the database,
+or ad hoc updates and
+
+19
+00:01:14,450 --> 00:01:16,400
+maintenance of the database.
+
+20
+00:01:16,400 --> 00:01:19,070
+The data manipulation language
+we are going to use in
+
+21
+00:01:19,070 --> 00:01:20,840
+this course is going to be SQL.
+
+22
+00:01:20,840 --> 00:01:24,940
+You're going to spend major amounts
+of time in the course learning
+
+23
+00:01:24,940 --> 00:01:27,300
+how to build programs like this and
+
+24
+00:01:27,300 --> 00:01:32,620
+how to embed in them SQL statements to
+manipulate and maintain the database.
+

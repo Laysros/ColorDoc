@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:03,970
+The Edit Profile task has four sub tasks.
+
+2
+00:00:03,970 --> 00:00:06,380
+View Profile, which we just completed,
+
+3
+00:00:06,380 --> 00:00:10,095
+Update Personal Information, Add or Delete a School,
+
+4
+00:00:10,095 --> 00:00:12,195
+Add or Delete an Employer.
+
+5
+00:00:12,195 --> 00:00:15,680
+The first step is to populate the dropdowns namely,
+
+6
+00:00:15,680 --> 00:00:17,785
+School Name and Employer Name.
+
+7
+00:00:17,785 --> 00:00:20,705
+So, those dropdowns here, to populate those,
+
+8
+00:00:20,705 --> 00:00:23,730
+we need to do a selection from the set of
+
+9
+00:00:23,730 --> 00:00:27,345
+school names and a set of employer names that currently exist.
+
+10
+00:00:27,345 --> 00:00:30,690
+So, each one of the SQL statements for that are here.
+
+11
+00:00:30,690 --> 00:00:33,735
+SELECT SchoolName and Type FROM School,
+
+12
+00:00:33,735 --> 00:00:37,235
+SELECT EmployerName FROM Employer.
+
+13
+00:00:37,235 --> 00:00:40,050
+Now to update the personal information,
+
+14
+00:00:40,050 --> 00:00:45,015
+we continue to assume that the email of the current user is managed by the application.
+
+15
+00:00:45,015 --> 00:00:47,675
+We then read Sex, Birthdate,
+
+16
+00:00:47,675 --> 00:00:51,055
+CurrentCity and Hometown from the input fields
+
+17
+00:00:51,055 --> 00:00:54,765
+on the personal information portion of the Profile screen.
+
+18
+00:00:54,765 --> 00:00:56,490
+So, having read those,
+
+19
+00:00:56,490 --> 00:01:01,500
+we now update the RegularUser and we overwrite the Sex with a new value,
+
+20
+00:01:01,500 --> 00:01:03,110
+the Birthdate with a new value,
+
+21
+00:01:03,110 --> 00:01:07,125
+CurrentCity, and Hometown with a new value and we do it for the row
+
+22
+00:01:07,125 --> 00:01:11,725
+that has an Email address that matches the Email of the current user.
+
+23
+00:01:11,725 --> 00:01:14,440
+For each one of the Interest that's added,
+
+24
+00:01:14,440 --> 00:01:21,040
+we insert into the Interest table the Email of the current user, and the interest.
+

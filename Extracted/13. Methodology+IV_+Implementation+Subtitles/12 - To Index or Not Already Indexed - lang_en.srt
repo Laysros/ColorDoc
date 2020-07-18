@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:04,680
+Sometimes tables are already indexed by the database management system.
+
+2
+00:00:04,680 --> 00:00:08,250
+This is actually the case for the regular user the same way we have looked at.
+
+3
+00:00:08,250 --> 00:00:13,350
+So, all the JOINs on that table and the look ups are on email.
+
+4
+00:00:13,350 --> 00:00:15,755
+Email is the primary key of the table.
+
+5
+00:00:15,755 --> 00:00:17,730
+When you're using MySQL,
+
+6
+00:00:17,730 --> 00:00:22,685
+that table will actually already be clustered on or indexed on email.
+
+7
+00:00:22,685 --> 00:00:25,965
+Therefore, the issues we've been discussing for regular user
+
+8
+00:00:25,965 --> 00:00:29,725
+actually are non-issues when MySQL is used.
+
+9
+00:00:29,725 --> 00:00:33,155
+In some cases, database management systems support that,
+
+10
+00:00:33,155 --> 00:00:34,665
+in other case they do not.
+
+11
+00:00:34,665 --> 00:00:38,170
+Sometimes it's good, sometimes it's bad.
+

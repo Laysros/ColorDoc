@@ -1,0 +1,114 @@
+1
+00:00:00,100 --> 00:00:04,760
+So the first step is to find
+the current user using User Email.
+
+2
+00:00:04,760 --> 00:00:06,960
+We can now, having found that user,
+
+3
+00:00:06,960 --> 00:00:12,210
+we can display on the output document
+View Profile the name of the user.
+
+4
+00:00:12,210 --> 00:00:16,184
+Again, using the User Email
+we can now move down and
+
+5
+00:00:16,184 --> 00:00:19,135
+check the RegularUser entity type and
+
+6
+00:00:19,135 --> 00:00:23,950
+by looking at the property types here
+we are then able to display Sex,
+
+7
+00:00:23,950 --> 00:00:27,870
+BirthDate, CurrentCity,
+Hometown and Interests.
+
+8
+00:00:27,870 --> 00:00:30,100
+That takes care of
+the personal information.
+
+9
+00:00:30,100 --> 00:00:34,710
+Now we gotta go through each school
+the user has attended and display that
+
+10
+00:00:34,710 --> 00:00:38,950
+information and each job the user has
+had and display that information.
+
+11
+00:00:38,950 --> 00:00:41,880
+So let's first take a look
+at the school information.
+
+12
+00:00:41,880 --> 00:00:44,100
+So we start with a RegularUser and
+
+13
+00:00:44,100 --> 00:00:49,430
+that leads us to N number of
+schools that the user has attended.
+
+14
+00:00:49,430 --> 00:00:53,830
+So for each one of those, display
+the school name and the year graduated.
+
+15
+00:00:53,830 --> 00:00:56,220
+Find the SchoolType and display that.
+
+16
+00:00:56,220 --> 00:00:59,280
+For each employer,
+start with a RegularUser,
+
+17
+00:00:59,280 --> 00:01:03,840
+find the N employers that that
+RegularUser has worked for.
+
+18
+00:01:03,840 --> 00:01:09,195
+And for each one of them, display
+the EmployerName and the JobTitle.
+
+19
+00:01:09,195 --> 00:01:13,869
+So that's the abstract code, there is
+no formal syntax for abstract code.
+
+20
+00:01:13,869 --> 00:01:16,230
+Every one has his or her own style.
+
+21
+00:01:16,230 --> 00:01:21,120
+But this is fairly formal and fairly
+precise and fairly complete description
+
+22
+00:01:21,120 --> 00:01:25,020
+of what needs to take place for
+each one of these subsets here.
+
+23
+00:01:25,020 --> 00:01:30,220
+And it is sort of the penultimate
+step before writing this in SQL
+
+24
+00:01:30,220 --> 00:01:33,400
+on a real relational database
+when we get that far.

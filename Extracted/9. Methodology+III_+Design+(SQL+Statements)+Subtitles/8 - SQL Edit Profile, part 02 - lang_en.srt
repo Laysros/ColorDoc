@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:04,200
+If the user clicks "Delete this School," then we delete
+
+2
+00:00:04,200 --> 00:00:08,275
+from Attend where the email matches the email of the current user.
+
+3
+00:00:08,275 --> 00:00:12,280
+The school name matches the school name identified to be deleted,
+
+4
+00:00:12,280 --> 00:00:14,700
+and the year graduated matches the year
+
+5
+00:00:14,700 --> 00:00:18,480
+graduated of the school that has been identified to be deleted.
+
+6
+00:00:18,480 --> 00:00:23,820
+If a new school is added with a school name given here and a year graduated given
+
+7
+00:00:23,820 --> 00:00:29,375
+here that will be done by an insertion into the Attend's table of email,
+
+8
+00:00:29,375 --> 00:00:31,350
+school name, and year graduated,
+
+9
+00:00:31,350 --> 00:00:34,650
+where the values are the email of the current user,
+
+10
+00:00:34,650 --> 00:00:36,630
+the school name read from input,
+
+11
+00:00:36,630 --> 00:00:39,085
+and the year graduated read from input.
+
+12
+00:00:39,085 --> 00:00:41,190
+To update an existing school,
+
+13
+00:00:41,190 --> 00:00:43,830
+we need to make the assumption that the application
+
+14
+00:00:43,830 --> 00:00:47,450
+manages the old school name and the old year graduated.
+
+15
+00:00:47,450 --> 00:00:51,905
+To overwrite those with the new values of school name and year graduated,
+
+16
+00:00:51,905 --> 00:00:53,730
+we need an update statement.
+
+17
+00:00:53,730 --> 00:00:56,845
+Update Attends will set the school name to
+
+18
+00:00:56,845 --> 00:01:01,680
+the new value and the year graduated to the new value where the following is true,
+
+19
+00:01:01,680 --> 00:01:05,420
+namely the email equals the email of the current user,
+
+20
+00:01:05,420 --> 00:01:07,210
+the school name is the old name,
+
+21
+00:01:07,210 --> 00:01:10,320
+and the year graduated is the old year.
+

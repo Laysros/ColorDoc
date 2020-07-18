@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:03,060
+When we looked at Relational Algebra and Calculus I
+
+2
+00:00:03,060 --> 00:00:06,390
+emphasized many many times that relations are sets,
+
+3
+00:00:06,390 --> 00:00:11,195
+and that the result of a query is always a relation and therefore, a set.
+
+4
+00:00:11,195 --> 00:00:15,090
+In SQL, tables may have duplicate rows.
+
+5
+00:00:15,830 --> 00:00:19,110
+Let me talk about the keyword 'Distinct'.
+
+6
+00:00:19,110 --> 00:00:22,430
+So let's say I want to find a sex for regular users in Atlanta.
+
+7
+00:00:22,430 --> 00:00:24,610
+The query to do that is as follows.
+
+8
+00:00:24,610 --> 00:00:27,300
+SELECT sex, FROM RegularUser,
+
+9
+00:00:27,300 --> 00:00:29,480
+WHERE HomeTown equals 'Atlanta'.
+
+10
+00:00:29,480 --> 00:00:34,615
+Looking at the RegularUser table and the rows where HomeTown equals Atlanta,
+
+11
+00:00:34,615 --> 00:00:37,385
+you see that user one satisfies that.
+
+12
+00:00:37,385 --> 00:00:40,070
+So, male is part of the result.
+
+13
+00:00:40,070 --> 00:00:45,575
+So is male a second time for user four and so is female for user six.
+
+14
+00:00:45,575 --> 00:00:48,090
+So here, male appears twice.
+
+15
+00:00:48,090 --> 00:00:50,400
+If you want to avoid the duplication,
+
+16
+00:00:50,400 --> 00:00:51,610
+here's the way to do that.
+
+17
+00:00:51,610 --> 00:00:55,740
+You use the keyword Distinct around the attribute that you want returned.
+
+18
+00:00:55,740 --> 00:01:00,360
+So, in this case, the result is the same except duplicates are eliminated.
+
+19
+00:01:00,360 --> 00:01:05,480
+So, you get just the row male and female returned.
+

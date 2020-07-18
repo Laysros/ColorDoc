@@ -1,0 +1,288 @@
+1
+00:00:00,000 --> 00:00:03,005
+So, in this next type of nested queries,
+
+2
+00:00:03,005 --> 00:00:04,915
+let's look at the following example.
+
+3
+00:00:04,915 --> 00:00:09,700
+Find CurrentCitys with at least one RegularUser who has
+
+4
+00:00:09,700 --> 00:00:16,010
+a Salary that's higher than all Salaries of RegularUsers with the HomeTown, Austin.
+
+5
+00:00:16,010 --> 00:00:21,130
+Since the Salary column is in one table and the HomeTown is in another one,
+
+6
+00:00:21,130 --> 00:00:24,150
+we obviously have to join the two tables together.
+
+7
+00:00:24,150 --> 00:00:25,620
+What's the join attribute?
+
+8
+00:00:25,620 --> 00:00:30,825
+It's BirthYear. So, let's join RegularUser and YearSalary together,
+
+9
+00:00:30,825 --> 00:00:32,315
+call them R and Y,
+
+10
+00:00:32,315 --> 00:00:34,125
+where the BirthYears match.
+
+11
+00:00:34,125 --> 00:00:39,985
+Select from that where the HomeTown equals Austin and project from that the Salary.
+
+12
+00:00:39,985 --> 00:00:43,785
+So, now, you're going to end up with the following salaries.
+
+13
+00:00:43,785 --> 00:00:45,850
+User2 lives in Austin,
+
+14
+00:00:45,850 --> 00:00:48,600
+user2 is born in 69,
+
+15
+00:00:48,600 --> 00:00:52,530
+people born in 69 make 43,000.
+
+16
+00:00:52,530 --> 00:00:57,525
+So, 43,000 is one of the Salaries for users in Austin.
+
+17
+00:00:57,525 --> 00:00:59,570
+Another one is user12,
+
+18
+00:00:59,570 --> 00:01:04,885
+born in 74, people born in 74 makes $38,000.
+
+19
+00:01:04,885 --> 00:01:10,025
+So, now, you have two salaries; 43,000 and 38,000.
+
+20
+00:01:10,025 --> 00:01:12,355
+Let's now get back to the query here.
+
+21
+00:01:12,355 --> 00:01:16,100
+So, here, you have 38,000 and 43,000.
+
+22
+00:01:16,100 --> 00:01:21,390
+So, the outer query now says select the CurrentCity from RegularUsers where
+
+23
+00:01:21,390 --> 00:01:24,075
+the Salary that those RegularUsers make
+
+24
+00:01:24,075 --> 00:01:27,285
+is greater than all of those that result from the sub query.
+
+25
+00:01:27,285 --> 00:01:31,650
+So, in other words, the Salary is greater than 38 and 43.
+
+26
+00:01:31,650 --> 00:01:36,240
+Again, since CurrentCity and Salary live in different tables,
+
+27
+00:01:36,240 --> 00:01:39,885
+we got to join the two tables together in the outer query also.
+
+28
+00:01:39,885 --> 00:01:43,060
+So, let's now consider whether the CurrentCity,
+
+29
+00:01:43,060 --> 00:01:45,090
+Seattle, is in the result.
+
+30
+00:01:45,090 --> 00:01:48,315
+Seattle is the CurrentCity of user1,
+
+31
+00:01:48,315 --> 00:01:52,935
+born in 85, and those born in 85 make 27.
+
+32
+00:01:52,935 --> 00:02:00,225
+Twenty seven is not greater than 38 and 43 so Seattle is not in the result.
+
+33
+00:02:00,225 --> 00:02:02,165
+Is Austin in the result?
+
+34
+00:02:02,165 --> 00:02:04,470
+Austin has user2 in it,
+
+35
+00:02:04,470 --> 00:02:09,320
+born in 69, people born in 69 make 43.
+
+36
+00:02:09,320 --> 00:02:14,290
+Is 43 greater than 38 and 43?
+
+37
+00:02:14,290 --> 00:02:17,360
+The answer is no. Had it been greater than equal to,
+
+38
+00:02:17,360 --> 00:02:18,890
+it would have been different.
+
+39
+00:02:18,890 --> 00:02:21,760
+Therefore, Austin is not in the result.
+
+40
+00:02:21,760 --> 00:02:25,745
+About San Diego, San Diego, user3,
+
+41
+00:02:25,745 --> 00:02:31,570
+born in 67, salary for people born in 67 is 45.
+
+42
+00:02:31,570 --> 00:02:35,365
+Is 45 greater than 38 and 43?
+
+43
+00:02:35,365 --> 00:02:38,435
+Yes. So, is San Diego in the result?
+
+44
+00:02:38,435 --> 00:02:40,050
+Yes, we just saw it is.
+
+45
+00:02:40,050 --> 00:02:43,925
+But it certainly is not in the result because of user6.
+
+46
+00:02:43,925 --> 00:02:46,715
+Because user6 is born in 88,
+
+47
+00:02:46,715 --> 00:02:52,365
+those born in 88 make 24 and that's less than both 38 and 43.
+
+48
+00:02:52,365 --> 00:02:56,620
+However, it still is in there because user3 was born in 67.
+
+49
+00:02:56,620 --> 00:02:58,450
+Let's take a look at College Park.
+
+50
+00:02:58,450 --> 00:03:01,100
+College Park, there's a person born in 68,
+
+51
+00:03:01,100 --> 00:03:04,030
+people born in 68 earn 44,000.
+
+52
+00:03:04,030 --> 00:03:06,650
+Forty four is greater than 43 and 38.
+
+53
+00:03:06,650 --> 00:03:08,215
+Is College Park in the result?
+
+54
+00:03:08,215 --> 00:03:12,920
+Well, yes it was. But it's not added to the result because of this person.
+
+55
+00:03:12,920 --> 00:03:15,710
+User12 was born in 74,
+
+56
+00:03:15,710 --> 00:03:18,225
+those born in 74 make 38.
+
+57
+00:03:18,225 --> 00:03:22,395
+Thirty eight is not greater than 43 and 38.
+
+58
+00:03:22,395 --> 00:03:24,955
+Of course, in all of these cases,
+
+59
+00:03:24,955 --> 00:03:26,920
+when we went in and compared,
+
+60
+00:03:26,920 --> 00:03:31,320
+we asked whether the salary of the user we are considering to
+
+61
+00:03:31,320 --> 00:03:35,925
+return CurrentCity from was greater then 38 and 43.
+
+62
+00:03:35,925 --> 00:03:37,350
+Why did we do that?
+
+63
+00:03:37,350 --> 00:03:40,790
+We didn't have to compare to both 43 and 38.
+
+64
+00:03:40,790 --> 00:03:43,410
+All we would have to do to make sure that salary is
+
+65
+00:03:43,410 --> 00:03:46,260
+greater than all of them is to compare to the 43.
+
+66
+00:03:46,260 --> 00:03:49,140
+So, instead of writing this comparison here,
+
+67
+00:03:49,140 --> 00:03:51,450
+we could just have compared the salary to
+
+68
+00:03:51,450 --> 00:03:54,035
+the biggest one of those returned by the inner query.
+
+69
+00:03:54,035 --> 00:03:56,385
+In other words, we could have done it like this.
+
+70
+00:03:56,385 --> 00:04:01,290
+So, the inner query instead would have been select the max(salary) here,
+
+71
+00:04:01,290 --> 00:04:03,420
+that would have yielded the 43,
+
+72
+00:04:03,420 --> 00:04:09,720
+and each one of these in the outer query would be compared just to the max query, 43.
+

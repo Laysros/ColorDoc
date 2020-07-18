@@ -1,0 +1,107 @@
+1
+00:00:00,490 --> 00:00:04,790
+The next relationship type we'll look
+at is a many to many relationship type,
+
+2
+00:00:04,790 --> 00:00:07,590
+or an N to M relationship type.
+
+3
+00:00:07,590 --> 00:00:11,560
+You can see it's a many to many
+relationship type when the cardinalities
+
+4
+00:00:11,560 --> 00:00:14,140
+here are described on
+the lines of the relationship.
+
+5
+00:00:14,140 --> 00:00:19,230
+So this is a many to many relationship
+type between regular users and
+
+6
+00:00:19,230 --> 00:00:21,070
+the schools they attended.
+
+7
+00:00:21,070 --> 00:00:23,840
+Again, let's take a look
+at the instance diagram.
+
+8
+00:00:23,840 --> 00:00:26,450
+So here we have five
+regular users shown.
+
+9
+00:00:26,450 --> 00:00:28,978
+Here we have a a bunch of schools shown.
+
+10
+00:00:28,978 --> 00:00:33,580
+The relationships here demonstrate
+that this regular user here has
+
+11
+00:00:33,580 --> 00:00:35,685
+attended these four schools.
+
+12
+00:00:35,685 --> 00:00:38,020
+This regular user, this one school.
+
+13
+00:00:38,020 --> 00:00:40,210
+This regular user here, these schools.
+
+14
+00:00:40,210 --> 00:00:45,156
+But see what happens now when we're
+dealing with many to many relationship
+
+15
+00:00:45,156 --> 00:00:45,720
+types.
+
+16
+00:00:45,720 --> 00:00:50,548
+So notice now that one element here,
+this regular user here may have
+
+17
+00:00:50,548 --> 00:00:55,038
+attended these four schools, but
+notice that this school here
+
+18
+00:00:55,038 --> 00:00:59,713
+actually has three regular users
+who have attended that school.
+
+19
+00:00:59,713 --> 00:01:04,159
+So in other words, any single element
+here may be mapped to multiple
+
+20
+00:01:04,159 --> 00:01:08,683
+elements over here, and any single
+element over here may be mapped to
+
+21
+00:01:08,683 --> 00:01:12,126
+multiple elements on the left
+side as is shown here.
+
+22
+00:01:12,126 --> 00:01:14,463
+No longer do we have a function here.
+
+23
+00:01:14,463 --> 00:01:18,060
+This is a relationship in
+the mathematical sense of the word.
+

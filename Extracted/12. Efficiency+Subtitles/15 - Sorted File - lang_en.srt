@@ -1,0 +1,208 @@
+1
+00:00:00,000 --> 00:00:04,160
+So, it was painful and expensive to lookup data in a heap.
+
+2
+00:00:04,160 --> 00:00:06,740
+So, let's try to sort the data on the file.
+
+3
+00:00:06,740 --> 00:00:09,040
+So now, the records will be sitting here,
+
+4
+00:00:09,040 --> 00:00:10,720
+multiple records on a block,
+
+5
+00:00:10,720 --> 00:00:12,110
+pointed to the next block,
+
+6
+00:00:12,110 --> 00:00:14,060
+several records on that etc,
+
+7
+00:00:14,060 --> 00:00:17,345
+and the data will be sorted here in some order.
+
+8
+00:00:17,345 --> 00:00:21,760
+Now, to look through and find a record with a particular key,
+
+9
+00:00:21,760 --> 00:00:23,370
+what is that going to cost us now?
+
+10
+00:00:23,370 --> 00:00:26,270
+Well, we could start at the first block and look through
+
+11
+00:00:26,270 --> 00:00:29,820
+the records and see if we find the one with the key desired,
+
+12
+00:00:29,820 --> 00:00:32,190
+if not, then we'll look at the second block,
+
+13
+00:00:32,190 --> 00:00:33,660
+see if we find it there,
+
+14
+00:00:33,660 --> 00:00:35,695
+third block, see if we find it there.
+
+15
+00:00:35,695 --> 00:00:37,470
+What is that going to cost us?
+
+16
+00:00:37,470 --> 00:00:41,845
+Well, sometimes the record we are looking for will actually be on the first block.
+
+17
+00:00:41,845 --> 00:00:45,225
+Sometimes the record we are looking for will be on the last block.
+
+18
+00:00:45,225 --> 00:00:47,110
+On the average again,
+
+19
+00:00:47,110 --> 00:00:48,765
+as for unsorted data,
+
+20
+00:00:48,765 --> 00:00:51,560
+we have to look at about half of the blocks of data.
+
+21
+00:00:51,560 --> 00:00:55,510
+Again therefore, the cost of looking up an element or
+
+22
+00:00:55,510 --> 00:01:00,085
+record with a particular key is going to again cost us 16.6 minutes.
+
+23
+00:01:00,085 --> 00:01:02,410
+But the reason for that is that we aren't
+
+24
+00:01:02,410 --> 00:01:05,285
+utilizing the fact that data is sorted that order.
+
+25
+00:01:05,285 --> 00:01:09,160
+So, what if we were to utilize the fact that data is sorted?
+
+26
+00:01:09,160 --> 00:01:12,370
+What if we had a little bit of metadata that would allow us to
+
+27
+00:01:12,370 --> 00:01:17,585
+understand where approximately the middle of the data file is?
+
+28
+00:01:17,585 --> 00:01:18,740
+Then we could go in.
+
+29
+00:01:18,740 --> 00:01:20,710
+We could look at that middle block,
+
+30
+00:01:20,710 --> 00:01:24,040
+and we could determine whether what we are looking for is to
+
+31
+00:01:24,040 --> 00:01:27,750
+the left of where we tried or to the right of where we tried.
+
+32
+00:01:27,750 --> 00:01:30,620
+So, we'll continue with half of the search space.
+
+33
+00:01:30,620 --> 00:01:32,065
+Then in the next step,
+
+34
+00:01:32,065 --> 00:01:33,880
+we'll hit about the middle of that and
+
+35
+00:01:33,880 --> 00:01:36,640
+continue either with the left piece or the right piece.
+
+36
+00:01:36,640 --> 00:01:41,530
+The amount of time it takes us to take something of size and look through
+
+37
+00:01:41,530 --> 00:01:46,485
+it and split in half each time is log base 2 toward this we are searching in.
+
+38
+00:01:46,485 --> 00:01:48,225
+Since we are searching in N blocks,
+
+39
+00:01:48,225 --> 00:01:50,830
+log base 2- N data blocks is what
+
+40
+00:01:50,830 --> 00:01:54,070
+the cost is going to be for binary search in order for us to
+
+41
+00:01:54,070 --> 00:01:56,815
+end up with a single block on which the data element
+
+42
+00:01:56,815 --> 00:02:00,000
+we're looking for is going to be stored if it's in the database.
+
+43
+00:02:00,000 --> 00:02:01,975
+With the numbers we have here,
+
+44
+00:02:01,975 --> 00:02:04,205
+log base 2- N,
+
+45
+00:02:04,205 --> 00:02:06,770
+where N is 200,000,
+
+46
+00:02:06,770 --> 00:02:10,125
+is 18 multiply that by 10 milliseconds,
+
+47
+00:02:10,125 --> 00:02:14,020
+and you get an access time which is 0.18 second.
+
+48
+00:02:14,020 --> 00:02:17,815
+Very, very much faster than the 16.6 minutes.
+
+49
+00:02:17,815 --> 00:02:21,345
+Before we proceed, I want to emphasize that the cost of
+
+50
+00:02:21,345 --> 00:02:24,980
+the search depends on the size of what we search in.
+
+51
+00:02:24,980 --> 00:02:27,470
+So N is the size of the file,
+
+52
+00:02:27,470 --> 00:02:30,440
+and the cost depends on that size.
+

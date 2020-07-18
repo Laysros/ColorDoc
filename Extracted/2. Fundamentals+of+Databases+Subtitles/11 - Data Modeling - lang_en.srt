@@ -1,0 +1,59 @@
+1
+00:00:00,470 --> 00:00:02,700
+Let us first talk about data modeling.
+
+2
+00:00:02,700 --> 00:00:07,210
+A model represents a perception
+of structures of reality.
+
+3
+00:00:07,210 --> 00:00:11,200
+The data modeling process
+has two steps to it.
+
+4
+00:00:11,200 --> 00:00:14,620
+First, we need to fix a perception
+of structures of reality.
+
+5
+00:00:14,620 --> 00:00:17,810
+And second,
+we need to represent that perception.
+
+6
+00:00:17,810 --> 00:00:21,570
+Database people use two
+different languages for this.
+
+7
+00:00:21,570 --> 00:00:25,280
+One language is the extended
+entity relationship model.
+
+8
+00:00:25,280 --> 00:00:29,350
+Which is good for fixing a perception
+of structures of reality.
+
+9
+00:00:29,350 --> 00:00:32,380
+And second,
+the relational model is good for
+
+10
+00:00:32,380 --> 00:00:35,890
+representing this perception
+inside a database.
+
+11
+00:00:35,890 --> 00:00:41,020
+In the data modeling process we select
+aspects of reality that are important
+
+12
+00:00:41,020 --> 00:00:47,420
+to us while ignoring others and we use
+abstraction to organize these aspects.
+

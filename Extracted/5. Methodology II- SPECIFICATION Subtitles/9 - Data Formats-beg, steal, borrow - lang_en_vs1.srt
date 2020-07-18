@@ -1,0 +1,177 @@
+1
+00:00:00,510 --> 00:00:03,640
+Now that we have used the input and
+output documents for
+
+2
+00:00:03,640 --> 00:00:06,640
+the application to help
+us with the specification
+
+3
+00:00:06,640 --> 00:00:10,670
+of the database in terms of an extended
+entity relationship diagram,
+
+4
+00:00:10,670 --> 00:00:14,650
+let us take a look at what kind of
+data formats are going to be needed.
+
+5
+00:00:14,650 --> 00:00:17,690
+We're going to take a look at
+the documents that are input to or
+
+6
+00:00:17,690 --> 00:00:21,020
+output from the data base
+because whichever format
+
+7
+00:00:21,020 --> 00:00:25,370
+it is that's required for those,
+corresponding formats will eventually be
+
+8
+00:00:25,370 --> 00:00:30,050
+needed to represent property types
+inside a relational data base.
+
+9
+00:00:30,050 --> 00:00:32,670
+So looking, for example,
+at the user entity type,
+
+10
+00:00:32,670 --> 00:00:34,810
+let's talk about some
+of the property type.
+
+11
+00:00:34,810 --> 00:00:37,690
+So email could, for
+example, be 36 characters.
+
+12
+00:00:37,690 --> 00:00:39,920
+Here's an example of that.
+
+13
+00:00:39,920 --> 00:00:42,960
+A password could be
+maximum 20 characters.
+
+14
+00:00:42,960 --> 00:00:46,320
+There might also be a restriction
+on how short it's allowed to be.
+
+15
+00:00:46,320 --> 00:00:50,360
+A first name could be 25 characters,
+last name 40.
+
+16
+00:00:50,360 --> 00:00:54,510
+Addresses, when needed, are very,
+very difficult to deal with.
+
+17
+00:00:54,510 --> 00:00:57,710
+A couple of years ago when I
+was looking at address formats,
+
+18
+00:00:57,710 --> 00:01:02,000
+I ran into the United States Postal
+Service's recommendation for
+
+19
+00:01:02,000 --> 00:01:03,830
+addresses across the world.
+
+20
+00:01:03,830 --> 00:01:07,190
+It's a whopping 200+ page guideline.
+
+21
+00:01:07,190 --> 00:01:12,310
+Guidelines like that take specialists
+to develop, and it takes a lot of time.
+
+22
+00:01:12,310 --> 00:01:15,940
+Instead of every single database
+designer out there who needs to
+
+23
+00:01:15,940 --> 00:01:18,620
+create addresses in their database,
+
+24
+00:01:18,620 --> 00:01:21,780
+maybe they should take a look
+at what other people have done.
+
+25
+00:01:21,780 --> 00:01:26,750
+In general, you can extrapolate that
+idea into one of the basic concepts when
+
+26
+00:01:26,750 --> 00:01:31,050
+it comes to data formatting,
+namely beg, steal, and borrow.
+
+27
+00:01:31,050 --> 00:01:34,930
+If someone already has spent a lot
+of time thinking about this,
+
+28
+00:01:34,930 --> 00:01:36,920
+why would you do it, too?
+
+29
+00:01:36,920 --> 00:01:39,000
+Continuing, for the regular user,
+
+30
+00:01:39,000 --> 00:01:42,535
+some examples could be birthdate
+might have this format.
+
+31
+00:01:42,535 --> 00:01:44,055
+Sex might have this.
+
+32
+00:01:44,055 --> 00:01:49,680
+Current city hometown may have, say,
+20 characters, interest and multi-value
+
+33
+00:01:49,680 --> 00:01:55,180
+attribute with 16 characters per each
+one of the values in the multi-value.
+
+34
+00:01:55,180 --> 00:01:57,750
+To determine what the data
+format should be,
+
+35
+00:01:57,750 --> 00:02:00,930
+you will need to look at the input and
+output documents, and
+
+36
+00:02:00,930 --> 00:02:05,190
+you might need to consult with
+a customer to ask what their needs are.
+
+37
+00:02:05,190 --> 00:02:10,060
+That detail was not specified in the
+description that you read previously.

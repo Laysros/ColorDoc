@@ -1,0 +1,110 @@
+1
+00:00:00,450 --> 00:00:04,080
+So back to the example of
+a map as a model of reality.
+
+2
+00:00:04,080 --> 00:00:05,750
+Here is a map of the world.
+
+3
+00:00:05,750 --> 00:00:11,190
+But wait, we are always used to north
+being up and that's not the case here.
+
+4
+00:00:11,190 --> 00:00:13,730
+All right,
+let's see if we can repair that.
+
+5
+00:00:13,730 --> 00:00:14,930
+So here it is.
+
+6
+00:00:14,930 --> 00:00:16,270
+North is now up.
+
+7
+00:00:16,270 --> 00:00:20,410
+You got South America, you got Africa,
+you got Denmark right there.
+
+8
+00:00:20,410 --> 00:00:22,450
+But wait, there's another problem here.
+
+9
+00:00:22,450 --> 00:00:25,400
+This one looks like it's
+squeezed left to right.
+
+10
+00:00:25,400 --> 00:00:28,110
+So here's a second
+convention we are used to
+
+11
+00:00:28,110 --> 00:00:30,930
+when using a map as a model of reality.
+
+12
+00:00:30,930 --> 00:00:33,248
+And that is that it's true to scale.
+
+13
+00:00:33,248 --> 00:00:36,211
+One more problem,
+what is it with all the blue for
+
+14
+00:00:36,211 --> 00:00:39,410
+landmasses here that's
+somewhat confusing.
+
+15
+00:00:39,410 --> 00:00:42,700
+We normally use blue for ocean instead.
+
+16
+00:00:42,700 --> 00:00:48,360
+Using blue for landmasses would be the
+same as if a math teacher used xs and
+
+17
+00:00:48,360 --> 00:00:50,305
+ys for function names.
+
+18
+00:00:50,305 --> 00:00:54,030
+And f and gs for variables that
+would certainly mess with our minds.
+
+19
+00:00:54,030 --> 00:00:57,220
+So here's a map where
+everything appears to be right.
+
+20
+00:00:57,220 --> 00:01:00,180
+North is up appears to be true to scale.
+
+21
+00:01:00,180 --> 00:01:04,540
+Although of course, we know that with
+this type of projection of a map there
+
+22
+00:01:04,540 --> 00:01:08,390
+are always some issues close to
+the north pole and the south pole.
+
+23
+00:01:08,390 --> 00:01:11,110
+And finally,
+we got the color we normally use for
+
+24
+00:01:11,110 --> 00:01:12,860
+land masses namely green.
+

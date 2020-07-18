@@ -1,0 +1,244 @@
+1
+00:00:00,000 --> 00:00:02,860
+Let us now look at secondary indexes.
+
+2
+00:00:02,860 --> 00:00:05,800
+So again here, you have a file with data blocks.
+
+3
+00:00:05,800 --> 00:00:08,555
+These data blocks are sorted on some key value.
+
+4
+00:00:08,555 --> 00:00:11,295
+But what you want now is you want to build an index
+
+5
+00:00:11,295 --> 00:00:14,790
+not on the key value but on some other value.
+
+6
+00:00:14,790 --> 00:00:18,780
+Now, since the other value you want to build an index on will
+
+7
+00:00:18,780 --> 00:00:23,315
+not be in sync with the order of the key values,
+
+8
+00:00:23,315 --> 00:00:28,080
+what will be all over the place building this index is going to be somewhat more painful.
+
+9
+00:00:28,080 --> 00:00:30,810
+Also notice, that since the values
+
+10
+00:00:30,810 --> 00:00:33,920
+here that we are going to build the index on are not sorted,
+
+11
+00:00:33,920 --> 00:00:36,160
+we cannot build a sparse index.
+
+12
+00:00:36,160 --> 00:00:41,220
+So, all indexes that are secondary indexes have to be dense indexes.
+
+13
+00:00:41,220 --> 00:00:43,325
+So, here's the idea looking at the data.
+
+14
+00:00:43,325 --> 00:00:45,160
+We go down to the first record,
+
+15
+00:00:45,160 --> 00:00:49,440
+we find the value of the field we are building the secondary index on.
+
+16
+00:00:49,440 --> 00:00:52,530
+That value we insert into
+
+17
+00:00:52,530 --> 00:00:56,340
+the index here together with the point back to where it came from.
+
+18
+00:00:56,340 --> 00:00:58,030
+Look at the second record,
+
+19
+00:00:58,030 --> 00:01:00,100
+pick up the key, put the pointer in,
+
+20
+00:01:00,100 --> 00:01:01,480
+third recorded and several.
+
+21
+00:01:01,480 --> 00:01:04,360
+So, every single one in our example,
+
+22
+00:01:04,360 --> 00:01:09,120
+20 records here will have a key value and a corresponding pointer back to this.
+
+23
+00:01:09,120 --> 00:01:10,380
+When we are done with that,
+
+24
+00:01:10,380 --> 00:01:13,590
+we pick up all the key values here with pointers back,
+
+25
+00:01:13,590 --> 00:01:15,325
+pick up all the key values here,
+
+26
+00:01:15,325 --> 00:01:16,840
+and point back et cetera.
+
+27
+00:01:16,840 --> 00:01:20,010
+Continue to add index blocks until we are all done.
+
+28
+00:01:20,010 --> 00:01:22,815
+If you look at what one of these blocks
+
+29
+00:01:22,815 --> 00:01:25,710
+will look like immediately after we have done that,
+
+30
+00:01:25,710 --> 00:01:27,600
+what you're going to see is of course,
+
+31
+00:01:27,600 --> 00:01:30,450
+that the pointers come nicely and point in order here
+
+32
+00:01:30,450 --> 00:01:34,370
+because the way we explain the construction took these in order.
+
+33
+00:01:34,370 --> 00:01:36,430
+So, all the pointers are going to sit like this.
+
+34
+00:01:36,430 --> 00:01:37,950
+But as I mentioned before,
+
+35
+00:01:37,950 --> 00:01:40,730
+the key values are going to not be ordered.
+
+36
+00:01:40,730 --> 00:01:42,690
+So, what we're going to need to do after
+
+37
+00:01:42,690 --> 00:01:46,725
+this first initial step of building the index is we're going to have to sort it.
+
+38
+00:01:46,725 --> 00:01:48,095
+So after the sort,
+
+39
+00:01:48,095 --> 00:01:50,915
+the key values we have picked up for the secondary index
+
+40
+00:01:50,915 --> 00:01:54,120
+are all going to come in order K1, K2, et cetera.
+
+41
+00:01:54,120 --> 00:01:56,010
+But now, the pointers are going to point all over
+
+42
+00:01:56,010 --> 00:01:58,380
+the place to different parts of the file.
+
+43
+00:01:58,380 --> 00:02:00,030
+The implication of that is,
+
+44
+00:02:00,030 --> 00:02:03,795
+that a secondary index is good for point queries only.
+
+45
+00:02:03,795 --> 00:02:08,450
+You cannot trust that once you follow the point or after a particular key value,
+
+46
+00:02:08,450 --> 00:02:11,360
+that the subsequent key values will come after that.
+
+47
+00:02:11,360 --> 00:02:14,080
+As a matter of fact, this is a counter example to that.
+
+48
+00:02:14,080 --> 00:02:19,365
+The course to look up in the secondary index is still a log-based two to the size of it.
+
+49
+00:02:19,365 --> 00:02:20,950
+The only problem is that,
+
+50
+00:02:20,950 --> 00:02:24,590
+you can't utilize that as a starting point for range query.
+
+51
+00:02:24,590 --> 00:02:29,320
+So log-base two to n is as we did before for a dense index.
+
+52
+00:02:29,320 --> 00:02:33,380
+Comes out that the point look up is going to be 0.17 seconds.
+
+53
+00:02:33,380 --> 00:02:38,115
+Notice that I've implicitly made the following, simplifying assumption.
+
+54
+00:02:38,115 --> 00:02:40,800
+I made the assumption that the non-key field we are
+
+55
+00:02:40,800 --> 00:02:44,115
+indexing on here actually had unique values.
+
+56
+00:02:44,115 --> 00:02:47,400
+So, what if a value appears multiple times in
+
+57
+00:02:47,400 --> 00:02:50,910
+that field that we want to build the secondary index on,
+
+58
+00:02:50,910 --> 00:02:54,750
+then we need to consider whether we are grouping those key values together,
+
+59
+00:02:54,750 --> 00:02:56,880
+so they don't have to be repeated all the time,
+
+60
+00:02:56,880 --> 00:02:59,220
+and then keep a bucket of pointers to
+
+61
+00:02:59,220 --> 00:03:02,950
+all the different copies of that key value accessed.
+

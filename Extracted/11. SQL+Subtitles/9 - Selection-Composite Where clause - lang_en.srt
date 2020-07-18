@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:03,210
+Looking at a selection with a composite where clause.
+
+2
+00:00:03,210 --> 00:00:06,420
+Let's say, we want to find all regular users who either
+
+3
+00:00:06,420 --> 00:00:10,300
+have the same CurrenCity and HomeTown or who live in Atlanta.
+
+4
+00:00:10,300 --> 00:00:15,100
+The rescue out for that would be as follows: select all the columns from regular user,
+
+5
+00:00:15,100 --> 00:00:20,040
+where either the CurrentCity equal HomeTown or HomeTown equal Atlanta.
+
+6
+00:00:20,040 --> 00:00:23,375
+So, let's take a look at the regular user table.
+
+7
+00:00:23,375 --> 00:00:25,190
+Does the HomeTown equal Atlanta?
+
+8
+00:00:25,190 --> 00:00:28,350
+Yes it does. So, user one is part of the result.
+
+9
+00:00:28,350 --> 00:00:30,585
+Are CurrentCity and HomeTown the same?
+
+10
+00:00:30,585 --> 00:00:33,035
+No. Does HomeTown equal Atlanta?
+
+11
+00:00:33,035 --> 00:00:37,145
+No. So, user three is not part of the result. Is user 4?
+
+12
+00:00:37,145 --> 00:00:38,945
+Yes. Is user 6?
+
+13
+00:00:38,945 --> 00:00:43,520
+Yes. So, starting out with this table this is your result.
+

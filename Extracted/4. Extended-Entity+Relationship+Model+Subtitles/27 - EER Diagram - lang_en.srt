@@ -1,0 +1,123 @@
+1
+00:00:00,480 --> 00:00:05,040
+Let's say we want to print a list of
+information about regular users and
+
+2
+00:00:05,040 --> 00:00:06,350
+the schools they attended.
+
+3
+00:00:06,350 --> 00:00:10,770
+The information we would like to
+come out in the result could be,
+
+4
+00:00:10,770 --> 00:00:15,430
+say, their email address,
+their first name,
+
+5
+00:00:16,640 --> 00:00:20,680
+their last name, and the school name.
+
+6
+00:00:20,680 --> 00:00:26,190
+And this is for regular users and
+the schools they attended.
+
+7
+00:00:26,190 --> 00:00:28,120
+What's the type of that query?
+
+8
+00:00:28,120 --> 00:00:30,610
+Well, it's a list of properties.
+
+9
+00:00:30,610 --> 00:00:32,920
+But a list of properties is not a type.
+
+10
+00:00:32,920 --> 00:00:36,010
+It's not an entity type,
+it's not a relationship type,
+
+11
+00:00:36,010 --> 00:00:39,080
+it's not a super sub type,
+it's not a property.
+
+12
+00:00:39,080 --> 00:00:42,380
+So there is no type to
+capture this result.
+
+13
+00:00:42,380 --> 00:00:47,010
+The essential observation that comes
+out of that is that since the result
+
+14
+00:00:47,010 --> 00:00:51,010
+doesn't have a type, there is no way
+that we can take that result and
+
+15
+00:00:51,010 --> 00:00:54,490
+continue to operate on it
+with a query language.
+
+16
+00:00:54,490 --> 00:00:57,490
+So the query I just asked
+does not have a type and
+
+17
+00:00:57,490 --> 00:01:01,270
+therefore what I used was
+not a closed query language.
+
+18
+00:01:01,270 --> 00:01:03,690
+Query languages have to be closed.
+
+19
+00:01:03,690 --> 00:01:09,220
+It's the only way we can
+formulate high level ideas and
+
+20
+00:01:09,220 --> 00:01:11,210
+ask high level questions.
+
+21
+00:01:11,210 --> 00:01:16,010
+It is actually the reason we don't
+run around in loin cloth anymore.
+
+22
+00:01:16,010 --> 00:01:19,870
+Later on, when we look at relations
+database you'll see elegant,
+
+23
+00:01:19,870 --> 00:01:23,490
+powerful examples of
+closed query languages.
+
+24
+00:01:23,490 --> 00:01:28,460
+In my opinion the lack of a generally
+agreed upon closed query language for
+
+25
+00:01:28,460 --> 00:01:33,210
+the extended entity relationship model
+is the reason that database management
+
+26
+00:01:33,210 --> 00:01:36,480
+systems are not based on the extended
+entity relationship model
+

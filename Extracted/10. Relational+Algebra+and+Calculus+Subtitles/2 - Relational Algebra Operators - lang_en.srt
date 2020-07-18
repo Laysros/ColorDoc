@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:03,820
+Let's take a look at the four groups of algebra operators.
+
+2
+00:00:03,820 --> 00:00:07,815
+First, we have four operators that are all set operators.
+
+3
+00:00:07,815 --> 00:00:12,165
+As you can see here, we got set union between two sets, R n S,
+
+4
+00:00:12,165 --> 00:00:17,865
+set intersection, set difference, and Cartesian product.
+
+5
+00:00:17,865 --> 00:00:21,710
+As you can already guess now from looking just at these,
+
+6
+00:00:21,710 --> 00:00:25,500
+it is not all the operators that are fundamental operators,
+
+7
+00:00:25,500 --> 00:00:28,895
+some of them are derived or composed from others.
+
+8
+00:00:28,895 --> 00:00:31,345
+Second, we have two special operators.
+
+9
+00:00:31,345 --> 00:00:37,450
+One is a projection operator that you can think of as eliminating columns from a result,
+
+10
+00:00:37,450 --> 00:00:43,275
+the second one is a selection operator which you can think of as eliminating rows.
+
+11
+00:00:43,275 --> 00:00:48,040
+The third group is a group of operators that in general are called joins.
+
+12
+00:00:48,040 --> 00:00:50,545
+These are constructor operations.
+
+13
+00:00:50,545 --> 00:00:53,775
+We have an operator called natural join,
+
+14
+00:00:53,775 --> 00:00:55,400
+we have outer joins,
+
+15
+00:00:55,400 --> 00:00:56,500
+there are three of those,
+
+16
+00:00:56,500 --> 00:01:00,855
+a left and right and a full and then we have theta-joins.
+
+17
+00:01:00,855 --> 00:01:04,495
+Find the two additional operators that are quite special,
+
+18
+00:01:04,495 --> 00:01:06,660
+one is the divideby operator.
+
+19
+00:01:06,660 --> 00:01:10,300
+Essentially, the divideby operator allows you to do
+
+20
+00:01:10,300 --> 00:01:15,335
+something similar to universal quantification in relational calculus.
+
+21
+00:01:15,335 --> 00:01:18,835
+The rename operator, Greek letter r or row.
+
+22
+00:01:18,835 --> 00:01:23,830
+is essentially an operator that allows you to manipulate the names of
+
+23
+00:01:23,830 --> 00:01:29,445
+attributes of relations in such a way that you can get your join operators,
+
+24
+00:01:29,445 --> 00:01:34,340
+and your set operators to work in the way you intend them to work.
+

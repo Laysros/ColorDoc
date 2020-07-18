@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:03,145
+To make sure that we do not lose information,
+
+2
+00:00:03,145 --> 00:00:07,320
+and that we preserve the functional dependencies when we decompose relations,
+
+3
+00:00:07,320 --> 00:00:09,850
+we need to be able to compute with meaning.
+
+4
+00:00:09,850 --> 00:00:13,005
+The rules for doing that are called Armstrong's rules.
+
+5
+00:00:13,005 --> 00:00:15,705
+The first is the rule of reflexivity.
+
+6
+00:00:15,705 --> 00:00:20,305
+All it says is that if Y is part of X,
+
+7
+00:00:20,305 --> 00:00:24,095
+then X determines Y as a function. Very simple rule.
+
+8
+00:00:24,095 --> 00:00:27,955
+Easy example, If Y is part of X,
+
+9
+00:00:27,955 --> 00:00:31,950
+in other words if the right hand side is a subset of the left hand side,
+
+10
+00:00:31,950 --> 00:00:34,875
+then the left hand side determines the right hand side.
+
+11
+00:00:34,875 --> 00:00:37,855
+The second rule is the rule of augmentation.
+
+12
+00:00:37,855 --> 00:00:40,665
+So, if X function determines Y,
+
+13
+00:00:40,665 --> 00:00:43,380
+then you can augment it with the same thing on
+
+14
+00:00:43,380 --> 00:00:47,510
+the left hand side or you could augment it with the same thing on the right hand side,
+
+15
+00:00:47,510 --> 00:00:50,655
+or you could augment it on both sides.
+
+16
+00:00:50,655 --> 00:00:52,670
+It will be true, in this case,
+
+17
+00:00:52,670 --> 00:00:54,465
+when you augment on the left hand side,
+
+18
+00:00:54,465 --> 00:00:58,040
+that WX function determines WY.
+
+19
+00:00:58,040 --> 00:00:59,605
+To show you an example of that,
+
+20
+00:00:59,605 --> 00:01:02,365
+let's say Email determines BirthYear,
+
+21
+00:01:02,365 --> 00:01:04,855
+then it will also be true that "Email,
+
+22
+00:01:04,855 --> 00:01:08,350
+Interest" will determine "Birth year, Interest".
+
+23
+00:01:08,350 --> 00:01:11,125
+Finally, very importantly, transitivity.
+
+24
+00:01:11,125 --> 00:01:13,200
+If X function determines Y,
+
+25
+00:01:13,200 --> 00:01:15,175
+and Y function determines Z,
+
+26
+00:01:15,175 --> 00:01:17,505
+then X function determines Z.
+
+27
+00:01:17,505 --> 00:01:20,285
+An example of that here is that if
+
+28
+00:01:20,285 --> 00:01:23,595
+Email determines BirthYear, Email determines BirthYear,
+
+29
+00:01:23,595 --> 00:01:26,770
+and BirthYear determines Salary, as you see here,
+
+30
+00:01:26,770 --> 00:01:31,240
+then Email will determine Salary by transitivity.
+

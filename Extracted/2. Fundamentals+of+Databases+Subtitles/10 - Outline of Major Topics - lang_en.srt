@@ -1,0 +1,49 @@
+1
+00:00:00,420 --> 00:00:04,400
+Based on the definition of a database
+and a Database Management System,
+
+2
+00:00:04,400 --> 00:00:09,290
+we can now identify the three
+major topics of this course.
+
+3
+00:00:09,290 --> 00:00:13,000
+We'll spend substantial amounts
+of time on data modeling.
+
+4
+00:00:13,000 --> 00:00:17,540
+Likewise, we'll spend substantial
+amount of time on process modeling.
+
+5
+00:00:17,540 --> 00:00:20,860
+Finally, we're going to take
+a look at database efficiency.
+
+6
+00:00:20,860 --> 00:00:24,760
+The reason for that is,
+that it is actually possible to do
+
+7
+00:00:24,760 --> 00:00:29,070
+data modeling just perfectly and
+process modeling just perfectly.
+
+8
+00:00:29,070 --> 00:00:31,950
+But end up with a database application
+
+9
+00:00:31,950 --> 00:00:34,270
+that doesn't run fast
+enough to be useful.
+
+10
+00:00:34,270 --> 00:00:38,340
+Therefore, we need to look at techniques
+for making databases efficient.
+

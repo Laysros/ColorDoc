@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:04,710
+The attend and employment relations are both very complicated.
+
+2
+00:00:04,710 --> 00:00:09,105
+They both stretch, both the capabilities of the relational model
+
+3
+00:00:09,105 --> 00:00:13,755
+and the extended entity relationship diagrams they were mapped from.
+
+4
+00:00:13,755 --> 00:00:16,220
+Let's talk about the attend relation.
+
+5
+00:00:16,220 --> 00:00:22,320
+The attend relation is many to many relationship between regular user and school.
+
+6
+00:00:22,320 --> 00:00:26,610
+So, it comes as no surprise that we need the identifiers for both,
+
+7
+00:00:26,610 --> 00:00:31,550
+to be combined, to identify a row in attend relation.
+
+8
+00:00:31,550 --> 00:00:34,080
+However, adding to the complication,
+
+9
+00:00:34,080 --> 00:00:37,200
+we have a multi-value property type year graduated.
+
+10
+00:00:37,200 --> 00:00:39,900
+And we know that the way that it is modeled
+
+11
+00:00:39,900 --> 00:00:43,710
+is that the thing it is about has a key which is
+
+12
+00:00:43,710 --> 00:00:47,400
+combined with the multi-valued attribute in order to
+
+13
+00:00:47,400 --> 00:00:51,690
+identify each individual value for this particular combination.
+
+14
+00:00:51,690 --> 00:00:55,815
+We, therefore, need an identifier here that consists of three elements.
+
+15
+00:00:55,815 --> 00:00:59,220
+However, the customer requirements that we are working
+
+16
+00:00:59,220 --> 00:01:02,550
+from allows year graduated to be left blank,
+
+17
+00:01:02,550 --> 00:01:07,140
+because no portion of a primary key is allowed to be null.
+
+18
+00:01:07,140 --> 00:01:11,085
+It is not possible to use primary key in the table definition.
+
+19
+00:01:11,085 --> 00:01:13,620
+So I'm using unique instead.
+
+20
+00:01:13,620 --> 00:01:18,320
+So this relation here is going to have email is a varchar (50),
+
+21
+00:01:18,320 --> 00:01:19,920
+school name varchar (50).
+
+22
+00:01:19,920 --> 00:01:22,460
+None of those will be null because then we would not
+
+23
+00:01:22,460 --> 00:01:25,340
+know which relation we are talking about.
+
+24
+00:01:25,340 --> 00:01:29,740
+Year graduated is an integer which initially is set to null,
+
+25
+00:01:29,740 --> 00:01:32,670
+the intent being that a value can later be
+
+26
+00:01:32,670 --> 00:01:35,955
+added when the person has graduated from the school.
+
+27
+00:01:35,955 --> 00:01:40,260
+We use unique instead of primary key to include all of all three.
+
+28
+00:01:40,260 --> 00:01:44,100
+Obviously, both email and school name are foreign keys on
+
+29
+00:01:44,100 --> 00:01:48,615
+the relations that contain the existence of the corresponding entity.
+
+30
+00:01:48,615 --> 00:01:52,520
+Even this way to model things could get us in trouble.
+
+31
+00:01:52,520 --> 00:01:55,920
+For example, if a particular person is working,
+
+32
+00:01:55,920 --> 00:02:00,255
+or two educations at the same time in the same institution,
+
+33
+00:02:00,255 --> 00:02:05,010
+like both are bachelors and a masters in the same university at the same time,
+
+34
+00:02:05,010 --> 00:02:08,480
+then year graduated will be null in both cases.
+

@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:02,435
+Now let's look at Cartesian product.
+
+2
+00:00:02,435 --> 00:00:07,230
+As you recall Cartesian Product is a very simple way to combine two relations.
+
+3
+00:00:07,230 --> 00:00:11,860
+So, let's say we want to combine every single tuple of the RegularUser relation,
+
+4
+00:00:11,860 --> 00:00:15,915
+with every single tuple of the UserInterests relation.
+
+5
+00:00:15,915 --> 00:00:18,240
+That query is very easy to write.
+
+6
+00:00:18,240 --> 00:00:22,135
+It simply consists of Tuples r followed by s,
+
+7
+00:00:22,135 --> 00:00:24,945
+where r is a tuple in RegularUser,
+
+8
+00:00:24,945 --> 00:00:28,085
+and s is a tuple in UserInterests.
+
+9
+00:00:28,085 --> 00:00:31,370
+So, looking at that again for example user
+
+10
+00:00:31,370 --> 00:00:36,000
+one gets combined with this user one tuple here.
+
+11
+00:00:36,000 --> 00:00:40,155
+So, you see here user one '85 is a male,
+
+12
+00:00:40,155 --> 00:00:44,155
+gets combined with user one, music and 10.
+
+13
+00:00:44,155 --> 00:00:45,880
+Take a look at this tuple here,
+
+14
+00:00:45,880 --> 00:00:47,040
+where does that come from?
+
+15
+00:00:47,040 --> 00:00:49,800
+Well, it's user four '88 and male.
+
+16
+00:00:49,800 --> 00:00:54,560
+So, that's that tuple here gets combined with everything of these tuples here,
+
+17
+00:00:54,560 --> 00:00:59,610
+including the user three, music and 11.
+

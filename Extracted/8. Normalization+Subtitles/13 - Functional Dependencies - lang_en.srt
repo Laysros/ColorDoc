@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:04,050
+To understand how to decompose relation in a proper manner,
+
+2
+00:00:04,050 --> 00:00:07,090
+we need to look at the concept of functional dependency.
+
+3
+00:00:07,090 --> 00:00:08,530
+So, here's the definition.
+
+4
+00:00:08,530 --> 00:00:11,790
+If X and Y are sets of attributes in relation, R,
+
+5
+00:00:11,790 --> 00:00:18,665
+then we say that Y is functionally dependent on X if and only if for each X in R,
+
+6
+00:00:18,665 --> 00:00:23,415
+there is precisely one Y in R. Looking at a couple of examples here,
+
+7
+00:00:23,415 --> 00:00:28,790
+current city is functionally dependent on e-mail if for each e-mail value,
+
+8
+00:00:28,790 --> 00:00:31,395
+there is precisely one current city.
+
+9
+00:00:31,395 --> 00:00:33,700
+Here's e-mail value, user one,
+
+10
+00:00:33,700 --> 00:00:35,960
+there is precisely one current city.
+
+11
+00:00:35,960 --> 00:00:39,085
+Why? Because user one is not repeated.
+
+12
+00:00:39,085 --> 00:00:43,390
+Because of that, it is impossible to record a second city.
+
+13
+00:00:43,390 --> 00:00:45,815
+User two determines a single city,
+
+14
+00:00:45,815 --> 00:00:47,670
+user three, a single city.
+
+15
+00:00:47,670 --> 00:00:49,210
+Similarly, with birth year,
+
+16
+00:00:49,210 --> 00:00:52,600
+for each e-mail, there is exactly one birth year.
+
+17
+00:00:52,600 --> 00:00:55,000
+E-mail two, birth year, 69.
+
+18
+00:00:55,000 --> 00:00:58,275
+E-mail user four, birth year, 88, et cetera.
+
+19
+00:00:58,275 --> 00:01:01,730
+Let's take a look at this from dependency e-mail and interest
+
+20
+00:01:01,730 --> 00:01:05,275
+together as a function determine SinceAge.
+
+21
+00:01:05,275 --> 00:01:08,035
+So, when you look at user one and music,
+
+22
+00:01:08,035 --> 00:01:11,325
+user one has been interest in music since the age of 10.
+
+23
+00:01:11,325 --> 00:01:14,560
+User one and music is not repeated anywhere here.
+
+24
+00:01:14,560 --> 00:01:17,450
+So, in this table, it is currently true that the pair
+
+25
+00:01:17,450 --> 00:01:20,630
+of e-mail and interest determines SinceAge.
+
+26
+00:01:20,630 --> 00:01:22,445
+Although it's currently true,
+
+27
+00:01:22,445 --> 00:01:25,420
+how do we make sure that it's always true?
+
+28
+00:01:25,420 --> 00:01:28,210
+We will look at that in just a little bit.
+

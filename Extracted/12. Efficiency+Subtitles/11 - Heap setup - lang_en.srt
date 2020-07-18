@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:03,090
+So a heap is an unsorted set of data.
+
+2
+00:00:03,090 --> 00:00:05,595
+So let me illustrate to you what it is.
+
+3
+00:00:05,595 --> 00:00:09,660
+So you take the pages of the phonebook, you rip them up,
+
+4
+00:00:09,660 --> 00:00:19,510
+you put them in there, so that's your phonebook right there.
+

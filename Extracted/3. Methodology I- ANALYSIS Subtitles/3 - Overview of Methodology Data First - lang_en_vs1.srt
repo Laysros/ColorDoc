@@ -1,0 +1,184 @@
+1
+00:00:00,510 --> 00:00:03,340
+Let me now give you
+an overview of the methodology.
+
+2
+00:00:03,340 --> 00:00:09,030
+In database application development
+methodologies data is always first.
+
+3
+00:00:09,030 --> 00:00:14,290
+In general software development
+methodologies process is often first.
+
+4
+00:00:14,290 --> 00:00:17,080
+So, they will concentrate
+on laying out the class
+
+5
+00:00:17,080 --> 00:00:22,040
+diagrams in just the right way to get
+the functionality just the right way.
+
+6
+00:00:22,040 --> 00:00:25,940
+And then they will hang the data
+onto the classes where they fit.
+
+7
+00:00:25,940 --> 00:00:28,790
+In database development it's data first.
+
+8
+00:00:28,790 --> 00:00:31,540
+And once data is designed just right,
+
+9
+00:00:31,540 --> 00:00:34,450
+we would hang the processes
+on where they fit.
+
+10
+00:00:34,450 --> 00:00:37,260
+So, the four phases are Analysis,
+
+11
+00:00:37,260 --> 00:00:41,150
+Specification, Design,
+and Implementation.
+
+12
+00:00:41,150 --> 00:00:46,540
+So the idea is that in the analysis
+phase here, we start with
+
+13
+00:00:46,540 --> 00:00:51,520
+all the information that's provided by
+the customer, and then the end product,
+
+14
+00:00:51,520 --> 00:00:56,290
+the output of the analysis phase,
+is an information flow diagram.
+
+15
+00:00:56,290 --> 00:01:00,550
+That diagram again together with all
+the information provided by the customer
+
+16
+00:01:00,550 --> 00:01:03,790
+constitutes the input to
+the specification process.
+
+17
+00:01:03,790 --> 00:01:05,410
+Remember data is first.
+
+18
+00:01:05,410 --> 00:01:09,320
+So in the specification process,
+the first thing we do is to create
+
+19
+00:01:09,320 --> 00:01:13,960
+an Diagram or
+EER diagram representing the data.
+
+20
+00:01:13,960 --> 00:01:17,000
+With that as a foundation,
+we then go ahead and
+
+21
+00:01:17,000 --> 00:01:22,220
+create a specification of the tasks,
+or applications that need to run
+
+22
+00:01:22,220 --> 00:01:26,770
+on the database represented by this Or
+EER diagram.
+
+23
+00:01:26,770 --> 00:01:28,040
+Then in design,
+
+24
+00:01:28,040 --> 00:01:33,140
+we first concentrate on translating the
+diagram to a relational database schema.
+
+25
+00:01:33,140 --> 00:01:37,760
+With that in place, we now take
+the task that represented what needs to
+
+26
+00:01:37,760 --> 00:01:42,320
+happen on the Diagram and
+represent in an abstract code,
+
+27
+00:01:42,320 --> 00:01:46,000
+accessing the relational database
+represented by the schema.
+
+28
+00:01:46,000 --> 00:01:50,420
+Finally in the implementation step, we
+take the relational database schema,and
+
+29
+00:01:50,420 --> 00:01:54,650
+we use a specific implementation
+in our sample case,
+
+30
+00:01:54,650 --> 00:01:58,150
+use MySQL,
+to create the relational database.
+
+31
+00:01:58,150 --> 00:02:01,680
+We then look at the abstract
+code with the embedded SQL and
+
+32
+00:02:01,680 --> 00:02:04,960
+use a programming language,
+like for example PHP,
+
+33
+00:02:04,960 --> 00:02:09,530
+with embedded SQL to represent the tests
+that need to run on this database.
+
+34
+00:02:09,530 --> 00:02:13,290
+That brings us all the way from
+analysis, starting with customer
+
+35
+00:02:13,290 --> 00:02:18,390
+requirements, all the way to a running
+database application implementation.
+
+36
+00:02:18,390 --> 00:02:21,700
+Needless to say if we don't know
+the customer's requirements,
+
+37
+00:02:21,700 --> 00:02:25,700
+the methodology is not going to
+result in a database application
+
+38
+00:02:25,700 --> 00:02:28,500
+that meets any requirements
+that user might have.

@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:04,760
+I want to stress the fact that relation are sets.
+
+2
+00:00:04,760 --> 00:00:06,520
+So let's say we want to write a query,
+
+3
+00:00:06,520 --> 00:00:09,465
+find the sex for RegularUsers in Atlanta.
+
+4
+00:00:09,465 --> 00:00:11,640
+The way we could write that is as follows,
+
+5
+00:00:11,640 --> 00:00:17,800
+select where HomeTown equals Atlanta from RegularUser and then project that on sex.
+
+6
+00:00:17,800 --> 00:00:19,610
+Let's take a look at the result.
+
+7
+00:00:19,610 --> 00:00:24,315
+So we have here three tables of users from Atlanta.
+
+8
+00:00:24,315 --> 00:00:26,775
+When you look at the sex there's one female,
+
+9
+00:00:26,775 --> 00:00:28,600
+one male, and one female.
+
+10
+00:00:28,600 --> 00:00:30,685
+So what is the result of that query?
+
+11
+00:00:30,685 --> 00:00:33,635
+Well, the result is this one.
+
+12
+00:00:33,635 --> 00:00:38,990
+Notice that male appears once and female appears once in spite of
+
+13
+00:00:38,990 --> 00:00:44,465
+the fact that two of the tables in RegularUser have sex female.
+
+14
+00:00:44,465 --> 00:00:47,810
+So in other words, relations are sets.
+
+15
+00:00:47,810 --> 00:00:51,370
+Again, relation rlgebra is a close clear language.
+
+16
+00:00:51,370 --> 00:00:53,025
+You start with a relation,
+
+17
+00:00:53,025 --> 00:00:54,495
+you end with a relation,
+
+18
+00:00:54,495 --> 00:00:55,930
+relation is a set.
+
+19
+00:00:55,930 --> 00:01:00,860
+Therefore, you only have the two rows male and female.
+

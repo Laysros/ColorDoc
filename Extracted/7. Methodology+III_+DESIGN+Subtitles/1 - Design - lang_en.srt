@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:03,030
+As a result of the specification phase of
+
+2
+00:00:03,030 --> 00:00:05,855
+the database application development methodology,
+
+3
+00:00:05,855 --> 00:00:09,225
+we generated an extended entity-relationship diagram
+
+4
+00:00:09,225 --> 00:00:12,840
+together with a set of test decompositions and
+
+5
+00:00:12,840 --> 00:00:16,470
+associated abstract code specifying what the test would
+
+6
+00:00:16,470 --> 00:00:20,250
+do relative to the extended entity-relationship diagram.
+
+7
+00:00:20,250 --> 00:00:24,295
+Our next phase of the methodology is the design phase.
+
+8
+00:00:24,295 --> 00:00:25,560
+In the design phase,
+
+9
+00:00:25,560 --> 00:00:27,860
+we first concentrate on data and take
+
+10
+00:00:27,860 --> 00:00:33,195
+the extended entity-relationship diagram and translate that into a relational schema.
+
+11
+00:00:33,195 --> 00:00:36,570
+We then take the abstract code for the tasks and
+
+12
+00:00:36,570 --> 00:00:40,345
+translate that into abstract code with embedded SQL
+
+13
+00:00:40,345 --> 00:00:44,040
+that will do to the relational schema what the tests was
+
+14
+00:00:44,040 --> 00:00:48,130
+specified to do through the extended entity-relationship diagram.
+
+15
+00:00:48,130 --> 00:00:51,885
+In order to understand that first step of the design phase,
+
+16
+00:00:51,885 --> 00:00:57,300
+we have taken a detour to find out enough about relations and enough about
+
+17
+00:00:57,300 --> 00:01:00,205
+the mapping of the extended entity-relationship model
+
+18
+00:01:00,205 --> 00:01:04,000
+to relations that we'd be able to carry out that step.
+

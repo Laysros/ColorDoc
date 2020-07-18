@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:02,699
+Let's now consider how we map identifying
+
+2
+00:00:02,699 --> 00:00:07,035
+relationship types are with weak entity types ET2.
+
+3
+00:00:07,035 --> 00:00:11,215
+ET1 results in a relation ET1 with primary key
+
+4
+00:00:11,215 --> 00:00:16,360
+A. ET2 creates relation ET2 with attribute B.
+
+5
+00:00:16,360 --> 00:00:19,840
+How do we now discriminate between the B values?
+
+6
+00:00:19,840 --> 00:00:24,135
+Well, you know that instances of ET2 needs values of
+
+7
+00:00:24,135 --> 00:00:29,185
+the strong entity types identifier namely A in order to discriminate between them.
+
+8
+00:00:29,185 --> 00:00:31,035
+So, our solution is,
+
+9
+00:00:31,035 --> 00:00:33,585
+to insert in ET2,
+
+10
+00:00:33,585 --> 00:00:38,835
+add reference to ET1 that is the A attribute in
+
+11
+00:00:38,835 --> 00:00:44,695
+ET2 becomes a foreign key on the A attribute in ET1.
+
+12
+00:00:44,695 --> 00:00:49,020
+Somewhat similar to what we saw in the many-to-many relationship type.
+
+13
+00:00:49,020 --> 00:00:53,890
+The combination of A and B here constitute the key for ET2.
+
+14
+00:00:53,890 --> 00:00:56,595
+The reason is as follows.
+
+15
+00:00:56,595 --> 00:01:01,290
+When you look at an instance of ET1 identified by A,
+
+16
+00:01:01,290 --> 00:01:04,835
+then through the one-to-many relationship type here,
+
+17
+00:01:04,835 --> 00:01:08,895
+that will identify multiple values of ET2.
+
+18
+00:01:08,895 --> 00:01:13,490
+Each one of those values has a value of B.
+
+19
+00:01:13,490 --> 00:01:23,200
+So, it takes the A and B in combination to distinguish between the instances of ET2.
+

@@ -1,0 +1,109 @@
+1
+00:00:00,245 --> 00:00:03,998
+Having now addressed the data
+formats of the property types,
+
+2
+00:00:03,998 --> 00:00:05,885
+lets talk about constraints.
+
+3
+00:00:05,885 --> 00:00:09,654
+Here are some examples of constraints
+in the particular application we
+
+4
+00:00:09,654 --> 00:00:11,010
+are creating now.
+
+5
+00:00:11,010 --> 00:00:11,840
+For example,
+
+6
+00:00:11,840 --> 00:00:17,380
+DateConnected must be NULL until
+a friend's request has been accepted.
+
+7
+00:00:17,380 --> 00:00:20,440
+Another example is you cannot
+be friend with yourself.
+
+8
+00:00:20,440 --> 00:00:24,980
+So whenever there is an insertion into
+the database to establish a friendship,
+
+9
+00:00:24,980 --> 00:00:29,460
+the application needs to check that
+this constraint is not violated.
+
+10
+00:00:29,460 --> 00:00:34,120
+You could have a constraint saying that
+only comments on the status of friends
+
+11
+00:00:34,120 --> 00:00:35,020
+is allowed.
+
+12
+00:00:35,020 --> 00:00:39,520
+In other words, if you try to submit
+a comment on a person that is not your
+
+13
+00:00:39,520 --> 00:00:43,275
+friend, then the application
+system should reject that.
+
+14
+00:00:43,275 --> 00:00:47,291
+To be a little bit more specific about
+the kind of constraints we are looking
+
+15
+00:00:47,291 --> 00:00:50,353
+for, remember we have already
+expressed constraints in
+
+16
+00:00:50,353 --> 00:00:52,795
+the Extended Entity Relationship
+diagram.
+
+17
+00:00:52,795 --> 00:00:56,023
+And by specifying what
+the data formatting would be,
+
+18
+00:00:56,023 --> 00:00:58,975
+we should not include
+those on the constraints.
+
+19
+00:00:58,975 --> 00:01:00,590
+So where does that leave us?
+
+20
+00:01:00,590 --> 00:01:03,780
+Well, it basically leaves
+us with a set of rules
+
+21
+00:01:03,780 --> 00:01:08,320
+that we can describe in the database
+that we can't format our way out of.
+
+22
+00:01:08,320 --> 00:01:12,150
+So there's only one place left to
+do it and that is to program it
+
+23
+00:01:12,150 --> 00:01:16,270
+into the application program so
+that constraints like this are enforced.

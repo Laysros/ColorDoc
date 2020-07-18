@@ -1,0 +1,88 @@
+1
+00:00:00,570 --> 00:00:05,740
+Third aspect of a data model, namely
+operations, let's look at some examples.
+
+2
+00:00:05,740 --> 00:00:08,515
+First let me give you an example
+of database maintenance.
+
+3
+00:00:08,515 --> 00:00:13,100
+Here's a statement that would insert
+an additional row in RegularUser.
+
+4
+00:00:13,100 --> 00:00:18,071
+That row would contain information
+about user11, born in '92,
+
+5
+00:00:18,071 --> 00:00:22,214
+with a home town Atlanta,
+and salary of $12,500.
+
+6
+00:00:22,214 --> 00:00:27,230
+Here's an example of a retrieval of
+data from the regular user table.
+
+7
+00:00:27,230 --> 00:00:32,189
+It has the well known SQL
+structures select, from, where.
+
+8
+00:00:32,189 --> 00:00:35,620
+So in this case, it's the regular
+user table we select from.
+
+9
+00:00:35,620 --> 00:00:40,330
+We select two columns,
+namely Email and BirthDate.
+
+10
+00:00:40,330 --> 00:00:43,760
+This one and this one, so
+we don't select these two.
+
+11
+00:00:43,760 --> 00:00:47,290
+And the condition for
+selecting the email and birth date
+
+12
+00:00:47,290 --> 00:00:51,923
+is that the hometown is Atlanta and
+the salary is greater than $12,000.
+
+13
+00:00:51,923 --> 00:00:56,440
+So will user1, born in '85, be selected?
+
+14
+00:00:56,440 --> 00:00:59,480
+No, because the salary is
+not greater than $12,000.
+
+15
+00:00:59,480 --> 00:01:05,050
+Will user4, '88,
+with hometown Atlanta, be selected?
+
+16
+00:01:05,050 --> 00:01:08,430
+Yes, because the salary
+is greater than $12,000.
+
+17
+00:01:08,430 --> 00:01:11,890
+Will user6, born in '88, be selected?
+
+18
+00:01:11,890 --> 00:01:16,679
+Yes, the hometown is Atlanta, and
+the salary is greater than $12,000.
+

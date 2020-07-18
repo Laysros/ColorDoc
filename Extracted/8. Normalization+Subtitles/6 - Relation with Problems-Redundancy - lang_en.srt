@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:04,315
+So, the first problem the relation has, is redundancy.
+
+2
+00:00:04,315 --> 00:00:05,970
+Because we repeat it,
+
+3
+00:00:05,970 --> 00:00:07,950
+all the user1 information;
+
+4
+00:00:07,950 --> 00:00:09,460
+birth year, current city,
+
+5
+00:00:09,460 --> 00:00:15,560
+and salary, in order to avoid the multi value problem you now have redundant information.
+
+6
+00:00:15,560 --> 00:00:18,860
+Redundancy potentially leads to inconsistency.
+
+7
+00:00:18,860 --> 00:00:21,075
+Inconsistency here would appear,
+
+8
+00:00:21,075 --> 00:00:22,960
+if user1 moves say,
+
+9
+00:00:22,960 --> 00:00:26,080
+from Seattle to Atlanta but for whatever reason,
+
+10
+00:00:26,080 --> 00:00:30,090
+you do not get all the Seattle values updated to Atlanta,
+
+11
+00:00:30,090 --> 00:00:31,485
+maybe just the first one.
+
+12
+00:00:31,485 --> 00:00:34,770
+Subsequent to that, users of the database will come in,
+
+13
+00:00:34,770 --> 00:00:40,090
+and they will look for the current city of user1 and in one place it will say Atlanta.
+
+14
+00:00:40,090 --> 00:00:42,555
+In other places it will say Seattle.
+
+15
+00:00:42,555 --> 00:00:45,840
+That means, the database is useless from the point of view
+
+16
+00:00:45,840 --> 00:00:49,760
+of understanding what the current city of the user is.
+

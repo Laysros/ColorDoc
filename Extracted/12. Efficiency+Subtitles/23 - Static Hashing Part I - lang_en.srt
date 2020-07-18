@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:05,995
+Let me finally show you a completely different approach to primary data organization.
+
+2
+00:00:05,995 --> 00:00:08,010
+It's called static hashing.
+
+3
+00:00:08,010 --> 00:00:14,365
+The idea in static hashing is the following: You have a very large space of key values.
+
+4
+00:00:14,365 --> 00:00:18,910
+Think for example the email addresses of regular users.
+
+5
+00:00:18,910 --> 00:00:21,700
+So, that's your key value space.
+
+6
+00:00:21,700 --> 00:00:26,980
+You have a hash function h. The job of the hash function is to take keys from
+
+7
+00:00:26,980 --> 00:00:32,385
+the key value space and match them into an atlas in a pocket directory.
+
+8
+00:00:32,385 --> 00:00:35,800
+The addresses it can map to would be at where zero,
+
+9
+00:00:35,800 --> 00:00:38,350
+one, two, etc up to a minus one.
+
+10
+00:00:38,350 --> 00:00:42,100
+A good hash function will have the following characteristics.
+
+11
+00:00:42,100 --> 00:00:44,560
+First, it would need to distribute
+
+12
+00:00:44,560 --> 00:00:48,240
+the values that it hits uniformly or with the address space.
+
+13
+00:00:48,240 --> 00:00:52,360
+So, given the keys that are actually used in the application,
+
+14
+00:00:52,360 --> 00:00:56,070
+it would have to uniformly map to this space.
+
+15
+00:00:56,070 --> 00:01:00,055
+Also, it has to fill the space as much as possible because
+
+16
+00:01:00,055 --> 00:01:04,690
+this by itself will take more than just a few blocks and
+
+17
+00:01:04,690 --> 00:01:08,950
+therefore it needs to be stored somewhere and therefore a piece of it might indeed be
+
+18
+00:01:08,950 --> 00:01:13,480
+stored on disk and itself be subject to being ported between disk and memory.
+
+19
+00:01:13,480 --> 00:01:17,350
+So, it's important that pockets are full as much as possible.
+
+20
+00:01:17,350 --> 00:01:21,300
+Contrary to that, it's also important to avoid collisions,
+
+21
+00:01:21,300 --> 00:01:24,320
+and I'll explain a little bit later why it's important.
+
+22
+00:01:24,320 --> 00:01:28,045
+So, collisions occur when the hash function maps
+
+23
+00:01:28,045 --> 00:01:32,645
+actual keys that occur to the same space too many times.
+
+24
+00:01:32,645 --> 00:01:35,710
+Now, let's take a little bit more look at what
+
+25
+00:01:35,710 --> 00:01:40,200
+happens then and how the hash table is actually built.
+

@@ -1,0 +1,81 @@
+1
+00:00:00,440 --> 00:00:02,760
+The search screen is an output document.
+
+2
+00:00:02,760 --> 00:00:07,080
+It returns to search result
+based on the search criteria.
+
+3
+00:00:07,080 --> 00:00:11,790
+The request new friends screen is
+an input document to the system.
+
+4
+00:00:11,790 --> 00:00:14,930
+The pending friend request screen for
+Michael Bluth
+
+5
+00:00:14,930 --> 00:00:19,200
+shows here the people that have
+requested to be friends with Michael.
+
+6
+00:00:19,200 --> 00:00:24,130
+Michael can then either then push accept
+or reject for each one of these friends.
+
+7
+00:00:24,130 --> 00:00:29,850
+This is the list of friends with whom
+you have requested to become friends.
+
+8
+00:00:29,850 --> 00:00:33,220
+So Phyllis here, you have asked
+to be friends with Phyllis.
+
+9
+00:00:33,220 --> 00:00:36,970
+You could decide to cancel
+that request if you want to.
+
+10
+00:00:36,970 --> 00:00:40,550
+This document is both an input and
+output document.
+
+11
+00:00:40,550 --> 00:00:44,600
+It's an output document from the
+database because it displays information
+
+12
+00:00:44,600 --> 00:00:45,780
+from the database.
+
+13
+00:00:45,780 --> 00:00:49,873
+It is also an input document to the
+database because it will cause changes
+
+14
+00:00:49,873 --> 00:00:54,050
+in the database depending on whether
+you hit the Accept or Reject button.
+
+15
+00:00:54,050 --> 00:00:58,649
+Of course if you hit the Cancel button
+it will delete your request to Phyllis
+
+16
+00:00:58,649 --> 00:01:00,842
+for her to become a friend of yours.
+
+17
+00:01:00,842 --> 00:01:04,879
+The friends' list form is an output
+document from the database.

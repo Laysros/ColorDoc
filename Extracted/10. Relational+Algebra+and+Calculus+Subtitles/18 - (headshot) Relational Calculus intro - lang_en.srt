@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:03,015
+So we have now looked at relational algebra.
+
+2
+00:00:03,015 --> 00:00:08,340
+That's one of the two fundamental formalism's for relational database query languages.
+
+3
+00:00:08,340 --> 00:00:11,915
+The second one is relational calculus.
+
+4
+00:00:11,915 --> 00:00:14,405
+To distinguish between the two,
+
+5
+00:00:14,405 --> 00:00:17,285
+relational algebra is procedural in nature.
+
+6
+00:00:17,285 --> 00:00:21,715
+It's operator-based and basically what you do is you say,
+
+7
+00:00:21,715 --> 00:00:25,335
+"Take this relation, take that relation, join them together.
+
+8
+00:00:25,335 --> 00:00:27,660
+Take the result of that, do a projection.
+
+9
+00:00:27,660 --> 00:00:30,030
+Take the result of that, do a selection."
+
+10
+00:00:30,030 --> 00:00:35,530
+You're basically describing step-by-step what you're supposed to do to get to the result.
+
+11
+00:00:35,530 --> 00:00:39,690
+Calculus, in comparison, is declarative in nature.
+
+12
+00:00:39,690 --> 00:00:45,375
+Instead of saying what to do step-by-step you simply describe the result that you want.
+
+13
+00:00:45,375 --> 00:00:50,985
+So it may appear that it's a higher level language with more expressive power.
+
+14
+00:00:50,985 --> 00:00:52,525
+As it turns out,
+
+15
+00:00:52,525 --> 00:00:55,535
+the algebra and calculus were defined in such a manner
+
+16
+00:00:55,535 --> 00:00:58,895
+that with respect to data retrieval of horsepower,
+
+17
+00:00:58,895 --> 00:01:01,270
+they can actually be shown to be equivalent.
+
+18
+00:01:01,270 --> 00:01:05,485
+SQL is mostly based on tuple calculus.
+
+19
+00:01:05,485 --> 00:01:08,590
+So, now on to calculus.
+

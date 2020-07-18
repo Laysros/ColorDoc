@@ -1,0 +1,56 @@
+1
+00:00:00,440 --> 00:00:03,420
+Please notice that the way
+I just summarized that
+
+2
+00:00:03,420 --> 00:00:07,870
+extended entity relationship diagram
+was quite mechanical in nature.
+
+3
+00:00:07,870 --> 00:00:12,710
+It would actually be possible to write
+a program that would take as input and
+
+4
+00:00:12,710 --> 00:00:15,020
+extend it into relationship diagram and
+
+5
+00:00:15,020 --> 00:00:18,700
+then read out in English
+exactly what it means.
+
+6
+00:00:18,700 --> 00:00:20,430
+No more, no less.
+
+7
+00:00:20,430 --> 00:00:24,380
+When you are talking with your customer
+about your database specification,
+
+8
+00:00:24,380 --> 00:00:28,800
+they will not be able to understand the
+extended entity relationship diagram.
+
+9
+00:00:28,800 --> 00:00:33,135
+They might be able able to understand
+this English representation
+
+10
+00:00:33,135 --> 00:00:34,405
+of that diagram.
+
+11
+00:00:34,405 --> 00:00:39,625
+Of course we all understand that when
+reading this, you need to pay very
+
+12
+00:00:39,625 --> 00:00:44,595
+very careful attention to every single
+word that's in that description.

@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:03,330
+Let's look at how requesting a friendship is
+
+2
+00:00:03,330 --> 00:00:06,580
+done through an insertion into the friendship table.
+
+3
+00:00:06,580 --> 00:00:11,530
+As before, we assume that the application knows the e-mail of the current user.
+
+4
+00:00:11,530 --> 00:00:14,850
+It will also know the e-mail of the friend that's
+
+5
+00:00:14,850 --> 00:00:18,285
+being requested through a user click on the screen,
+
+6
+00:00:18,285 --> 00:00:24,025
+and the relationship will be input by the user that's making the request.
+
+7
+00:00:24,025 --> 00:00:27,225
+With that information, this is the insertion.
+
+8
+00:00:27,225 --> 00:00:29,885
+So, insert into the friendship table,
+
+9
+00:00:29,885 --> 00:00:32,030
+and e-mail, a friends e-mail,
+
+10
+00:00:32,030 --> 00:00:34,370
+and date connected and a relationship.
+
+11
+00:00:34,370 --> 00:00:36,005
+The values the following;
+
+12
+00:00:36,005 --> 00:00:37,880
+the e-mail of the current user,
+
+13
+00:00:37,880 --> 00:00:40,340
+the friend email identified there,
+
+14
+00:00:40,340 --> 00:00:42,700
+the null value for date connected,
+
+15
+00:00:42,700 --> 00:00:45,760
+because this invitation has not yet been accepted,
+
+16
+00:00:45,760 --> 00:00:50,350
+and then the value of relationship read from the screen.
+

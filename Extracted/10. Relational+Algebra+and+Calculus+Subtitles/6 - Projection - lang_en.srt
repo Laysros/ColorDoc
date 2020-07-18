@@ -1,0 +1,168 @@
+1
+00:00:00,000 --> 00:00:02,480
+The next operator is projection.
+
+2
+00:00:02,480 --> 00:00:04,600
+The Syntax is as follows,
+
+3
+00:00:04,600 --> 00:00:06,960
+use the Greek letter pi, and it says,
+
+4
+00:00:06,960 --> 00:00:12,090
+project from relation R. The following attributes A1, A2,
+
+5
+00:00:12,090 --> 00:00:14,845
+up through An, where A1,
+
+6
+00:00:14,845 --> 00:00:21,260
+A2 up through An is a subset of the set of attributes in relation R. So, let's say,
+
+7
+00:00:21,260 --> 00:00:22,805
+we want to find email,
+
+8
+00:00:22,805 --> 00:00:27,960
+birth year and sex for all regular users in Atlanta.
+
+9
+00:00:27,960 --> 00:00:31,575
+So, one way to express their career is the following.
+
+10
+00:00:31,575 --> 00:00:34,440
+We take a look at the regular user table,
+
+11
+00:00:34,440 --> 00:00:38,280
+we find all of those tuples that have
+
+12
+00:00:38,280 --> 00:00:42,365
+a hometown equal to Atlanta thus satisfying this requirement.
+
+13
+00:00:42,365 --> 00:00:46,310
+Then after that, we project on the attributes we want;
+
+14
+00:00:46,310 --> 00:00:50,160
+email, birth year and sex as expressed up here.
+
+15
+00:00:50,160 --> 00:00:53,590
+So, which of these regular users live in Atlanta?
+
+16
+00:00:53,590 --> 00:00:56,125
+Well, user number one lives in Atlanta,
+
+17
+00:00:56,125 --> 00:01:00,025
+and what are the email birth year and sex for user1?
+
+18
+00:01:00,025 --> 00:01:03,870
+It's here; email, birth year and sex.
+
+19
+00:01:03,870 --> 00:01:06,820
+User4 happens to live in Atlanta too.
+
+20
+00:01:06,820 --> 00:01:11,395
+So, for user4, we also put in the result email,
+
+21
+00:01:11,395 --> 00:01:13,305
+and birth year and sex.
+
+22
+00:01:13,305 --> 00:01:15,685
+User number six lives in Atlanta.
+
+23
+00:01:15,685 --> 00:01:18,080
+So, we get user6 email,
+
+24
+00:01:18,080 --> 00:01:20,595
+birth year and sex.
+
+25
+00:01:20,595 --> 00:01:24,230
+User10 and user12 do not live in Atlanta.
+
+26
+00:01:24,230 --> 00:01:28,450
+So, they do not add anything to the result of the query.
+
+27
+00:01:28,450 --> 00:01:33,720
+One thing which is very interesting to notice here is not just what projection is.
+
+28
+00:01:33,720 --> 00:01:36,110
+So, clearly as you can see here with email,
+
+29
+00:01:36,110 --> 00:01:37,750
+and birth year and sex,
+
+30
+00:01:37,750 --> 00:01:42,780
+that is a projection from the state because it leaves out current city and hometown.
+
+31
+00:01:42,780 --> 00:01:44,640
+That's what projections do.
+
+32
+00:01:44,640 --> 00:01:46,905
+What is very, very interesting here with
+
+33
+00:01:46,905 --> 00:01:50,710
+this query refers back to what I talked about earlier,
+
+34
+00:01:50,710 --> 00:01:54,250
+that relational algebra is a closed query language.
+
+35
+00:01:54,250 --> 00:01:57,405
+Because what actually happens here is that this query
+
+36
+00:01:57,405 --> 00:02:00,960
+here is done in two steps, when we formulated.
+
+37
+00:02:00,960 --> 00:02:06,410
+First, we take regular user and do a selection from it with a selection condition.
+
+38
+00:02:06,410 --> 00:02:08,095
+Then from the result of that,
+
+39
+00:02:08,095 --> 00:02:10,450
+which we know is a relation,
+
+40
+00:02:10,450 --> 00:02:12,850
+we then do the projection on that.
+
+41
+00:02:12,850 --> 00:02:15,360
+So, does a composite, query,
+
+42
+00:02:15,360 --> 00:02:21,040
+using two operators and this can only be done when your algebra is closed.
+

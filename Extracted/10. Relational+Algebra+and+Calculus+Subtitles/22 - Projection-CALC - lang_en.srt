@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:03,945
+Next, let's look at projection in tuple calculus.
+
+2
+00:00:03,945 --> 00:00:06,409
+Let's say we want to find Email, BirthYear,
+
+3
+00:00:06,409 --> 00:00:09,865
+and Sex for RegularUser's with HomeTown Atlanta.
+
+4
+00:00:09,865 --> 00:00:11,425
+So, we write it as follows.
+
+5
+00:00:11,425 --> 00:00:12,750
+We want Email, BirthYear,
+
+6
+00:00:12,750 --> 00:00:16,565
+and Sex directly reflecting what is asked for in the projection,
+
+7
+00:00:16,565 --> 00:00:19,255
+that is of tuples that are in RegularUser,
+
+8
+00:00:19,255 --> 00:00:21,750
+where the corresponding HomeTown equals Atlanta.
+
+9
+00:00:21,750 --> 00:00:25,530
+Are we going to include in this result user1,
+
+10
+00:00:25,530 --> 00:00:29,955
+1985, male? Yes, we are.
+
+11
+00:00:29,955 --> 00:00:34,805
+It's a tuple in RegularUser and HomeTown equals Atlanta.
+
+12
+00:00:34,805 --> 00:00:39,330
+So, user1, 85, and male is part of the result.
+
+13
+00:00:39,330 --> 00:00:41,140
+What about user4?
+
+14
+00:00:41,140 --> 00:00:43,335
+Yes, HomeTown is Atlanta.
+
+15
+00:00:43,335 --> 00:00:44,955
+What about user6?
+
+16
+00:00:44,955 --> 00:00:47,385
+Yes. What about user10?
+
+17
+00:00:47,385 --> 00:00:56,010
+No. User12? No. So, the result consists of parts of the first three tuples namely,
+
+18
+00:00:56,010 --> 00:00:58,920
+the three attributes we are projecting on Email, BirthYear,
+
+19
+00:00:58,920 --> 00:01:01,210
+and Sex from those first three tuples,
+
+20
+00:01:01,210 --> 00:01:04,760
+user1, user4, and user6.
+

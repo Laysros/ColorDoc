@@ -1,0 +1,123 @@
+1
+00:00:00,510 --> 00:00:03,810
+What you see here is
+a recursive relationship type.
+
+2
+00:00:03,810 --> 00:00:09,140
+It's called recursive because it
+relates an entity type to itself.
+
+3
+00:00:09,140 --> 00:00:13,980
+So you have the AdminUser
+entity type here with
+
+4
+00:00:13,980 --> 00:00:19,240
+properties Email which is identifying
+and then a SinceDate property,
+
+5
+00:00:19,240 --> 00:00:24,440
+a SinceDate When that adminUser became
+
+6
+00:00:24,440 --> 00:00:30,510
+the supervisor for
+another adminuser who is the supervisee.
+
+7
+00:00:30,510 --> 00:00:34,290
+As you see here, a couple of extra
+things are added to our notation.
+
+8
+00:00:34,290 --> 00:00:39,540
+First of all, there's a direction
+to the lines of the relationship.
+
+9
+00:00:39,540 --> 00:00:43,980
+Second we add roles to
+the relationship sides.
+
+10
+00:00:43,980 --> 00:00:44,960
+Why do we do that?
+
+11
+00:00:44,960 --> 00:00:49,810
+We do that because when we have
+one instance of an admin user,
+
+12
+00:00:49,810 --> 00:00:54,550
+we need to know whether that admin
+user plays the role of supervisor or
+
+13
+00:00:54,550 --> 00:00:57,930
+supervisee in the manages relationship.
+
+14
+00:00:57,930 --> 00:01:00,620
+So let us illustrate that
+with an instance diagram.
+
+15
+00:01:01,640 --> 00:01:06,360
+So take a look at these seven
+instances of admin users and
+
+16
+00:01:06,360 --> 00:01:11,820
+let's see how they are related
+to each other in this hierarchy.
+
+17
+00:01:11,820 --> 00:01:16,140
+So what you see in this hierarchy
+is that this admin user instance
+
+18
+00:01:16,140 --> 00:01:20,280
+is the supervisor and manages this admin
+
+19
+00:01:20,280 --> 00:01:25,560
+user who is the supervisee then,
+apparently, of that admin user.
+
+20
+00:01:25,560 --> 00:01:29,930
+This admin user is the supervisor
+of this one and he or
+
+21
+00:01:29,930 --> 00:01:32,130
+she is the supervisor of this one.
+
+22
+00:01:32,130 --> 00:01:33,170
+And at this node,
+
+23
+00:01:33,170 --> 00:01:38,870
+supervisee of this supervisor Is
+this person and here's another one.
+
+24
+00:01:38,870 --> 00:01:44,830
+The person here is the supervisee
+of that supervisor.
+
+25
+00:01:44,830 --> 00:01:47,810
+So this is the manager's hierarchy
+
+26
+00:01:47,810 --> 00:01:51,950
+that you see among the admin
+users in this example.
+

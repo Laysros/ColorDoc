@@ -1,0 +1,121 @@
+1
+00:00:00,510 --> 00:00:03,390
+The next relationship type we
+need to talk about is the one
+
+2
+00:00:03,390 --> 00:00:05,330
+to many relationship type.
+
+3
+00:00:05,330 --> 00:00:11,000
+So here we have an example of
+a relationship type between employer and
+
+4
+00:00:11,000 --> 00:00:13,990
+the regular users that work for
+employers.
+
+5
+00:00:13,990 --> 00:00:19,680
+It's called a one to many relationship
+type for the following reason.
+
+6
+00:00:19,680 --> 00:00:23,960
+Let's look at the surrogate C or
+D instances of employer, and
+
+7
+00:00:23,960 --> 00:00:27,360
+the instances representing
+regular users.
+
+8
+00:00:27,360 --> 00:00:33,510
+Then it's a one to many, because each
+surrogate of employer can be hooked up
+
+9
+00:00:33,510 --> 00:00:39,450
+to zero, one, or
+more instances of regular user.
+
+10
+00:00:39,450 --> 00:00:41,090
+So let me connect a couple more.
+
+11
+00:00:41,090 --> 00:00:42,880
+So this employer here
+
+12
+00:00:47,240 --> 00:00:50,634
+may be the employer that this
+regular user works for and
+
+13
+00:00:50,634 --> 00:00:52,252
+may be the employer that
+this regular user works for.
+
+14
+00:00:52,252 --> 00:00:57,170
+This employer here may be the employer
+that this regular user works for.
+
+15
+00:00:57,170 --> 00:01:01,680
+So when you look at this, being at one
+to many relationship type means that
+
+16
+00:01:01,680 --> 00:01:06,420
+there's a partial function from
+the set of surrogates representing
+
+17
+00:01:06,420 --> 00:01:10,570
+regular users to the set of
+surrogates representing employers.
+
+18
+00:01:10,570 --> 00:01:15,170
+It's partial because it's not every
+single regular user that's met by it.
+
+19
+00:01:15,170 --> 00:01:19,140
+So you see here there are some
+regular users that are not working for
+
+20
+00:01:19,140 --> 00:01:21,260
+any employer what so ever.
+
+21
+00:01:21,260 --> 00:01:24,700
+It is also the case that
+there are some employers,
+
+22
+00:01:24,700 --> 00:01:27,700
+that do not have any regular
+users working for them.
+
+23
+00:01:28,710 --> 00:01:32,000
+That's not related to it being
+a partial function, of course.
+
+24
+00:01:32,000 --> 00:01:36,420
+Being a partial function
+means that each one of these
+
+25
+00:01:36,420 --> 00:01:40,200
+is mapped to at most,
+one employer on this side.
+

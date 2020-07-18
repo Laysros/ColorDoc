@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:02,040
+We already looked at select,
+
+2
+00:00:02,040 --> 00:00:04,880
+and we looked at select with the WHERE equals one.
+
+3
+00:00:04,880 --> 00:00:06,885
+Now, if you want to go back,
+
+4
+00:00:06,885 --> 00:00:10,060
+and you can see there are two students with Los Angeles.
+
+5
+00:00:10,060 --> 00:00:11,225
+So, if we were to say,
+
+6
+00:00:11,225 --> 00:00:16,890
+WHERE current city equals Los Angeles, and run.
+
+7
+00:00:16,890 --> 00:00:19,180
+Now, we get just those two rows back.
+
+8
+00:00:19,180 --> 00:00:20,740
+So, that pretty much covers it.
+
+9
+00:00:20,740 --> 00:00:23,400
+The basics of phpMyAdmin.
+
+10
+00:00:23,400 --> 00:00:24,930
+There are some more tools in here,
+
+11
+00:00:24,930 --> 00:00:26,850
+but a lot of what we're going to want to do in
+
+12
+00:00:26,850 --> 00:00:29,020
+the class is going to be more script-based.
+
+13
+00:00:29,020 --> 00:00:31,760
+So, we're learning how to do things rather than doing them through the gooey.
+
+14
+00:00:31,760 --> 00:00:34,370
+So, that you do it and good luck.
+

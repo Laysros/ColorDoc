@@ -1,0 +1,192 @@
+1
+00:00:00,465 --> 00:00:02,950
+So, now let's look at
+the career transformer.
+
+2
+00:00:02,950 --> 00:00:07,300
+So, a person acting in the role of
+user can now express careers on
+
+3
+00:00:07,300 --> 00:00:10,970
+the database using this
+language interface number 12.
+
+4
+00:00:10,970 --> 00:00:14,380
+We previously talked about two
+different ways that could be done.
+
+5
+00:00:14,380 --> 00:00:16,680
+The user could write ad hoc queries, and
+
+6
+00:00:16,680 --> 00:00:20,740
+those ad hoc queries would then be
+translated down through the levels,
+
+7
+00:00:20,740 --> 00:00:24,500
+executed on data, and
+an answer would come back to the user.
+
+8
+00:00:24,500 --> 00:00:29,610
+Or as we saw, the user, or a programmer
+implementing a user interface
+
+9
+00:00:29,610 --> 00:00:34,630
+would include access to the database
+inside some host language code.
+
+10
+00:00:34,630 --> 00:00:39,580
+And when, in the execution of that
+program, the database access statements
+
+11
+00:00:39,580 --> 00:00:43,920
+are met, then they are sent down
+through the translation, evaluated and
+
+12
+00:00:43,920 --> 00:00:46,670
+an answer comes back up to
+the application program.
+
+13
+00:00:46,670 --> 00:00:49,530
+So let's talk about
+these translations here.
+
+14
+00:00:49,530 --> 00:00:53,030
+So, here's a database query
+expressed in this interface.
+
+15
+00:00:53,030 --> 00:00:56,980
+The external to conceptual schema and
+transformer will
+
+16
+00:00:56,980 --> 00:01:01,460
+read the metadata which describes what
+the external schema looks like and
+
+17
+00:01:01,460 --> 00:01:03,800
+describes what the conceptual
+schema looks like.
+
+18
+00:01:03,800 --> 00:01:08,030
+And we're using that information from
+the meta database, coming through into
+
+19
+00:01:08,030 --> 00:01:12,920
+phase 36 here, will translate the query
+that was issued in interface 12,
+
+20
+00:01:12,920 --> 00:01:16,560
+to a query expressed in interface 31.
+
+21
+00:01:16,560 --> 00:01:21,420
+Likewise, the conceptual to internal
+transformer will read the conceptual
+
+22
+00:01:21,420 --> 00:01:25,510
+schema definition and the internal
+schema definition through interface 36,
+
+23
+00:01:25,510 --> 00:01:28,993
+and translate the query from
+a query here at this level,
+
+24
+00:01:28,993 --> 00:01:32,250
+to a query here at this
+level in interface 30.
+
+25
+00:01:32,250 --> 00:01:36,720
+And finally, the internal
+schema to storage transformer
+
+26
+00:01:36,720 --> 00:01:41,250
+will read the internal schema
+definition here through interface 34,
+
+27
+00:01:41,250 --> 00:01:45,490
+translate the query to be one from
+over the internal schema to one that's
+
+28
+00:01:45,490 --> 00:01:47,850
+under the internal schema and
+over the data.
+
+29
+00:01:47,850 --> 00:01:53,430
+So, this is essentially the operating
+system level here, the language 21.
+
+30
+00:01:53,430 --> 00:01:55,580
+And through operating system calls,
+
+31
+00:01:55,580 --> 00:02:00,300
+our database calls, the operation
+would be executed on the database.
+
+32
+00:02:00,300 --> 00:02:03,590
+The result will come back from
+the operating system, and
+
+33
+00:02:03,590 --> 00:02:07,500
+again in the same way, will be
+translated back through the levels.
+
+34
+00:02:07,500 --> 00:02:10,320
+And returned as an answer to the query,
+or
+
+35
+00:02:10,320 --> 00:02:14,440
+the external schema that the user
+is accessing the database through.
+
+36
+00:02:14,440 --> 00:02:19,330
+If this process took place every single
+time there's a query that's executed
+
+37
+00:02:19,330 --> 00:02:23,690
+on the database, the database
+would be incredibly inefficient.
+
+38
+00:02:23,690 --> 00:02:26,720
+Therefore, it's actually
+done slightly different.
+
+39
+00:02:26,720 --> 00:02:30,920
+But the functionality of what happens
+is exactly what I have just described.
+

@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:02,530
+So here's an example of a file.
+
+2
+00:00:02,530 --> 00:00:04,630
+It consists of multiple blocks.
+
+3
+00:00:04,630 --> 00:00:08,010
+These blocks are linked together by address pointers.
+
+4
+00:00:08,010 --> 00:00:11,470
+The blocks may not sit right next to each other on disk,
+
+5
+00:00:11,470 --> 00:00:13,120
+but when we have seen one block,
+
+6
+00:00:13,120 --> 00:00:15,990
+we can use the next pointer to get to the place
+
+7
+00:00:15,990 --> 00:00:18,890
+on disk where the second block is et cetera, et cetera.
+
+8
+00:00:18,890 --> 00:00:21,040
+So those are all the blocks on the file.
+
+9
+00:00:21,040 --> 00:00:22,630
+Continuing with the example,
+
+10
+00:00:22,630 --> 00:00:26,665
+we can assume that block pointers are four bytes in a 32 bit architecture.
+
+11
+00:00:26,665 --> 00:00:30,070
+Let's say, we had four million regular users records
+
+12
+00:00:30,070 --> 00:00:33,490
+and we know that we could fit 20 records on a block.
+
+13
+00:00:33,490 --> 00:00:37,865
+So that means the number of data blocks would be four million divided by 20,
+
+14
+00:00:37,865 --> 00:00:40,450
+which is 200,000 blocks of data.
+
+15
+00:00:40,450 --> 00:00:43,610
+That also means with a block size of 4k,
+
+16
+00:00:43,610 --> 00:00:47,480
+it means that the file size here is about 800 megabytes.
+
+17
+00:00:47,480 --> 00:00:50,890
+Not a big file, not a small one either.
+

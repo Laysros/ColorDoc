@@ -1,0 +1,119 @@
+1
+00:00:00,420 --> 00:00:04,190
+Is a somewhat different rendition
+of what I just described to you.
+
+2
+00:00:04,190 --> 00:00:09,430
+In this, DBA staff includes the three
+human roles that I described for
+
+3
+00:00:09,430 --> 00:00:10,200
+you before.
+
+4
+00:00:10,200 --> 00:00:15,000
+The role defined conceptual schema,
+internal schema, and external schema.
+
+5
+00:00:15,000 --> 00:00:18,370
+That's done through the DDL,
+or data definition language,
+
+6
+00:00:18,370 --> 00:00:22,130
+with statements that
+basically define them, and
+
+7
+00:00:22,130 --> 00:00:27,240
+the DDL compiler will compile them and
+store them in the metadatabase.
+
+8
+00:00:27,240 --> 00:00:32,060
+With that in place a casual user
+can now write an interactive query.
+
+9
+00:00:32,060 --> 00:00:34,700
+That query is processed
+by a query compiler.
+
+10
+00:00:34,700 --> 00:00:38,610
+It is optimized to find
+an efficient way to execute it and
+
+11
+00:00:38,610 --> 00:00:43,290
+it's given as a DBA command to
+the one time database processor,
+
+12
+00:00:43,290 --> 00:00:46,830
+which will execute it together with
+other queries on the database.
+
+13
+00:00:46,830 --> 00:00:51,370
+Looking at application programmers,
+they can write application programs,
+
+14
+00:00:51,370 --> 00:00:56,500
+which consist of host language code
+with embedded database access.
+
+15
+00:00:56,500 --> 00:01:01,770
+That code is passed to a precompiler and
+out of the precompiler comes two things.
+
+16
+00:01:01,770 --> 00:01:06,150
+Number one, the host language code and
+number two, the database queries or
+
+17
+00:01:06,150 --> 00:01:09,150
+database manipulation
+language statements.
+
+18
+00:01:09,150 --> 00:01:14,050
+Those DML statements, are then compiled
+and optimized and then combined
+
+19
+00:01:14,050 --> 00:01:18,560
+with the complied host link which
+code in this complied transaction.
+
+20
+00:01:18,560 --> 00:01:21,350
+The compiled transactions
+are sent tot the database and
+
+21
+00:01:21,350 --> 00:01:24,181
+execute by the run time,
+data base process on.
+
+22
+00:01:24,181 --> 00:01:28,590
+Since there may be many concurrent users
+on the database, a concurrency control
+
+23
+00:01:28,590 --> 00:01:32,605
+sub-system make sure that all
+these competing transactions and
+
+24
+00:01:32,605 --> 00:01:35,905
+queries on the database
+are executed in a proper order.
+

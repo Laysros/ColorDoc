@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:02,440
+Now, let's look at set difference.
+
+2
+00:00:02,440 --> 00:00:05,975
+We're using the same example with slight modifications.
+
+3
+00:00:05,975 --> 00:00:09,700
+Find all cities that are current city for some regular user but exclude
+
+4
+00:00:09,700 --> 00:00:13,875
+those that are a hometown for some regular users.
+
+5
+00:00:13,875 --> 00:00:17,170
+Of course, not necessarily the same regular user.
+
+6
+00:00:17,170 --> 00:00:21,005
+So, we are looking for cities that are found the following way.
+
+7
+00:00:21,005 --> 00:00:26,825
+There must exist a tubule r in regular user that has that city as a current city.
+
+8
+00:00:26,825 --> 00:00:30,000
+But it must also be true that there does not
+
+9
+00:00:30,000 --> 00:00:34,440
+exist a tubule t in regular user where that city appears as hometown.
+
+10
+00:00:34,440 --> 00:00:36,170
+So, let's see here.
+
+11
+00:00:36,170 --> 00:00:37,765
+What about Seattle?
+
+12
+00:00:37,765 --> 00:00:41,250
+Well, Seattle is part of the result because it appears here as
+
+13
+00:00:41,250 --> 00:00:44,925
+a current city and no one has Seattle as hometown.
+
+14
+00:00:44,925 --> 00:00:47,400
+College Park, same thing,
+
+15
+00:00:47,400 --> 00:00:49,245
+is not a hometown for anyone.
+
+16
+00:00:49,245 --> 00:00:52,995
+Las Vegas is not a hometown for anyone, so it's in the result.
+
+17
+00:00:52,995 --> 00:00:56,955
+Dallas however is a hometown for someone so it's not in the result.
+
+18
+00:00:56,955 --> 00:01:00,975
+College Park, we already have that and the result is as said.
+
+19
+00:01:00,975 --> 00:01:02,250
+So the result of the quiz,
+
+20
+00:01:02,250 --> 00:01:06,130
+Seattle, College Park and Las Vegas.
+

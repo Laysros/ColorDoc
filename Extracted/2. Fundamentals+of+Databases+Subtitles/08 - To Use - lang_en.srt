@@ -1,0 +1,197 @@
+1
+00:00:00,420 --> 00:00:05,840
+Database Management Systems are good at
+supporting data intensive applications.
+
+2
+00:00:05,840 --> 00:00:07,930
+Think about the following distinction.
+
+3
+00:00:07,930 --> 00:00:12,360
+Some applications are data intensive,
+some are processed intensive.
+
+4
+00:00:12,360 --> 00:00:16,325
+Database Management Systems are good
+at data intensive applications.
+
+5
+00:00:16,325 --> 00:00:20,300
+Data-intensive applications
+are those where a lot of data
+
+6
+00:00:20,300 --> 00:00:24,050
+may flow between memory and
+secondary storage and
+
+7
+00:00:24,050 --> 00:00:28,500
+where a lot of data may be communicated
+between the user and the database.
+
+8
+00:00:28,500 --> 00:00:31,538
+Databases provide
+persistent storage of data.
+
+9
+00:00:31,538 --> 00:00:35,250
+That means that even if your
+application is shut down
+
+10
+00:00:35,250 --> 00:00:37,700
+your database is still
+going to be there tomorrow.
+
+11
+00:00:37,700 --> 00:00:42,410
+Databases provide centralized control of
+data which is important, because it's
+
+12
+00:00:42,410 --> 00:00:47,720
+possible to enforce policies across
+a database, even when it's distributed.
+
+13
+00:00:47,720 --> 00:00:50,630
+Databases allow you to
+control redundancy.
+
+14
+00:00:50,630 --> 00:00:53,470
+You might think that's important,
+because then we won't
+
+15
+00:00:53,470 --> 00:00:57,950
+waste space on having data represented
+in many different locations.
+
+16
+00:00:57,950 --> 00:00:59,830
+But that's actually not the point.
+
+17
+00:00:59,830 --> 00:01:02,680
+The point is that by
+controlling redundancy,
+
+18
+00:01:02,680 --> 00:01:05,200
+we get some other advantages.
+
+19
+00:01:05,200 --> 00:01:09,450
+The most important one of these
+advantages is that we can control
+
+20
+00:01:09,450 --> 00:01:11,600
+consistency and integrity.
+
+21
+00:01:11,600 --> 00:01:14,760
+We'll define these concepts
+in more detail later, but
+
+22
+00:01:14,760 --> 00:01:19,586
+consistency is the question of whether
+you can derive contradictions from
+
+23
+00:01:19,586 --> 00:01:21,190
+within the database itself.
+
+24
+00:01:21,190 --> 00:01:24,600
+And that is not possible
+unless you have redundancy.
+
+25
+00:01:24,600 --> 00:01:27,280
+Database provide multi-user support, and
+
+26
+00:01:27,280 --> 00:01:31,890
+I'm not just thinking about five people
+sitting in a room sharing one database.
+
+27
+00:01:31,890 --> 00:01:34,880
+I'm thinking about systems
+that would allow tens or
+
+28
+00:01:34,880 --> 00:01:39,240
+hundreds of thousands of users to
+use the database at the same time.
+
+29
+00:01:39,240 --> 00:01:44,610
+Think flight reservation systems, point
+of sale transaction processing, etc.
+
+30
+00:01:44,610 --> 00:01:47,180
+Databases allow you to share data.
+
+31
+00:01:47,180 --> 00:01:51,460
+Sharing data is the key behind
+supporting communications.
+
+32
+00:01:51,460 --> 00:01:55,760
+So when you operate from many
+different places on the same data, and
+
+33
+00:01:55,760 --> 00:01:58,470
+you share data, you are communicating.
+
+34
+00:01:58,470 --> 00:02:02,280
+Databases contain their own
+documentation of the structures of
+
+35
+00:02:02,280 --> 00:02:06,330
+the data and cannot run without
+that which is a great advantage.
+
+36
+00:02:06,330 --> 00:02:10,650
+Data independence is the ability
+to change the implementation of
+
+37
+00:02:10,650 --> 00:02:15,370
+database to be more efficient without
+affecting the user interface.
+
+38
+00:02:15,370 --> 00:02:18,560
+Next, databases provide
+control of access and
+
+39
+00:02:18,560 --> 00:02:21,240
+security of the data
+that's stored in them.
+
+40
+00:02:21,240 --> 00:02:25,320
+And finally,
+databases provide you with backup and
+
+41
+00:02:25,320 --> 00:02:29,690
+recovery utility should the power go or
+something else happen.
+

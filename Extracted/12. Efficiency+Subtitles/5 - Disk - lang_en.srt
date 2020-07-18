@@ -1,0 +1,220 @@
+1
+00:00:00,000 --> 00:00:04,620
+In order to get an understanding of how data is sitting on our disk,
+
+2
+00:00:04,620 --> 00:00:07,800
+let's first take a look at what a disk actually is.
+
+3
+00:00:07,800 --> 00:00:09,475
+So, in this example here,
+
+4
+00:00:09,475 --> 00:00:11,775
+you are seeing the insides of a disk.
+
+5
+00:00:11,775 --> 00:00:14,925
+The disk has a number of plates or platters.
+
+6
+00:00:14,925 --> 00:00:17,445
+For each one of the plates,
+
+7
+00:00:17,445 --> 00:00:20,880
+there is a read/write head that accesses
+
+8
+00:00:20,880 --> 00:00:25,065
+the top of the plate and one that accesses the bottom of the plate.
+
+9
+00:00:25,065 --> 00:00:30,330
+All of these read/write heads are connected together and are operated by an actuator.
+
+10
+00:00:30,330 --> 00:00:34,775
+So, what the actuator will do in order to move the read/write heads
+
+11
+00:00:34,775 --> 00:00:39,750
+further out or further in on the disk is that this one will turn.
+
+12
+00:00:39,750 --> 00:00:41,110
+So, when it turns,
+
+13
+00:00:41,110 --> 00:00:45,475
+then you will see that this will move further out or it will move further in.
+
+14
+00:00:45,475 --> 00:00:47,615
+All the platters move together.
+
+15
+00:00:47,615 --> 00:00:51,150
+They all sit at the same spindle and they all move together.
+
+16
+00:00:51,150 --> 00:00:53,090
+So, with the read/write heads in
+
+17
+00:00:53,090 --> 00:00:56,980
+a particular position and all of these plates spinning together,
+
+18
+00:00:56,980 --> 00:01:01,605
+what passes under the read/write heads is called a cylinder.
+
+19
+00:01:01,605 --> 00:01:07,285
+On each surface, what paces under the read/write head in that position is called a track.
+
+20
+00:01:07,285 --> 00:01:08,700
+So, on the surface here,
+
+21
+00:01:08,700 --> 00:01:10,545
+you have a track and you have
+
+22
+00:01:10,545 --> 00:01:15,550
+a corresponding track on every single surface under the same head position.
+
+23
+00:01:15,550 --> 00:01:18,600
+That collection of tracks is called a cylinder.
+
+24
+00:01:18,600 --> 00:01:22,140
+Each surface is split up into a number of sectors.
+
+25
+00:01:22,140 --> 00:01:25,050
+A sector is the smallest physical unit
+
+26
+00:01:25,050 --> 00:01:28,645
+that could be transported from the disk to main memory.
+
+27
+00:01:28,645 --> 00:01:31,355
+It consists of 512 bytes.
+
+28
+00:01:31,355 --> 00:01:35,160
+Typically though, blocks that will have contributions
+
+29
+00:01:35,160 --> 00:01:39,310
+from several sectors on them is what is transferred as unit.
+
+30
+00:01:39,310 --> 00:01:41,915
+Block typically will be 4K,
+
+31
+00:01:41,915 --> 00:01:44,670
+in other words, it contains eight sectors,
+
+32
+00:01:44,670 --> 00:01:50,750
+or it will be 8K or 16K depending on the type of data we decide to store on the disk.
+
+33
+00:01:50,750 --> 00:01:53,400
+There are several quite interesting videos out on
+
+34
+00:01:53,400 --> 00:01:56,745
+YouTube that shows you disks that are spun open.
+
+35
+00:01:56,745 --> 00:01:59,400
+Some of them show your head crashes and so on.
+
+36
+00:01:59,400 --> 00:02:01,000
+Here's one that's interesting.
+
+37
+00:02:01,000 --> 00:02:04,290
+Go take a look and be impressed when you see how fast
+
+38
+00:02:04,290 --> 00:02:07,860
+the read/write head moves in and out in order to transport data.
+
+39
+00:02:07,860 --> 00:02:12,335
+So, here's an example of a typical higher end disc pack.
+
+40
+00:02:12,335 --> 00:02:14,420
+It would have four plates.
+
+41
+00:02:14,420 --> 00:02:16,950
+Therefore, it will have eight read write heads.
+
+42
+00:02:16,950 --> 00:02:21,565
+It might have approximately 150,000 tracks per surface.
+
+43
+00:02:21,565 --> 00:02:24,230
+A track might be 1,000 kilobytes.
+
+44
+00:02:24,230 --> 00:02:28,170
+Total disk capacity might be 12,000 gigabytes.
+
+45
+00:02:28,170 --> 00:02:31,240
+As I mentioned, a sector is 512 bytes.
+
+46
+00:02:31,240 --> 00:02:34,395
+Disks are formatted, if it's highly formatted data,
+
+47
+00:02:34,395 --> 00:02:36,845
+typical block size would be 4K.
+
+48
+00:02:36,845 --> 00:02:39,990
+If you're dealing with fairly large less formatted objects,
+
+49
+00:02:39,990 --> 00:02:41,415
+you might go higher than that.
+
+50
+00:02:41,415 --> 00:02:45,840
+Most systems by default will come with block size of 4K.
+
+51
+00:02:45,840 --> 00:02:49,750
+Some major systems come with default block size of 8K.
+
+52
+00:02:49,750 --> 00:02:52,260
+A high end disk pack like this would typically
+
+53
+00:02:52,260 --> 00:02:55,095
+have a 600 megabyte per second transfer rate.
+
+54
+00:02:55,095 --> 00:02:58,620
+It would run with 10,000 RPMs and it would
+
+55
+00:02:58,620 --> 00:03:03,120
+have a latency somewhere between three and four milliseconds.
+

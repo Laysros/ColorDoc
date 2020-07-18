@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:03,405
+So, now I've talked about the content information,
+
+2
+00:00:03,405 --> 00:00:05,800
+the preservation description information,
+
+3
+00:00:05,800 --> 00:00:11,355
+and I got two more to go just for the archival information package.
+
+4
+00:00:11,355 --> 00:00:12,750
+After that of course,
+
+5
+00:00:12,750 --> 00:00:14,580
+I would have to talk to you about
+
+6
+00:00:14,580 --> 00:00:19,065
+the submission information package and the dissemination information package.
+
+7
+00:00:19,065 --> 00:00:20,400
+I hope that by now,
+
+8
+00:00:20,400 --> 00:00:23,505
+I managed to impress on you the massive amount of
+
+9
+00:00:23,505 --> 00:00:28,720
+metadata that's needed for the long-term archival of digital information.
+

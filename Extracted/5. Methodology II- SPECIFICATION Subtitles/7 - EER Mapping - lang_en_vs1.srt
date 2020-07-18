@@ -1,0 +1,106 @@
+1
+00:00:00,470 --> 00:00:05,540
+Adding it all together, here is
+the EER diagram we have arrived at.
+
+2
+00:00:05,540 --> 00:00:07,110
+We have a set of users.
+
+3
+00:00:07,110 --> 00:00:10,450
+The users are uniquely
+identified by email.
+
+4
+00:00:10,450 --> 00:00:12,010
+Users have passwords and
+
+5
+00:00:12,010 --> 00:00:15,420
+they have names that are composed
+from first and last names.
+
+6
+00:00:15,420 --> 00:00:21,080
+A user must either be a regular user or
+an admin user, but cannot be both.
+
+7
+00:00:21,080 --> 00:00:23,810
+Therefore, the constraint is disjoint.
+
+8
+00:00:23,810 --> 00:00:27,330
+Regular users have profiles with sex,
+birthdate, current city, and
+
+9
+00:00:27,330 --> 00:00:30,270
+hometown, and a list of interests.
+
+10
+00:00:30,270 --> 00:00:35,260
+Admin users only have a single property
+name the last time they logged in.
+
+11
+00:00:35,260 --> 00:00:38,250
+Regular users may have
+attended multiple schools.
+
+12
+00:00:38,250 --> 00:00:42,820
+And a particular school may have
+multiple regular users that attended it.
+
+13
+00:00:42,820 --> 00:00:44,950
+A school must have a school type.
+
+14
+00:00:44,950 --> 00:00:50,700
+Schools are identified by school name,
+school type identified by type name.
+
+15
+00:00:50,700 --> 00:00:54,720
+A regular user may have worked for many
+employers and a particular employer of
+
+16
+00:00:54,720 --> 00:00:58,690
+course may have many regular
+users working for that employer.
+
+17
+00:00:58,690 --> 00:01:02,850
+A particular employer could hold
+multiple titles over time for
+
+18
+00:01:02,850 --> 00:01:04,300
+the same employer.
+
+19
+00:01:04,300 --> 00:01:05,880
+Employee names are unique.
+
+20
+00:01:05,880 --> 00:01:07,500
+You have the friendships.
+
+21
+00:01:07,500 --> 00:01:10,410
+Regular users request
+multiple friendships.
+
+22
+00:01:10,410 --> 00:01:13,590
+And regular users can accept
+multiple friendships.
+
+23
+00:01:13,590 --> 00:01:17,790
+Date connected reflects the date that
+our friendship request was accepted.

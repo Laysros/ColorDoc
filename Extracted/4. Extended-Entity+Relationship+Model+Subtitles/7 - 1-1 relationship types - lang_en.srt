@@ -1,0 +1,122 @@
+1
+00:00:00,550 --> 00:00:04,980
+We've now seen the concept of an entity
+type, and we've several different
+
+2
+00:00:04,980 --> 00:00:09,030
+property types, let's now turn our
+attention to relationship types.
+
+3
+00:00:09,030 --> 00:00:12,330
+Relationship types
+are represent by diamonds.
+
+4
+00:00:12,330 --> 00:00:16,027
+So here in this example, we have
+two entity of types, male user and
+
+5
+00:00:16,027 --> 00:00:21,330
+female user, and they are connected by
+the relationship type, current marriage.
+
+6
+00:00:21,330 --> 00:00:26,790
+This notation here is
+the carnality of that relationship.
+
+7
+00:00:26,790 --> 00:00:33,550
+It says that this relationship, current
+marriage, is a 1-1 relationship type.
+
+8
+00:00:33,550 --> 00:00:37,440
+Let's add the instance diagram
+to see what that means.
+
+9
+00:00:37,440 --> 00:00:43,690
+So here we have four instances of
+maleuser and we have six femaleuser.
+
+10
+00:00:43,690 --> 00:00:49,940
+As you can see, this maleuser here is
+currently married to this femaleuser.
+
+11
+00:00:49,940 --> 00:00:53,410
+This user here may be
+married to this femaleuser.
+
+12
+00:00:53,410 --> 00:00:58,099
+And this user here is currently
+married to this femaleuser.
+
+13
+00:00:58,099 --> 00:01:02,745
+Notice that there are a couple of
+maleusers here that are currently not
+
+14
+00:01:02,745 --> 00:01:03,462
+married.
+
+15
+00:01:03,462 --> 00:01:09,598
+And notice there are three femaleusers
+here that are currently not married.
+
+16
+00:01:09,598 --> 00:01:12,390
+So since there are instances
+of maleuser and
+
+17
+00:01:12,390 --> 00:01:17,490
+instances of femaleuser that are not
+married, this function here or
+
+18
+00:01:17,490 --> 00:01:22,680
+this mapping between these two
+entity types is a partial function.
+
+19
+00:01:22,680 --> 00:01:24,050
+Why is it a function?
+
+20
+00:01:24,050 --> 00:01:27,910
+It's a function because for
+each one of the elements here,
+
+21
+00:01:27,910 --> 00:01:32,250
+there's at most one element
+over here that it's mapped to.
+
+22
+00:01:32,250 --> 00:01:37,040
+It's partial because there are some
+that are not mapped to anything.
+
+23
+00:01:37,040 --> 00:01:42,160
+If we were to have two relationship
+types between the same two entity types
+
+24
+00:01:42,160 --> 00:01:45,330
+then they would clearly have
+to have different names so
+
+25
+00:01:45,330 --> 00:01:46,970
+we can distinguish between them.
+

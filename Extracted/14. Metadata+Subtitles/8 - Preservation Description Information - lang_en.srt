@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:04,665
+The preservation description information consists of reference information,
+
+2
+00:00:04,665 --> 00:00:09,435
+context information, provenance information and fixity information.
+
+3
+00:00:09,435 --> 00:00:14,025
+The archival system identification consists of the system ID,
+
+4
+00:00:14,025 --> 00:00:16,380
+the value, construction method,
+
+5
+00:00:16,380 --> 00:00:19,640
+responsible agency and additional information.
+
+6
+00:00:19,640 --> 00:00:22,440
+There is a global identifier with a value,
+
+7
+00:00:22,440 --> 00:00:26,885
+construction method and a responsible agency for that identification.
+
+8
+00:00:26,885 --> 00:00:31,240
+Finally, on the reference information there is resource description,
+
+9
+00:00:31,240 --> 00:00:34,395
+existing metadata, and existing records.
+
+10
+00:00:34,395 --> 00:00:37,875
+That brings us to the context information some of which
+
+11
+00:00:37,875 --> 00:00:42,320
+includes relationships between this object and other objects,
+
+12
+00:00:42,320 --> 00:00:44,760
+information about the relationships between
+
+13
+00:00:44,760 --> 00:00:48,175
+this object and other manifestations of the same object,
+
+14
+00:00:48,175 --> 00:00:50,110
+what the type of relationship is.
+
+15
+00:00:50,110 --> 00:00:52,560
+The provenance information contains
+
+16
+00:00:52,560 --> 00:00:56,755
+the complete history of the information throughout it's lifetime.
+
+17
+00:00:56,755 --> 00:00:58,470
+Where did it originate?
+
+18
+00:00:58,470 --> 00:00:59,880
+How was it created?
+
+19
+00:00:59,880 --> 00:01:03,530
+What was the history before ingest to the archival system?
+
+20
+00:01:03,530 --> 00:01:06,920
+What was the process that was used during the ingest event?
+
+21
+00:01:06,920 --> 00:01:10,375
+What's the history of archival rights management?
+
+22
+00:01:10,375 --> 00:01:12,955
+Each one of these events throughout the lifetime,
+
+23
+00:01:12,955 --> 00:01:16,030
+origin, pre-ingest, ingest, archival retention,
+
+24
+00:01:16,030 --> 00:01:19,080
+rights management, will have a name, procedure,
+
+25
+00:01:19,080 --> 00:01:22,895
+date, responsible agency, and outcome, and notes.
+
+26
+00:01:22,895 --> 00:01:27,895
+Fixity information refers to the authentication method for the object.
+
+27
+00:01:27,895 --> 00:01:31,760
+Digital signature, watermark, check sum, etc,.
+
+28
+00:01:31,760 --> 00:01:33,615
+Both the type, procedure,
+
+29
+00:01:33,615 --> 00:01:37,560
+date and result are part of the fixity information.
+

@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:03,090
+The second formalism in which we can express
+
+2
+00:00:03,090 --> 00:00:06,505
+queries on relational databases is called Relational Calculus.
+
+3
+00:00:06,505 --> 00:00:10,725
+In this particular case we're going to look at relational Tuple calculus.
+
+4
+00:00:10,725 --> 00:00:13,980
+It's called Tuple calculus because queries
+
+5
+00:00:13,980 --> 00:00:17,480
+have variables that range or with sets of Tuples.
+
+6
+00:00:17,480 --> 00:00:19,410
+As you can already see now,
+
+7
+00:00:19,410 --> 00:00:23,880
+queries in relation to Tuple Calculus are declarative in nature as opposed to
+
+8
+00:00:23,880 --> 00:00:29,010
+the relational algebra which is operator based and is procedural in nature.
+
+9
+00:00:29,010 --> 00:00:33,325
+So the semantics of a query like this is to find a set of Tuples T
+
+10
+00:00:33,325 --> 00:00:38,290
+that satisfy the predicate P. Predicates are built from atoms.
+
+11
+00:00:38,290 --> 00:00:42,480
+So let's take a look at some of the atoms that go into predicates.
+
+12
+00:00:42,480 --> 00:00:45,295
+So first they are range expressions.
+
+13
+00:00:45,295 --> 00:00:49,010
+A range expressions says for example in this case here
+
+14
+00:00:49,010 --> 00:00:52,530
+that T is a member of relational or written in
+
+15
+00:00:52,530 --> 00:00:55,680
+an alternative format contains Tuple
+
+16
+00:00:55,680 --> 00:01:00,360
+T. We need to be able to reference attributes of Tuples.
+
+17
+00:01:00,360 --> 00:01:02,475
+We used to dot notation for that.
+
+18
+00:01:02,475 --> 00:01:05,730
+So this notation indicates that we are looking at
+
+19
+00:01:05,730 --> 00:01:10,690
+the value of attribute a of Tuple T. Third,
+
+20
+00:01:10,690 --> 00:01:15,285
+constants in our queries are denoted by C. Fourth,
+
+21
+00:01:15,285 --> 00:01:19,455
+we have several comparison operators theta, equal to,
+
+22
+00:01:19,455 --> 00:01:21,830
+different from, less than equal to,
+
+23
+00:01:21,830 --> 00:01:23,085
+greater than equal to,
+
+24
+00:01:23,085 --> 00:01:25,180
+less than and greater than.
+
+25
+00:01:25,180 --> 00:01:28,185
+Atoms are then any one of the following.
+
+26
+00:01:28,185 --> 00:01:30,080
+Could be a range expression,
+
+27
+00:01:30,080 --> 00:01:35,390
+it could be a comparison of two attributes, here Tuple R,
+
+28
+00:01:35,390 --> 00:01:40,385
+attribute A compared by the theta here to attribute B
+
+29
+00:01:40,385 --> 00:01:46,230
+of Tuple S and again the theta could be any one of these comparison operators.
+
+30
+00:01:46,230 --> 00:01:54,090
+Alternatively we could compare attribute A of tuple R to the constant C,
+
+31
+00:01:54,090 --> 00:01:58,625
+and again all of these could be the comparison operator.
+
+32
+00:01:58,625 --> 00:02:01,145
+Building up then what a predicate is,
+
+33
+00:02:01,145 --> 00:02:03,000
+an atom is a predicate.
+
+34
+00:02:03,000 --> 00:02:06,335
+So this means that the range expression,
+
+35
+00:02:06,335 --> 00:02:12,030
+the attribute comparison expression and comparing an attribute to a constant.
+
+36
+00:02:12,030 --> 00:02:13,865
+Those are all predicates.
+
+37
+00:02:13,865 --> 00:02:18,840
+Now, if you have predicates P one and P two then you can put parentheses
+
+38
+00:02:18,840 --> 00:02:21,420
+around them which basically means you can use
+
+39
+00:02:21,420 --> 00:02:24,450
+nesting in the way you write your expressions.
+
+40
+00:02:24,450 --> 00:02:26,240
+You can use negation,
+
+41
+00:02:26,240 --> 00:02:28,355
+you can use or,
+
+42
+00:02:28,355 --> 00:02:30,240
+you can use and,
+
+43
+00:02:30,240 --> 00:02:32,725
+and you can use implies.
+
+44
+00:02:32,725 --> 00:02:38,945
+Finally, if P of T is a predicate and T is a free variable in P and I is a relation,
+
+45
+00:02:38,945 --> 00:02:43,560
+then there exists a T in R that satisfies P as a predicate.
+
+46
+00:02:43,560 --> 00:02:49,120
+Likewise for all T and R for which P is true is also a predicate.
+
+47
+00:02:49,120 --> 00:02:52,440
+If T is free in the predicate P,
+
+48
+00:02:52,440 --> 00:02:59,470
+then using the extended quantifier or the universal quantifier binds T.
+

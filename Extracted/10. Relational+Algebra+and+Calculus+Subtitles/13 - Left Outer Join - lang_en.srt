@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:04,780
+The third construct to operate off the relation as a bar is outer join.
+
+2
+00:00:04,780 --> 00:00:07,265
+In this case it's (left) outer Join
+
+3
+00:00:07,265 --> 00:00:11,040
+signified by those two small lines on the join symbol.
+
+4
+00:00:11,040 --> 00:00:13,440
+Let's say we want to find e-mail, year,
+
+5
+00:00:13,440 --> 00:00:16,885
+sex and event for RegularUsers when the birth year
+
+6
+00:00:16,885 --> 00:00:20,645
+of the RegularUser matches the event year of the event.
+
+7
+00:00:20,645 --> 00:00:24,830
+But let's in addition to that say that we want to preserve
+
+8
+00:00:24,830 --> 00:00:31,275
+RegularUser information even if their birth year does not match any event.
+
+9
+00:00:31,275 --> 00:00:34,020
+The Algebra expression will look like this,
+
+10
+00:00:34,020 --> 00:00:38,025
+Outer Join RegularUser with Major60sEvents.
+
+11
+00:00:38,025 --> 00:00:41,080
+So, let's take a look at user three first.
+
+12
+00:00:41,080 --> 00:00:44,735
+User three is born in '67.
+
+13
+00:00:44,735 --> 00:00:51,425
+'67 matches the year that The Doors recorded the Alabama Song.
+
+14
+00:00:51,425 --> 00:00:56,475
+So, user three here gets combined with the Alabama Song,
+
+15
+00:00:56,475 --> 00:00:59,655
+and the result appears here.
+
+16
+00:00:59,655 --> 00:01:02,635
+User eight who was born in '68
+
+17
+00:01:02,635 --> 00:01:06,490
+will be combined with the three events that happened in '68,
+
+18
+00:01:06,490 --> 00:01:08,910
+The Tet Offensive, Bloody Sunday,
+
+19
+00:01:08,910 --> 00:01:11,240
+and the MLK assassination.
+
+20
+00:01:11,240 --> 00:01:13,385
+So, that is the next,
+
+21
+00:01:13,385 --> 00:01:16,045
+three tables in the result.
+
+22
+00:01:16,045 --> 00:01:21,585
+Together, those first four are called the "inner" part of the query.
+
+23
+00:01:21,585 --> 00:01:25,740
+Now, let's then go take a look at user one and use 10.
+
+24
+00:01:25,740 --> 00:01:31,735
+As you see, their birth years do not match anything on the major '60's events table.
+
+25
+00:01:31,735 --> 00:01:37,500
+Therefore there's nothing to match them up with but as we said up in the query here,
+
+26
+00:01:37,500 --> 00:01:41,065
+we would still like to preserve the RegularUser information.
+
+27
+00:01:41,065 --> 00:01:44,880
+So, you see here the user one information and
+
+28
+00:01:44,880 --> 00:01:50,840
+the user 10 information and in both cases they have a null associated with them.
+
+29
+00:01:50,840 --> 00:01:57,565
+So that null, this is called The Outer part or signifies the outer part of that result.
+
+30
+00:01:57,565 --> 00:02:01,610
+So, in this case the (left) outer join I showed you really was
+
+31
+00:02:01,610 --> 00:02:06,185
+a natural (left) outer join because we compared same values.
+
+32
+00:02:06,185 --> 00:02:09,600
+It is a special case of the theta-join.
+

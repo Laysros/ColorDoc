@@ -1,0 +1,124 @@
+1
+00:00:00,000 --> 00:00:04,065
+Let's look at the subtask view pending requests.
+
+2
+00:00:04,065 --> 00:00:06,410
+There are two kinds of pending requests;
+
+3
+00:00:06,410 --> 00:00:10,440
+pending requests to you and pending requests from you.
+
+4
+00:00:10,440 --> 00:00:14,055
+Let's concentrate on pending requests to you first.
+
+5
+00:00:14,055 --> 00:00:16,525
+When it's a pending request to you,
+
+6
+00:00:16,525 --> 00:00:18,710
+you know that in the friendship table,
+
+7
+00:00:18,710 --> 00:00:22,780
+the friend email in this case, is your email.
+
+8
+00:00:22,780 --> 00:00:27,540
+The one requesting you to become friends has this email.
+
+9
+00:00:27,540 --> 00:00:31,245
+To collect the information about the requestor,
+
+10
+00:00:31,245 --> 00:00:35,090
+you need a three-way join that puts together the first name,
+
+11
+00:00:35,090 --> 00:00:37,440
+last name, birthday, sex etc.
+
+12
+00:00:37,440 --> 00:00:41,880
+to the email of the person that requests you to become friends.
+
+13
+00:00:41,880 --> 00:00:45,070
+This three-way join is illustrated here.
+
+14
+00:00:45,070 --> 00:00:46,805
+So, you join friendship,
+
+15
+00:00:46,805 --> 00:00:52,070
+RegularUser and user and it's all on matching emails.
+
+16
+00:00:52,070 --> 00:00:55,170
+That email matches this one, matches this one.
+
+17
+00:00:55,170 --> 00:00:59,100
+Now, you got one big table with all this information in it.
+
+18
+00:00:59,100 --> 00:01:04,140
+Their particular row you want to extract in that table is the row
+
+19
+00:01:04,140 --> 00:01:09,360
+where their friends email is your email as current user,
+
+20
+00:01:09,360 --> 00:01:13,320
+and date connected is null because it's still pending.
+
+21
+00:01:13,320 --> 00:01:15,575
+So, now you've got that one row.
+
+22
+00:01:15,575 --> 00:01:20,585
+From that you can now extract from the requester the email,
+
+23
+00:01:20,585 --> 00:01:25,125
+the first name, the last name, hometown, relationship etc.
+
+24
+00:01:25,125 --> 00:01:27,655
+When the request is from you,
+
+25
+00:01:27,655 --> 00:01:28,980
+you know the following,
+
+26
+00:01:28,980 --> 00:01:33,180
+the email in the friendship table is your email.
+
+27
+00:01:33,180 --> 00:01:36,120
+To pull together all the information about
+
+28
+00:01:36,120 --> 00:01:40,040
+the other user you have requested to be friends with,
+
+29
+00:01:40,040 --> 00:01:42,190
+you need to match the user email,
+
+30
+00:01:42,190 --> 00:01:45,330
+the regular user email to the friends email,
+
+31
+00:01:45,330 --> 00:01:49,880
+and that is exactly what is done in this three-way join here.
+

@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:05,490
+So what we're basically here for is to install the WAMP stack,
+
+2
+00:00:05,490 --> 00:00:09,885
+which is the tool that we're going to use for doing the projects in this class.
+
+3
+00:00:09,885 --> 00:00:12,470
+There are essentially three different AMP stacks.
+
+4
+00:00:12,470 --> 00:00:14,710
+There's the WAMP stack, which is good for Windows.
+
+5
+00:00:14,710 --> 00:00:15,810
+There's the MAMP stack,
+
+6
+00:00:15,810 --> 00:00:19,000
+which is for Macintosh and the LAMP stack which is good for Linux.
+
+7
+00:00:19,000 --> 00:00:21,630
+The LAMP stack is actually the oldest as I understand it,
+
+8
+00:00:21,630 --> 00:00:24,750
+but we're going to work with the WAMP stack because we're on a Windows machine here.
+
+9
+00:00:24,750 --> 00:00:27,285
+So these are the URLs that you will use.
+
+10
+00:00:27,285 --> 00:00:28,520
+I've tried all three of them.
+
+11
+00:00:28,520 --> 00:00:29,955
+They all seem to work very well.
+
+12
+00:00:29,955 --> 00:00:32,325
+So you can use the one that's appropriate for you.
+
+13
+00:00:32,325 --> 00:00:34,655
+I will say, if you're using the WAMP stack on
+
+14
+00:00:34,655 --> 00:00:37,440
+Windows and you're on a machine that's still at XP,
+
+15
+00:00:37,440 --> 00:00:39,225
+it isn't going to work for you because I tried.
+
+16
+00:00:39,225 --> 00:00:43,605
+They don't support anything prior to Windows 7, I believe at this point.
+
+17
+00:00:43,605 --> 00:00:48,000
+So start with the URL that you want which in this case is this one.
+
+18
+00:00:48,000 --> 00:00:52,635
+We're going to go over to the browser and we're going to go to that location.
+
+19
+00:00:52,635 --> 00:00:56,255
+The screen looks exactly the same whether you choose WAMP, LAMP or MAMP.
+
+20
+00:00:56,255 --> 00:00:58,785
+It's the same format so you'll see the same thing.
+
+21
+00:00:58,785 --> 00:01:01,225
+And what you'll do is over here, the latest version.
+
+22
+00:01:01,225 --> 00:01:03,610
+Just click on it. I'm sure you all know how to download things.
+
+23
+00:01:03,610 --> 00:01:04,760
+Click on "No thanks,
+
+24
+00:01:04,760 --> 00:01:06,720
+just take me to download" and save
+
+25
+00:01:06,720 --> 00:01:09,945
+the file or whatever's appropriate for your particular browser.
+
+26
+00:01:09,945 --> 00:01:13,140
+So here's the file that we have downloaded and we're just going to execute it.
+
+27
+00:01:13,140 --> 00:01:15,015
+Go through the standard install.
+
+28
+00:01:15,015 --> 00:01:16,860
+Nothing special to achieve here.
+
+29
+00:01:16,860 --> 00:01:18,930
+Put it where you want to put it. You know how this works.
+
+30
+00:01:18,930 --> 00:01:21,165
+Now, this is the first thing that you need to be aware of.
+
+31
+00:01:21,165 --> 00:01:23,295
+It's going to create a root account for you.
+
+32
+00:01:23,295 --> 00:01:26,595
+The root account is what's going to have all of the access
+
+33
+00:01:26,595 --> 00:01:30,045
+to the database so you need to pick a password you're going to use.
+
+34
+00:01:30,045 --> 00:01:32,225
+Now try to begin installing.
+
+35
+00:01:32,225 --> 00:01:37,680
+Installation has completed and it will launch forth automatically when I click "Finish."
+

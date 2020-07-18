@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,515
+Let me first briefly give you an overview of all the AMP stacks that out there.
+
+2
+00:00:04,515 --> 00:00:08,340
+The basic idea is that all the client needs is a browser.
+
+3
+00:00:08,340 --> 00:00:10,610
+That browser will talk with a server.
+
+4
+00:00:10,610 --> 00:00:12,770
+On the server at the top level,
+
+5
+00:00:12,770 --> 00:00:14,635
+you have an HTML server,
+
+6
+00:00:14,635 --> 00:00:17,130
+underneath of that, you have a PHP server,
+
+7
+00:00:17,130 --> 00:00:18,510
+and finally at the bottom,
+
+8
+00:00:18,510 --> 00:00:21,000
+you have the database server.
+

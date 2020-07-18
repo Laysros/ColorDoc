@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:02,200
+So, data in the phone book is sorted.
+
+2
+00:00:02,200 --> 00:00:05,460
+Let's see how we utilize that in a binary search.
+
+3
+00:00:05,460 --> 00:00:08,745
+We're going to look for the phone number of Leo Mark.
+
+4
+00:00:08,745 --> 00:00:11,045
+So, we take the phone book,
+
+5
+00:00:11,045 --> 00:00:15,355
+we split it magically in half like here,
+
+6
+00:00:15,355 --> 00:00:19,350
+we look at the entry here through the my right,
+
+7
+00:00:19,350 --> 00:00:23,075
+it's New Birth Urban International Ministries.
+
+8
+00:00:23,075 --> 00:00:27,360
+So, Leo Mark comes before them.
+
+9
+00:00:27,360 --> 00:00:32,250
+So, let's split that next piece in half.
+
+10
+00:00:32,250 --> 00:00:34,980
+All right what does it say here?
+
+11
+00:00:34,980 --> 00:00:37,620
+It says friendship.
+
+12
+00:00:37,620 --> 00:00:45,110
+So, it comes after friendship and we are left with this piece here,
+
+13
+00:00:45,110 --> 00:00:48,525
+now let's split that in half,
+
+14
+00:00:48,525 --> 00:00:52,360
+it says here Jesse's flaws.
+
+15
+00:00:52,360 --> 00:00:54,960
+What comes after that?
+
+16
+00:00:55,190 --> 00:01:03,245
+Split that in half and we are here at Lloyd's Insurance.
+
+17
+00:01:03,245 --> 00:01:06,955
+So, it's still in the right side here.
+
+18
+00:01:06,955 --> 00:01:14,775
+We'll split that in half and it says Mack Miller, MC Miller.
+
+19
+00:01:14,775 --> 00:01:17,920
+So, Mack is in the left side.
+
+20
+00:01:17,920 --> 00:01:26,700
+Okay, so here it says magic and here it says,
+
+21
+00:01:26,700 --> 00:01:35,940
+Maine split that in half and see what we end up with here, Mason.
+
+22
+00:01:35,940 --> 00:01:39,210
+All right. We're down pretty small now.
+
+23
+00:01:39,210 --> 00:01:41,725
+Split that in half,
+
+24
+00:01:41,725 --> 00:01:45,875
+let's see which side we are in. All right.
+
+25
+00:01:45,875 --> 00:01:47,390
+That's Mark's.
+
+26
+00:01:47,390 --> 00:01:50,790
+So we're getting close. Would you believe it?
+
+27
+00:01:50,790 --> 00:01:59,270
+Right here on the page are the names that start with Mark. Thank you very much.
+

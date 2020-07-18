@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:02,500
+Second, let's take a look at
+
+2
+00:00:02,500 --> 00:00:06,255
+an example of the selection operator with a simple expression.
+
+3
+00:00:06,255 --> 00:00:11,130
+So, let's say we want to find all RegularUsers with HomeTown Atlanta.
+
+4
+00:00:11,130 --> 00:00:13,750
+The relational algebraic expression is this,
+
+5
+00:00:13,750 --> 00:00:16,565
+select where the expression condition is
+
+6
+00:00:16,565 --> 00:00:20,975
+HomeTown equals the value Atlanta from RegularUser.
+
+7
+00:00:20,975 --> 00:00:24,060
+In general, when we form simple expressions,
+
+8
+00:00:24,060 --> 00:00:27,480
+we can do it in one of the following two ways.
+
+9
+00:00:27,480 --> 00:00:29,395
+We can take an attribute name,
+
+10
+00:00:29,395 --> 00:00:31,505
+and compare to a constant.
+
+11
+00:00:31,505 --> 00:00:35,660
+The comparison operators are the usual suspects: equal to,
+
+12
+00:00:35,660 --> 00:00:38,215
+less than, less than equal to, et cetera.
+
+13
+00:00:38,215 --> 00:00:40,795
+Or alternatively, we can say attribute
+
+14
+00:00:40,795 --> 00:00:44,180
+one compares to attribute two in the following way,
+
+15
+00:00:44,180 --> 00:00:46,335
+either equal to less than,
+
+16
+00:00:46,335 --> 00:00:48,260
+less than equal to et cetera.
+
+17
+00:00:48,260 --> 00:00:50,260
+So, let's take a look at the result.
+
+18
+00:00:50,260 --> 00:00:55,185
+The first rule here satisfies the requirement that HomeTown equals Atlanta.
+
+19
+00:00:55,185 --> 00:00:57,245
+So, that appears in the result.
+
+20
+00:00:57,245 --> 00:00:59,150
+Second one doesn't.
+
+21
+00:00:59,150 --> 00:01:01,155
+Third one does.
+
+22
+00:01:01,155 --> 00:01:03,030
+So, that appears in the result.
+
+23
+00:01:03,030 --> 00:01:04,280
+Fourth tuple does.
+
+24
+00:01:04,280 --> 00:01:06,285
+So, that appears in the result.
+
+25
+00:01:06,285 --> 00:01:08,175
+The fifth tuple does not.
+
+26
+00:01:08,175 --> 00:01:11,665
+So therefore, the three tuples that satisfy
+
+27
+00:01:11,665 --> 00:01:15,615
+HomeTown equals Atlanta is what comes back in the result.
+
+28
+00:01:15,615 --> 00:01:18,760
+Notice that all the columns of
+
+29
+00:01:18,760 --> 00:01:25,320
+the RegularUser table are also present in the result of the selection query.
+

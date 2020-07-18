@@ -1,0 +1,234 @@
+1
+00:00:00,500 --> 00:00:03,680
+Here's the description of
+the database management system
+
+2
+00:00:03,680 --> 00:00:07,180
+architecture that's necessary
+in order to create and
+
+3
+00:00:07,180 --> 00:00:10,760
+support a three-level database
+as we have just looked at.
+
+4
+00:00:10,760 --> 00:00:12,050
+This architecture or
+
+5
+00:00:12,050 --> 00:00:16,470
+this framework was proposed by the
+American National Standards Institute
+
+6
+00:00:16,470 --> 00:00:21,080
+and, amazingly,
+it was done as early as in 1975.
+
+7
+00:00:21,080 --> 00:00:26,090
+Before there really were any commercial
+implementations of relational databases.
+
+8
+00:00:26,090 --> 00:00:31,460
+It had a profound impact on the way
+relational databases were built.
+
+9
+00:00:31,460 --> 00:00:36,240
+The framework consists of two pieces,
+the Schema Compiler piece and
+
+10
+00:00:36,240 --> 00:00:38,520
+the Query Transformer piece.
+
+11
+00:00:38,520 --> 00:00:43,030
+Let us first take a look at the top of
+it here, the Schema Compiler piece.
+
+12
+00:00:43,030 --> 00:00:47,700
+These hexagons represent people
+working in different roles
+
+13
+00:00:47,700 --> 00:00:49,560
+with a database management system.
+
+14
+00:00:49,560 --> 00:00:55,670
+The boxes represent process or
+pieces of software that transform text.
+
+15
+00:00:55,670 --> 00:01:00,970
+The triangle represents the metadatabase
+where schema definitions are stored.
+
+16
+00:01:00,970 --> 00:01:01,730
+The job or
+
+17
+00:01:01,730 --> 00:01:07,370
+the role of Enterprise Administrator is
+to define conceptual database schemata.
+
+18
+00:01:07,370 --> 00:01:10,260
+So using the language or the interface,
+
+19
+00:01:10,260 --> 00:01:15,140
+one here, the Enterprise Administrator
+will define a conceptual schema.
+
+20
+00:01:15,140 --> 00:01:18,324
+The Conceptual Schema Processor
+will check that for
+
+21
+00:01:18,324 --> 00:01:21,289
+correct syntax, and
+through a language, too,
+
+22
+00:01:21,289 --> 00:01:25,685
+it will store that conceptual
+schema of this in the metadatabase.
+
+23
+00:01:25,685 --> 00:01:29,640
+An Applications Systems Administrator
+is responsible for
+
+24
+00:01:29,640 --> 00:01:31,640
+defining external schemata.
+
+25
+00:01:31,640 --> 00:01:35,330
+That human role can look
+at the conceptual schema
+
+26
+00:01:35,330 --> 00:01:39,630
+that's currently defined through
+the Language Interface three.
+
+27
+00:01:39,630 --> 00:01:44,348
+And can express an external schema
+definition through the interface four.
+
+28
+00:01:44,348 --> 00:01:48,470
+The External Schema Processor will
+read that external schema definition,
+
+29
+00:01:48,470 --> 00:01:50,870
+it will check it for correct syntax.
+
+30
+00:01:50,870 --> 00:01:53,560
+And it will check that it is correctly,
+
+31
+00:01:53,560 --> 00:01:58,210
+logically derived from the conceptual
+schema that was previously defined.
+
+32
+00:01:58,210 --> 00:02:01,430
+Finally, it will store that
+external schema definition
+
+33
+00:02:01,430 --> 00:02:03,140
+inside the metadatabase.
+
+34
+00:02:03,140 --> 00:02:06,890
+And as we all ready talked about,
+multiple external schemata
+
+35
+00:02:06,890 --> 00:02:11,360
+can be defined from the same conceptual
+schema and stored as metadata.
+
+36
+00:02:11,360 --> 00:02:15,010
+Next, a person acting in the role
+of Database Administrator,
+
+37
+00:02:15,010 --> 00:02:18,200
+again can look at the conceptual
+schema that has been defined for
+
+38
+00:02:18,200 --> 00:02:20,870
+the database through
+the interface three here.
+
+39
+00:02:20,870 --> 00:02:25,210
+Then that Database Administrator
+can define an internal schema
+
+40
+00:02:25,210 --> 00:02:27,570
+using the language in interface 13.
+
+41
+00:02:27,570 --> 00:02:33,620
+The Internal Schema Processor will now
+pass that internal schema definition and
+
+42
+00:02:33,620 --> 00:02:35,940
+make sure that it's
+syntactically correct.
+
+43
+00:02:35,940 --> 00:02:39,180
+And make sure that it actually,
+physically implements and
+
+44
+00:02:39,180 --> 00:02:42,280
+supports what was defined
+in the conceptual schema.
+
+45
+00:02:42,280 --> 00:02:45,510
+When all of that is checked,
+the Internal Schema Processor
+
+46
+00:02:45,510 --> 00:02:50,030
+can now store that internal schema
+definition inside the metadatabase.
+
+47
+00:02:50,030 --> 00:02:54,350
+So with those three levels completed,
+
+48
+00:02:54,350 --> 00:02:58,580
+there is now a definition of what
+the three levels of the database
+
+49
+00:02:58,580 --> 00:03:01,555
+will look like stored
+inside the metadatabase.
+

@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:07,905
+In case three, ET is not mandatorily related to ET1 and or ET2.
+
+2
+00:00:07,905 --> 00:00:10,950
+ET1 and ET2 are allowed to overlap.
+
+3
+00:00:10,950 --> 00:00:13,470
+Let's take a look at the solution for that.
+
+4
+00:00:13,470 --> 00:00:16,470
+So again this is actually an option,
+
+5
+00:00:16,470 --> 00:00:18,575
+you collect all the attributes together,
+
+6
+00:00:18,575 --> 00:00:23,760
+now you may actually have troupers in this single relay's net has A and B values,
+
+7
+00:00:23,760 --> 00:00:28,325
+but no C or D values because that's not mandatory anymore.
+
+8
+00:00:28,325 --> 00:00:30,930
+For the same reasons as before,
+
+9
+00:00:30,930 --> 00:00:33,570
+I just do not like that.
+
+10
+00:00:33,570 --> 00:00:37,120
+Second solution very similar to the one we used in
+
+11
+00:00:37,120 --> 00:00:40,935
+case two is that we generate a relation for ET,
+
+12
+00:00:40,935 --> 00:00:42,555
+a relation for ET1,
+
+13
+00:00:42,555 --> 00:00:44,380
+and a relation for ET2.
+
+14
+00:00:44,380 --> 00:00:51,185
+Attribute A is inherited in ET1 and ET2 as identifying properties.
+
+15
+00:00:51,185 --> 00:00:57,255
+So, both of those will be foreign keys up to the A attribute in ET.
+
+16
+00:00:57,255 --> 00:01:03,190
+It is now possible to have instances of ET with A and B values where
+
+17
+00:01:03,190 --> 00:01:06,260
+the corresponding A value does not exist
+
+18
+00:01:06,260 --> 00:01:09,790
+in ET1 or ET2 simply because that's not mandatory.
+
+19
+00:01:09,790 --> 00:01:15,360
+It is likewise possible to have instances of ET that are in ET1,
+
+20
+00:01:15,360 --> 00:01:17,610
+for example in this case here,
+
+21
+00:01:17,610 --> 00:01:23,100
+or instances of ET that are in ET2 for example these two relations together.
+
+22
+00:01:23,100 --> 00:01:26,570
+So, this is really a fairly pretty solution.
+

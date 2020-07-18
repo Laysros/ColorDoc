@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:05,125
+The most popular of the multi-level indices is one called a B plus Tree.
+
+2
+00:00:05,125 --> 00:00:06,230
+In a B plus Tree,
+
+3
+00:00:06,230 --> 00:00:12,880
+all the data is at the bottom and all nodes over that index nodes in multiple levels.
+
+4
+00:00:12,880 --> 00:00:16,750
+B plus Trees are implemented in many relational database products.
+
+5
+00:00:16,750 --> 00:00:19,900
+Insertion, deletion, and update operations, of course,
+
+6
+00:00:19,900 --> 00:00:22,660
+are provided together with those implementations to
+
+7
+00:00:22,660 --> 00:00:26,665
+guarantee that the B plus Tree continues to be balanced.
+
+8
+00:00:26,665 --> 00:00:28,555
+B stands for balanced.
+
+9
+00:00:28,555 --> 00:00:31,860
+So, if the tree over time would deteriorate,
+
+10
+00:00:31,860 --> 00:00:33,315
+so would the search time.
+
+11
+00:00:33,315 --> 00:00:35,860
+So, it's very, very important that the distance from
+
+12
+00:00:35,860 --> 00:00:39,115
+the route to the base level is the same at all times.
+
+13
+00:00:39,115 --> 00:00:42,040
+It is actually quite rare that an overflow at
+
+14
+00:00:42,040 --> 00:00:45,190
+a lower level will propagate far up the index.
+
+15
+00:00:45,190 --> 00:00:48,970
+Maybe once, maybe twice is what is most common,
+
+16
+00:00:48,970 --> 00:00:51,800
+and that in and by itself is rare.
+

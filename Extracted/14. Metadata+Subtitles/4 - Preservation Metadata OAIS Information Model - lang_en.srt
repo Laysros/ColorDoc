@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:02,265
+To try to answer that question,
+
+2
+00:00:02,265 --> 00:00:08,590
+I want to talk with you about preservation metadata and the OAIS information model.
+
+3
+00:00:08,590 --> 00:00:09,975
+In the late 90's,
+
+4
+00:00:09,975 --> 00:00:14,220
+at the request of the International Organization for Standardization, IOS,
+
+5
+00:00:14,220 --> 00:00:18,985
+the Consultative Committee for Space Data Systems, CCSDS,
+
+6
+00:00:18,985 --> 00:00:24,870
+started developing an archive standard for long term storage of data in digital form.
+
+7
+00:00:24,870 --> 00:00:27,180
+Initial report was released in
+
+8
+00:00:27,180 --> 00:00:32,285
+1999 for the open archival information system reference model.
+
+9
+00:00:32,285 --> 00:00:37,800
+This model went through very thorough review and got feedback from a number of
+
+10
+00:00:37,800 --> 00:00:41,610
+additional organizations outside of the space community such as
+
+11
+00:00:41,610 --> 00:00:45,660
+the Library of Congress and Nesson Archives and Records Administration.
+
+12
+00:00:45,660 --> 00:00:49,980
+That's the model I want to briefly talk with you about today.
+

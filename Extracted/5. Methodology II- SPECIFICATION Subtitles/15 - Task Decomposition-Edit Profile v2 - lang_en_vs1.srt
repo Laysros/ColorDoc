@@ -1,0 +1,309 @@
+1
+00:00:00,510 --> 00:00:04,190
+Now let's take a second example and
+look at test decomposition for
+
+2
+00:00:04,190 --> 00:00:06,050
+the edit profile page.
+
+3
+00:00:06,050 --> 00:00:08,970
+Here is the document which
+is both an input and
+
+4
+00:00:08,970 --> 00:00:13,610
+output document that needs to be
+supported by the edit profile task.
+
+5
+00:00:13,610 --> 00:00:17,620
+This is somewhat more complicated
+than the view profile task.
+
+6
+00:00:17,620 --> 00:00:21,660
+Let us first check the rule of thumb for
+decomposition for this task.
+
+7
+00:00:21,660 --> 00:00:26,390
+The first step in the edit profile task
+is a lookup of personal education and
+
+8
+00:00:26,390 --> 00:00:30,790
+professional information in order
+to be able to support editing it.
+
+9
+00:00:30,790 --> 00:00:33,890
+Now, fortunately we just
+specified the view profile task,
+
+10
+00:00:33,890 --> 00:00:35,900
+so we're going to use that for that.
+
+11
+00:00:35,900 --> 00:00:37,630
+So that takes care of that step.
+
+12
+00:00:37,630 --> 00:00:42,420
+In order to populate the edit profile
+screen, it is necessary for us to
+
+13
+00:00:42,420 --> 00:00:47,410
+go to the database and look up the list
+of schools and the list of employers.
+
+14
+00:00:47,410 --> 00:00:51,780
+Without those we won't be able
+to populate the drop down menus.
+
+15
+00:00:51,780 --> 00:00:55,280
+The added profile task
+may end up editing
+
+16
+00:00:55,280 --> 00:00:57,860
+any one of the three
+groups of information.
+
+17
+00:00:57,860 --> 00:01:01,730
+The personal, the educational,
+and the professional information.
+
+18
+00:01:01,730 --> 00:01:03,770
+Both reading from the database and
+
+19
+00:01:03,770 --> 00:01:08,330
+writing to the database are possible
+in the edit profile task.
+
+20
+00:01:08,330 --> 00:01:12,320
+Reading for example, to look up
+the list of schools and employers.
+
+21
+00:01:12,320 --> 00:01:16,320
+And writing could take place in
+order to execute an insertion,
+
+22
+00:01:16,320 --> 00:01:18,380
+a deletion, or an update.
+
+23
+00:01:18,380 --> 00:01:21,673
+Certainly insertion is
+possible if an extra school is
+
+24
+00:01:21,673 --> 00:01:23,733
+added to the education section.
+
+25
+00:01:23,733 --> 00:01:27,210
+Deletion is possible if
+one of them is removed.
+
+26
+00:01:27,210 --> 00:01:30,950
+An update is possible if information
+has changed, for example,
+
+27
+00:01:30,950 --> 00:01:32,980
+in the personal information section.
+
+28
+00:01:32,980 --> 00:01:36,313
+The only thing that's required
+in order to enable one
+
+29
+00:01:36,313 --> 00:01:40,845
+of these operations is the users login
+and then separate edit requests.
+
+30
+00:01:40,845 --> 00:01:43,540
+As you can see,
+there's a separate save here.
+
+31
+00:01:43,540 --> 00:01:45,430
+There's a separate add and save here.
+
+32
+00:01:45,430 --> 00:01:47,220
+Separate add and save here.
+
+33
+00:01:47,220 --> 00:01:50,380
+The frequencies of the things
+that happen in this task
+
+34
+00:01:50,380 --> 00:01:51,990
+are somewhat different.
+
+35
+00:01:51,990 --> 00:01:56,330
+Some of the information will not change,
+like sex and birthdate.
+
+36
+00:01:56,330 --> 00:01:57,850
+Current city might.
+
+37
+00:01:57,850 --> 00:01:59,810
+Interest might change overtime.
+
+38
+00:01:59,810 --> 00:02:02,760
+The education won't change
+that many times, but
+
+39
+00:02:02,760 --> 00:02:05,390
+your job history may change overtime.
+
+40
+00:02:05,390 --> 00:02:09,680
+These are not great differences in
+frequency but there are differences.
+
+41
+00:02:09,680 --> 00:02:13,320
+Clearly there are several different
+schema constructs involved.
+
+42
+00:02:13,320 --> 00:02:18,200
+There's both the personal information
+portion for user and for regular user.
+
+43
+00:02:18,200 --> 00:02:20,065
+There's the whole education portion.
+
+44
+00:02:20,065 --> 00:02:22,470
+And there's the whole
+professional portion.
+
+45
+00:02:22,470 --> 00:02:25,610
+Again, consistency is not
+necessarily critical.
+
+46
+00:02:25,610 --> 00:02:29,103
+If someone else is looking up
+this profile that the owner
+
+47
+00:02:29,103 --> 00:02:32,075
+of the profile is currently updating,
+it is not
+
+48
+00:02:32,075 --> 00:02:36,778
+essential that the absolute up to
+the second latest version is available.
+
+49
+00:02:36,778 --> 00:02:40,776
+There's some sequencing of what needs
+to take place, so the lookup or
+
+50
+00:02:40,776 --> 00:02:44,200
+the read to the database of
+course needs to be done first.
+
+51
+00:02:44,200 --> 00:02:48,980
+And then followed by any number
+of edits or additional lookups.
+
+52
+00:02:48,980 --> 00:02:51,520
+A model task is clearly needed for this.
+
+53
+00:02:51,520 --> 00:02:55,020
+This task should be decomposed
+into a set of subtasks.
+
+54
+00:02:55,020 --> 00:02:58,800
+So the edit profile task
+should be subdivided into
+
+55
+00:02:58,800 --> 00:03:01,040
+view profile that's read only.
+
+56
+00:03:01,040 --> 00:03:02,949
+Update the personal information.
+
+57
+00:03:02,949 --> 00:03:04,447
+Add and delete schools.
+
+58
+00:03:04,447 --> 00:03:06,690
+Add and delete jobs.
+
+59
+00:03:06,690 --> 00:03:11,060
+This subtask will update only
+the regular user information.
+
+60
+00:03:11,060 --> 00:03:14,690
+This one could update both
+regular user and school.
+
+61
+00:03:14,690 --> 00:03:19,420
+Likewise, this one could update both
+regular user and employer information.
+
+62
+00:03:19,420 --> 00:03:21,870
+So, as we did in our first example,
+
+63
+00:03:21,870 --> 00:03:26,730
+our job is now to describe the abstract
+code that's going to make this happen.
+
+64
+00:03:26,730 --> 00:03:31,430
+And the idea is to say how each
+of these are going to take place,
+
+65
+00:03:31,430 --> 00:03:36,140
+which will tie this input output
+document that sits outside of the system
+
+66
+00:03:36,140 --> 00:03:40,195
+boundary, through the task edit profile,
+to the database.

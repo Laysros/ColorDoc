@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:02,830
+Now, let's take a look at the first very,
+
+2
+00:00:02,830 --> 00:00:06,120
+very simple operation expressed in tuple calculus,
+
+3
+00:00:06,120 --> 00:00:08,280
+namely that of a selection.
+
+4
+00:00:08,280 --> 00:00:10,565
+As you will see in the following,
+
+5
+00:00:10,565 --> 00:00:15,690
+I'm using your understanding of relational algebra operators and essentially going
+
+6
+00:00:15,690 --> 00:00:22,250
+through some of those in order to show you how they are expressed in tuple calculus.
+
+7
+00:00:22,250 --> 00:00:24,155
+In that first example,
+
+8
+00:00:24,155 --> 00:00:27,230
+let's try to find all regular users.
+
+9
+00:00:27,230 --> 00:00:31,055
+The way that's written in tuple calculus is find the set r,
+
+10
+00:00:31,055 --> 00:00:34,965
+where r is a member of the relation regular user.
+
+11
+00:00:34,965 --> 00:00:36,660
+In this example here,
+
+12
+00:00:36,660 --> 00:00:39,390
+what is it we are attempting to do?
+
+13
+00:00:39,390 --> 00:00:44,770
+We are simply attempting to find every single tuple in the relation regular user.
+
+14
+00:00:44,770 --> 00:00:48,710
+So therefore, the first tuple here is part of the result,
+
+15
+00:00:48,710 --> 00:00:51,555
+second tuple is part of the result, et cetera.
+
+16
+00:00:51,555 --> 00:00:57,190
+The result from this operation is identical to the relation we started with.
+

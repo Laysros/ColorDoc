@@ -1,0 +1,67 @@
+1
+00:00:00,460 --> 00:00:03,500
+Instead of the information
+flow diagram modeling clearly,
+
+2
+00:00:03,500 --> 00:00:05,540
+the requirements of the customer.
+
+3
+00:00:05,540 --> 00:00:07,170
+As a software engineer or
+
+4
+00:00:07,170 --> 00:00:12,190
+computer scientist you might be tempted
+instead to think about it as follows.
+
+5
+00:00:12,190 --> 00:00:14,605
+It's an application,
+you got to log on to it.
+
+6
+00:00:14,605 --> 00:00:17,365
+So, there's a log in document and
+a log in task.
+
+7
+00:00:17,365 --> 00:00:19,305
+You got to maintain the data base.
+
+8
+00:00:19,305 --> 00:00:23,605
+There's a bunch of documents involved in
+that maintenance, as input and output.
+
+9
+00:00:23,605 --> 00:00:26,652
+And you need to generate
+some reports as output.
+
+10
+00:00:26,652 --> 00:00:30,862
+So, the application will have three
+tasks, login, maintain the database, and
+
+11
+00:00:30,862 --> 00:00:32,272
+generate the report.
+
+12
+00:00:32,272 --> 00:00:33,932
+Don't do that.
+
+13
+00:00:33,932 --> 00:00:37,702
+That does not model the future
+system you're building.
+
+14
+00:00:37,702 --> 00:00:40,576
+There's models programs, code, etc.
+
+15
+00:00:40,576 --> 00:00:43,122
+That's not what you want to do.

@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:04,235
+Finally, let's look at the mapping of the week entity type friendship.
+
+2
+00:00:04,235 --> 00:00:06,695
+This is a fairly complex situation.
+
+3
+00:00:06,695 --> 00:00:09,800
+So you have a strong entity type regular user and
+
+4
+00:00:09,800 --> 00:00:12,170
+a weak entity type friendship and there's
+
+5
+00:00:12,170 --> 00:00:15,360
+an identification relationship type between them.
+
+6
+00:00:15,360 --> 00:00:17,565
+So in other words in order to identify
+
+7
+00:00:17,565 --> 00:00:21,050
+friendship you're going to need the identifier for regular user.
+
+8
+00:00:21,050 --> 00:00:23,900
+But wait, there's one more of those involved.
+
+9
+00:00:23,900 --> 00:00:27,020
+So in order to understand a friendship you need to know
+
+10
+00:00:27,020 --> 00:00:29,990
+not just the regular user that requested it but
+
+11
+00:00:29,990 --> 00:00:33,230
+also the regular user who has been asked to accept it.
+
+12
+00:00:33,230 --> 00:00:38,170
+So when looking at the friendship relationship type it will have email twice.
+
+13
+00:00:38,170 --> 00:00:41,875
+It will have email of the one making the request and
+
+14
+00:00:41,875 --> 00:00:45,890
+email of the friend that the request is being made to.
+
+15
+00:00:45,890 --> 00:00:49,430
+Then there are two property types relationship and
+
+16
+00:00:49,430 --> 00:00:53,420
+date connected and date connected is going to initially be
+
+17
+00:00:53,420 --> 00:00:57,380
+null and then subsequently if the one invited to become
+
+18
+00:00:57,380 --> 00:01:01,940
+friends accepts it will be set to the date of that accept.
+
+19
+00:01:01,940 --> 00:01:04,895
+Again I've included this one in order to show that
+
+20
+00:01:04,895 --> 00:01:08,990
+both the email of the requester and the potential acceptor of
+
+21
+00:01:08,990 --> 00:01:11,745
+the friendship is going to be an email of
+
+22
+00:01:11,745 --> 00:01:16,865
+a regular user since only regular users can participate in these friendships.
+
+23
+00:01:16,865 --> 00:01:21,400
+An interesting aside about this friendship relation is the following.
+
+24
+00:01:21,400 --> 00:01:28,700
+Notice that there are two one to many relationships into friendship and typically when we
+
+25
+00:01:28,700 --> 00:01:32,150
+have a many to many relationship type that can actually be
+
+26
+00:01:32,150 --> 00:01:36,165
+modeled by two one to many relationships into the same entity type.
+
+27
+00:01:36,165 --> 00:01:37,625
+When that's the case,
+
+28
+00:01:37,625 --> 00:01:39,330
+then the combination is a key.
+
+29
+00:01:39,330 --> 00:01:42,820
+That corresponds very much to other cases we've seen of many to
+
+30
+00:01:42,820 --> 00:01:48,400
+many relationship types where you take a key from each end of the relationship.
+

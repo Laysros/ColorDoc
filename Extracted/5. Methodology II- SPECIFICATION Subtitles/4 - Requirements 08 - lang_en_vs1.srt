@@ -1,0 +1,117 @@
+1
+00:00:00,450 --> 00:00:02,990
+Looking further down
+the edit profile screen,
+
+2
+00:00:02,990 --> 00:00:05,640
+we see the education section of it.
+
+3
+00:00:05,640 --> 00:00:09,170
+Looking at the requirements
+from our customer is a snippet,
+
+4
+00:00:09,170 --> 00:00:12,700
+says a list of schools from
+which the user can select
+
+5
+00:00:12,700 --> 00:00:15,280
+is maintained by
+the system administrator.
+
+6
+00:00:15,280 --> 00:00:16,090
+So in other words,
+
+7
+00:00:16,090 --> 00:00:20,170
+we have a list of schools as
+an entity type in the database.
+
+8
+00:00:20,170 --> 00:00:22,670
+Further says that school
+names are unique,
+
+9
+00:00:22,670 --> 00:00:26,920
+that means that school name is
+an identifying attribute of school.
+
+10
+00:00:26,920 --> 00:00:31,590
+It says that user can have any number
+of schools associated with him or her.
+
+11
+00:00:31,590 --> 00:00:32,549
+So that means for
+
+12
+00:00:32,549 --> 00:00:36,990
+a particular user, many schools
+can be associated with that user.
+
+13
+00:00:36,990 --> 00:00:41,130
+Of course, for a particular school
+there may be many regular users who
+
+14
+00:00:41,130 --> 00:00:45,040
+have attended that school, so given one
+school there may be many regular users
+
+15
+00:00:45,040 --> 00:00:46,900
+associated with that school.
+
+16
+00:00:46,900 --> 00:00:51,340
+In a unique relationship instance
+between a regular user and
+
+17
+00:00:51,340 --> 00:00:55,440
+a school, there's year graduated
+date associated with it.
+
+18
+00:00:55,440 --> 00:00:58,640
+Since a regular user may
+attempt the same school for
+
+19
+00:00:58,640 --> 00:01:02,110
+many different levels of education,
+like bachelors and masters, for
+
+20
+00:01:02,110 --> 00:01:05,590
+example, the year
+graduated is a multi-value.
+
+21
+00:01:05,590 --> 00:01:10,380
+So here's the screen that an admin user
+uses to maintain a list of schools and
+
+22
+00:01:10,380 --> 00:01:11,350
+their types.
+
+23
+00:01:11,350 --> 00:01:13,900
+Each school must have a school type.
+
+24
+00:01:13,900 --> 00:01:16,220
+So the relationship here is mandatory.
+
+25
+00:01:16,220 --> 00:01:20,500
+A school type, of course, can be
+the type from any schools on the list.

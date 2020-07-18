@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:05,255
+The creation and evolution of a metadata registry is a very complex process.
+
+2
+00:00:05,255 --> 00:00:08,130
+To be successful several elements are needed.
+
+3
+00:00:08,130 --> 00:00:12,460
+The first element is the initial creation of the metadata schemata.
+
+4
+00:00:12,460 --> 00:00:15,990
+It is very important that this process is done well.
+
+5
+00:00:15,990 --> 00:00:20,265
+The reason is that software will be developed to access the registry
+
+6
+00:00:20,265 --> 00:00:24,945
+and you don't want that software to be rewritten as the registry evolves.
+
+7
+00:00:24,945 --> 00:00:31,110
+It is sort of an anchor that will hold you back in future evolution of that registry
+
+8
+00:00:31,110 --> 00:00:35,080
+so subsequent creation of new metadata schemata must be
+
+9
+00:00:35,080 --> 00:00:39,770
+a controlled process so you do not get two radical changes.
+
+10
+00:00:39,770 --> 00:00:41,630
+A process for the long term
+
+11
+00:00:41,630 --> 00:00:46,755
+controlled evolution maintenance as use of the metadata schemata must be created.
+
+12
+00:00:46,755 --> 00:00:49,980
+Finally, of course, tools must be in place to support
+
+13
+00:00:49,980 --> 00:00:54,900
+the development and evolution and control of the metadata registry.
+

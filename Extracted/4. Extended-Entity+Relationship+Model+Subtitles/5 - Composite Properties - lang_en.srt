@@ -1,0 +1,55 @@
+1
+00:00:00,590 --> 00:00:05,100
+The next construct I want to show you
+is that of a composite property type.
+
+2
+00:00:05,100 --> 00:00:08,260
+So in this example here again
+we have the entity type user.
+
+3
+00:00:08,260 --> 00:00:12,420
+User has a property of name,
+but in this case,
+
+4
+00:00:12,420 --> 00:00:19,260
+name is composed from two properties,
+namely first name and last name.
+
+5
+00:00:19,260 --> 00:00:21,700
+So let's look at the instance diagram.
+
+6
+00:00:21,700 --> 00:00:23,670
+So let's take a look at this user.
+
+7
+00:00:23,670 --> 00:00:28,260
+This user has a name that's composed
+from a first name and a last name.
+
+8
+00:00:28,260 --> 00:00:31,630
+The first name is Jim,
+last name is Smith.
+
+9
+00:00:31,630 --> 00:00:33,620
+Let's take a look at this user.
+
+10
+00:00:33,620 --> 00:00:37,420
+This user is Leo, last name Mark.
+
+11
+00:00:37,420 --> 00:00:40,850
+And finally,
+let's take a look at this user here,
+
+12
+00:00:40,850 --> 00:00:43,170
+that's Rocky, last name Dunlop.
+

@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:03,650
+Let us briefly discuss why we should care what amount of
+
+2
+00:00:03,650 --> 00:00:07,230
+time it takes to access main memory and to access the disk.
+
+3
+00:00:07,230 --> 00:00:09,900
+So, main memory access time is typically
+
+4
+00:00:09,900 --> 00:00:15,130
+30 nanoseconds or 0.3 times ten to the power of minus seven seconds.
+
+5
+00:00:15,130 --> 00:00:17,690
+In comparison, disk access time is
+
+6
+00:00:17,690 --> 00:00:22,615
+about 10 milliseconds or 10 to the power of minus two seconds.
+
+7
+00:00:22,615 --> 00:00:27,650
+So, in the amount of time that it would take to do a single disk access,
+
+8
+00:00:27,650 --> 00:00:34,550
+you would be able to do three times 10 to the power of five main memory accesses,
+
+9
+00:00:34,550 --> 00:00:36,290
+that is a very large number.
+
+10
+00:00:36,290 --> 00:00:41,660
+It is actually so large that when we do cost computations in database access,
+
+11
+00:00:41,660 --> 00:00:46,400
+we completely ignore the amount of computing time that spent in main memory and
+
+12
+00:00:46,400 --> 00:00:52,200
+we count only disk access time or what is called the I/O cost.
+

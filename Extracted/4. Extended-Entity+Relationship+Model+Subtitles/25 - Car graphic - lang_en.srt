@@ -1,0 +1,91 @@
+1
+00:00:00,470 --> 00:00:03,020
+Let's take a look at
+a beautiful car here.
+
+2
+00:00:03,020 --> 00:00:05,820
+A car is composed from
+many many components.
+
+3
+00:00:05,820 --> 00:00:07,480
+Let's take a look at the drivetrain.
+
+4
+00:00:08,590 --> 00:00:11,500
+So here as you can see
+you've got the engine and
+
+5
+00:00:11,500 --> 00:00:15,120
+you've got the clutch,
+the transmission right behind that.
+
+6
+00:00:15,120 --> 00:00:18,750
+Here's the driveshaft,
+it's a rear wheel drive car.
+
+7
+00:00:18,750 --> 00:00:23,580
+Your differential,
+one of the axles has shock.
+
+8
+00:00:23,580 --> 00:00:26,060
+These are all parts of a car.
+
+9
+00:00:26,060 --> 00:00:28,860
+If you look at an instance
+of a drivetrain,
+
+10
+00:00:28,860 --> 00:00:34,190
+then that instance is composed from
+instances of the component parts.
+
+11
+00:00:34,190 --> 00:00:36,490
+So you will need
+an instance of an engine,
+
+12
+00:00:36,490 --> 00:00:39,960
+an instance of a clutch,
+an instance of a transmission
+
+13
+00:00:39,960 --> 00:00:44,130
+in order to actually compose
+an instance of a drive train.
+
+14
+00:00:44,130 --> 00:00:46,970
+How do you model that in the EER model?
+
+15
+00:00:46,970 --> 00:00:50,310
+Unfortunately the answer is, you can't.
+
+16
+00:00:50,310 --> 00:00:55,790
+So the entity relationship model does
+not explicitly support aggregation.
+
+17
+00:00:55,790 --> 00:01:01,230
+Of course you can force it and use
+existing types, relationship types etc.
+
+18
+00:01:01,230 --> 00:01:04,940
+But that's like playing object
+oriented programing in C,
+
+19
+00:01:04,940 --> 00:01:09,420
+it might be a good idea but
+it's not supported by any kind of tool.
+

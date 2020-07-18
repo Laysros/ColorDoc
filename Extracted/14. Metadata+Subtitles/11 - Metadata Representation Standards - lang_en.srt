@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,510
+Many different metadata representations standards
+
+2
+00:00:03,510 --> 00:00:06,840
+have evolved over the last 15 years or longer.
+
+3
+00:00:06,840 --> 00:00:08,855
+They are constantly evolving.
+
+4
+00:00:08,855 --> 00:00:15,025
+Among some of the better-known activities are XML, XML Schema, OWL,
+
+5
+00:00:15,025 --> 00:00:17,110
+RDF, the Dublin Core,
+
+6
+00:00:17,110 --> 00:00:21,485
+XML METS, VERS, AIP, and MOF.
+
+7
+00:00:21,485 --> 00:00:25,360
+Take a look at those lots of interesting reading.
+

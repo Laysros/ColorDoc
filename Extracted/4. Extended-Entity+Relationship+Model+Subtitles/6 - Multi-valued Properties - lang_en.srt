@@ -1,0 +1,65 @@
+1
+00:00:00,510 --> 00:00:04,354
+The next property type we're going to
+look at is a multi-valued property type.
+
+2
+00:00:04,354 --> 00:00:09,050
+Multi-valued property types are modeled
+by the the double ellipsis.
+
+3
+00:00:09,050 --> 00:00:14,050
+So here we have a regular user who has
+a multi-valued property type interest.
+
+4
+00:00:14,050 --> 00:00:16,560
+Let's look at the instance
+diagram again.
+
+5
+00:00:16,560 --> 00:00:18,780
+So here you have your regular users.
+
+6
+00:00:18,780 --> 00:00:21,090
+There are four instances of those.
+
+7
+00:00:21,090 --> 00:00:23,183
+Here is a multi-value, so
+
+8
+00:00:23,183 --> 00:00:28,480
+this one multi-value consists
+of reading, chess and math.
+
+9
+00:00:28,480 --> 00:00:31,470
+Those are the interests
+of the first user.
+
+10
+00:00:31,470 --> 00:00:34,570
+This third user he is
+interested in biking.
+
+11
+00:00:34,570 --> 00:00:36,880
+Notice that that's also a multi-value.
+
+12
+00:00:36,880 --> 00:00:39,590
+That's acceptable,
+although it's just one.
+
+13
+00:00:39,590 --> 00:00:43,330
+The last user here has a whole
+bunch of interests, soccer, beer,
+
+14
+00:00:43,330 --> 00:00:44,740
+cricket and baseball.
+

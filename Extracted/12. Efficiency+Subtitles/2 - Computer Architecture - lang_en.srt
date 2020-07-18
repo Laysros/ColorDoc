@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:04,630
+To understand some of the many issues involved in physical database design,
+
+2
+00:00:04,630 --> 00:00:08,040
+let us take a look at a simple computer architecture.
+
+3
+00:00:08,040 --> 00:00:11,855
+There are two kinds of storage on memory in a computer:
+
+4
+00:00:11,855 --> 00:00:16,250
+there's the disk where the bulk of data and application programs are stored,
+
+5
+00:00:16,250 --> 00:00:17,940
+then there's main memory,
+
+6
+00:00:17,940 --> 00:00:20,335
+where the programs that are run right now and
+
+7
+00:00:20,335 --> 00:00:23,300
+the data that they are run-on need to be located.
+
+8
+00:00:23,300 --> 00:00:29,040
+The CPU can only run applications on data that's stored in main memory.
+
+9
+00:00:29,040 --> 00:00:32,730
+The BUS is there to allow us to transport data from
+
+10
+00:00:32,730 --> 00:00:37,365
+the disk to main memory and to write it back again if it has been changed.
+
+11
+00:00:37,365 --> 00:00:40,540
+The reason the architecture is like that is the following:
+
+12
+00:00:40,540 --> 00:00:44,095
+Main memory or random access memory is volatile.
+
+13
+00:00:44,095 --> 00:00:47,500
+So, it constantly needs power to keep its state.
+
+14
+00:00:47,500 --> 00:00:49,245
+It is very, very fast.
+
+15
+00:00:49,245 --> 00:00:52,865
+It is small, and it is relatively expensive.
+
+16
+00:00:52,865 --> 00:00:55,890
+On the other hand, secondary memory or the disk
+
+17
+00:00:55,890 --> 00:00:59,100
+as is most often the case, is permanent storage.
+
+18
+00:00:59,100 --> 00:01:01,890
+It does not need power in order to keep it state,
+
+19
+00:01:01,890 --> 00:01:05,500
+it is relatively slow compared to main memory,
+
+20
+00:01:05,500 --> 00:01:08,450
+it is very big compared to main memory,
+
+21
+00:01:08,450 --> 00:01:11,400
+and it is very cheap compared to main memory.
+
+22
+00:01:11,400 --> 00:01:16,615
+It is important that only a tiny fraction of a real database will fit in main memory.
+
+23
+00:01:16,615 --> 00:01:19,610
+So, it is necessary to have for example,
+
+24
+00:01:19,610 --> 00:01:23,420
+proper management programs that will allow us to transport the data from
+
+25
+00:01:23,420 --> 00:01:27,765
+disk to main memory when it's to be operated on and write it back again.
+
+26
+00:01:27,765 --> 00:01:32,445
+People that talk about main memory database are not really talking about databases.
+
+27
+00:01:32,445 --> 00:01:34,160
+They are talking about toys.
+
+28
+00:01:34,160 --> 00:01:36,570
+So, our assumption going forward will be that
+
+29
+00:01:36,570 --> 00:01:40,005
+the vast majority of the database will be stored on disk,
+
+30
+00:01:40,005 --> 00:01:45,650
+and only a tiny fraction will be in main memory at any given point in time.
+

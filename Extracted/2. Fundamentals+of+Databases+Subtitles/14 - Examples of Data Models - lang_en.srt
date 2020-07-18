@@ -1,0 +1,79 @@
+1
+00:00:00,490 --> 00:00:03,960
+A data model is not the same
+as a model of data.
+
+2
+00:00:03,960 --> 00:00:08,870
+We define the database to be
+a model of structures of reality.
+
+3
+00:00:08,870 --> 00:00:15,000
+A data model is the tool or the formulas
+that we use to create such a model.
+
+4
+00:00:15,000 --> 00:00:18,840
+We should always be talking about
+the following three elements,
+
+5
+00:00:18,840 --> 00:00:21,110
+when talking about a data model.
+
+6
+00:00:21,110 --> 00:00:25,550
+Data structures,
+integrity constraints and operations.
+
+7
+00:00:25,550 --> 00:00:28,180
+Let me mention three
+examples of data models.
+
+8
+00:00:28,180 --> 00:00:31,200
+The first one is the entity
+relationship model.
+
+9
+00:00:31,200 --> 00:00:36,110
+We will use this model to fix
+a perception of reality in this course.
+
+10
+00:00:36,110 --> 00:00:39,330
+Second is the relational
+model which we will use to
+
+11
+00:00:39,330 --> 00:00:43,240
+implement that model in
+a database management system.
+
+12
+00:00:43,240 --> 00:00:45,600
+Third let me mention
+the Hierachical Model.
+
+13
+00:00:45,600 --> 00:00:49,730
+The Hierarchical Model was the one
+implemented in the first data base
+
+14
+00:00:49,730 --> 00:00:55,610
+system the IBMIMS data
+base system back in 1967.
+
+15
+00:00:55,610 --> 00:00:59,260
+Interestingly the Hierarchical Model
+is also
+
+16
+00:00:59,260 --> 00:01:03,060
+the fundamental model on
+the XML data bases today.
+

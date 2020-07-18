@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:02,190
+As in all the previous phases,
+
+2
+00:00:02,190 --> 00:00:03,700
+let's look at data first.
+
+3
+00:00:03,700 --> 00:00:07,465
+Following this, you're going to see a number of WAMP stack demos.
+
+4
+00:00:07,465 --> 00:00:11,150
+In the first one, you're going to learn how to install a WAMP stack.
+
+5
+00:00:11,150 --> 00:00:13,225
+Once the WAMP stack is installed,
+
+6
+00:00:13,225 --> 00:00:15,395
+it's ready to accept a database.
+
+7
+00:00:15,395 --> 00:00:20,040
+In general, database management systems come with bulk load utilities.
+
+8
+00:00:20,040 --> 00:00:22,995
+These utilities make it easy to load
+
+9
+00:00:22,995 --> 00:00:26,535
+a lots database into a relational database management system.
+
+10
+00:00:26,535 --> 00:00:29,490
+We're going to cheat a little bit in this case because we
+
+11
+00:00:29,490 --> 00:00:32,370
+actually going to use a script to load
+
+12
+00:00:32,370 --> 00:00:38,340
+the example GTOnline database in through a tool called phpMyadmin.
+
+13
+00:00:38,340 --> 00:00:40,920
+That script is going to be available to you on
+
+14
+00:00:40,920 --> 00:00:44,190
+the downloadable so you can use the same script
+
+15
+00:00:44,190 --> 00:00:46,620
+to create the GTOnline database
+
+16
+00:00:46,620 --> 00:00:50,325
+inside of the MySQL database that's part of your WAMP stack.
+
+17
+00:00:50,325 --> 00:00:52,660
+I strongly encourage you to play around with
+
+18
+00:00:52,660 --> 00:00:57,560
+the GTOnline database using the phpMyAdmin interface.
+
+19
+00:00:57,560 --> 00:01:01,610
+It's a good way to familiarize yourselves better with SQL.
+
+20
+00:01:01,610 --> 00:01:03,290
+You can play with insertions,
+
+21
+00:01:03,290 --> 00:01:04,535
+you can play with queries,
+
+22
+00:01:04,535 --> 00:01:07,525
+and once you need to clean up the example database,
+
+23
+00:01:07,525 --> 00:01:12,120
+just go load it in using the script one more time.
+

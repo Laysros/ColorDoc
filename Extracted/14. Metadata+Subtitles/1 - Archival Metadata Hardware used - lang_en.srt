@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,280
+Today, we are going to talk about archival metadata,
+
+2
+00:00:03,280 --> 00:00:06,210
+archival metadata is just one of the types of
+
+3
+00:00:06,210 --> 00:00:09,720
+metadata that's so important for Information Interchange.
+
+4
+00:00:09,720 --> 00:00:11,855
+Let me first motivate the topic.
+
+5
+00:00:11,855 --> 00:00:16,860
+The hardware I have used includes Gutenberg hand-set lead types.
+
+6
+00:00:16,860 --> 00:00:19,050
+This is what they look like when you set them
+
+7
+00:00:19,050 --> 00:00:21,450
+up before you put them in the printing press.
+
+8
+00:00:21,450 --> 00:00:26,820
+I worked in a small newspaper printing house from fifth grade to eighth grade.
+
+9
+00:00:26,820 --> 00:00:32,305
+Early in college, I used punch card to submit my programs for better processing.
+
+10
+00:00:32,305 --> 00:00:34,710
+I have of course used record players.
+
+11
+00:00:34,710 --> 00:00:37,390
+I still have about 6 feet of vinyls.
+
+12
+00:00:37,390 --> 00:00:40,565
+VCRs, I may even still have one in my house.
+
+13
+00:00:40,565 --> 00:00:46,980
+In addition to those I've used 8-bit paper tape readers following the punch card error,
+
+14
+00:00:46,980 --> 00:00:50,120
+I've used a manual edition machine with anvil,
+
+15
+00:00:50,120 --> 00:00:53,460
+I used an old gear computer in Scandinavia with
+
+16
+00:00:53,460 --> 00:01:00,150
+an external magnetic drum and 1K of 42-bit double word memory, wow.
+
+17
+00:01:00,150 --> 00:01:05,895
+I've used 8-tracks, big reel tape recorders and big magnetic disk packs.
+
+18
+00:01:05,895 --> 00:01:08,745
+Now let's take a look at what hardware you have used.
+
+19
+00:01:08,745 --> 00:01:11,915
+First of all, you have all used the Atari,
+
+20
+00:01:11,915 --> 00:01:13,370
+you have used to Walkman,
+
+21
+00:01:13,370 --> 00:01:17,235
+you've used a Nintendo and you've used the Super Nintendo.
+
+22
+00:01:17,235 --> 00:01:20,310
+Looks like you had more fun than I did.
+

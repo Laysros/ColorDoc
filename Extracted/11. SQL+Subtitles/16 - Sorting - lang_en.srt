@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:03,010
+Sorting, oh no.
+
+2
+00:00:03,230 --> 00:00:06,140
+Another one of those practical things.
+
+3
+00:00:06,140 --> 00:00:08,985
+But if you print out from an SQL query,
+
+4
+00:00:08,985 --> 00:00:11,080
+say a phone number list,
+
+5
+00:00:11,080 --> 00:00:13,910
+don't you want that sorted by say, last name?
+
+6
+00:00:13,910 --> 00:00:15,745
+So from a practical perspective,
+
+7
+00:00:15,745 --> 00:00:18,040
+although it's not part of algebra and calculus,
+
+8
+00:00:18,040 --> 00:00:20,930
+you do need ability to sort an output.
+
+9
+00:00:20,930 --> 00:00:24,030
+Let's say you want to find data about regular users who are males,
+
+10
+00:00:24,030 --> 00:00:27,710
+and you want to sort the data by ascending current city.
+
+11
+00:00:27,710 --> 00:00:29,300
+So, we select emails, sex,
+
+12
+00:00:29,300 --> 00:00:32,145
+and currency city from regular user for males
+
+13
+00:00:32,145 --> 00:00:35,735
+and we order the result by current city ascending.
+
+14
+00:00:35,735 --> 00:00:37,685
+So, what is the result going to look like?
+
+15
+00:00:37,685 --> 00:00:40,160
+Well, it's only the males that are involved here.
+
+16
+00:00:40,160 --> 00:00:42,420
+So, this tuple is going to qualify,
+
+17
+00:00:42,420 --> 00:00:44,005
+this tuple is going to qualify,
+
+18
+00:00:44,005 --> 00:00:45,040
+this one, and this one.
+
+19
+00:00:45,040 --> 00:00:47,360
+So, we know there are four tuples in the result.
+
+20
+00:00:47,360 --> 00:00:50,035
+Now, it needs to be sorted by current city.
+
+21
+00:00:50,035 --> 00:00:54,325
+So, the first output will be the row Austin,
+
+22
+00:00:54,325 --> 00:00:58,345
+then San Diego, then San Francisco, and finally Seattle.
+
+23
+00:00:58,345 --> 00:01:01,160
+It is possible to sort on multiple columns.
+
+24
+00:01:01,160 --> 00:01:04,720
+You can sort ascending and or descending.
+

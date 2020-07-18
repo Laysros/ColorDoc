@@ -1,0 +1,160 @@
+1
+00:00:00,610 --> 00:00:03,990
+Let us now take a look at
+identifying relationships types and
+
+2
+00:00:03,990 --> 00:00:05,640
+weak entity types.
+
+3
+00:00:05,640 --> 00:00:10,470
+In this example we have two entity
+types, regular user and status updates.
+
+4
+00:00:10,470 --> 00:00:14,080
+We have an identifying property type,
+email, and
+
+5
+00:00:14,080 --> 00:00:16,820
+we have another property type,
+date and time.
+
+6
+00:00:16,820 --> 00:00:20,640
+The idea of this example is as follows,
+regular users,
+
+7
+00:00:20,640 --> 00:00:25,450
+they can post multiple status updates
+during the day to their website.
+
+8
+00:00:25,450 --> 00:00:28,410
+Status updates, when they are posted,
+will have a date and
+
+9
+00:00:28,410 --> 00:00:29,920
+time associated with them.
+
+10
+00:00:29,920 --> 00:00:34,530
+However, other users could potentially
+post status updates at the same
+
+11
+00:00:34,530 --> 00:00:35,590
+date and time.
+
+12
+00:00:35,590 --> 00:00:39,970
+So, what we need to model is that
+each status update in addition
+
+13
+00:00:39,970 --> 00:00:44,800
+is identified by the email of
+the regular user that posted it.
+
+14
+00:00:44,800 --> 00:00:49,350
+And then of course needless to say,
+date and time need to have a fine
+
+15
+00:00:49,350 --> 00:00:53,092
+enough granularity that is
+physically impossible for
+
+16
+00:00:53,092 --> 00:00:57,220
+a regular user to post to
+at the same date and time.
+
+17
+00:00:57,220 --> 00:01:01,130
+So, here's how we identify
+a particular status update.
+
+18
+00:01:01,130 --> 00:01:03,700
+We need the email, and
+we need the date and
+
+19
+00:01:03,700 --> 00:01:08,630
+time in order to identify
+an individual status update.
+
+20
+00:01:08,630 --> 00:01:13,530
+So, email, date, and time together
+will identify a status update.
+
+21
+00:01:13,530 --> 00:01:16,280
+On the other hand since
+it's not plausible
+
+22
+00:01:16,280 --> 00:01:20,360
+to uniquely identify a status
+update just by date and time,
+
+23
+00:01:20,360 --> 00:01:26,060
+every single status update that is
+an instance of this entity type
+
+24
+00:01:26,060 --> 00:01:31,390
+must be hooked up to a regular user so
+that we have the email available.
+
+25
+00:01:31,390 --> 00:01:37,070
+So, status update cannot exist without
+being hooked up to a regular user.
+
+26
+00:01:37,070 --> 00:01:40,580
+That's why we call that
+entity type weak because
+
+27
+00:01:40,580 --> 00:01:43,330
+instances cannot exists
+without them being hooked up.
+
+28
+00:01:43,330 --> 00:01:48,720
+And we say that this is
+an identifying relationship type
+
+29
+00:01:48,720 --> 00:01:54,170
+because in order to get to a unique
+status update, we need to go through
+
+30
+00:01:54,170 --> 00:01:58,350
+the email of regular user and
+combine that with date and time.
+
+31
+00:01:58,350 --> 00:02:02,950
+The fact that this one is not in and
+by itself, a unique identifier,
+
+32
+00:02:02,950 --> 00:02:05,730
+as illustrated by the dotted line here.
+
+33
+00:02:05,730 --> 00:02:08,360
+And this is called a partial identifier.
+

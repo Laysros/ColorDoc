@@ -1,0 +1,82 @@
+1
+00:00:00,460 --> 00:00:04,370
+Having now read the document that
+describes the client's requirements,
+
+2
+00:00:04,370 --> 00:00:08,310
+let us now analyze some of those
+requirements in more detail.
+
+3
+00:00:08,310 --> 00:00:12,970
+So all users will log in via
+the GTOnline login screen.
+
+4
+00:00:12,970 --> 00:00:17,040
+Users are uniquely identified
+by their email address and
+
+5
+00:00:17,040 --> 00:00:21,710
+providing a correct email password
+combination and hitting log in,
+
+6
+00:00:21,710 --> 00:00:24,010
+the user will be logged into the system.
+
+7
+00:00:24,010 --> 00:00:27,310
+If a wrong incorrect
+combination of email and
+
+8
+00:00:27,310 --> 00:00:31,720
+password is presented on the screen,
+then the user should be sent to some
+
+9
+00:00:31,720 --> 00:00:35,530
+error message, and
+back to the login screen to try again.
+
+10
+00:00:35,530 --> 00:00:38,640
+If a user has not previously logged in,
+then he or
+
+11
+00:00:38,640 --> 00:00:41,980
+she needs to register first,
+by pushing the Register button.
+
+12
+00:00:41,980 --> 00:00:46,950
+Notice, as the user interacts with the
+login screen, the information provided
+
+13
+00:00:46,950 --> 00:00:51,550
+is not written into the database
+as a result of the login process.
+
+14
+00:00:51,550 --> 00:00:56,530
+However, the test that checks the login
+information will read information from
+
+15
+00:00:56,530 --> 00:01:01,520
+the database to make sure that the user
+who's about to login in is a valid user,
+
+16
+00:01:01,520 --> 00:01:04,129
+and has provided the correct email and
+password.
+
+17
+00:01:04,129 --> 00:01:07,010
+So this is purely an input document.

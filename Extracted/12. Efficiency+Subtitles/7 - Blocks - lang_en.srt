@@ -1,0 +1,144 @@
+1
+00:00:00,000 --> 00:00:02,240
+So, now we have looked at Records.
+
+2
+00:00:02,240 --> 00:00:04,630
+Let's take a look at the blocks they sit on.
+
+3
+00:00:04,630 --> 00:00:10,220
+So, with the example we used it's possible to store several records on a single block.
+
+4
+00:00:10,220 --> 00:00:16,130
+Let's assume that the block size is 4K and let's ignore the metadata that is on it,
+
+5
+00:00:16,130 --> 00:00:19,700
+that will keep information about for example where records start,
+
+6
+00:00:19,700 --> 00:00:24,350
+what their formats are and might contain information sources and next pointer.
+
+7
+00:00:24,350 --> 00:00:27,710
+We assume that we've got 4K space available for data.
+
+8
+00:00:27,710 --> 00:00:31,555
+Let's also assume that we run only about 80 percent full.
+
+9
+00:00:31,555 --> 00:00:35,390
+The reason you might want to not fill a block completely with data is,
+
+10
+00:00:35,390 --> 00:00:38,740
+that if there's some additional record, you need to insert,
+
+11
+00:00:38,740 --> 00:00:40,440
+and there's no room for it then,
+
+12
+00:00:40,440 --> 00:00:43,565
+you would get an overflow and then it takes extra work.
+
+13
+00:00:43,565 --> 00:00:47,220
+So typically, we don't run with blocks totally filled,
+
+14
+00:00:47,220 --> 00:00:49,080
+assuming 80 percent fill.
+
+15
+00:00:49,080 --> 00:00:52,655
+If you've got 80 percent fill and you got 4K block size,
+
+16
+00:00:52,655 --> 00:00:57,065
+then you got about 3,200 bytes with a record size of
+
+17
+00:00:57,065 --> 00:01:02,460
+159 that means that you will fit about 20 records per block,
+
+18
+00:01:02,460 --> 00:01:04,220
+leaving a little bit of space open.
+
+19
+00:01:04,220 --> 00:01:06,295
+So, here's record number 20.
+
+20
+00:01:06,295 --> 00:01:09,935
+You can see, you might be able to fill some additional records in here.
+
+21
+00:01:09,935 --> 00:01:14,260
+There are two ways of thinking about what happens to the piece of
+
+22
+00:01:14,260 --> 00:01:19,040
+a block that might not fill a complete record at the end if it comes to that.
+
+23
+00:01:19,040 --> 00:01:22,710
+Do we then break up the record we are trying to put in?
+
+24
+00:01:22,710 --> 00:01:25,880
+Put the first part here and the second part on
+
+25
+00:01:25,880 --> 00:01:29,370
+the next block that will be called a spanned representation.
+
+26
+00:01:29,370 --> 00:01:32,775
+If we just ignore the tiny amount of waste at the end,
+
+27
+00:01:32,775 --> 00:01:35,315
+that's called an unspanned representation.
+
+28
+00:01:35,315 --> 00:01:37,715
+In most cases, when multiple records,
+
+29
+00:01:37,715 --> 00:01:39,345
+they will fit on a block.
+
+30
+00:01:39,345 --> 00:01:43,505
+Most database systems will run with unspanned representation,
+
+31
+00:01:43,505 --> 00:01:47,640
+simply to avoid the processing that's necessary to break up records.
+
+32
+00:01:47,640 --> 00:01:51,950
+Obviously, if you have record sizes that are larger than block sizes,
+
+33
+00:01:51,950 --> 00:01:53,255
+you don't have a choice,
+
+34
+00:01:53,255 --> 00:01:55,900
+you have to run with a spanned representation.
+
+35
+00:01:55,900 --> 00:01:58,160
+So, now that we know what a block looks like,
+
+36
+00:01:58,160 --> 00:02:01,420
+let's address what files look like.
+

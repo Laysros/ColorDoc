@@ -1,0 +1,124 @@
+1
+00:00:00,490 --> 00:00:04,820
+To give you an example of a data model,
+let me use the relation model, and
+
+2
+00:00:04,820 --> 00:00:09,350
+let me illustrate to you what data
+structures and constraints and
+
+3
+00:00:09,350 --> 00:00:12,290
+operations look like in that model.
+
+4
+00:00:12,290 --> 00:00:15,910
+In the relational model,
+data is represented in tables.
+
+5
+00:00:15,910 --> 00:00:19,320
+Tables have names,
+in this case, RegularUser.
+
+6
+00:00:19,320 --> 00:00:23,700
+Each column has a name,
+Email BirthDate, Hometown,
+
+7
+00:00:23,700 --> 00:00:27,260
+Salary, each one of
+the columns has a data type.
+
+8
+00:00:27,260 --> 00:00:31,330
+In this case,
+emails are represented by varchar(50),
+
+9
+00:00:31,330 --> 00:00:35,060
+variable length character
+strings maximum length 50.
+
+10
+00:00:35,060 --> 00:00:38,150
+BirthDate is represented over datetime.
+
+11
+00:00:38,150 --> 00:00:40,470
+Hometown, again over varchar 50.
+
+12
+00:00:40,470 --> 00:00:43,930
+Salary is represented over
+the data type integer.
+
+13
+00:00:43,930 --> 00:00:46,470
+A table is set to have columns.
+
+14
+00:00:46,470 --> 00:00:48,440
+In this case there are four columns.
+
+15
+00:00:48,440 --> 00:00:52,740
+The number of columns is also
+called the degree of the table.
+
+16
+00:00:52,740 --> 00:00:57,580
+A relation also has a number of rows,
+in this case, one,
+
+17
+00:00:57,580 --> 00:01:01,580
+two, three, four, five, six,
+seven rows in the table.
+
+18
+00:01:01,580 --> 00:01:03,810
+The table name, column names and
+
+19
+00:01:03,810 --> 00:01:08,450
+data types together constitute
+the schema of this table.
+
+20
+00:01:08,450 --> 00:01:13,810
+The schema represents aspects of
+the data that are stable over time.
+
+21
+00:01:13,810 --> 00:01:17,560
+In other words,
+the schema is not expected to change.
+
+22
+00:01:17,560 --> 00:01:22,080
+The state of the database
+represented by the rows in
+
+23
+00:01:22,080 --> 00:01:27,470
+the table reflect aspects that
+are dynamic and change overtime.
+
+24
+00:01:27,470 --> 00:01:31,800
+So the idea is that whereas
+the schema in general
+
+25
+00:01:31,800 --> 00:01:36,780
+represents the structure of data,
+the rows will represent
+
+26
+00:01:36,780 --> 00:01:41,070
+what is the current state of reality
+that's modeled by this table.
+

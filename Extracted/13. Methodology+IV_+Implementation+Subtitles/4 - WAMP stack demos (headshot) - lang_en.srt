@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:03,145
+Hello. I would like to introduce you to Will Johnson.
+
+2
+00:00:03,145 --> 00:00:06,795
+Will Johnson is TA in our Database Class here.
+
+3
+00:00:06,795 --> 00:00:10,055
+He is also an OMS CS student as you can see.
+
+4
+00:00:10,055 --> 00:00:12,570
+He is going to tell you everything you need to know
+
+5
+00:00:12,570 --> 00:00:15,820
+about how to install and run a WAMP stack.
+

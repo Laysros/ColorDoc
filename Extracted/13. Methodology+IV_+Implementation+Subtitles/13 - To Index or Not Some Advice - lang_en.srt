@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:05,190
+So, let me now give you some general advice to summarize our discussion of these issues.
+
+2
+00:00:05,190 --> 00:00:07,755
+First of all, pay attention to size.
+
+3
+00:00:07,755 --> 00:00:09,820
+Even for relatively small table,
+
+4
+00:00:09,820 --> 00:00:12,450
+you might not be able to keep it in memory at
+
+5
+00:00:12,450 --> 00:00:16,330
+all times and you might need to index it to get to [inaudible].
+
+6
+00:00:16,330 --> 00:00:18,195
+Multiple queries add up.
+
+7
+00:00:18,195 --> 00:00:23,770
+You need to consider all the different ways in which a particular table is accessed.
+
+8
+00:00:23,770 --> 00:00:28,175
+In general, writes will suffer inefficiency when you index a table.
+
+9
+00:00:28,175 --> 00:00:30,180
+However, in most cases,
+
+10
+00:00:30,180 --> 00:00:32,060
+the write is preceded by a read,
+
+11
+00:00:32,060 --> 00:00:34,470
+which benefits from an index on the table.
+
+12
+00:00:34,470 --> 00:00:38,370
+There are some neat tools that many database management systems come with.
+
+13
+00:00:38,370 --> 00:00:41,715
+One valuable tool is a tool to measure performance.
+
+14
+00:00:41,715 --> 00:00:44,985
+Some database systems are able to print out for
+
+15
+00:00:44,985 --> 00:00:48,325
+you the actual query graph that's used to execute a query.
+
+16
+00:00:48,325 --> 00:00:53,540
+Very valuable to help you understand whether you need to further index that table or not,
+
+17
+00:00:53,540 --> 00:00:56,490
+to force the use of a better query graph.
+
+18
+00:00:56,490 --> 00:01:00,380
+I recommend that you think globally but you act locally.
+
+19
+00:01:00,380 --> 00:01:04,470
+So, make small changes and when you have made small changes,
+
+20
+00:01:04,470 --> 00:01:09,170
+compare the performance before the change to the performance after the change.
+
+21
+00:01:09,170 --> 00:01:12,050
+If you want to know in more details what you're doing,
+
+22
+00:01:12,050 --> 00:01:15,300
+you actually need to learn more about efficiency,
+
+23
+00:01:15,300 --> 00:01:17,845
+more about physical database organization,
+
+24
+00:01:17,845 --> 00:01:20,570
+and more about query optimization.
+

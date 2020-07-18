@@ -1,0 +1,48 @@
+1
+00:00:00,510 --> 00:00:04,240
+There are three kinds of abstractions
+that people normally agree are important
+
+2
+00:00:04,240 --> 00:00:06,890
+when you try to fix
+a perception of reality.
+
+3
+00:00:06,890 --> 00:00:12,400
+They are classification,
+aggregation, and generalization.
+
+4
+00:00:12,400 --> 00:00:14,270
+Our ability to define, for
+
+5
+00:00:14,270 --> 00:00:18,010
+example, entity types in
+the Extended Entity Relationship model,
+
+6
+00:00:18,010 --> 00:00:22,310
+clearly is in support of
+representing classification.
+
+7
+00:00:22,310 --> 00:00:25,650
+The super subtype
+relationship is introduced
+
+8
+00:00:25,650 --> 00:00:29,310
+in order to be able to
+support generalization.
+
+9
+00:00:29,310 --> 00:00:31,460
+But how about aggregation?
+
+10
+00:00:31,460 --> 00:00:34,070
+Does the Empty Relationship Model
+really support that?
+

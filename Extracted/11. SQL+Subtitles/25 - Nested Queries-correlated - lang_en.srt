@@ -1,0 +1,256 @@
+1
+00:00:00,000 --> 00:00:04,915
+The last type of Nested Queries I want to show you is that of a correlated query.
+
+2
+00:00:04,915 --> 00:00:10,780
+Say we want to find the Email and BirthYear of RegularUsers who have no Interests at all.
+
+3
+00:00:10,780 --> 00:00:14,155
+The SQL query looks like this and I will explain it in just a
+
+4
+00:00:14,155 --> 00:00:17,975
+second on the example but I want to do the following with you.
+
+5
+00:00:17,975 --> 00:00:19,730
+In the two previous examples,
+
+6
+00:00:19,730 --> 00:00:21,865
+when we read the inner query,
+
+7
+00:00:21,865 --> 00:00:25,920
+we could think of first evaluating the inner query and then use
+
+8
+00:00:25,920 --> 00:00:30,490
+the result of that when considering tupples to return in the outer query.
+
+9
+00:00:30,490 --> 00:00:34,020
+That cannot be done in this case when queries are correlated.
+
+10
+00:00:34,020 --> 00:00:35,280
+Let me show you why.
+
+11
+00:00:35,280 --> 00:00:36,720
+So in this query we say,
+
+12
+00:00:36,720 --> 00:00:39,455
+select everything from UserInterest,
+
+13
+00:00:39,455 --> 00:00:45,135
+U where U.Email equals R.Email. What is R?
+
+14
+00:00:45,135 --> 00:00:49,550
+R does not exist in this particular inner query.
+
+15
+00:00:49,550 --> 00:00:51,090
+So where is R?
+
+16
+00:00:51,090 --> 00:00:54,015
+This is called a reference out of scope.
+
+17
+00:00:54,015 --> 00:00:58,660
+So the next layer up from this inner query is this layer.
+
+18
+00:00:58,660 --> 00:01:02,765
+As you see, in the scope of this layer R is defined.
+
+19
+00:01:02,765 --> 00:01:07,680
+So in other words from the inner query you have a reference to the outer query.
+
+20
+00:01:07,680 --> 00:01:10,560
+These queries are quite different to understand.
+
+21
+00:01:10,560 --> 00:01:13,020
+I'm going to go through a method that
+
+22
+00:01:13,020 --> 00:01:16,605
+allows you to write and to understand those queries.
+
+23
+00:01:16,605 --> 00:01:21,080
+The problem is that since the result of the inner query depends on the outer query,
+
+24
+00:01:21,080 --> 00:01:24,315
+you're essentially looking at a situation where for
+
+25
+00:01:24,315 --> 00:01:29,795
+every single possible instantiation of R of a RegularUser,
+
+26
+00:01:29,795 --> 00:01:33,340
+there's a completely new query as the inner query.
+
+27
+00:01:33,340 --> 00:01:36,690
+So think of it as a sub query being evaluated for
+
+28
+00:01:36,690 --> 00:01:42,415
+every single instantiation of the topper variable R ranging over a regular user.
+
+29
+00:01:42,415 --> 00:01:43,740
+That gives, of course,
+
+30
+00:01:43,740 --> 00:01:47,985
+a clue as to how to write these queries and how to think about them.
+
+31
+00:01:47,985 --> 00:01:51,760
+So let's simply proceed from the top here and ask the question.
+
+32
+00:01:51,760 --> 00:01:54,800
+For the first row in RegularUser.
+
+33
+00:01:54,800 --> 00:02:01,655
+So this user 1 '85 M is that can contribute to the result of the query.
+
+34
+00:02:01,655 --> 00:02:04,430
+So the instantiation in the RegularUser of table of
+
+35
+00:02:04,430 --> 00:02:07,620
+the tupple variable R is to the first row.
+
+36
+00:02:07,620 --> 00:02:11,920
+Are we going to return Email and BirthYear from the first row?
+
+37
+00:02:11,920 --> 00:02:13,760
+Well, let's take a look.
+
+38
+00:02:13,760 --> 00:02:15,455
+For that first row,
+
+39
+00:02:15,455 --> 00:02:20,670
+is it true that there does not exist anything in the result of this inner query?
+
+40
+00:02:20,670 --> 00:02:25,870
+So the comparison here between the outer and the inner query is exist, not exist,.
+
+41
+00:02:25,870 --> 00:02:27,580
+In this case, not exist.
+
+42
+00:02:27,580 --> 00:02:29,815
+So, in other words, for that first row,
+
+43
+00:02:29,815 --> 00:02:34,410
+will the result of the inner query result to the empty set.
+
+44
+00:02:34,410 --> 00:02:38,850
+So look at the first instantiation of U in UserInterest.
+
+45
+00:02:38,850 --> 00:02:40,795
+That's the user one row.
+
+46
+00:02:40,795 --> 00:02:43,920
+Does that email match this email?
+
+47
+00:02:43,920 --> 00:02:45,525
+Yes it does.
+
+48
+00:02:45,525 --> 00:02:50,680
+It is not true that there does not exist anything in the restart of this query.
+
+49
+00:02:50,680 --> 00:02:56,530
+Therefore, the first instantiation of R does not give an empty set of the inner query.
+
+50
+00:02:56,530 --> 00:02:58,800
+So user one does not contribute.
+
+51
+00:02:58,800 --> 00:03:01,900
+What about the second row here, user two.
+
+52
+00:03:01,900 --> 00:03:07,725
+Is it the case that there is nothing on the UserInterest table with email user two?
+
+53
+00:03:07,725 --> 00:03:09,605
+No. Doesn't contribute.
+
+54
+00:03:09,605 --> 00:03:11,960
+User three? Doesn't contribute.
+
+55
+00:03:11,960 --> 00:03:14,445
+Use four? Doesn't contribute.
+
+56
+00:03:14,445 --> 00:03:17,220
+User six, wait a second now.
+
+57
+00:03:17,220 --> 00:03:22,345
+Looking for users in UserInterest with Email user six,
+
+58
+00:03:22,345 --> 00:03:25,300
+is that an empty result? Yes, it is.
+
+59
+00:03:25,300 --> 00:03:27,970
+Because user six has no interest at all.
+
+60
+00:03:27,970 --> 00:03:33,785
+Therefore, user six contributes to the result together with BirthYear '88.
+
+61
+00:03:33,785 --> 00:03:37,885
+User eight, no interests contributes to the result.
+
+62
+00:03:37,885 --> 00:03:42,140
+User nine, no interest contributes to the result.
+
+63
+00:03:42,140 --> 00:03:46,355
+So that is the expression of finding the set of Emails
+
+64
+00:03:46,355 --> 00:03:51,360
+and BirthYears for RegularUsers that have no Interests whatsoever.
+

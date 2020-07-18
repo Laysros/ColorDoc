@@ -1,0 +1,145 @@
+1
+00:00:00,460 --> 00:00:03,580
+So as our first example
+of Task Decomposition,
+
+2
+00:00:03,580 --> 00:00:06,140
+let's now try to use our rules of thumb.
+
+3
+00:00:06,140 --> 00:00:07,770
+On the View Profile test,
+
+4
+00:00:07,770 --> 00:00:11,300
+which is the test that supports
+the View Profile screen.
+
+5
+00:00:11,300 --> 00:00:15,850
+So by looking at the screen here,
+we notice that there are three lookups.
+
+6
+00:00:15,850 --> 00:00:18,190
+There's a lookup of
+the personal information.
+
+7
+00:00:18,190 --> 00:00:21,170
+There's a lookup of
+the education information, and
+
+8
+00:00:21,170 --> 00:00:24,600
+finally the professional information for
+a regular user.
+
+9
+00:00:24,600 --> 00:00:27,050
+All three lookups are read-only.
+
+10
+00:00:27,050 --> 00:00:31,830
+In other words, there's no operation or
+update of the database that takes place.
+
+11
+00:00:31,830 --> 00:00:36,630
+All three are enabled by a user's
+login or a friend's lookup.
+
+12
+00:00:36,630 --> 00:00:39,020
+All three have the same frequency.
+
+13
+00:00:39,020 --> 00:00:43,140
+A fairly large number of schema
+constructs are needed for this task.
+
+14
+00:00:43,140 --> 00:00:49,030
+Just look in the EER diagram and see how
+big a portion the personal information
+
+15
+00:00:49,030 --> 00:00:53,100
+covers the education information and
+the professional information.
+
+16
+00:00:53,100 --> 00:00:55,860
+Consistency is really not critical.
+
+17
+00:00:55,860 --> 00:01:00,660
+So even if there is an update
+going on here on the database
+
+18
+00:01:00,660 --> 00:01:05,580
+by some other user, whether you
+get the absolute 100% up to date
+
+19
+00:01:05,580 --> 00:01:08,270
+version of the personal information,
+the education information, and
+
+20
+00:01:08,270 --> 00:01:11,890
+professional information
+is not really important.
+
+21
+00:01:11,890 --> 00:01:16,070
+Another important observation is,
+that these can be done in any order.
+
+22
+00:01:16,070 --> 00:01:20,030
+They do not need to be done in
+the order of personal, then education,
+
+23
+00:01:20,030 --> 00:01:21,180
+then professional information.
+
+24
+00:01:21,180 --> 00:01:24,300
+So there's flexibility in
+the order of execution.
+
+25
+00:01:24,300 --> 00:01:26,950
+However all three of the must be done
+
+26
+00:01:26,950 --> 00:01:30,890
+in order to display the information
+on the View Profile screen.
+
+27
+00:01:30,890 --> 00:01:35,120
+So another task is needed to make
+sure that all three things get done.
+
+28
+00:01:35,120 --> 00:01:39,760
+Most of these are good indicators
+that the task should be split up in
+
+29
+00:01:39,760 --> 00:01:40,590
+three subtasks.
+
+30
+00:01:40,590 --> 00:01:42,710
+So we take the View Profile task and
+
+31
+00:01:42,710 --> 00:01:47,050
+split it up in the View Personal,
+View Education, and View Professional

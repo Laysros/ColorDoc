@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:02,140
+Using the phone book as a metaphor,
+
+2
+00:00:02,140 --> 00:00:07,100
+I would like to illustrate the difference between main memory access and disk access.
+
+3
+00:00:07,100 --> 00:00:12,360
+Main memory access corresponds pretty well to having the book open on a page,
+
+4
+00:00:12,360 --> 00:00:14,175
+and then process that page.
+
+5
+00:00:14,175 --> 00:00:17,010
+Let us say that would take me a minute to do.
+
+6
+00:00:17,010 --> 00:00:21,015
+The question now is how long time would it take me to
+
+7
+00:00:21,015 --> 00:00:25,815
+open the book to have the next page available for processing?
+
+8
+00:00:25,815 --> 00:00:32,115
+There are five orders of magnitude difference between main memory access and disk access.
+
+9
+00:00:32,115 --> 00:00:35,560
+So, assuming it would take a minute to read this page.
+
+10
+00:00:35,560 --> 00:00:40,485
+It would take 200 days to open the book to the next page.
+
+11
+00:00:40,485 --> 00:00:42,255
+So, I read this in a minute,
+
+12
+00:00:42,255 --> 00:00:44,390
+and then I start opening the book,
+
+13
+00:00:44,390 --> 00:00:46,100
+and opening the book,
+
+14
+00:00:46,100 --> 00:00:50,695
+would be way into next semester 200 days from now,
+
+15
+00:00:50,695 --> 00:00:54,380
+I got the second page open and I read that in a minute.
+
+16
+00:00:54,380 --> 00:00:57,120
+That's the difference.
+

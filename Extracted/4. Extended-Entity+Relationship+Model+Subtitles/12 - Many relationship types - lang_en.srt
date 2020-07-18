@@ -1,0 +1,64 @@
+1
+00:00:00,570 --> 00:00:05,930
+So in this example, what I've done,
+is I revised the single relationship
+
+2
+00:00:05,930 --> 00:00:11,030
+type we had here to basically three
+different binary relationship types.
+
+3
+00:00:11,030 --> 00:00:13,220
+So here, you see Regular User,
+
+4
+00:00:13,220 --> 00:00:16,750
+while the User Team relationship
+is hooked up to Team.
+
+5
+00:00:16,750 --> 00:00:19,670
+Team is hooked up to
+Event by Team Event, and
+
+6
+00:00:19,670 --> 00:00:23,200
+Event is hooked up to
+Regular User by User Event.
+
+7
+00:00:23,200 --> 00:00:26,070
+What would the meaning of
+these relationships be?
+
+8
+00:00:26,070 --> 00:00:32,380
+Well, this one would merely state that
+a regular user is on a particular team.
+
+9
+00:00:32,380 --> 00:00:37,110
+It would state that regular user
+participates in some event.
+
+10
+00:00:37,110 --> 00:00:43,000
+It would state that in some event,
+particular teams are participating.
+
+11
+00:00:43,000 --> 00:00:48,140
+But those three facts together,
+do not cover that a particular
+
+12
+00:00:48,140 --> 00:00:53,130
+user on a particular team
+participate in a particular event.
+
+13
+00:00:53,130 --> 00:00:57,575
+That's space is much, much more narrow
+than what is illustrated by these.
+

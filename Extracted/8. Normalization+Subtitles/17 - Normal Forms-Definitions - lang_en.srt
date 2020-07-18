@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:03,230
+So, let me now define the four normal forms.
+
+2
+00:00:03,230 --> 00:00:08,255
+A relation I set to be in first normal form if all domain values are atomic.
+
+3
+00:00:08,255 --> 00:00:12,015
+But wait, we defined a relation as a data structure
+
+4
+00:00:12,015 --> 00:00:15,780
+where the domain values are pulled from sets of atomic values.
+
+5
+00:00:15,780 --> 00:00:20,905
+So in other words, all relations are automatically born in first normal form.
+
+6
+00:00:20,905 --> 00:00:25,195
+A subset of the first normal form relations are in second normal form.
+
+7
+00:00:25,195 --> 00:00:28,680
+They are in second normal form if and only if
+
+8
+00:00:28,680 --> 00:00:32,685
+every non-key attribute is fully dependent on the key.
+
+9
+00:00:32,685 --> 00:00:35,285
+So, they are a subset of first normal form,
+
+10
+00:00:35,285 --> 00:00:39,485
+and every non-key attribute is fully dependent on the key.
+
+11
+00:00:39,485 --> 00:00:41,565
+A relation is in third normal form,
+
+12
+00:00:41,565 --> 00:00:43,270
+if it is in second normal form,
+
+13
+00:00:43,270 --> 00:00:48,215
+and every non-key attribute is non-transitivity dependent on the key.
+
+14
+00:00:48,215 --> 00:00:50,000
+Finally, and this is the goal,
+
+15
+00:00:50,000 --> 00:00:53,050
+this is the desirable normal form for relations to be in,
+
+16
+00:00:53,050 --> 00:00:56,575
+a relation is in Boyce-Codd normal form or BCNF,
+
+17
+00:00:56,575 --> 00:01:00,955
+if and only if every determinant is a candidate key.
+
+18
+00:01:00,955 --> 00:01:02,670
+To understand that, of course,
+
+19
+00:01:02,670 --> 00:01:05,100
+we need to define the concept of determinant.
+
+20
+00:01:05,100 --> 00:01:09,030
+So, a determinant is a set of attributes in a relation on which
+
+21
+00:01:09,030 --> 00:01:13,230
+some other attribute is fully functional dependent.
+
+22
+00:01:13,230 --> 00:01:15,400
+So, let's take a look at these normal forms,
+
+23
+00:01:15,400 --> 00:01:19,475
+and let's see how we progress through each one of the normal forms
+
+24
+00:01:19,475 --> 00:01:23,750
+when we decompose a relation to end up in Boyce-Codd normal form.
+
+25
+00:01:23,750 --> 00:01:25,890
+Notice that first, second,
+
+26
+00:01:25,890 --> 00:01:29,685
+and third normal form really not our goals in and by themselves.
+
+27
+00:01:29,685 --> 00:01:34,840
+Our goal is to get relations decomposed into Boyce-Codd normal form.
+

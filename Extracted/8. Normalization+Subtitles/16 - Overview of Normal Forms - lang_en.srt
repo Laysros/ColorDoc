@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:03,630
+To help us recognize how well a relation is laid out,
+
+2
+00:00:03,630 --> 00:00:06,685
+we are going to introduce four normal forms.
+
+3
+00:00:06,685 --> 00:00:14,635
+First, in general, the whole set of data structures is called non-first normal form, NF2.
+
+4
+00:00:14,635 --> 00:00:19,670
+Most of those are not relations in the sense we have defined what a relation is.
+
+5
+00:00:19,670 --> 00:00:23,240
+A subset of the non-first normal form data structures
+
+6
+00:00:23,240 --> 00:00:26,070
+is the set of first normal form relations.
+
+7
+00:00:26,070 --> 00:00:31,260
+A subset of the first normal form relations is the second normal form relations.
+
+8
+00:00:31,260 --> 00:00:33,680
+Within the second normal form relations,
+
+9
+00:00:33,680 --> 00:00:36,875
+there's a subset of third normal form relations.
+
+10
+00:00:36,875 --> 00:00:40,015
+As a subset of the third normal form relations is
+
+11
+00:00:40,015 --> 00:00:43,635
+a set of Boyce-Codd normal form relations.
+
+12
+00:00:43,635 --> 00:00:47,580
+Boyce-Codd normal form relations are the relations we are aiming at.
+
+13
+00:00:47,580 --> 00:00:51,495
+I'm trying to make one additional point with this illustration here.
+
+14
+00:00:51,495 --> 00:00:56,210
+There are certainly first normal form relations that are not in second normal form.
+
+15
+00:00:56,210 --> 00:01:01,380
+There also are second normal form relations that are not in third normal form.
+
+16
+00:01:01,380 --> 00:01:05,075
+However, as illustrated by this small number of
+
+17
+00:01:05,075 --> 00:01:09,145
+relations that are in third normal form but not in Boyce-Codd Normal Form,
+
+18
+00:01:09,145 --> 00:01:12,330
+it is theoretically possible that you have a relation in
+
+19
+00:01:12,330 --> 00:01:16,195
+third normal form that's not also in Boyce-Codd normal form.
+
+20
+00:01:16,195 --> 00:01:18,600
+However, in practice, what happens when you
+
+21
+00:01:18,600 --> 00:01:20,990
+normalize relations from second normal form to
+
+22
+00:01:20,990 --> 00:01:25,970
+third normal form is that you get lucky and actually end up in where we want to be,
+
+23
+00:01:25,970 --> 00:01:28,070
+namely in Boyce-Codd normal form.
+
+24
+00:01:28,070 --> 00:01:30,480
+More about this to come.
+

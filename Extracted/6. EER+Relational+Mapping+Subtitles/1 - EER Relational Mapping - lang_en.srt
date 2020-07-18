@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:03,280
+You now know the extended entity-relationship model,
+
+2
+00:00:03,280 --> 00:00:05,410
+and you know what a relation is.
+
+3
+00:00:05,410 --> 00:00:07,230
+Next, I'm going to show you,
+
+4
+00:00:07,230 --> 00:00:11,700
+how to map EER diagrams to relations.
+

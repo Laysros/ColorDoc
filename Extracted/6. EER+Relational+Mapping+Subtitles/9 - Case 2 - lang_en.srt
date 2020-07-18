@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:04,510
+A slight variation in the interrelationship diagram and actually makes
+
+2
+00:00:04,510 --> 00:00:10,595
+a fairly big difference in the mapping is when the constraint is overlapping.
+
+3
+00:00:10,595 --> 00:00:11,850
+So, in other words,
+
+4
+00:00:11,850 --> 00:00:19,605
+every single instance of ET is either an instance of ET1 or of ET2 or of both.
+
+5
+00:00:19,605 --> 00:00:21,080
+So, the first option,
+
+6
+00:00:21,080 --> 00:00:23,050
+which I really do not like,
+
+7
+00:00:23,050 --> 00:00:26,515
+is an option where we create one single relation.
+
+8
+00:00:26,515 --> 00:00:29,020
+We could call that relation ET.
+
+9
+00:00:29,020 --> 00:00:31,210
+It has attribute A and B.
+
+10
+00:00:31,210 --> 00:00:33,030
+It has attributes C,
+
+11
+00:00:33,030 --> 00:00:36,675
+which is representing the attributes for ET1.
+
+12
+00:00:36,675 --> 00:00:38,800
+One of my attributes, in this case,
+
+13
+00:00:38,800 --> 00:00:43,715
+just D used as an example of the attribute of ET2.
+
+14
+00:00:43,715 --> 00:00:46,295
+Then, it has an attribute called type.
+
+15
+00:00:46,295 --> 00:00:53,860
+Type will say, whether this is an instance that is in ET1 or whether
+
+16
+00:00:53,860 --> 00:01:02,210
+it's an instance that's in ET2 or whether it's an instance that is in both ET1 and ET2.
+
+17
+00:01:02,210 --> 00:01:05,350
+There are several reasons I do not like this option.
+
+18
+00:01:05,350 --> 00:01:11,600
+One is, that when there are instances of ET that is in either.
+

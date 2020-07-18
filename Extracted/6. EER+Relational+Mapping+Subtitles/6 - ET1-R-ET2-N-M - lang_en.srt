@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:02,920
+Next comes Many to Many relationship types.
+
+2
+00:00:02,920 --> 00:00:04,530
+How do we deal with those?
+
+3
+00:00:04,530 --> 00:00:09,705
+Well, we already saw before we could not point from the ET1 side to the ET2 side
+
+4
+00:00:09,705 --> 00:00:15,800
+because that would require a multi-valued reference or pointer from ET1 to ET2.
+
+5
+00:00:15,800 --> 00:00:19,165
+So, that one is out. Let's try the other side then.
+
+6
+00:00:19,165 --> 00:00:23,340
+Well, from the other side ET2 you would have to have multiple pointers
+
+7
+00:00:23,340 --> 00:00:27,555
+pointing to the ET1 side and that's not acceptable either.
+
+8
+00:00:27,555 --> 00:00:29,125
+So, that one is out too.
+
+9
+00:00:29,125 --> 00:00:31,795
+So what do we do? Well, here's the solution,
+
+10
+00:00:31,795 --> 00:00:35,010
+instead of just generating one relation for ET1
+
+11
+00:00:35,010 --> 00:00:38,540
+and one for ET2 as we have correctly done here,
+
+12
+00:00:38,540 --> 00:00:42,690
+we actually need to generate a separate relation for R. So,
+
+13
+00:00:42,690 --> 00:00:46,515
+basically the idea is that from R we will point
+
+14
+00:00:46,515 --> 00:00:51,920
+to the ET1 side and the same for the ET2 side.
+
+15
+00:00:51,920 --> 00:00:55,860
+It is important to notice that it is the combination of
+
+16
+00:00:55,860 --> 00:01:01,570
+attribute A and B that constitute the key of relation R together.
+
+17
+00:01:01,570 --> 00:01:03,345
+Why is that important?
+
+18
+00:01:03,345 --> 00:01:05,910
+Well, it's important because that is
+
+19
+00:01:05,910 --> 00:01:10,030
+exactly what enforces a Many to Many relationship type.
+
+20
+00:01:10,030 --> 00:01:16,965
+It means that for a particular value of A identifying ET1,
+
+21
+00:01:16,965 --> 00:01:21,200
+there will be multiple values of B that are portable and
+
+22
+00:01:21,200 --> 00:01:26,095
+the unique combination is going to identify to plane A and vice versa,
+
+23
+00:01:26,095 --> 00:01:31,590
+for each unique value of B there will be an instance of ET2 that is related
+
+24
+00:01:31,590 --> 00:01:37,990
+to many instances in ET1 and the combination of them is unique.
+

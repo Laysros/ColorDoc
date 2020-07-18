@@ -1,0 +1,328 @@
+1
+00:00:00,000 --> 00:00:03,240
+There are two different things that you see when you run the WAMP stack.
+
+2
+00:00:03,240 --> 00:00:05,820
+The first thing is it brings you to this main page
+
+3
+00:00:05,820 --> 00:00:09,060
+here but it also brings you this control panel.
+
+4
+00:00:09,060 --> 00:00:11,810
+And the most important thing you're going to want here is
+
+5
+00:00:11,810 --> 00:00:15,240
+the managed servers because there are two things that will be running
+
+6
+00:00:15,240 --> 00:00:18,240
+on your machine and every once in a while you'll need to
+
+7
+00:00:18,240 --> 00:00:21,500
+stop them or start them or make sure if you reboot your machine,
+
+8
+00:00:21,500 --> 00:00:23,250
+"I don't know why one of the machines I
+
+9
+00:00:23,250 --> 00:00:25,590
+installed this on it comes up and automatically starts.
+
+10
+00:00:25,590 --> 00:00:27,450
+The other one I installed it on when I was
+
+11
+00:00:27,450 --> 00:00:29,760
+playing comes up and doesn't automatically start," So you
+
+12
+00:00:29,760 --> 00:00:32,650
+have to start this up and then click "Start All"
+
+13
+00:00:32,650 --> 00:00:35,970
+and "My SQL" and the Web server will start.
+
+14
+00:00:35,970 --> 00:00:39,335
+And then you can go over to here and say "Open my
+
+15
+00:00:39,335 --> 00:00:43,480
+phpMyAdmin" and this is where you need that password that we had before.
+
+16
+00:00:43,480 --> 00:00:46,185
+So again we use GATECH.
+
+17
+00:00:46,185 --> 00:00:52,200
+You can use whatever you use and that brings us into the M"y phpAdmin" main screen.
+
+18
+00:00:52,200 --> 00:00:54,450
+This is a web-based utility.
+
+19
+00:00:54,450 --> 00:00:57,420
+It's essentially if you have used any other databases,
+
+20
+00:00:57,420 --> 00:00:58,935
+if you've used PostgreSQL,
+
+21
+00:00:58,935 --> 00:01:02,390
+this is similar to the pgAdmin program.
+
+22
+00:01:02,390 --> 00:01:04,020
+If you've used Oracle,
+
+23
+00:01:04,020 --> 00:01:06,675
+it's similar to a number of different utilities that they have.
+
+24
+00:01:06,675 --> 00:01:08,685
+It basically shows us everything we have here.
+
+25
+00:01:08,685 --> 00:01:10,380
+So if I click on "Databases",
+
+26
+00:01:10,380 --> 00:01:13,170
+by default it has a few things that get loaded.
+
+27
+00:01:13,170 --> 00:01:15,615
+The next thing we're going to do is we are going to install
+
+28
+00:01:15,615 --> 00:01:18,740
+the sample database for the class that we are working on here.
+
+29
+00:01:18,740 --> 00:01:22,485
+We have this SQL script that we're going to use and I'm going to do it through.
+
+30
+00:01:22,485 --> 00:01:25,410
+You can run this at the command line but we're going to do it through the
+
+31
+00:01:25,410 --> 00:01:28,770
+gooey just to show you some of the usefulness of the gooey.
+
+32
+00:01:28,770 --> 00:01:31,945
+So basically, this is the script and I'm just going to cut it and
+
+33
+00:01:31,945 --> 00:01:35,250
+paste it into the query window for phpMyAdmin.
+
+34
+00:01:35,250 --> 00:01:38,500
+As you can see guys, I've posted this in here it has already formatted.
+
+35
+00:01:38,500 --> 00:01:40,460
+Apparently, it did that on this one.
+
+36
+00:01:40,460 --> 00:01:41,970
+When I did it on my computer,
+
+37
+00:01:41,970 --> 00:01:43,440
+it didn't automatically format.
+
+38
+00:01:43,440 --> 00:01:46,110
+You can press the Format button if it looks really funny and it
+
+39
+00:01:46,110 --> 00:01:48,815
+will become something more human-readable.
+
+40
+00:01:48,815 --> 00:01:50,715
+If you're not familiar with databases,
+
+41
+00:01:50,715 --> 00:01:52,010
+this will look like Greek to you.
+
+42
+00:01:52,010 --> 00:01:54,080
+By the time we're done, you'll understand what all this
+
+43
+00:01:54,080 --> 00:01:56,190
+is but it just creates table scripts and puts in
+
+44
+00:01:56,190 --> 00:01:58,950
+some initial rows and stuff so we're just going
+
+45
+00:01:58,950 --> 00:02:01,970
+to run that query and it's going to run and when it's done,
+
+46
+00:02:01,970 --> 00:02:04,080
+it tells us "That returned an empty result set."
+
+47
+00:02:04,080 --> 00:02:07,770
+The reason it says "I returned an empty result set," is we didn't do any queries.
+
+48
+00:02:07,770 --> 00:02:10,800
+There is DML and there's DDL.
+
+49
+00:02:10,800 --> 00:02:12,805
+DML is data manipulation language.
+
+50
+00:02:12,805 --> 00:02:15,015
+DDL is data definition language.
+
+51
+00:02:15,015 --> 00:02:16,760
+That's things like creating tables,
+
+52
+00:02:16,760 --> 00:02:18,300
+inserting rows, that sort of thing.
+
+53
+00:02:18,300 --> 00:02:19,385
+This has all been DDL.
+
+54
+00:02:19,385 --> 00:02:23,020
+There's no result sets coming back because we haven't asked for anything.
+
+55
+00:02:23,020 --> 00:02:25,520
+But if we go back over here to the databases tab,
+
+56
+00:02:25,520 --> 00:02:29,250
+you will see that now our DDL online complete database exists and we
+
+57
+00:02:29,250 --> 00:02:33,390
+can click on it and go in and see all the tables that we have just created.
+
+58
+00:02:33,390 --> 00:02:38,385
+Let us choose user and we can click browse and we can see what's in there.
+
+59
+00:02:38,385 --> 00:02:40,530
+So this is basically just showing what's in
+
+60
+00:02:40,530 --> 00:02:43,050
+the table and we can do the same thing by going to
+
+61
+00:02:43,050 --> 00:02:47,865
+the SQL window and they've even showed us the query that they used.
+
+62
+00:02:47,865 --> 00:02:49,580
+I don't know why they have to wear one that's
+
+63
+00:02:49,580 --> 00:02:51,420
+not necessary but we could do the same thing
+
+64
+00:02:51,420 --> 00:02:55,080
+here and just type go and we get the same results back.
+
+65
+00:02:55,080 --> 00:02:57,840
+So now we're going to look at the regular user table and again we're going to
+
+66
+00:02:57,840 --> 00:03:00,735
+browse which shows us what's in that table.
+
+67
+00:03:00,735 --> 00:03:05,910
+It's got some different different columns in it and if we go to the structure tab,
+
+68
+00:03:05,910 --> 00:03:09,660
+we can actually see what the different columns are in the structure of the database.
+
+69
+00:03:09,660 --> 00:03:11,745
+So this one has the primary key.
+
+70
+00:03:11,745 --> 00:03:14,865
+This shows us the primary key is the email address which is
+
+71
+00:03:14,865 --> 00:03:18,250
+a very lengthy character up to 250 characters long.
+
+72
+00:03:18,250 --> 00:03:22,125
+So the collation field has something to do with which character set is supported.
+
+73
+00:03:22,125 --> 00:03:23,970
+This is non-nullable field.
+
+74
+00:03:23,970 --> 00:03:24,990
+To have a row in the table,
+
+75
+00:03:24,990 --> 00:03:28,860
+you must have something in this field as opposed to down here where it is nullable.
+
+76
+00:03:28,860 --> 00:03:32,350
+You can enter something and not put in a current city or a home town.
+
+77
+00:03:32,350 --> 00:03:34,500
+There is no default value for these three so again
+
+78
+00:03:34,500 --> 00:03:36,680
+you have to specify them when you add a row.
+
+79
+00:03:36,680 --> 00:03:40,425
+You don't have to specify these two because they have a default value defined.
+
+80
+00:03:40,425 --> 00:03:46,335
+So we could define a default value that says "Hello" as the default value and save that.
+
+81
+00:03:46,335 --> 00:03:49,770
+And now if we go back to the structure,
+
+82
+00:03:49,770 --> 00:03:54,160
+we can see that the default value for current city is hello.
+

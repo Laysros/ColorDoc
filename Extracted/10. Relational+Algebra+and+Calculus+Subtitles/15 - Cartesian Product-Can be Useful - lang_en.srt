@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:03,310
+Although Cartesian Product combines troopers,
+
+2
+00:00:03,310 --> 00:00:05,545
+that have nothing to do with each other,
+
+3
+00:00:05,545 --> 00:00:08,980
+there's a very interesting portable use of it.
+
+4
+00:00:08,980 --> 00:00:11,165
+So, let's look at our example here.
+
+5
+00:00:11,165 --> 00:00:13,530
+You got the regular user table with user one,
+
+6
+00:00:13,530 --> 00:00:14,855
+two, three and 12.
+
+7
+00:00:14,855 --> 00:00:19,270
+You've got the UserInterests table here that record the interest in
+
+8
+00:00:19,270 --> 00:00:24,305
+this case for user one and for user two who has two and for use three.
+
+9
+00:00:24,305 --> 00:00:28,850
+So, those are all the currently known UserInterests.
+
+10
+00:00:28,850 --> 00:00:32,785
+Let's say we want to do an email blast to all regular users
+
+11
+00:00:32,785 --> 00:00:37,015
+to make them aware of all the interests they currently are not hooked up with.
+
+12
+00:00:37,015 --> 00:00:40,765
+In that case, we sort of need that complement to this table.
+
+13
+00:00:40,765 --> 00:00:42,280
+How could we do that?
+
+14
+00:00:42,280 --> 00:00:47,410
+The first thing we do is we take the regular user table and we project that on email.
+
+15
+00:00:47,410 --> 00:00:49,375
+That is what we are doing here.
+
+16
+00:00:49,375 --> 00:00:51,510
+Take the regular user projected on email.
+
+17
+00:00:51,510 --> 00:00:57,805
+So, the intermediate result of that query is the email column of regular user.
+
+18
+00:00:57,805 --> 00:01:02,470
+Second, we take the UserInterests table and project that on interest,
+
+19
+00:01:02,470 --> 00:01:05,560
+that gives us all a set of interests that
+
+20
+00:01:05,560 --> 00:01:08,995
+are currently recorded for any user in the database.
+
+21
+00:01:08,995 --> 00:01:12,390
+So UserInterests projected on interest,
+
+22
+00:01:12,390 --> 00:01:15,060
+that's another single column table.
+
+23
+00:01:15,060 --> 00:01:18,205
+Now, we have that single column intermediate result
+
+24
+00:01:18,205 --> 00:01:20,770
+and that single column intermediate result.
+
+25
+00:01:20,770 --> 00:01:24,445
+Now, we simply do the Cartesian Product of the two.
+
+26
+00:01:24,445 --> 00:01:28,640
+Which is combined user one with all interest user two,
+
+27
+00:01:28,640 --> 00:01:30,355
+with all interest user three,
+
+28
+00:01:30,355 --> 00:01:33,660
+with all interest and user 12, with all interests.
+
+29
+00:01:33,660 --> 00:01:35,800
+All we now need to do,
+
+30
+00:01:35,800 --> 00:01:38,785
+in order to end up with a result that has
+
+31
+00:01:38,785 --> 00:01:42,520
+every single user hooked up with all the interest they currently
+
+32
+00:01:42,520 --> 00:01:45,250
+do not have is now to actually just
+
+33
+00:01:45,250 --> 00:01:49,630
+subtract the current UserInterest from the intermediate result.
+
+34
+00:01:49,630 --> 00:01:51,430
+So, that's what we do here.
+
+35
+00:01:51,430 --> 00:01:56,675
+We subtract the UserInterests table, email and interest.
+
+36
+00:01:56,675 --> 00:01:59,980
+Notice that the two operands in the subtraction
+
+37
+00:01:59,980 --> 00:02:03,100
+are type compatible in this case here because you
+
+38
+00:02:03,100 --> 00:02:09,725
+have email Cartesian Product interest and you subtract from that email and interest.
+
+39
+00:02:09,725 --> 00:02:12,520
+So, when you look at for example, user one,
+
+40
+00:02:12,520 --> 00:02:16,360
+user one was hooked up with the interest music,
+
+41
+00:02:16,360 --> 00:02:20,065
+but was not hooked up with blogging and meditation.
+
+42
+00:02:20,065 --> 00:02:21,755
+Therefore, when the result,
+
+43
+00:02:21,755 --> 00:02:26,275
+you now see user one hooked up with both blogging and meditation.
+
+44
+00:02:26,275 --> 00:02:30,480
+That did not previously appear in the current interests.
+

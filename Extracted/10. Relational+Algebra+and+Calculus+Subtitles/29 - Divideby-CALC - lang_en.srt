@@ -1,0 +1,164 @@
+1
+00:00:00,000 --> 00:00:03,400
+Finally, let's look at the Divideby operator.
+
+2
+00:00:03,400 --> 00:00:11,110
+Let's say we want to find emails of all users with at least all the interests of user1.
+
+3
+00:00:11,110 --> 00:00:15,785
+I think it's easiest to take a look at the example here first.
+
+4
+00:00:15,785 --> 00:00:21,930
+So, user1: are we going to return as part of the result the email address of user1?
+
+5
+00:00:21,930 --> 00:00:29,470
+Yes, we are, because user1 certainly does have at least all the interests of user1,
+
+6
+00:00:29,470 --> 00:00:32,195
+namely music, reading, and tennis.
+
+7
+00:00:32,195 --> 00:00:34,525
+So, user1 is part of the result.
+
+8
+00:00:34,525 --> 00:00:36,655
+Is user2 part of the result?
+
+9
+00:00:36,655 --> 00:00:41,810
+Well, we don't even have to think about that because user2 only has two interests.
+
+10
+00:00:41,810 --> 00:00:46,510
+So, user2 cannot both be interest in music, reading, and tennis.
+
+11
+00:00:46,510 --> 00:00:48,365
+How about user3?
+
+12
+00:00:48,365 --> 00:00:50,850
+Well, user3 is a potential candidate.
+
+13
+00:00:50,850 --> 00:00:54,760
+There's one, two, three, four user3 tuples,
+
+14
+00:00:54,760 --> 00:01:00,450
+and so all we got a check now is that user3 has the interest music,
+
+15
+00:01:00,450 --> 00:01:03,790
+reading, and tennis, and it is right here,
+
+16
+00:01:03,790 --> 00:01:06,550
+music, reading, and tennis.
+
+17
+00:01:06,550 --> 00:01:09,090
+So, user3 is part of the result.
+
+18
+00:01:09,090 --> 00:01:11,115
+How about user4?
+
+19
+00:01:11,115 --> 00:01:17,650
+Well, user4 does have three interests but only music and reading match,
+
+20
+00:01:17,650 --> 00:01:22,645
+DIY does not so user4 is not in the result.
+
+21
+00:01:22,645 --> 00:01:27,125
+Let's try to see how we write the calculus expression to do this.
+
+22
+00:01:27,125 --> 00:01:33,015
+So, the first thing we see is we are interested in tuples R with attribute email.
+
+23
+00:01:33,015 --> 00:01:34,685
+So, as you see here,
+
+24
+00:01:34,685 --> 00:01:37,250
+that is the structure of the result.
+
+25
+00:01:37,250 --> 00:01:43,055
+In order for us to consider a particular tuple R to be part of the result,
+
+26
+00:01:43,055 --> 00:01:46,240
+of course, R has to be a tuple in user interests,
+
+27
+00:01:46,240 --> 00:01:47,410
+so in this table here.
+
+28
+00:01:47,410 --> 00:01:52,915
+So, let us consider in turn all of these tuples in user interests.
+
+29
+00:01:52,915 --> 00:01:56,070
+For example, this user3 tuple.
+
+30
+00:01:56,070 --> 00:02:02,995
+For user3 to be in the result it must be the case that for all s' in user interests,
+
+31
+00:02:02,995 --> 00:02:05,549
+either the email is not user1,
+
+32
+00:02:05,549 --> 00:02:07,580
+or if it is user1,
+
+33
+00:02:07,580 --> 00:02:11,320
+then the interests that are here must match
+
+34
+00:02:11,320 --> 00:02:16,475
+up with the interests of the tuple we are asking for in this case.
+
+35
+00:02:16,475 --> 00:02:21,140
+Music, reading, and tennis matches music, reading,
+
+36
+00:02:21,140 --> 00:02:25,980
+and tennis, and that's why user3 is part of the result.
+
+37
+00:02:25,980 --> 00:02:31,650
+So, what you see in this inside expression here is that for all s' in
+
+38
+00:02:31,650 --> 00:02:38,145
+user interest we don't care about the interests that are not hooked up to user1.
+
+39
+00:02:38,145 --> 00:02:41,110
+So, all of these are those that are hooked up to user1,
+
+40
+00:02:41,110 --> 00:02:45,770
+and what this basically says is there must exist a tuple somewhere in
+
+41
+00:02:45,770 --> 00:02:52,790
+the relation that matches the interests of the user1 tuples.
+

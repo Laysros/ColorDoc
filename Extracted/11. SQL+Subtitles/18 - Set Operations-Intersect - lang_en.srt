@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:03,140
+Now, let's look at intersection in SQL.
+
+2
+00:00:03,140 --> 00:00:06,150
+So, let's say we want to find all cities that are CurrentCity's for
+
+3
+00:00:06,150 --> 00:00:09,210
+someone and HomeTown's for someone,
+
+4
+00:00:09,210 --> 00:00:13,980
+not necessarily the same person and do not include duplicates.
+
+5
+00:00:13,980 --> 00:00:15,530
+In SQL, that looks like this,
+
+6
+00:00:15,530 --> 00:00:17,910
+Select CurrentCity from RegularUser,
+
+7
+00:00:17,910 --> 00:00:20,175
+Select HomeTown from RegularUser,
+
+8
+00:00:20,175 --> 00:00:22,460
+intersects them while we turn a set.
+
+9
+00:00:22,460 --> 00:00:23,940
+So, when you look here,
+
+10
+00:00:23,940 --> 00:00:29,385
+which cities are going to be CurrentCity for someone and HomeTown for someone,
+
+11
+00:00:29,385 --> 00:00:31,055
+not necessarily the same person,
+
+12
+00:00:31,055 --> 00:00:34,365
+while Seattle will not because not HomeTown for anyone.
+
+13
+00:00:34,365 --> 00:00:40,035
+Austin will because Austin appears here and it appears here and it appears here.
+
+14
+00:00:40,035 --> 00:00:42,240
+So, Austin is going to be part of the result.
+
+15
+00:00:42,240 --> 00:00:43,810
+San Diego is not,.
+
+16
+00:00:43,810 --> 00:00:46,440
+San Francisco, yes, San Francisco is
+
+17
+00:00:46,440 --> 00:00:49,620
+here and San Francisco is here so it's part of the result.
+
+18
+00:00:49,620 --> 00:00:51,210
+College Park, no.
+
+19
+00:00:51,210 --> 00:00:53,920
+Austin is all ready included in the result.
+
+20
+00:00:53,920 --> 00:00:56,920
+So a set returned as before.
+
+21
+00:00:56,920 --> 00:01:00,780
+If you want to see all cities as many times as they appear,
+
+22
+00:01:00,780 --> 00:01:03,310
+then you say Intersect All.
+
+23
+00:01:03,310 --> 00:01:06,840
+So, the only difference between the results here and
+
+24
+00:01:06,840 --> 00:01:10,950
+the results here now is that Austin is counted twice.
+
+25
+00:01:10,950 --> 00:01:12,215
+Why is that?
+
+26
+00:01:12,215 --> 00:01:13,370
+Well, as you see here,
+
+27
+00:01:13,370 --> 00:01:19,650
+Austin is the CurrentCity for two people and Austin is also the HomeTown for two people.
+
+28
+00:01:19,650 --> 00:01:25,680
+So, that is why Austin appears twice in the Intersect All.
+

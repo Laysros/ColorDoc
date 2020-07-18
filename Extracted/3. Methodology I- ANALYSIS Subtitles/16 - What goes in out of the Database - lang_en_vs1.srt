@@ -1,0 +1,105 @@
+1
+00:00:00,460 --> 00:00:04,280
+Given an information flow diagram,
+with documents that are input
+
+2
+00:00:04,280 --> 00:00:07,820
+documents to the database or
+output documents from the database,
+
+3
+00:00:07,820 --> 00:00:12,440
+how does one go about creating
+a specification of the database?
+
+4
+00:00:12,440 --> 00:00:17,340
+When the database discipline was young,
+people talked about this as
+
+5
+00:00:17,340 --> 00:00:21,550
+the art of database specification,
+or the are of database design.
+
+6
+00:00:21,550 --> 00:00:26,000
+Over the years I have developed this
+database development methodology, and
+
+7
+00:00:26,000 --> 00:00:29,520
+it attempts to take some of
+the art out of the process and
+
+8
+00:00:29,520 --> 00:00:32,500
+add in some mechanical steps.
+
+9
+00:00:32,500 --> 00:00:34,900
+So I have two fundamental questions.
+
+10
+00:00:34,900 --> 00:00:37,480
+One is, what goes into the database?
+
+11
+00:00:37,480 --> 00:00:40,800
+And the second one is,
+what comes out of the database?
+
+12
+00:00:40,800 --> 00:00:44,970
+Corresponding to each one of these two,
+I have two observations.
+
+13
+00:00:44,970 --> 00:00:49,080
+First, observations related to
+what goes into the database.
+
+14
+00:00:49,080 --> 00:00:53,340
+So everything in the database
+has got to come from somewhere.
+
+15
+00:00:53,340 --> 00:00:55,340
+It doesn't happen by magic.
+
+16
+00:00:55,340 --> 00:00:58,920
+And everything on an input document,
+must go somewhere
+
+17
+00:00:58,920 --> 00:01:02,820
+corresponding with the second question,
+I have these two observations.
+
+18
+00:01:02,820 --> 00:01:05,340
+Everything in the database
+should be used for
+
+19
+00:01:05,340 --> 00:01:08,440
+something, otherwise why
+is it in the database?
+
+20
+00:01:08,440 --> 00:01:12,730
+And everything on an output
+document must come from somewhere.
+
+21
+00:01:12,730 --> 00:01:16,430
+We are now going to proceed by
+looking at the documents, and
+
+22
+00:01:16,430 --> 00:01:21,050
+using these four observations to help us
+create a specification of the database.

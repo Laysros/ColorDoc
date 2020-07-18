@@ -1,0 +1,68 @@
+1
+00:00:00,520 --> 00:00:03,100
+So whenever we look at a data model
+
+2
+00:00:03,100 --> 00:00:05,270
+we know there are three
+things we need to look at.
+
+3
+00:00:05,270 --> 00:00:07,230
+We need to look at data structures.
+
+4
+00:00:07,230 --> 00:00:09,250
+We need to look at constraints.
+
+5
+00:00:09,250 --> 00:00:11,270
+We need to look at operations.
+
+6
+00:00:11,270 --> 00:00:15,670
+There are two fundamental notations
+that can be used to express operations
+
+7
+00:00:15,670 --> 00:00:20,480
+in relational databases relational
+algebra and relational calculus.
+
+8
+00:00:20,480 --> 00:00:21,999
+We'll look at both of those.
+
+9
+00:00:21,999 --> 00:00:24,910
+There are actually two
+calculi notations.
+
+10
+00:00:24,910 --> 00:00:26,890
+One is tuple calculus.
+
+11
+00:00:26,890 --> 00:00:29,420
+The other one is domain calculus.
+
+12
+00:00:29,420 --> 00:00:33,800
+In the first case it's tuples of
+relations that are the variables.
+
+13
+00:00:33,800 --> 00:00:38,380
+In the second one it's cells of
+domains that are the variables.
+
+14
+00:00:38,380 --> 00:00:42,460
+Sequel, or SQL which we will
+talk a lot about later,
+
+15
+00:00:42,460 --> 00:00:45,100
+is an example of a tuple
+calculus language.
+

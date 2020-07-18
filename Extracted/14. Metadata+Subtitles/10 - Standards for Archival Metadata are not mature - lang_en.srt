@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,865
+There are a number of standards for archival metadata and they are constantly evolving.
+
+2
+00:00:05,865 --> 00:00:08,250
+One that I particularly like is
+
+3
+00:00:08,250 --> 00:00:13,185
+the ISO 11179 Specification and Standardization of Data Elements.
+
+4
+00:00:13,185 --> 00:00:18,940
+Very very informative about what metadata looks like and what kind of metadata is needed.
+
+5
+00:00:18,940 --> 00:00:23,215
+Then, there's the OAIS reference model I just presented.
+
+6
+00:00:23,215 --> 00:00:27,690
+It exists in newer versions than the one I pointed you to before and it
+
+7
+00:00:27,690 --> 00:00:33,045
+includes the process that sits around all the archival activities.
+
+8
+00:00:33,045 --> 00:00:36,420
+It includes extended entity relationship diagrams
+
+9
+00:00:36,420 --> 00:00:40,845
+between all the different kinds of metadata that I've talked to you about.
+
+10
+00:00:40,845 --> 00:00:46,920
+Then, there's the OASIS Registry/Repository for XML Schemas.
+

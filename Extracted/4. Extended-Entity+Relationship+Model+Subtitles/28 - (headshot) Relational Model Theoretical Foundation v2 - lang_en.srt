@@ -1,0 +1,42 @@
+1
+00:00:00,520 --> 00:00:04,070
+The extended entity relationship
+model is great for fixing and
+
+2
+00:00:04,070 --> 00:00:06,900
+representing a perception of reality.
+
+3
+00:00:06,900 --> 00:00:09,900
+However, there is no commercial
+database system that implements
+
+4
+00:00:09,900 --> 00:00:10,740
+the model directly.
+
+5
+00:00:11,770 --> 00:00:15,440
+Almost all the commercial systems
+implement a relational data model.
+
+6
+00:00:16,660 --> 00:00:20,130
+So what I want to do is
+to show you how to map
+
+7
+00:00:20,130 --> 00:00:23,660
+extended entity relationship
+diagrams to relations.
+
+8
+00:00:23,660 --> 00:00:27,524
+For you to understand that mapping,
+I first need to define for
+
+9
+00:00:27,524 --> 00:00:29,021
+you what a relation is.
+

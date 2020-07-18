@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:05,550
+Now, take a look at how we map one-to-one relationship types to the relational model.
+
+2
+00:00:05,550 --> 00:00:12,110
+We already know from our previous rule how to map ET1 with identifying property type A.
+
+3
+00:00:12,110 --> 00:00:16,860
+It becomes relation ET1 with primary key attribute A,
+
+4
+00:00:16,860 --> 00:00:18,705
+similar thing for ET2.
+
+5
+00:00:18,705 --> 00:00:23,470
+Now, in databases, we are going to need to be able to start, for example,
+
+6
+00:00:23,470 --> 00:00:26,370
+with some B values and travel and find
+
+7
+00:00:26,370 --> 00:00:31,720
+the corresponding A values via the relationship type R. So,
+
+8
+00:00:31,720 --> 00:00:35,235
+in relational database, we need to be able to do the same thing.
+
+9
+00:00:35,235 --> 00:00:37,500
+So there are basically two ways of doing that.
+
+10
+00:00:37,500 --> 00:00:40,310
+One way is that in ET1,
+
+11
+00:00:40,310 --> 00:00:49,465
+we insert the primary key attribute of ET2 as a pointer or a reference from ET1 to ET2.
+
+12
+00:00:49,465 --> 00:00:51,620
+Now, I can start out with some A values,
+
+13
+00:00:51,620 --> 00:00:53,160
+find the corresponding B values,
+
+14
+00:00:53,160 --> 00:00:55,560
+go over here, and find them here,
+
+15
+00:00:55,560 --> 00:00:59,025
+and then find whatever ET2 minus to add of information.
+
+16
+00:00:59,025 --> 00:01:03,570
+Alternatively, I could of course take the primary key of
+
+17
+00:01:03,570 --> 00:01:08,515
+ET1 and insert as a reference in ET2 to point back here.
+
+18
+00:01:08,515 --> 00:01:11,845
+Again, this will allow me to travel both ways.
+
+19
+00:01:11,845 --> 00:01:17,325
+So, either the first solution here or the second solution are acceptable.
+
+20
+00:01:17,325 --> 00:01:22,635
+There's one particular situation where we would prefer one of these solutions.
+
+21
+00:01:22,635 --> 00:01:24,060
+Let's take a look at that.
+
+22
+00:01:24,060 --> 00:01:31,720
+Let's say that ET2 has a mandatory participation in relationship type
+
+23
+00:01:31,720 --> 00:01:35,700
+R. What that means is that every single instance of ET2 in
+
+24
+00:01:35,700 --> 00:01:40,865
+the database must be related by relationship R to ET1.
+
+25
+00:01:40,865 --> 00:01:42,085
+That means, in other words,
+
+26
+00:01:42,085 --> 00:01:47,325
+there cannot be an instance of ET2 that's not in a relationship with ET1.
+
+27
+00:01:47,325 --> 00:01:48,990
+In that particular case,
+
+28
+00:01:48,990 --> 00:01:51,720
+it is not advisable to use this solution.
+
+29
+00:01:51,720 --> 00:01:53,040
+The reason being that,
+
+30
+00:01:53,040 --> 00:01:56,960
+since there might be some ET1s that are not related,
+
+31
+00:01:56,960 --> 00:01:58,965
+they will have null values here.
+
+32
+00:01:58,965 --> 00:02:02,520
+This solution is much better because every single
+
+33
+00:02:02,520 --> 00:02:06,450
+one of the ET2s are going to be related to ET1,
+
+34
+00:02:06,450 --> 00:02:10,720
+and therefore there will never be a null value here for that A.
+

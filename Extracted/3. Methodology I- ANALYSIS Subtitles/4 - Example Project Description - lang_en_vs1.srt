@@ -1,0 +1,52 @@
+1
+00:00:00,420 --> 00:00:04,200
+In order to proceed with a description
+of the database application development
+
+2
+00:00:04,200 --> 00:00:07,640
+methodology, we need an example
+project description.
+
+3
+00:00:07,640 --> 00:00:11,290
+As I stated,
+we assume that the business process,
+
+4
+00:00:11,290 --> 00:00:14,520
+the documents, tasks, and
+system boundary are all
+
+5
+00:00:14,520 --> 00:00:19,220
+well known before we can start deploying
+the database development methodology.
+
+6
+00:00:19,220 --> 00:00:22,550
+It certainly would be
+preferable to have a group of
+
+7
+00:00:22,550 --> 00:00:25,560
+real users to discuss
+the requirements with.
+
+8
+00:00:25,560 --> 00:00:29,240
+Short of that I'm going to go
+through a project description
+
+9
+00:00:29,240 --> 00:00:31,260
+that represents the customer.
+
+10
+00:00:31,260 --> 00:00:35,170
+If you don't read that description you
+won't be able to get anything out of
+
+11
+00:00:35,170 --> 00:00:36,630
+the rest of this course.

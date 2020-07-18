@@ -1,0 +1,124 @@
+1
+00:00:00,480 --> 00:00:01,940
+Here's one more requirement for
+
+2
+00:00:01,940 --> 00:00:04,460
+the cosmos we're building
+the application for.
+
+3
+00:00:04,460 --> 00:00:10,590
+It's says that all GT online users
+except admin users have a profile.
+
+4
+00:00:10,590 --> 00:00:11,970
+What did we learn from that?
+
+5
+00:00:11,970 --> 00:00:14,280
+We learned that they are not just users.
+
+6
+00:00:14,280 --> 00:00:16,670
+They are also admin users.
+
+7
+00:00:16,670 --> 00:00:19,240
+The way we specify that is as follows.
+
+8
+00:00:19,240 --> 00:00:22,150
+The users actually has two subtypes.
+
+9
+00:00:22,150 --> 00:00:25,580
+It has regular users and admin users.
+
+10
+00:00:25,580 --> 00:00:28,200
+The regular users are those that have
+
+11
+00:00:28,200 --> 00:00:32,770
+this additional information in their
+profile whereas admin users do not.
+
+12
+00:00:32,770 --> 00:00:35,970
+An additional requirement
+from the customer says that
+
+13
+00:00:35,970 --> 00:00:39,800
+administrative users have some of
+the same information as regular users,
+
+14
+00:00:39,800 --> 00:00:43,340
+namely e-mail address, password,
+first name, and last name.
+
+15
+00:00:43,340 --> 00:00:47,980
+So it is okay to keep those as
+properties of user in general.
+
+16
+00:00:47,980 --> 00:00:51,230
+Since both regular users and
+admin users have them,
+
+17
+00:00:51,230 --> 00:00:55,800
+they would then be able to inherit those
+properties from the super type user.
+
+18
+00:00:55,800 --> 00:01:00,560
+It is also further specified here
+that the admin users do not have all
+
+19
+00:01:00,560 --> 00:01:04,769
+the other properties that are in
+the profile of regular users.
+
+20
+00:01:04,769 --> 00:01:09,850
+Then it says a user must be either
+an administrator or a regular user.
+
+21
+00:01:09,850 --> 00:01:14,250
+That must, is reflected by
+the mandatory relationship here.
+
+22
+00:01:14,250 --> 00:01:18,610
+And it says the user must be
+either an administrator or
+
+23
+00:01:18,610 --> 00:01:21,050
+a regular user, but never both.
+
+24
+00:01:21,050 --> 00:01:24,550
+That means that the constraint
+here on the super sub type is
+
+25
+00:01:24,550 --> 00:01:26,430
+a disjointness constraint.
+
+26
+00:01:26,430 --> 00:01:29,650
+The only additional
+attribute an admin user has,
+
+27
+00:01:29,650 --> 00:01:35,670
+other than those inherited from a user,
+is that of the last login date and time.

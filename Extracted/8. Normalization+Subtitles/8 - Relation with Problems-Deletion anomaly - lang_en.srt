@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:04,120
+A closely related problem is that of Deletion Anomalies.
+
+2
+00:00:04,120 --> 00:00:08,990
+So, let's say we go in and we want to delete user12 from the database.
+
+3
+00:00:08,990 --> 00:00:12,270
+Then deleting user12 will mean that we lose
+
+4
+00:00:12,270 --> 00:00:17,095
+the information that people born in 74 make 38,000.
+
+5
+00:00:17,095 --> 00:00:23,240
+Why is that? Because there's no other regular user that's born in 74.
+

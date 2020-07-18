@@ -1,0 +1,286 @@
+1
+00:00:00,480 --> 00:00:05,670
+Integrity and consistency are two highly
+desirable properties of databases.
+
+2
+00:00:05,670 --> 00:00:10,190
+To give you a really great example of
+integrity I have a confession to make.
+
+3
+00:00:10,190 --> 00:00:11,890
+This is how you know me now.
+
+4
+00:00:11,890 --> 00:00:12,920
+I'm Leo Mark.
+
+5
+00:00:12,920 --> 00:00:16,590
+My confession is I am
+really working undercover.
+
+6
+00:00:16,590 --> 00:00:20,110
+Leo Mark Christenson,
+that is who I really am.
+
+7
+00:00:20,110 --> 00:00:20,840
+Why?
+
+8
+00:00:20,840 --> 00:00:24,180
+Born in Denmark lot of people
+with last name Christenson,
+
+9
+00:00:24,180 --> 00:00:27,050
+first day of first grade, 21 students.
+
+10
+00:00:27,050 --> 00:00:28,920
+There were three with
+last name Christenson,
+
+11
+00:00:28,920 --> 00:00:30,600
+and two with first name Leo.
+
+12
+00:00:30,600 --> 00:00:33,330
+>From that day on I became Leo Mark.
+
+13
+00:00:33,330 --> 00:00:38,000
+Integrity has to do with whether
+the database reflects reality well.
+
+14
+00:00:38,000 --> 00:00:41,190
+Consistency has to do
+with whether the database
+
+15
+00:00:41,190 --> 00:00:44,170
+is without any internal conflicts in it.
+
+16
+00:00:44,170 --> 00:00:46,330
+Let's take a look at an example here.
+
+17
+00:00:46,330 --> 00:00:48,928
+So we have our regular user table.
+
+18
+00:00:48,928 --> 00:00:52,270
+The regular user table has email,
+birthday, name, and
+
+19
+00:00:52,270 --> 00:00:54,010
+it has current city in it.
+
+20
+00:00:54,010 --> 00:00:55,660
+Then we have a user table.
+
+21
+00:00:55,660 --> 00:01:00,140
+And in the user table,
+we have emails and we have address.
+
+22
+00:01:00,140 --> 00:01:02,540
+So let us first talk about consistency.
+
+23
+00:01:02,540 --> 00:01:03,940
+Take a look at User 1.
+
+24
+00:01:03,940 --> 00:01:08,300
+The current city of User 1
+is recorded as Atlanta, but
+
+25
+00:01:08,300 --> 00:01:12,680
+the address of User 1 is 123 Kent Rd,
+in Roswell.
+
+26
+00:01:12,680 --> 00:01:16,050
+There seems to be inconsistency
+between these two.
+
+27
+00:01:16,050 --> 00:01:17,840
+Let's take a look at another one.
+
+28
+00:01:17,840 --> 00:01:20,270
+So User 4, current city is Atlanta.
+
+29
+00:01:20,270 --> 00:01:24,150
+But address is 789 1st St, Roswell.
+
+30
+00:01:24,150 --> 00:01:27,130
+Again, there appears
+to be inconsistency.
+
+31
+00:01:27,130 --> 00:01:30,030
+User 5, that information may be okay.
+
+32
+00:01:30,030 --> 00:01:32,623
+User 6, that information may be okay.
+
+33
+00:01:32,623 --> 00:01:37,560
+However, since User 1 and
+User 4 seem to have inconsistency,
+
+34
+00:01:37,560 --> 00:01:41,420
+and in general we don't know
+when that inconsistency appears,
+
+35
+00:01:41,420 --> 00:01:47,100
+this database cannot be used to answer
+the question of where does a user live.
+
+36
+00:01:47,100 --> 00:01:50,430
+The problem here of course is
+that there's some redundancy
+
+37
+00:01:50,430 --> 00:01:52,390
+between where a current city is.
+
+38
+00:01:52,390 --> 00:01:54,360
+And what an address is.
+
+39
+00:01:54,360 --> 00:01:57,970
+Now, let's turn our attention
+to an example of integrity.
+
+40
+00:01:57,970 --> 00:02:02,580
+So you all now know that my full
+name is Leo Mark Christensen.
+
+41
+00:02:02,580 --> 00:02:05,700
+User 4 here actually
+happens to be my daughter.
+
+42
+00:02:05,700 --> 00:02:09,080
+Louise Mark Christensen, funny name.
+
+43
+00:02:09,080 --> 00:02:10,330
+She's born in Denmark.
+
+44
+00:02:10,330 --> 00:02:13,650
+In Denmark children inherit
+both the last name and
+
+45
+00:02:13,650 --> 00:02:15,410
+the middle name of the father.
+
+46
+00:02:15,410 --> 00:02:18,730
+So my daughter's cross to bare
+in life is that she has a boys
+
+47
+00:02:18,730 --> 00:02:20,390
+name for a middle name.
+
+48
+00:02:20,390 --> 00:02:25,120
+So on the morning of her 18th birthday,
+the extended family is
+
+49
+00:02:25,120 --> 00:02:28,280
+gathered in the kitchen for
+breakfast and the phone rings.
+
+50
+00:02:28,280 --> 00:02:34,910
+A man's voice on the other ends asks,
+is Louis Mark present?
+
+51
+00:02:34,910 --> 00:02:36,390
+So I hand the phone to my daughter.
+
+52
+00:02:36,390 --> 00:02:40,290
+She answers several questions,
+first yes, no, and
+
+53
+00:02:40,290 --> 00:02:43,860
+then certainly not,
+then she hangs up the phone.
+
+54
+00:02:43,860 --> 00:02:45,330
+Who do you think called?
+
+55
+00:02:45,330 --> 00:02:50,450
+Well, the military called, and the first
+question was, are you Louis Mark?
+
+56
+00:02:50,450 --> 00:02:51,720
+She answers yes.
+
+57
+00:02:51,720 --> 00:02:54,840
+Second question was,
+have you signed up for services?
+
+58
+00:02:54,840 --> 00:02:56,540
+The answer, of course, is no.
+
+59
+00:02:56,540 --> 00:02:59,030
+And the final question was,
+are you not a male?
+
+60
+00:02:59,030 --> 00:03:04,590
+So the problem in this database here is
+that an inference was made that someone
+
+61
+00:03:04,590 --> 00:03:10,270
+with the name Louise or Louis or
+whatever, Mark certainly must be a male.
+
+62
+00:03:10,270 --> 00:03:13,300
+And therefore this person should
+have signed up for services.
+
+63
+00:03:13,300 --> 00:03:14,420
+Bad integrity.
+

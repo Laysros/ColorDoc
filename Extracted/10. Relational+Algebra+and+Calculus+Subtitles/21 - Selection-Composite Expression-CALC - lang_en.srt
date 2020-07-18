@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:02,415
+Let's make it a little bit more complicated.
+
+2
+00:00:02,415 --> 00:00:06,135
+Let's take a look at a selection that has a composite expression.
+
+3
+00:00:06,135 --> 00:00:07,785
+So, here's what we want to do.
+
+4
+00:00:07,785 --> 00:00:10,590
+Want to find all regular users who have
+
+5
+00:00:10,590 --> 00:00:15,320
+the same CurrentCity and HomeTown or who have the HomeTown, Atlanta.
+
+6
+00:00:15,320 --> 00:00:19,090
+Query is expressed as follows: find a set of tuples r,
+
+7
+00:00:19,090 --> 00:00:24,275
+where r is a member of RegularUser and the following is true:
+
+8
+00:00:24,275 --> 00:00:30,495
+either CurrentCity most equal HomeTown or the HomeTown must be Atlanta.
+
+9
+00:00:30,495 --> 00:00:34,935
+This reflects directly what is asked for here namely that the tuple must
+
+10
+00:00:34,935 --> 00:00:40,305
+satisfy CurrentCity is equal to HomeTown or HomeTown equals Atlanta.
+
+11
+00:00:40,305 --> 00:00:41,970
+Looking at the example here,
+
+12
+00:00:41,970 --> 00:00:45,070
+see which tuples become part of the result of the query here.
+
+13
+00:00:45,070 --> 00:00:50,600
+So, here, is it the case that CurrentCity and hometown is the same? No, it's not.
+
+14
+00:00:50,600 --> 00:00:54,185
+Well, is it then the case that the HomeTown equals Atlanta?
+
+15
+00:00:54,185 --> 00:00:55,455
+Yes, it is.
+
+16
+00:00:55,455 --> 00:01:01,040
+In other words, this one evaluate to true since this is a disjunction,
+
+17
+00:01:01,040 --> 00:01:03,335
+this whole thing evaluates to true,
+
+18
+00:01:03,335 --> 00:01:05,775
+and r is a tuple in RegularUser.
+
+19
+00:01:05,775 --> 00:01:10,125
+So, therefore, the first tuple we looked at satisfies the query,
+
+20
+00:01:10,125 --> 00:01:11,610
+and so there you go.
+
+21
+00:01:11,610 --> 00:01:13,015
+What about the second one?
+
+22
+00:01:13,015 --> 00:01:16,065
+Is HomeTown equal to CurrentCity? Yes, it is.
+
+23
+00:01:16,065 --> 00:01:19,465
+So, user2 is part of the result of the query.
+
+24
+00:01:19,465 --> 00:01:21,615
+Is San Diego equal to Portland?
+
+25
+00:01:21,615 --> 00:01:25,840
+No, it's not. Is hometown equal to Atlanta? No, it's not.
+
+26
+00:01:25,840 --> 00:01:29,295
+So, as you see, user3 is not part of the result.
+
+27
+00:01:29,295 --> 00:01:31,925
+User4, Hometown is Atlanta,
+
+28
+00:01:31,925 --> 00:01:34,275
+user4 in the result.
+
+29
+00:01:34,275 --> 00:01:38,100
+Finally, user10, HomeTown equals CurrentCity,
+
+30
+00:01:38,100 --> 00:01:40,130
+is part of the result.
+

@@ -1,0 +1,196 @@
+1
+00:00:00,000 --> 00:00:03,300
+To be able to compute the amount of time it takes to
+
+2
+00:00:03,300 --> 00:00:06,475
+transport data from disk to main memory and back again,
+
+3
+00:00:06,475 --> 00:00:08,490
+let's just make some assumptions.
+
+4
+00:00:08,490 --> 00:00:12,440
+Typical seek times are between three to eight milliseconds,
+
+5
+00:00:12,440 --> 00:00:16,800
+rotational delays are typically between two and three milliseconds,
+
+6
+00:00:16,800 --> 00:00:22,230
+and transfer times may be somewhere between half a millisecond to one millisecond.
+
+7
+00:00:22,230 --> 00:00:27,390
+If you add these up, you get a total of five to 12 milliseconds so let us
+
+8
+00:00:27,390 --> 00:00:32,930
+conservatively say that a particular page fault is going to cost us 10 milliseconds.
+
+9
+00:00:32,930 --> 00:00:35,120
+While we will make that assumption,
+
+10
+00:00:35,120 --> 00:00:37,695
+we need to make the following observation.
+
+11
+00:00:37,695 --> 00:00:40,770
+Once we are at a particular location on a disk,
+
+12
+00:00:40,770 --> 00:00:44,750
+might there be a chance that instead of just picking up a single block of data,
+
+13
+00:00:44,750 --> 00:00:47,550
+maybe we should pick up 10, 100,
+
+14
+00:00:47,550 --> 00:00:52,375
+250, because we might need those next in our application?
+
+15
+00:00:52,375 --> 00:00:57,180
+So, bulk transfer or extent transfer would allow, for example,
+
+16
+00:00:57,180 --> 00:01:00,120
+250 blocks to be transferred in
+
+17
+00:01:00,120 --> 00:01:04,380
+one shot without paying additional seek time and rotational delay.
+
+18
+00:01:04,380 --> 00:01:07,690
+Once we have found the first one of the 250 blocks,
+
+19
+00:01:07,690 --> 00:01:11,760
+we simply just, from that point on, incur transfer time.
+
+20
+00:01:11,760 --> 00:01:16,230
+If we do that with our default of 10 milliseconds per page fault,
+
+21
+00:01:16,230 --> 00:01:22,740
+then this will take us a grand whopping total of 2.5 seconds to transfer the 250 blocks.
+
+22
+00:01:22,740 --> 00:01:24,435
+If, on the other hand,
+
+23
+00:01:24,435 --> 00:01:28,295
+we consider the savings in seek time and rotational delay,
+
+24
+00:01:28,295 --> 00:01:31,305
+then transferring to 250 blocks would
+
+25
+00:01:31,305 --> 00:01:34,365
+only cost us slightly more than a quarter of a second.
+
+26
+00:01:34,365 --> 00:01:36,065
+Very big difference.
+
+27
+00:01:36,065 --> 00:01:37,655
+One of the problems, of course,
+
+28
+00:01:37,655 --> 00:01:39,090
+with extent transfer of
+
+29
+00:01:39,090 --> 00:01:42,770
+bulk transfers is that we are probably going to need more buffer space.
+
+30
+00:01:42,770 --> 00:01:45,885
+When we use the buffer in general and data
+
+31
+00:01:45,885 --> 00:01:49,470
+moves from disk to memory and memory back to disk again,
+
+32
+00:01:49,470 --> 00:01:52,320
+then we need buffer management strategies.
+
+33
+00:01:52,320 --> 00:01:55,800
+In timeshare systems, a favorite strategy used in
+
+34
+00:01:55,800 --> 00:02:01,245
+buffer management is the LRU strategy or the Least Recently Used strategy.
+
+35
+00:02:01,245 --> 00:02:05,370
+The idea is that when we run out of buffer space and we need to
+
+36
+00:02:05,370 --> 00:02:09,625
+free up space for the new data coming in from disk to main memory,
+
+37
+00:02:09,625 --> 00:02:13,650
+then it's what is least recently used that we overwrite.
+
+38
+00:02:13,650 --> 00:02:17,130
+The philosophy being if we haven't used it for the longest time,
+
+39
+00:02:17,130 --> 00:02:19,510
+we're probably not going to use it next.
+
+40
+00:02:19,510 --> 00:02:22,770
+It is not always that an LRU strategy
+
+41
+00:02:22,770 --> 00:02:26,130
+works well from the point of view of a database management system.
+
+42
+00:02:26,130 --> 00:02:29,960
+It would be excellent for merge joins where two relations are
+
+43
+00:02:29,960 --> 00:02:33,995
+sorted on the join fields and you simply merge them together on matching keys.
+
+44
+00:02:33,995 --> 00:02:37,240
+However, if you're doing nested loop joins,
+
+45
+00:02:37,240 --> 00:02:43,490
+then LRU strategies would kill that computation and rather strategies like MRU,
+
+46
+00:02:43,490 --> 00:02:44,915
+or Most Recently Used,
+
+47
+00:02:44,915 --> 00:02:47,585
+might work well for nested loop joins.
+
+48
+00:02:47,585 --> 00:02:52,680
+Much more detail about the join strategies needed in order to make that decision.
+
+49
+00:02:52,680 --> 00:02:58,180
+I just want to give you a heads-up on the importance of buffer management strategies.
+

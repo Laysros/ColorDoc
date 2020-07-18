@@ -1,0 +1,14 @@
+1
+00:00:00,300 --> 00:00:03,270
+At the end of this lesson you
+will know what a database is, and
+
+2
+00:00:03,270 --> 00:00:06,010
+what a Database Management System is.
+
+3
+00:00:06,010 --> 00:00:09,490
+You will also know what the major topics
+you will cover in this course are.
+

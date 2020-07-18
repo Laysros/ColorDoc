@@ -1,0 +1,227 @@
+1
+00:00:00,480 --> 00:00:03,140
+Now let's look at a more
+detailed example of a map,
+
+2
+00:00:03,140 --> 00:00:07,730
+namely a map of the city of Atlanta,
+in the Peach State of Georgia.
+
+3
+00:00:07,730 --> 00:00:09,310
+What do we see on this map?
+
+4
+00:00:09,310 --> 00:00:15,170
+Well, we see a lot of interstates here,
+285 is part of the interstate system.
+
+5
+00:00:15,170 --> 00:00:18,284
+You see 85 coming down from northeast.
+
+6
+00:00:18,284 --> 00:00:20,908
+You see 75 coming down from northwest.
+
+7
+00:00:20,908 --> 00:00:23,590
+You see I-20 going east to west.
+
+8
+00:00:23,590 --> 00:00:28,080
+There are other smaller roads like,
+take a look at this yellow one here.
+
+9
+00:00:28,080 --> 00:00:31,930
+There's all the major roads, like this
+green one here is Georgia 400 but
+
+10
+00:00:31,930 --> 00:00:34,270
+it's a different color
+from the interstates.
+
+11
+00:00:34,270 --> 00:00:36,780
+There's some neighborhoods
+pointed out like east point here,
+
+12
+00:00:36,780 --> 00:00:40,800
+and as you can see there's an alphabet
+that's used to your language,
+
+13
+00:00:40,800 --> 00:00:44,680
+that's used here to illustrate
+to you what reality looks like.
+
+14
+00:00:44,680 --> 00:00:45,649
+And in that language,
+
+15
+00:00:45,649 --> 00:00:48,964
+different kinds of roads have different
+colors to let you know what they are.
+
+16
+00:00:48,964 --> 00:00:53,020
+You have letters available
+to spell names of places.
+
+17
+00:00:53,020 --> 00:00:55,620
+You've got symbols available
+to illustrate there might be
+
+18
+00:00:55,620 --> 00:00:56,610
+a forest there.
+
+19
+00:00:56,610 --> 00:01:00,500
+It's important to understand that
+there might be errors in the model.
+
+20
+00:01:00,500 --> 00:01:05,480
+So for example, if I were to draw
+the following line here, for
+
+21
+00:01:05,480 --> 00:01:09,970
+example from here to here,
+and pretend that's a road,
+
+22
+00:01:09,970 --> 00:01:12,670
+that road probably
+doesn't exist in reality.
+
+23
+00:01:12,670 --> 00:01:13,880
+So that's an error.
+
+24
+00:01:13,880 --> 00:01:16,840
+There might be things on
+a map like contour lines for
+
+25
+00:01:16,840 --> 00:01:20,930
+example, county lines that
+are useful when you use the map.
+
+26
+00:01:20,930 --> 00:01:23,480
+But really,
+they don't represent something,
+
+27
+00:01:23,480 --> 00:01:26,810
+which is physically present in reality.
+
+28
+00:01:26,810 --> 00:01:29,836
+On this map here I haven't even
+mentioned the fact that North is up and
+
+29
+00:01:29,836 --> 00:01:30,785
+it's true to scale.
+
+30
+00:01:30,785 --> 00:01:34,904
+And those were things that users must
+have in common in order to be able to
+
+31
+00:01:34,904 --> 00:01:37,400
+communicate through this map.
+
+32
+00:01:37,400 --> 00:01:40,593
+Now let me illustrate to you why using
+a map might be a better idea than
+
+33
+00:01:40,593 --> 00:01:42,735
+experimenting with
+a reality model itself.
+
+34
+00:01:42,735 --> 00:01:45,579
+So let's say I'm going to
+launch on The Varsity,
+
+35
+00:01:45,579 --> 00:01:49,574
+start out here Georgia Tech and
+I can see I gotta cross the interstate,
+
+36
+00:01:49,574 --> 00:01:53,890
+and go south about a half a mile to
+get to The Varsity on the right.
+
+37
+00:01:53,890 --> 00:01:57,990
+I actually wouldn't necessarily need a
+map, the only thing I would need to get
+
+38
+00:01:57,990 --> 00:02:02,010
+to The Varsity is the following, I would
+need to know that 285 goes all the way
+
+39
+00:02:02,010 --> 00:02:05,170
+around the city, and
+The Varsity is located inside the city.
+
+40
+00:02:05,170 --> 00:02:08,150
+So I could start from Georgia Tech
+with a big stack of paper and
+
+41
+00:02:08,150 --> 00:02:12,260
+a couple of pencils and just keep
+an eye on every single road I try,
+
+42
+00:02:12,260 --> 00:02:16,310
+if I get to 285 turn around,
+do something else.
+
+43
+00:02:16,310 --> 00:02:19,730
+Try to minimize the number of
+times I go on the same road.
+
+44
+00:02:19,730 --> 00:02:23,610
+There's a finite number of miles of
+roads inside of the perimeter so
+
+45
+00:02:23,610 --> 00:02:25,390
+eventually I will get to The Varsity.
+
+46
+00:02:25,390 --> 00:02:27,560
+It may not be today,
+but I will get there.
+
+47
+00:02:28,760 --> 00:02:30,380
+So you don't always need a map.
+
+48
+00:02:31,792 --> 00:02:33,706
+[SOUND]
+

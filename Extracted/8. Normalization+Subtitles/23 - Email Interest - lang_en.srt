@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:05,245
+So, let's go back to the example of a good decomposition that we did before.
+
+2
+00:00:05,245 --> 00:00:10,050
+Again, starting with the function dependency diagram here of our major example.
+
+3
+00:00:10,050 --> 00:00:15,005
+So, first, we decomposed this relation here into these two relations;
+
+4
+00:00:15,005 --> 00:00:19,420
+email and interests together determine SinceAge and email
+
+5
+00:00:19,420 --> 00:00:24,525
+determines current city BirthYear and salary email determining salary.
+
+6
+00:00:24,525 --> 00:00:27,615
+Is this loss less decomposition?
+
+7
+00:00:27,615 --> 00:00:30,915
+Well, remember the rule is that the join field,
+
+8
+00:00:30,915 --> 00:00:32,340
+in this case email,
+
+9
+00:00:32,340 --> 00:00:36,150
+must be a key in at least one of the two relations and of course
+
+10
+00:00:36,150 --> 00:00:40,500
+email here needs to be the key in order to enforce these functional dependencies.
+
+11
+00:00:40,500 --> 00:00:42,750
+So, this is a lossless join.
+
+12
+00:00:42,750 --> 00:00:45,820
+Is it dependency preserving? Yes, it is.
+
+13
+00:00:45,820 --> 00:00:48,930
+This is a very simple case to check if you look at
+
+14
+00:00:48,930 --> 00:00:53,460
+the dependency from email and interest to SinceAge that's directly there.
+
+15
+00:00:53,460 --> 00:00:55,680
+If you look at the three from email to
+
+16
+00:00:55,680 --> 00:00:59,035
+current city BirthYear and salary they are directly here.
+
+17
+00:00:59,035 --> 00:01:00,840
+If you look at the dependency,
+
+18
+00:01:00,840 --> 00:01:04,530
+both year to salary it can be enforced within this one relation.
+
+19
+00:01:04,530 --> 00:01:06,690
+So this one is dependency preserving.
+
+20
+00:01:06,690 --> 00:01:10,860
+So, what happens after we split this one up in these two relations?
+
+21
+00:01:10,860 --> 00:01:13,280
+Let's first check whether it's lossless.
+
+22
+00:01:13,280 --> 00:01:16,050
+So the join attribute here would be BirthYear.
+
+23
+00:01:16,050 --> 00:01:17,660
+BirthYear is clearly the key,
+
+24
+00:01:17,660 --> 00:01:19,590
+in the second relation year therefore,
+
+25
+00:01:19,590 --> 00:01:20,870
+the join is loss less.
+
+26
+00:01:20,870 --> 00:01:22,815
+Is it dependency preserving?
+
+27
+00:01:22,815 --> 00:01:27,300
+Yes, it is because by transitivity email determines BirthYear,
+
+28
+00:01:27,300 --> 00:01:32,730
+which determines salary and therefore implied in the meaning is email determines salary,
+
+29
+00:01:32,730 --> 00:01:35,640
+which is the only one that's actually missing.
+

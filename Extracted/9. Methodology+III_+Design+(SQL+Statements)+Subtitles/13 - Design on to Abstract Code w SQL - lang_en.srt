@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:03,480
+So, we have now completed the data first portion of
+
+2
+00:00:03,480 --> 00:00:07,530
+the design phase of the database application development methodology.
+
+3
+00:00:07,530 --> 00:00:10,460
+We took the extended interrelationship diagram,
+
+4
+00:00:10,460 --> 00:00:14,295
+used the mapping to generate a set of relations.
+
+5
+00:00:14,295 --> 00:00:18,510
+We check that the relations are in the proper Boyce-Codd normal form.
+
+6
+00:00:18,510 --> 00:00:21,720
+Now, the next step is to take a look at the tasks
+
+7
+00:00:21,720 --> 00:00:25,035
+that we specified in the specification process.
+
+8
+00:00:25,035 --> 00:00:28,350
+Those tasks express what tests of the application will
+
+9
+00:00:28,350 --> 00:00:31,860
+do relative to the extended interrelationship diagram.
+
+10
+00:00:31,860 --> 00:00:35,550
+Now, that we have translated that diagram into a set of relations,
+
+11
+00:00:35,550 --> 00:00:39,060
+we need to adjust the task to do to
+
+12
+00:00:39,060 --> 00:00:43,770
+the relations what they previously did to the extended interrelationship diagram.
+
+13
+00:00:43,770 --> 00:00:46,380
+So, in the abstract code for the task,
+
+14
+00:00:46,380 --> 00:00:49,230
+we need the code to work on the relational schema
+
+15
+00:00:49,230 --> 00:00:52,380
+as opposed to the extended interrelationship diagram.
+
+16
+00:00:52,380 --> 00:00:56,440
+So, let's now dive into that step of the design phase.
+

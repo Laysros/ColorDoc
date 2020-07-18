@@ -1,0 +1,123 @@
+1
+00:00:00,410 --> 00:00:04,470
+Before we look at some examples of tests
+decompensation, let us briefly talk
+
+2
+00:00:04,470 --> 00:00:09,080
+about web based applications,
+versus traditional applications.
+
+3
+00:00:09,080 --> 00:00:13,440
+Web based applications
+are almost completely stateless.
+
+4
+00:00:13,440 --> 00:00:17,417
+The amount of state may be as
+little at the login information for
+
+5
+00:00:17,417 --> 00:00:18,720
+a session user.
+
+6
+00:00:18,720 --> 00:00:22,250
+There may be a small amount of
+click stream data that's available
+
+7
+00:00:22,250 --> 00:00:24,890
+in order to proceed
+with the application.
+
+8
+00:00:24,890 --> 00:00:28,560
+Things, however, for
+web-based applications are changing.
+
+9
+00:00:28,560 --> 00:00:32,064
+With new technologies
+such as Web 2.0 and
+
+10
+00:00:32,064 --> 00:00:36,955
+AJAX it is now possible to provide
+much more state with the application.
+
+11
+00:00:36,955 --> 00:00:40,225
+Because of that web applications
+are beginning to act
+
+12
+00:00:40,225 --> 00:00:42,125
+more like traditional applications.
+
+13
+00:00:42,125 --> 00:00:45,860
+What is it we have been able to
+do with traditional applications?
+
+14
+00:00:45,860 --> 00:00:47,450
+Well, in a traditional application,
+
+15
+00:00:47,450 --> 00:00:51,710
+it is much easier to manage local
+states separate from the database.
+
+16
+00:00:51,710 --> 00:00:55,360
+That means that a whole bunch of
+changes can be collected, before they
+
+17
+00:00:55,360 --> 00:00:58,750
+are submitted to the Database
+Management System for execution.
+
+18
+00:00:58,750 --> 00:01:02,820
+That means, that there is not
+a roundtrip to the database needed
+
+19
+00:01:02,820 --> 00:01:05,600
+every single time a minor
+thing is changed.
+
+20
+00:01:05,600 --> 00:01:08,080
+So it's as you have to do in a web app.
+
+21
+00:01:08,080 --> 00:01:11,540
+Traditionally applications are much
+better to support control of
+
+22
+00:01:11,540 --> 00:01:15,160
+ACID transaction properties,
+so that's a big advantage too.
+
+23
+00:01:15,160 --> 00:01:16,310
+So fortunately,
+
+24
+00:01:16,310 --> 00:01:21,080
+web app technology is moving closer
+to traditional app technology.
+
+25
+00:01:21,080 --> 00:01:25,660
+An understanding of this is
+necessary as we consider examples
+
+26
+00:01:25,660 --> 00:01:26,910
+of tasty composition.

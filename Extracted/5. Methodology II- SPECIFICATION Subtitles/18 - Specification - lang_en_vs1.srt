@@ -1,0 +1,61 @@
+1
+00:00:00,390 --> 00:00:03,210
+This basically complete
+the specification phase
+
+2
+00:00:03,210 --> 00:00:05,800
+of our database development methodology.
+
+3
+00:00:05,800 --> 00:00:09,810
+We have generated an extended
+energy relationship diagram,
+
+4
+00:00:09,810 --> 00:00:13,260
+we have looked at data formats,
+and we have looked at constraints.
+
+5
+00:00:13,260 --> 00:00:17,050
+And based on that, we then looked
+at the test decomposition and
+
+6
+00:00:17,050 --> 00:00:19,350
+wrote abstract code for the tasks.
+
+7
+00:00:19,350 --> 00:00:21,400
+We now need to take a little detour.
+
+8
+00:00:21,400 --> 00:00:24,960
+When we come back again,
+we're going to proceed with a design.
+
+9
+00:00:24,960 --> 00:00:28,424
+In the design,
+we're going to translate the extended
+
+10
+00:00:28,424 --> 00:00:31,198
+relationship diagram to
+a Relational Database Schema.
+
+11
+00:00:31,198 --> 00:00:35,326
+And we're going to take the abstract
+code for the test and put in the SQL
+
+12
+00:00:35,326 --> 00:00:39,891
+that is necessary, in order for the test
+to do to the relational database,
+
+13
+00:00:39,891 --> 00:00:44,400
+what our abstract code did to the
+extended entity relationship diagram.

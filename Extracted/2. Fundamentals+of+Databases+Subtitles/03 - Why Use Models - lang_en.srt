@@ -1,0 +1,93 @@
+1
+00:00:00,570 --> 00:00:02,350
+So why use models at all?
+
+2
+00:00:02,350 --> 00:00:04,480
+Let me give you a couple
+of observations.
+
+3
+00:00:04,480 --> 00:00:08,230
+First, models can be useful
+when we want to examine or
+
+4
+00:00:08,230 --> 00:00:10,440
+manage part of the real world.
+
+5
+00:00:10,440 --> 00:00:14,910
+Second, the costs of using a model
+are often considerably lower
+
+6
+00:00:14,910 --> 00:00:18,960
+than the costs of using or
+experimenting with reality itself.
+
+7
+00:00:18,960 --> 00:00:22,070
+Let me give you som examples
+of models of reality.
+
+8
+00:00:22,070 --> 00:00:26,510
+We're going to be using a map to
+talk about several important aspects
+
+9
+00:00:26,510 --> 00:00:28,170
+of models of reality.
+
+10
+00:00:28,170 --> 00:00:30,490
+There are many other examples, however.
+
+11
+00:00:30,490 --> 00:00:32,490
+How about a model of US economy?
+
+12
+00:00:32,490 --> 00:00:37,170
+Such a model would presumably allow
+us to plug in ideas of new laws,
+
+13
+00:00:37,170 --> 00:00:40,510
+etc., and find out how they
+would affect the economy.
+
+14
+00:00:40,510 --> 00:00:43,140
+One fundamental problem
+here would have caused B,
+
+15
+00:00:43,140 --> 00:00:45,820
+can we agree on how to build that model.
+
+16
+00:00:45,820 --> 00:00:49,520
+A second example is that of
+a tsunami warning system,
+
+17
+00:00:49,520 --> 00:00:54,180
+a system that would allow us to
+save human lives, livestock, etc.
+
+18
+00:00:54,180 --> 00:00:57,090
+Another example is that
+of traffic simulation.
+
+19
+00:00:57,090 --> 00:01:01,420
+Traffic simulation can be used when we
+want to make decisions about where to
+
+20
+00:01:01,420 --> 00:01:02,330
+build roads.
+

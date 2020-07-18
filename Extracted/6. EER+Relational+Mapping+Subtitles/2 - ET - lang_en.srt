@@ -1,0 +1,168 @@
+1
+00:00:00,000 --> 00:00:06,160
+What I'm going to do here and in every single step of the mapping is that to the left,
+
+2
+00:00:06,160 --> 00:00:12,475
+I'm going to show you the extended entity relationship modern notation and to the right,
+
+3
+00:00:12,475 --> 00:00:15,420
+I'm going to show you fragments of the relations that
+
+4
+00:00:15,420 --> 00:00:18,775
+are created by each step of the mapping.
+
+5
+00:00:18,775 --> 00:00:23,155
+So, here the very first and very simple rule we have is,
+
+6
+00:00:23,155 --> 00:00:26,305
+if we have an entity type, give it the name,
+
+7
+00:00:26,305 --> 00:00:29,625
+"ET" then, for that entity type,
+
+8
+00:00:29,625 --> 00:00:34,545
+we create a relation and that relation gets the same name, "ET".
+
+9
+00:00:34,545 --> 00:00:38,300
+If an entity type ET has a property type,
+
+10
+00:00:38,300 --> 00:00:40,615
+single valued property type B,
+
+11
+00:00:40,615 --> 00:00:45,960
+then the relation ET will have B as an attribute.
+
+12
+00:00:45,960 --> 00:00:48,630
+If an entity type ET has
+
+13
+00:00:48,630 --> 00:00:53,575
+a property type A and that property type is an identifying property,
+
+14
+00:00:53,575 --> 00:00:57,460
+then in the relation ET corresponding to it,
+
+15
+00:00:57,460 --> 00:01:03,405
+there will be an attribute A which is an identifying or primary key attribute.
+
+16
+00:01:03,405 --> 00:01:05,760
+So, these steps are very simple.
+
+17
+00:01:05,760 --> 00:01:09,245
+Unfortunately, it gets a little bit more complicated than that.
+
+18
+00:01:09,245 --> 00:01:15,300
+We have an entity type ET with a composite property type C and
+
+19
+00:01:15,300 --> 00:01:22,250
+that composite property type C is composed from property type D and E. Then,
+
+20
+00:01:22,250 --> 00:01:26,785
+in the relation corresponding to ET that adds two attributes,
+
+21
+00:01:26,785 --> 00:01:30,495
+attribute D and attribute E. You might then ask,
+
+22
+00:01:30,495 --> 00:01:32,845
+what happened to property C?
+
+23
+00:01:32,845 --> 00:01:35,100
+Unfortunately, in the translation,
+
+24
+00:01:35,100 --> 00:01:37,335
+property type C gets lost.
+
+25
+00:01:37,335 --> 00:01:39,960
+That means that the meaning that's expressed by
+
+26
+00:01:39,960 --> 00:01:43,790
+the relation will not be as rich as it is here.
+
+27
+00:01:43,790 --> 00:01:50,310
+Vision for example, that C was name and D was first name and E was last name,
+
+28
+00:01:50,310 --> 00:01:54,850
+then and this mapping here you do not really see the concept of name.
+
+29
+00:01:54,850 --> 00:01:58,605
+You only see the concept of first name and last name.
+
+30
+00:01:58,605 --> 00:02:03,770
+So, one could consider the following alternative way of mapping it.
+
+31
+00:02:03,770 --> 00:02:07,770
+It would be nice if in relation ET,
+
+32
+00:02:07,770 --> 00:02:11,430
+the concept C would continue to appear with
+
+33
+00:02:11,430 --> 00:02:15,360
+the two components that it consists of D and E. However,
+
+34
+00:02:15,360 --> 00:02:18,510
+if you remember back to the way we defined a relation,
+
+35
+00:02:18,510 --> 00:02:22,670
+we said that a relation was defined as a subset of
+
+36
+00:02:22,670 --> 00:02:27,285
+tuples that were constructed from domains with atomic values.
+
+37
+00:02:27,285 --> 00:02:31,230
+Now, this would certainly not be a domain with atomic values.
+
+38
+00:02:31,230 --> 00:02:36,635
+This would actually be a domain where we would have a name and two sub-components on it.
+
+39
+00:02:36,635 --> 00:02:41,820
+The relational model is inherently flat and the languages we are going to look,
+
+40
+00:02:41,820 --> 00:02:46,805
+relational algebra, calculus and SQL only work when that's the case.
+
+41
+00:02:46,805 --> 00:02:51,660
+So, unfortunately, this is the solution that we have.
+
+42
+00:02:51,660 --> 00:02:53,800
+We have lost C.
+

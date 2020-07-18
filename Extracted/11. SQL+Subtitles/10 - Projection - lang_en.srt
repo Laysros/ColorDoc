@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:02,275
+Let's look at a projection now.
+
+2
+00:00:02,275 --> 00:00:06,445
+Let's say, we want to find just some of the columns of the regular user table,
+
+3
+00:00:06,445 --> 00:00:07,905
+namely email, birth year,
+
+4
+00:00:07,905 --> 00:00:10,225
+and sex for regular users in Atlanta.
+
+5
+00:00:10,225 --> 00:00:11,845
+So, it is a projection.
+
+6
+00:00:11,845 --> 00:00:14,030
+We can't use to star wild card.
+
+7
+00:00:14,030 --> 00:00:18,570
+It is a projection on only some of the columns of the regular user table.
+
+8
+00:00:18,570 --> 00:00:19,740
+So, in other words,
+
+9
+00:00:19,740 --> 00:00:23,610
+the result from this query here is going to have three columns,
+
+10
+00:00:23,610 --> 00:00:27,740
+e-mail, birth year, and sex in that order.
+
+11
+00:00:27,740 --> 00:00:30,560
+So, going through then the regular user table,
+
+12
+00:00:30,560 --> 00:00:33,320
+we're going to have to look at where hometown equals Atlanta.
+
+13
+00:00:33,320 --> 00:00:36,625
+It does here, so that means that user1,
+
+14
+00:00:36,625 --> 00:00:39,925
+85 and male is at row in the result.
+
+15
+00:00:39,925 --> 00:00:42,040
+User4 hometown is Atlanta,
+
+16
+00:00:42,040 --> 00:00:45,820
+so user4, 88, and male is in the result.
+
+17
+00:00:45,820 --> 00:00:51,370
+Finally, user6, 88 female is in the result.
+

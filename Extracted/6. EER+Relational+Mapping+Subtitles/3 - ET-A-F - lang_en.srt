@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:03,785
+The rules for multi-valued property types are quite special.
+
+2
+00:00:03,785 --> 00:00:06,370
+Let's say we have an entity type, ET,
+
+3
+00:00:06,370 --> 00:00:09,885
+and it has an identifying property type, A.
+
+4
+00:00:09,885 --> 00:00:14,840
+Then you know by a previous rule that that results in a relationship,
+
+5
+00:00:14,840 --> 00:00:19,375
+ET will attribute A which is then the primary key.
+
+6
+00:00:19,375 --> 00:00:22,110
+Your multi-valued property type, F,
+
+7
+00:00:22,110 --> 00:00:25,480
+is dealt with for each F as follows.
+
+8
+00:00:25,480 --> 00:00:28,845
+A brand new relation is created.
+
+9
+00:00:28,845 --> 00:00:33,565
+The name of that relation is the name of the entity type, ET-,
+
+10
+00:00:33,565 --> 00:00:38,245
+the name of the particular multi-valued property type we are dealing with,
+
+11
+00:00:38,245 --> 00:00:40,320
+in this case, F. So,
+
+12
+00:00:40,320 --> 00:00:44,080
+the name of the additional relation is ET-F.
+
+13
+00:00:44,080 --> 00:00:50,375
+The property type F results in an attribute in ET-F.
+
+14
+00:00:50,375 --> 00:00:52,460
+Together with that attribute,
+
+15
+00:00:52,460 --> 00:00:57,360
+we insert the identifying property type for ET and
+
+16
+00:00:57,360 --> 00:01:03,815
+then the combination of A and F become a composite key in ET-F.
+
+17
+00:01:03,815 --> 00:01:10,975
+The reason for all of this gymnastics basically is as follows: so, F is multi-valued.
+
+18
+00:01:10,975 --> 00:01:17,370
+We would not be able to just insert F as a property or as an attribute in ET.
+
+19
+00:01:17,370 --> 00:01:23,340
+The reason for that is that we don't have multi values in the relational model.
+
+20
+00:01:23,340 --> 00:01:28,105
+So, we put it in a separate relation together with the identifying property type,
+
+21
+00:01:28,105 --> 00:01:30,930
+A, and make the combination a key.
+
+22
+00:01:30,930 --> 00:01:33,965
+The reason that works is that now,
+
+23
+00:01:33,965 --> 00:01:36,644
+for a given instance of ET,
+
+24
+00:01:36,644 --> 00:01:39,940
+it will have a unique value of A.
+
+25
+00:01:39,940 --> 00:01:44,790
+That unique value of A can now be represented with multiple different values
+
+26
+00:01:44,790 --> 00:01:50,040
+of F as long as the combination of the A and F is unique.
+
+27
+00:01:50,040 --> 00:01:52,705
+That's the reason for the composite key.
+
+28
+00:01:52,705 --> 00:01:56,450
+Of course, the As for which we record F values
+
+29
+00:01:56,450 --> 00:02:00,120
+has to be a subset of the set of As that exist,
+
+30
+00:02:00,120 --> 00:02:09,190
+so the A attribute in ET F will be a foreign key on attribute A in ET.
+

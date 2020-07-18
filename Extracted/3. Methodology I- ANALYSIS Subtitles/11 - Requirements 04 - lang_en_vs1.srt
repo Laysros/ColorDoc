@@ -1,0 +1,126 @@
+1
+00:00:00,460 --> 00:00:04,320
+Let's now see what that looks like
+from the view profile screen.
+
+2
+00:00:04,320 --> 00:00:08,490
+You see that Michael Bluth now has Sex,
+BirthDate, Currency, Hometown,
+
+3
+00:00:08,490 --> 00:00:10,670
+and a list of Interests entered.
+
+4
+00:00:10,670 --> 00:00:15,120
+He also has two schools entered
+one is a college/university,
+
+5
+00:00:15,120 --> 00:00:16,790
+the other one is a high school.
+
+6
+00:00:16,790 --> 00:00:18,690
+He has graduated from both.
+
+7
+00:00:18,690 --> 00:00:23,690
+He also has a job in the tier with a
+title Assistant to the Regional Manager.
+
+8
+00:00:23,690 --> 00:00:25,770
+As you noticed on the previous screen,
+
+9
+00:00:25,770 --> 00:00:28,740
+to enter a school there
+was a drop-down menu.
+
+10
+00:00:28,740 --> 00:00:33,300
+Likewise, to enter an employer for
+a job there was a drop-down menu.
+
+11
+00:00:33,300 --> 00:00:37,760
+A number of administrative users
+behind the scenes will maintain
+
+12
+00:00:37,760 --> 00:00:41,030
+the list of scores and
+the list of employers.
+
+13
+00:00:41,030 --> 00:00:44,680
+The View Profile screen also
+contains a number of links that
+
+14
+00:00:44,680 --> 00:00:46,990
+will allow you to go to other screens.
+
+15
+00:00:46,990 --> 00:00:51,050
+For example, the view friend screen
+will show the list of Friends for
+
+16
+00:00:51,050 --> 00:00:52,530
+this particular user.
+
+17
+00:00:52,530 --> 00:00:55,320
+Log Out, of course,
+will log you out of the system.
+
+18
+00:00:55,320 --> 00:01:00,230
+The View Pending Requests screen, you
+could see the list of friends' requests
+
+19
+00:01:00,230 --> 00:01:03,610
+that have not yet
+been accepted or rejected.
+
+20
+00:01:03,610 --> 00:01:08,130
+And the Edit Profile link will send you
+back to the Edit Profile screen that we
+
+21
+00:01:08,130 --> 00:01:09,400
+looked at previously.
+
+22
+00:01:09,400 --> 00:01:14,710
+Notice that the View Profile screen
+is not an input to the database,
+
+23
+00:01:14,710 --> 00:01:19,370
+it is an output document from
+the database where all the information
+
+24
+00:01:19,370 --> 00:01:23,460
+about the user's profile has
+been read from the database and
+
+25
+00:01:23,460 --> 00:01:25,860
+written onto this output document.
+
+26
+00:01:25,860 --> 00:01:28,390
+There is, of course,
+control information here
+
+27
+00:01:28,390 --> 00:01:32,300
+that leads you to a different screen,
+depending on which link you choose.

@@ -1,0 +1,110 @@
+1
+00:00:00,540 --> 00:00:02,860
+Let's now look at some
+of the constraints.
+
+2
+00:00:02,860 --> 00:00:05,600
+So we have keys and primary keys.
+
+3
+00:00:05,600 --> 00:00:09,670
+There are some consequences of
+defining in particular primary keys.
+
+4
+00:00:09,670 --> 00:00:13,970
+Two consequences are the consequence
+of entity integrity and
+
+5
+00:00:13,970 --> 00:00:15,600
+referential integrity.
+
+6
+00:00:15,600 --> 00:00:18,730
+To explain those,
+let's take a look at an example.
+
+7
+00:00:18,730 --> 00:00:23,210
+So we have a regular user table
+here with email, birthday, sex,
+
+8
+00:00:23,210 --> 00:00:25,080
+current city and home town.
+
+9
+00:00:25,080 --> 00:00:30,220
+And we have the more general table here
+of users with attributes email and
+
+10
+00:00:30,220 --> 00:00:35,370
+password represent the list of
+users that exist in reality
+
+11
+00:00:35,370 --> 00:00:38,800
+about whom we are capturing
+information in the database.
+
+12
+00:00:38,800 --> 00:00:41,250
+So this is an existence list.
+
+13
+00:00:41,250 --> 00:00:46,190
+This case here, we have chosen
+to use emails as the unique
+
+14
+00:00:46,190 --> 00:00:51,630
+identifiers for users as opposed to,
+for example, using surrogates.
+
+15
+00:00:51,630 --> 00:00:55,100
+Email is called the primary
+key of the user table.
+
+16
+00:00:55,100 --> 00:00:58,350
+There's an important consequence
+of being a primary key.
+
+17
+00:00:58,350 --> 00:01:03,880
+And that is that no value of email
+is allowed to be the null value.
+
+18
+00:01:03,880 --> 00:01:08,870
+There's another important implication
+and that is, whenever something,
+
+19
+00:01:08,870 --> 00:01:12,910
+which is a primary key somewhere else,
+like email here,
+
+20
+00:01:12,910 --> 00:01:18,450
+when that's used in another table like
+here, the following must be obeyed.
+
+21
+00:01:18,450 --> 00:01:22,080
+The set of email addresses
+that appear here in this table
+
+22
+00:01:22,080 --> 00:01:26,290
+must be a subset of the email
+addresses that appear here.
+
+23
+00:01:28,240 --> 00:01:30,660
+So this must be a subset of this.
+

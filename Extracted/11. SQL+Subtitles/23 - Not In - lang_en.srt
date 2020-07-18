@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:05,630
+The final SQL concept I want to introduce to you is the concept of nested queries.
+
+2
+00:00:05,630 --> 00:00:10,245
+We are going to illustrate for you three different types of nested queries.
+
+3
+00:00:10,245 --> 00:00:12,135
+So, let's look at a simple example.
+
+4
+00:00:12,135 --> 00:00:16,180
+Let's find email and interests for RegularUser's in Atlanta.
+
+5
+00:00:16,180 --> 00:00:18,450
+So, let's look at the UserInterests table.
+
+6
+00:00:18,450 --> 00:00:20,730
+Consider first the first row,
+
+7
+00:00:20,730 --> 00:00:23,040
+will then contribute to the result.
+
+8
+00:00:23,040 --> 00:00:27,660
+Well it's user one and user one lives in Atlanta satisfying
+
+9
+00:00:27,660 --> 00:00:33,250
+the nested query and therefore user one and music will contribute to the result.
+
+10
+00:00:33,250 --> 00:00:37,070
+What about this one here? We already know user one lives in Atlanta.
+
+11
+00:00:37,070 --> 00:00:39,225
+So, user one reading is in here,
+
+12
+00:00:39,225 --> 00:00:41,345
+user one tennis is in here,
+
+13
+00:00:41,345 --> 00:00:42,660
+what about user two?
+
+14
+00:00:42,660 --> 00:00:46,165
+Well, user two does not have hometown Atlanta,
+
+15
+00:00:46,165 --> 00:00:49,050
+so user two does not contribute to the result.
+
+16
+00:00:49,050 --> 00:00:54,735
+Neither does user three who has hometown Portland or user four lives in Atlanta,
+
+17
+00:00:54,735 --> 00:00:58,865
+so user four and DIY contributes to the result.
+
+18
+00:00:58,865 --> 00:01:01,245
+You can think about it slightly differently.
+
+19
+00:01:01,245 --> 00:01:05,195
+You could say, in this case here you would look at the inner query
+
+20
+00:01:05,195 --> 00:01:09,270
+and say SELECT email FROM RegularUser WHERE HomeTown equals Atlanta.
+
+21
+00:01:09,270 --> 00:01:12,430
+You're going to see, that only the user one
+
+22
+00:01:12,430 --> 00:01:15,820
+and user four are going to count in this example.
+
+23
+00:01:15,820 --> 00:01:18,360
+So, when you look at the outer query,
+
+24
+00:01:18,360 --> 00:01:21,510
+you just need to check whether the email
+
+25
+00:01:21,510 --> 00:01:24,850
+for which you are considering listing email and interest,
+
+26
+00:01:24,850 --> 00:01:30,090
+whether that's in the result of the inner query consisting of user one and user four.
+
+27
+00:01:30,090 --> 00:01:34,830
+You could say there's no correlation necessarily between the two which
+
+28
+00:01:34,830 --> 00:01:39,715
+you are considering in the outer query and those you are looking at in the inner query.
+
+29
+00:01:39,715 --> 00:01:45,780
+The inner query is the same we got this off which row you look at in the outer query.
+
+30
+00:01:45,780 --> 00:01:49,220
+We'll see that differently in later examples,
+
+31
+00:01:49,220 --> 00:01:53,610
+and alternative of course for this very very simple query is that you just take
+
+32
+00:01:53,610 --> 00:01:59,370
+the UserInterests and RegularUser table represented by alias I and U,
+
+33
+00:01:59,370 --> 00:02:01,810
+and you just join them on matching emails,
+
+34
+00:02:01,810 --> 00:02:07,630
+select where hometown is Atlanta and then project on email and interest.
+

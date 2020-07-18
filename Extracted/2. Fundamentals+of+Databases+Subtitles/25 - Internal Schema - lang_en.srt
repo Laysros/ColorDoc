@@ -1,0 +1,135 @@
+1
+00:00:00,510 --> 00:00:04,960
+An internal schema describes how
+information in the conceptual schema is
+
+2
+00:00:04,960 --> 00:00:10,300
+physically represented, in order to get
+the overall best query performance and
+
+3
+00:00:10,300 --> 00:00:12,780
+update performance on the database.
+
+4
+00:00:12,780 --> 00:00:14,000
+So let me illustrate that.
+
+5
+00:00:14,000 --> 00:00:18,270
+Again, we have in the middle,
+the table in our conceptual schema.
+
+6
+00:00:18,270 --> 00:00:20,530
+That may be represented, for example,
+
+7
+00:00:20,530 --> 00:00:25,160
+here by a corresponding table in
+the physical, internal schema.
+
+8
+00:00:25,160 --> 00:00:29,200
+It has, in this example here,
+the same attributes.
+
+9
+00:00:29,200 --> 00:00:31,860
+And it may be sorted in
+some particular way.
+
+10
+00:00:31,860 --> 00:00:35,340
+For example,
+it could be sorted on LastName.
+
+11
+00:00:35,340 --> 00:00:40,118
+Now, in the case that there are many
+queries on Salary, it might be good,
+
+12
+00:00:40,118 --> 00:00:45,470
+and make queries more efficient, if
+there were an index defined on Salary.
+
+13
+00:00:45,470 --> 00:00:49,660
+So we could define an index in
+a B+-tree, for example, and
+
+14
+00:00:49,660 --> 00:00:51,780
+we'll look at those
+later on in the course.
+
+15
+00:00:51,780 --> 00:00:56,380
+B+-trees create logarithmic
+time access to data so
+
+16
+00:00:56,380 --> 00:00:59,400
+it would be possible to
+ask efficiently a query.
+
+17
+00:00:59,400 --> 00:01:03,480
+Like the one you just saw before,
+that defined the external schema, and
+
+18
+00:01:03,480 --> 00:01:05,310
+was based on Salary.
+
+19
+00:01:05,310 --> 00:01:10,700
+Furthermore, it might be that we would
+like to have fast access on CurrentCity.
+
+20
+00:01:10,700 --> 00:01:11,260
+And therefore,
+
+21
+00:01:11,260 --> 00:01:15,390
+we could create an additional index
+on the database on CurrentCity.
+
+22
+00:01:15,390 --> 00:01:18,965
+That index would basically be
+a table with two columns in it.
+
+23
+00:01:18,965 --> 00:01:23,368
+One, the list of CurrentCity,
+and two, pointers to the rows
+
+24
+00:01:23,368 --> 00:01:28,291
+in the database that contain that
+particular value of CurrentCity.
+
+25
+00:01:28,291 --> 00:01:33,504
+Notice that since both the B+-tree here
+and the index here cannot be seen by
+
+26
+00:01:33,504 --> 00:01:38,881
+way up from the applications, because
+of that it is possible to replace that,
+
+27
+00:01:38,881 --> 00:01:43,118
+to remove it, to remove this,
+or to add additional indices,
+
+28
+00:01:43,118 --> 00:01:47,701
+all without affecting the applications
+that run on the database.
+

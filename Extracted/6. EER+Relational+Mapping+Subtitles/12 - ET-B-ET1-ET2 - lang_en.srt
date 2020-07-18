@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:02,240
+Finally, let's look at union type.
+
+2
+00:00:02,240 --> 00:00:04,145
+So ET is a union type.
+
+3
+00:00:04,145 --> 00:00:12,470
+The semantics of that is as follows: ET is a subset of the union of ET1 and ET2,
+
+4
+00:00:12,470 --> 00:00:19,410
+and there's the added constraint that the intersection of ET1 and ET2 is empty.
+
+5
+00:00:19,410 --> 00:00:23,450
+So we know we're going to get a relation for ET1,
+
+6
+00:00:23,450 --> 00:00:29,280
+and we know it has identifying attribute C. We know we will get one for ET2 with
+
+7
+00:00:29,280 --> 00:00:36,300
+identifying attribute D. We know we will have a relation for ET with property type B.
+
+8
+00:00:36,300 --> 00:00:43,360
+The question now is how do we model this subtype relationship here?
+
+9
+00:00:43,360 --> 00:00:48,615
+One way which is sort of a soft hack that works well is the following.
+
+10
+00:00:48,615 --> 00:00:53,365
+We insert an artificial identifier into relation ET.
+
+11
+00:00:53,365 --> 00:00:57,630
+That identifier will then consist either of
+
+12
+00:00:57,630 --> 00:01:02,420
+what corresponds to C or corresponds to D. Remember,
+
+13
+00:01:02,420 --> 00:01:06,480
+that every single element in there comes either from that or
+
+14
+00:01:06,480 --> 00:01:10,655
+from that so it will be identified by C or by
+
+15
+00:01:10,655 --> 00:01:21,100
+D. So the ET identifier is a foreign key on the ET-ID and ET both from ET1 and from ET2.
+

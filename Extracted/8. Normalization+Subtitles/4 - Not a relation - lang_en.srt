@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:02,880
+It's really not that difficult to envision how
+
+2
+00:00:02,880 --> 00:00:05,670
+you may end up with a data structure that's not
+
+3
+00:00:05,670 --> 00:00:11,510
+a relation or a data structure that we call a non-first normal form data structure.
+
+4
+00:00:11,510 --> 00:00:13,185
+So, here's an example of it.
+
+5
+00:00:13,185 --> 00:00:18,320
+The idea of this data structure is the following: you have users who have emails,
+
+6
+00:00:18,320 --> 00:00:22,600
+and then each user has a multi-value interest,
+
+7
+00:00:22,600 --> 00:00:24,650
+since age dependency here.
+
+8
+00:00:24,650 --> 00:00:27,365
+So, in this data structure you have user1.
+
+9
+00:00:27,365 --> 00:00:31,000
+User1 has been interested in music since the age of 10,
+
+10
+00:00:31,000 --> 00:00:33,930
+reading since five, tennis since 14.
+
+11
+00:00:33,930 --> 00:00:38,154
+Similarly, user2 has been interested in blogging since 13,
+
+12
+00:00:38,154 --> 00:00:42,210
+meditation since 21, surfing since 19, etc.
+
+13
+00:00:42,210 --> 00:00:44,630
+This is called a multi-value.
+
+14
+00:00:44,630 --> 00:00:47,160
+If you remember the definition of a relation,
+
+15
+00:00:47,160 --> 00:00:52,335
+you will remember that values of attributes are pulled from sets of atomic values.
+
+16
+00:00:52,335 --> 00:00:55,335
+So certainly, music 10, reading five,
+
+17
+00:00:55,335 --> 00:00:58,765
+tennis 14, that is not an atomic value.
+
+18
+00:00:58,765 --> 00:01:01,800
+So, to take a data structure like this which says
+
+19
+00:01:01,800 --> 00:01:04,950
+non-first normal form and create a relation from it.
+
+20
+00:01:04,950 --> 00:01:08,125
+There's one obvious way we could try to do that.
+
+21
+00:01:08,125 --> 00:01:13,360
+So, what if I simply repeat user1 for each one of these rows?
+
+22
+00:01:13,360 --> 00:01:18,015
+What if I repeat this value in each one of the rows?
+
+23
+00:01:18,015 --> 00:01:21,040
+Then I will actually have a relation.
+

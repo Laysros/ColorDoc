@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:04,560
+Let us now look at the second subtext of the View Profile text,
+
+2
+00:00:04,560 --> 00:00:06,825
+namely the subtext education.
+
+3
+00:00:06,825 --> 00:00:10,335
+In that subtext, we extract school name,
+
+4
+00:00:10,335 --> 00:00:12,680
+school type, and year graduated.
+
+5
+00:00:12,680 --> 00:00:17,120
+As you see, school name and type are in the school table;
+
+6
+00:00:17,120 --> 00:00:20,080
+year graduated is in the attend table.
+
+7
+00:00:20,080 --> 00:00:22,590
+So, we need to proceed as follows.
+
+8
+00:00:22,590 --> 00:00:27,080
+We take the score table and join it with the attend table on matching
+
+9
+00:00:27,080 --> 00:00:32,390
+school names and then we extract where the email is the email of the current user.
+
+10
+00:00:32,390 --> 00:00:34,425
+So, let's look at the SQL for that.
+
+11
+00:00:34,425 --> 00:00:38,190
+We select School.SchoolName and School.Type and
+
+12
+00:00:38,190 --> 00:00:41,990
+we select Attend.YearGraduated and we do it by
+
+13
+00:00:41,990 --> 00:00:45,560
+taking the attend table and doing an INNER JOIN with
+
+14
+00:00:45,560 --> 00:00:49,945
+schoool and the join condition is that the two school names match.
+
+15
+00:00:49,945 --> 00:00:52,200
+School name must match school name,
+
+16
+00:00:52,200 --> 00:00:57,165
+and we extract where the email matches that of the current user.
+
+17
+00:00:57,165 --> 00:01:01,260
+Finally, extracting the professional information consisting of
+
+18
+00:01:01,260 --> 00:01:06,100
+employer name and job title is done from the employment table.
+
+19
+00:01:06,100 --> 00:01:11,070
+So, we select employer name and job title from employment
+
+20
+00:01:11,070 --> 00:01:17,240
+where the email is that of the current user and we display that information here.
+

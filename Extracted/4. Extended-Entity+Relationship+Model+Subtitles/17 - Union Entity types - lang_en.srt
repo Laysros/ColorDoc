@@ -1,0 +1,177 @@
+1
+00:00:00,540 --> 00:00:04,310
+In this example I'm showing
+a relationship type current job
+
+2
+00:00:04,310 --> 00:00:06,710
+between employer and regular user.
+
+3
+00:00:06,710 --> 00:00:10,610
+The point I want to make here
+is that the employer may be
+
+4
+00:00:10,610 --> 00:00:13,740
+one of two different kinds of entities.
+
+5
+00:00:13,740 --> 00:00:17,380
+It could either be a company,
+which is the employer, or
+
+6
+00:00:17,380 --> 00:00:21,570
+it could be a government agency,
+which is the employer.
+
+7
+00:00:21,570 --> 00:00:26,710
+In case the employer is a company,
+then an attribute EIN,
+
+8
+00:00:26,710 --> 00:00:32,610
+which is a tax identification number, is
+needed to be attached with the employer.
+
+9
+00:00:32,610 --> 00:00:37,990
+In case the employer is the government
+agency, then we need an agency ID,
+
+10
+00:00:37,990 --> 00:00:43,770
+which may be a composite property type
+consisting of the agency name and
+
+11
+00:00:43,770 --> 00:00:46,300
+which municipality it's in.
+
+12
+00:00:46,300 --> 00:00:51,430
+The employer type in this case
+is called a union entity type.
+
+13
+00:00:51,430 --> 00:00:55,790
+So there are two important rules
+associated with union entity types.
+
+14
+00:00:55,790 --> 00:01:00,381
+The first one is that employer
+is a subset of company union
+
+15
+00:01:00,381 --> 00:01:02,110
+government agency.
+
+16
+00:01:02,110 --> 00:01:06,824
+So, in other words, they are not
+going to exist any employers that
+
+17
+00:01:06,824 --> 00:01:10,855
+are not either a company or
+a government agency.
+
+18
+00:01:10,855 --> 00:01:14,578
+The second rule is that
+the intersection between company and
+
+19
+00:01:14,578 --> 00:01:16,403
+government agency is empty.
+
+20
+00:01:16,403 --> 00:01:19,482
+So it is not plausible
+to have an employer,
+
+21
+00:01:19,482 --> 00:01:24,850
+which at the same time is both
+a company and a government agency.
+
+22
+00:01:24,850 --> 00:01:26,713
+So let's take a look.
+
+23
+00:01:26,713 --> 00:01:29,240
+Here's the set of
+instances of companies.
+
+24
+00:01:29,240 --> 00:01:32,200
+Here's the set of instances
+of government agencies.
+
+25
+00:01:32,200 --> 00:01:37,093
+Here's the set of instances of
+employers at a given point in time.
+
+26
+00:01:37,093 --> 00:01:41,480
+So let's try to find out what it
+means now to satisfy these two rules.
+
+27
+00:01:41,480 --> 00:01:47,106
+So as you see with this instance
+diagram here, we obey the rule that
+
+28
+00:01:47,106 --> 00:01:53,346
+the set of employers must be a subset
+of company union government agency.
+
+29
+00:01:53,346 --> 00:01:57,429
+And you can see, actually in this
+case here, there's a proper subset.
+
+30
+00:01:57,429 --> 00:02:02,293
+There is one company in the instance
+diagram, which is not an employer.
+
+31
+00:02:02,293 --> 00:02:07,680
+And there are two government agencies
+that are not employers in this database.
+
+32
+00:02:07,680 --> 00:02:12,642
+However, every single element of
+the employer entity type instances,
+
+33
+00:02:12,642 --> 00:02:14,940
+ie they're from one or from the other.
+
+34
+00:02:14,940 --> 00:02:16,891
+Let's look at the intersection here.
+
+35
+00:02:16,891 --> 00:02:21,362
+As you can see, there are none of
+the elements in the employer entity type
+
+36
+00:02:21,362 --> 00:02:24,460
+instance set that comes
+from both of these types.
+
+37
+00:02:24,460 --> 00:02:27,530
+So we are also, in this instance,
+satisfying this role.
+

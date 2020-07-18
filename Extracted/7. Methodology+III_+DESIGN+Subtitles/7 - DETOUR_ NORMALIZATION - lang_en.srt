@@ -1,0 +1,9 @@
+1
+00:00:00,460 --> 00:00:01,839
+Before we go any further,
+
+2
+00:00:01,839 --> 00:00:05,600
+we need a small detour to study
+an additional database tool or technique
+

@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:02,060
+So back to the question then,
+
+2
+00:00:02,060 --> 00:00:06,105
+how do you enforce functional dependencies in a relation?
+
+3
+00:00:06,105 --> 00:00:09,070
+The trick simply is that you use keys.
+
+4
+00:00:09,070 --> 00:00:14,310
+So, if you want to enforce a frontal dependency that X determines Y,
+
+5
+00:00:14,310 --> 00:00:20,085
+then all you need to do is you need to make X the key in that relation.
+
+6
+00:00:20,085 --> 00:00:21,510
+So in this case here,
+
+7
+00:00:21,510 --> 00:00:25,440
+making email and interest a key will guarantee that
+
+8
+00:00:25,440 --> 00:00:29,370
+the functional dependency email and interest to SinceAge.
+
+9
+00:00:29,370 --> 00:00:31,230
+This one here is enforced.
+
+10
+00:00:31,230 --> 00:00:32,810
+Why is that the case?
+
+11
+00:00:32,810 --> 00:00:35,120
+Because by making that pair the key,
+
+12
+00:00:35,120 --> 00:00:36,980
+there will be no duplicate values.
+
+13
+00:00:36,980 --> 00:00:39,185
+Since there are no duplicate values,
+
+14
+00:00:39,185 --> 00:00:41,760
+given a particular email an interest in
+
+15
+00:00:41,760 --> 00:00:45,270
+the table that will determine exactly one SinceAge,
+
+16
+00:00:45,270 --> 00:00:47,400
+namely the one that shows up next to it.
+
+17
+00:00:47,400 --> 00:00:51,555
+This example here, how do we enforce that for a particular email,
+
+18
+00:00:51,555 --> 00:00:53,055
+for a current user?
+
+19
+00:00:53,055 --> 00:00:55,785
+There is a single current city and a single birth year.
+
+20
+00:00:55,785 --> 00:01:00,000
+We do it by making email the key that makes these values unique.
+
+21
+00:01:00,000 --> 00:01:05,100
+That means that if you mention a particular email address like user3,
+
+22
+00:01:05,100 --> 00:01:07,290
+it's going to be in the table a single time,
+
+23
+00:01:07,290 --> 00:01:10,020
+and therefore it's going to have associated with it as
+
+24
+00:01:10,020 --> 00:01:13,145
+single birth year and as a single current city.
+
+25
+00:01:13,145 --> 00:01:15,420
+Third example, if you want to enforce
+
+26
+00:01:15,420 --> 00:01:18,310
+the function dependency birth year determines salary,
+
+27
+00:01:18,310 --> 00:01:21,195
+all you need to do is make birth year the key.
+
+28
+00:01:21,195 --> 00:01:25,740
+That means that if you mentioned a particular birth year like 67,
+
+29
+00:01:25,740 --> 00:01:28,210
+it's going to be in the table as single time,
+
+30
+00:01:28,210 --> 00:01:31,740
+and next to it is going to be the salary that's determined from it.
+
+31
+00:01:31,740 --> 00:01:33,655
+So all of these are functions.
+
+32
+00:01:33,655 --> 00:01:37,810
+There's a function from the pay of email and interest to SinceAge,
+
+33
+00:01:37,810 --> 00:01:42,610
+there's a function from email to birth year function from email to current city,
+
+34
+00:01:42,610 --> 00:01:46,370
+and finally a function from birth year to salary.
+

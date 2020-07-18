@@ -1,0 +1,75 @@
+1
+00:00:00,510 --> 00:00:03,220
+A variation of a 1-N relationship
+
+2
+00:00:03,220 --> 00:00:06,140
+type is one that's
+constraint to be mandatory.
+
+3
+00:00:06,140 --> 00:00:07,770
+Show you an example of that here.
+
+4
+00:00:07,770 --> 00:00:12,200
+The bold solid line
+signifies that regular user
+
+5
+00:00:12,200 --> 00:00:15,740
+mandatorily must
+participate in current job.
+
+6
+00:00:15,740 --> 00:00:19,850
+Let's take a look at what that means
+when we look at the instances.
+
+7
+00:00:19,850 --> 00:00:22,750
+So we have a set of employers over here.
+
+8
+00:00:22,750 --> 00:00:25,690
+We have a set of regular
+users over here.
+
+9
+00:00:25,690 --> 00:00:30,390
+When you look at this 1-N relationship
+type here you see that, for
+
+10
+00:00:30,390 --> 00:00:34,486
+example, this employer here
+has two regular users working,
+
+11
+00:00:34,486 --> 00:00:37,904
+this one has one, this one has four.
+
+12
+00:00:38,930 --> 00:00:43,180
+There are a couple of employers here
+that have no one working for them.
+
+13
+00:00:43,180 --> 00:00:48,830
+But notice that all the regular users
+that are instances of that type,
+
+14
+00:00:48,830 --> 00:00:53,670
+that they must be hooked up via
+that relationship to an employer.
+
+15
+00:00:53,670 --> 00:00:57,890
+So not only is it a passive function
+from regular user to employer.
+
+16
+00:00:57,890 --> 00:00:59,330
+It's even a total function.
+

@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:03,000
+We are now ready to look at the last phase of
+
+2
+00:00:03,000 --> 00:00:07,105
+the database application development methodology, implementation.
+
+3
+00:00:07,105 --> 00:00:08,800
+Let us review where we are.
+
+4
+00:00:08,800 --> 00:00:14,540
+So, in design, we created a relational database schema and wrote the SQL for it.
+
+5
+00:00:14,540 --> 00:00:20,245
+We also wrote the SQL for the tests that are going to access that relational schema.
+
+6
+00:00:20,245 --> 00:00:23,325
+We surrounded that SQL with abstract code.
+
+7
+00:00:23,325 --> 00:00:25,300
+In the implementation phase,
+
+8
+00:00:25,300 --> 00:00:27,675
+we are again going to do data first.
+
+9
+00:00:27,675 --> 00:00:30,240
+So, we start out with relational schema and we
+
+10
+00:00:30,240 --> 00:00:33,085
+need to implement that on relational platform.
+
+11
+00:00:33,085 --> 00:00:36,230
+We will install MySQL to run it on.
+
+12
+00:00:36,230 --> 00:00:37,550
+After we have done that,
+
+13
+00:00:37,550 --> 00:00:41,740
+we'll take a look at the abstract code that surrounds the SQL,
+
+14
+00:00:41,740 --> 00:00:46,110
+we will implement that in PHP and we will show how to
+
+15
+00:00:46,110 --> 00:00:51,880
+run that PHP script with the embedded SQL on the database we have set up.
+

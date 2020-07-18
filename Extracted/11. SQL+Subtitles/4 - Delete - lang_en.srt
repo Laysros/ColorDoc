@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,515
+Second, let's take a look at deletion.
+
+2
+00:00:02,515 --> 00:00:05,845
+So, this expression here will DELETE FROM UserInterests,
+
+3
+00:00:05,845 --> 00:00:08,295
+WHERE the Interest equals Swimming.
+
+4
+00:00:08,295 --> 00:00:11,435
+So, all the tuples that satisfy that condition,
+
+5
+00:00:11,435 --> 00:00:14,800
+this tuple here and this tuple here will be removed.
+
+6
+00:00:14,800 --> 00:00:16,270
+So, the result is this.
+
+7
+00:00:16,270 --> 00:00:23,480
+So, notice a deletion can actually result in deleting a set of rows in the table.
+

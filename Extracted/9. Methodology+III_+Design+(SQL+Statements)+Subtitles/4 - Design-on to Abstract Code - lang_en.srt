@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:03,795
+We have now completed the first half of the design phase.
+
+2
+00:00:03,795 --> 00:00:07,350
+We started out with an extended entity relationship diagram
+
+3
+00:00:07,350 --> 00:00:09,875
+and some data format specifications,
+
+4
+00:00:09,875 --> 00:00:11,730
+and we use the mapping from
+
+5
+00:00:11,730 --> 00:00:14,190
+the extended entity relationship model to
+
+6
+00:00:14,190 --> 00:00:17,940
+the relational model to create a set of table definitions.
+
+7
+00:00:17,940 --> 00:00:21,690
+So, now we have completed our relational schema definition.
+
+8
+00:00:21,690 --> 00:00:24,650
+We now turn our attention to the tasks.
+
+9
+00:00:24,650 --> 00:00:28,740
+In the specification, the test stated what the application case
+
+10
+00:00:28,740 --> 00:00:32,875
+needs to do relative to the extended entity relationship diagram.
+
+11
+00:00:32,875 --> 00:00:37,950
+In the design, we now need to replace the code that states what
+
+12
+00:00:37,950 --> 00:00:44,000
+the application does to the database with SQL statements that realize that.
+

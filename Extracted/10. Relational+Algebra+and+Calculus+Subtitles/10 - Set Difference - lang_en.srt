@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:02,960
+Finally, let's look at Set Difference.
+
+2
+00:00:02,960 --> 00:00:04,300
+So, in the query,
+
+3
+00:00:04,300 --> 00:00:08,520
+we want to find cities that are a CurrentCity for some RegularUser,
+
+4
+00:00:08,520 --> 00:00:13,220
+but not also a HomeTown for some RegularUser.
+
+5
+00:00:13,220 --> 00:00:15,060
+So, looking at the Venn diagram,
+
+6
+00:00:15,060 --> 00:00:19,125
+we see the following: got a set here corresponding to CurrentCity,
+
+7
+00:00:19,125 --> 00:00:22,130
+got a set here corresponding to HomeTown,
+
+8
+00:00:22,130 --> 00:00:26,440
+and in the result we are looking for all of those that
+
+9
+00:00:26,440 --> 00:00:31,405
+have this CurrentCity but excluding all of these,
+
+10
+00:00:31,405 --> 00:00:35,510
+which in essence just means we're excluding these in here.
+
+11
+00:00:35,510 --> 00:00:38,655
+So these out here do not even get to play in the query.
+
+12
+00:00:38,655 --> 00:00:40,230
+Here's how it's formulated.
+
+13
+00:00:40,230 --> 00:00:42,865
+Take RegularUser, project it on CurrentCity,
+
+14
+00:00:42,865 --> 00:00:45,165
+take RegularUser, project it on HomeTown,
+
+15
+00:00:45,165 --> 00:00:47,770
+take the latter away from the former.
+
+16
+00:00:47,770 --> 00:00:49,735
+So, in the example here,
+
+17
+00:00:49,735 --> 00:00:53,590
+Seattle is part of the result because it doesn't appear over here.
+
+18
+00:00:53,590 --> 00:00:57,745
+College Park is part of the result because it does not appear over here,
+
+19
+00:00:57,745 --> 00:00:59,545
+same thing with Las Vegas.
+
+20
+00:00:59,545 --> 00:01:03,060
+Dallas is not part of the result because it appears over here.
+
+21
+00:01:03,060 --> 00:01:06,825
+College Park is not added because it's already over there,
+
+22
+00:01:06,825 --> 00:01:08,200
+and the result is a set.
+
+23
+00:01:08,200 --> 00:01:11,820
+So, the result of the query is this.
+

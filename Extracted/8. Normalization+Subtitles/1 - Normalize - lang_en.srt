@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:03,705
+The mapping of EER diagrams to relations
+
+2
+00:00:03,705 --> 00:00:07,600
+will in all cases be solved in a database which is normalized.
+
+3
+00:00:07,600 --> 00:00:12,220
+In spite of that, we still have to learn about normalization.
+
+4
+00:00:16,130 --> 00:00:25,530
+"Databases are forever, they are all I need to please me,
+
+5
+00:00:25,530 --> 00:00:30,315
+they can stimulate and tease me,
+
+6
+00:00:30,315 --> 00:00:33,929
+they won't leave in the night,
+
+7
+00:00:33,929 --> 00:00:42,090
+I've no fear that they might desert me. "
+
+8
+00:00:42,090 --> 00:00:46,100
+A second reason you need to know how to normalize databases is that
+
+9
+00:00:46,100 --> 00:00:50,440
+the EER diagrams they may have been created from may have gone missing.
+
+10
+00:00:50,440 --> 00:00:53,410
+When you get a database and you look at it for the first time,
+
+11
+00:00:53,410 --> 00:00:55,105
+it's really like a box of chocolate,
+
+12
+00:00:55,105 --> 00:00:56,785
+you never know what's in there.
+
+13
+00:00:56,785 --> 00:00:58,655
+So when you look at a database,
+
+14
+00:00:58,655 --> 00:01:00,760
+it may be beautifully normalized,
+
+15
+00:01:00,760 --> 00:01:06,840
+designed by experts or it may not be normalized and look like it was designed by idiots.
+
+16
+00:01:06,840 --> 00:01:08,680
+Although it looks like that,
+
+17
+00:01:08,680 --> 00:01:12,610
+it could be because some compromises had to be made in the way
+
+18
+00:01:12,610 --> 00:01:18,290
+the database was normalized in order for example to get the database to run faster.
+

@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:02,880
+The friendship table is created as follows.
+
+2
+00:00:02,880 --> 00:00:05,755
+It has attribute Email and FriendEmail.
+
+3
+00:00:05,755 --> 00:00:07,395
+Both are varchar 50's,
+
+4
+00:00:07,395 --> 00:00:08,760
+none of them can be NULL.
+
+5
+00:00:08,760 --> 00:00:11,835
+The combination of the two is the primary key.
+
+6
+00:00:11,835 --> 00:00:15,250
+The relationship is also varchar 50, NOT NULL,
+
+7
+00:00:15,250 --> 00:00:17,580
+but it is NOT NULL because the value is
+
+8
+00:00:17,580 --> 00:00:20,340
+required not because it's part of the primary key.
+
+9
+00:00:20,340 --> 00:00:24,720
+DateConnected is of the datetime type and initially set to NULL.
+
+10
+00:00:24,720 --> 00:00:28,125
+Email is a foreign key on the Email of RegularUser,
+
+11
+00:00:28,125 --> 00:00:33,040
+and FriendEmail is also a foreign key on the Email of RegularUser.
+

@@ -1,0 +1,70 @@
+1
+00:00:00,460 --> 00:00:05,030
+So at the bottom of the Edit Profile
+screen, is the Professional section.
+
+2
+00:00:05,030 --> 00:00:08,530
+Just like a regular user can
+have attended multiple schools,
+
+3
+00:00:08,530 --> 00:00:11,900
+a regular user may have
+had several employers.
+
+4
+00:00:11,900 --> 00:00:16,010
+Here you see the screen that the admin
+user uses to maintain a list of
+
+5
+00:00:16,010 --> 00:00:17,050
+employers.
+
+6
+00:00:17,050 --> 00:00:19,900
+So, we have an entity type of Employer.
+
+7
+00:00:19,900 --> 00:00:22,770
+Employers have the property
+type Employer Name, and
+
+8
+00:00:22,770 --> 00:00:25,210
+Employer Names are unique.
+
+9
+00:00:25,210 --> 00:00:27,500
+As we saw from the Edit Profile screen,
+
+10
+00:00:27,500 --> 00:00:32,530
+a regular user may have had multiple
+employers over time, and, obviously,
+
+11
+00:00:32,530 --> 00:00:37,730
+a particular employer may have multiple
+regular users working for that employer.
+
+12
+00:00:37,730 --> 00:00:41,290
+Job title is not maintained
+by the administrative user.
+
+13
+00:00:41,290 --> 00:00:45,260
+It can be anything that
+the regular user wants to insert.
+
+14
+00:00:45,260 --> 00:00:50,082
+It's a multi-value, because over time
+a particular regular user may have
+
+15
+00:00:50,082 --> 00:00:53,260
+held different job titles for
+the same employer.

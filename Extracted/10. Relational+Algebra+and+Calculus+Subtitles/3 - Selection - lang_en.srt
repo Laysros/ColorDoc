@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:02,575
+Let's first look at the selection operator.
+
+2
+00:00:02,575 --> 00:00:10,380
+The general syntax is select all the tuples from relation R that satisfy this expression.
+
+3
+00:00:10,380 --> 00:00:11,820
+Let's look at an example.
+
+4
+00:00:11,820 --> 00:00:14,365
+Let's find all RegularUsers.
+
+5
+00:00:14,365 --> 00:00:17,460
+So, there's no subexpression that has to be true here.
+
+6
+00:00:17,460 --> 00:00:20,260
+So, let's take a look at what the result is.
+
+7
+00:00:20,260 --> 00:00:23,970
+If this is our RegularUser table with Email,
+
+8
+00:00:23,970 --> 00:00:27,254
+Birth Year, Sex, Current City, HomeTown,
+
+9
+00:00:27,254 --> 00:00:29,800
+and we got one, two, three, four,
+
+10
+00:00:29,800 --> 00:00:31,600
+five to present it right now,
+
+11
+00:00:31,600 --> 00:00:35,580
+then the result of that is going to be every single one of the tuples.
+
+12
+00:00:35,580 --> 00:00:38,890
+Why? Because there was no selection expression.
+
+13
+00:00:38,890 --> 00:00:41,950
+So, all of them qualify as part of the result.
+
+14
+00:00:41,950 --> 00:00:45,570
+So, the result of the query is this.
+

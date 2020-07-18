@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:04,260
+Next algebra operator we'll look at is the Rename Operator Rome,
+
+2
+00:00:04,260 --> 00:00:09,975
+Greek letter for R. Rename is useful when we want to control whether a natural join,
+
+3
+00:00:09,975 --> 00:00:13,030
+a theta join or some other type of join takes place.
+
+4
+00:00:13,030 --> 00:00:16,769
+As you noticed when I presented the previous three for operators,
+
+5
+00:00:16,769 --> 00:00:22,485
+I was renaming the attributes to make the operator work like it was supposed to do.
+
+6
+00:00:22,485 --> 00:00:24,960
+Here is how to actually make that happen.
+
+7
+00:00:24,960 --> 00:00:27,855
+The formal syntax for renaming is as follows.
+
+8
+00:00:27,855 --> 00:00:30,345
+Row followed by the following expression.
+
+9
+00:00:30,345 --> 00:00:33,840
+What's in that expression is the name of the relation as it
+
+10
+00:00:33,840 --> 00:00:38,530
+currently is and the name of the result relation after renaming.
+
+11
+00:00:38,530 --> 00:00:42,980
+In the subscript here is the list of attributes that get renamed.
+
+12
+00:00:42,980 --> 00:00:47,820
+So we are renaming sex to gender and birth year to year.
+
+13
+00:00:47,820 --> 00:00:50,200
+Let's take a look at it. So we start out with
+
+14
+00:00:50,200 --> 00:00:55,395
+the regular user relation and we rename it to Ruser as you see there.
+
+15
+00:00:55,395 --> 00:00:58,005
+Then, sex is renamed to gender.
+
+16
+00:00:58,005 --> 00:01:02,055
+You see that here and birth year is renamed to year.
+
+17
+00:01:02,055 --> 00:01:04,300
+You see that here.
+

@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:03,179
+So, let's say we are doing the exact same query,
+
+2
+00:00:03,179 --> 00:00:07,970
+but we only want to return the groups that have more than one interest.
+
+3
+00:00:07,970 --> 00:00:09,810
+The way we do that is that,
+
+4
+00:00:09,810 --> 00:00:12,600
+in addition to the group by clause on email here,
+
+5
+00:00:12,600 --> 00:00:14,605
+we have a condition on the group saying,
+
+6
+00:00:14,605 --> 00:00:18,045
+"Having NumInt greater than one."
+
+7
+00:00:18,045 --> 00:00:20,745
+Other than that, the query is exactly the same.
+
+8
+00:00:20,745 --> 00:00:22,800
+If you look at the results here,
+
+9
+00:00:22,800 --> 00:00:25,015
+you will also see the result is the same,
+
+10
+00:00:25,015 --> 00:00:27,420
+except the user4, who had
+
+11
+00:00:27,420 --> 00:00:32,770
+just a single interest does no longer appear in the result because of this clause.
+

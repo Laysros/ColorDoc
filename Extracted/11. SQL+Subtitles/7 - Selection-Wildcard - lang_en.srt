@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:03,855
+Let's first look at a very simple selection query.
+
+2
+00:00:03,855 --> 00:00:08,395
+Let's say, we simply want to find all the rows in regular user.
+
+3
+00:00:08,395 --> 00:00:10,205
+Here's one way to write then.
+
+4
+00:00:10,205 --> 00:00:13,215
+SELECT Email, BirthYear, Sex,
+
+5
+00:00:13,215 --> 00:00:16,440
+CurrentCity, HomeTown FROM RegularUser.
+
+6
+00:00:16,440 --> 00:00:19,200
+Notice there's no way I'm closing this query.
+
+7
+00:00:19,200 --> 00:00:23,400
+Notice also, that all the SQL queries they end with a semicolon.
+
+8
+00:00:23,400 --> 00:00:27,560
+So basically what we are saying here is give me all the attributes: email,
+
+9
+00:00:27,560 --> 00:00:31,710
+birth year, sex, current city and hometown from the regular user table.
+
+10
+00:00:31,710 --> 00:00:33,600
+And what is the result going to be?
+
+11
+00:00:33,600 --> 00:00:37,495
+Well of course, it's going to be all the rows in the regular user table.
+
+12
+00:00:37,495 --> 00:00:41,780
+There's an easier way to write that by using the wildcard star.
+
+13
+00:00:41,780 --> 00:00:47,300
+So, SELECT star actually is the exact same query as the one you see there.
+
+14
+00:00:47,300 --> 00:00:50,280
+It makes it a little bit easier to type.
+

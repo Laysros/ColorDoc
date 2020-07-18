@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:04,740
+Second question is, how do we guarantee preservation of functional dependencies?
+
+2
+00:00:04,740 --> 00:00:06,575
+And here the simple rule is,
+
+3
+00:00:06,575 --> 00:00:08,365
+you're using Armstrong's rules.
+
+4
+00:00:08,365 --> 00:00:12,225
+The meaning implied by the remaining functional dependencies
+
+5
+00:00:12,225 --> 00:00:16,485
+must be the same as the meaning that was implied by the original set.
+
+6
+00:00:16,485 --> 00:00:23,220
+So, looking here at the decomposition of this functional dependency diagram into Email,
+
+7
+00:00:23,220 --> 00:00:26,335
+BirthYear and CurrentCity in one relation,
+
+8
+00:00:26,335 --> 00:00:28,825
+and in a separate relation BirthYear and Salary,
+
+9
+00:00:28,825 --> 00:00:29,970
+as you see there.
+
+10
+00:00:29,970 --> 00:00:33,315
+We can now, by the transitivity rule, see the following,
+
+11
+00:00:33,315 --> 00:00:36,220
+Email determines BirthYear from this relation,
+
+12
+00:00:36,220 --> 00:00:39,980
+and BirthYear determines Salary from this relation, and therefore,
+
+13
+00:00:39,980 --> 00:00:44,500
+by transitivity, Email determines Salary or as you see here,
+
+14
+00:00:44,500 --> 00:00:45,990
+that is implied and therefore,
+
+15
+00:00:45,990 --> 00:00:50,010
+the meaning implied by the remaining functional dependencies is the same.
+
+16
+00:00:50,010 --> 00:00:56,460
+So, in spite of the fact that you do not see Email determining Salary with one relation,
+
+17
+00:00:56,460 --> 00:00:58,050
+by the rule of transitivity,
+
+18
+00:00:58,050 --> 00:01:00,800
+it's implied by this decomposition.
+

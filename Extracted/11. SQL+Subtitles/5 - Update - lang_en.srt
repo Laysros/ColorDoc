@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:01,765
+Let's now look at update.
+
+2
+00:00:01,765 --> 00:00:06,445
+So, UPDATE UserInterests or right and SET Interest attribute to
+
+3
+00:00:06,445 --> 00:00:12,650
+rock music where the e-mail in that row is user three and the interest is music.
+
+4
+00:00:12,650 --> 00:00:16,185
+This row here is the only one that satisfies the condition,
+
+5
+00:00:16,185 --> 00:00:18,620
+that its user three and the interest is music.
+
+6
+00:00:18,620 --> 00:00:23,680
+So, this row here will be updated and the new value will be user3@gt.edu,
+
+7
+00:00:23,680 --> 00:00:26,585
+rock music and 11.
+
+8
+00:00:26,585 --> 00:00:31,720
+Notice that a set update is possible in an update expression.
+

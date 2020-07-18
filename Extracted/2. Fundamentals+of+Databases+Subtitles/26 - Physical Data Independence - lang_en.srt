@@ -1,0 +1,44 @@
+1
+00:00:00,410 --> 00:00:04,900
+The three levels in the part
+architecture provides for
+
+2
+00:00:04,900 --> 00:00:07,280
+two types of independence.
+
+3
+00:00:07,280 --> 00:00:10,890
+One is called physical data
+independence, and is a measure of how
+
+4
+00:00:10,890 --> 00:00:15,780
+much you can change the internal schema
+representation of a database without
+
+5
+00:00:15,780 --> 00:00:20,380
+changing or affecting the applications
+that one on the external schema.
+
+6
+00:00:20,380 --> 00:00:25,110
+Database technology allows you to
+make that separation almost perfect.
+
+7
+00:00:25,110 --> 00:00:30,040
+It is very similar to the idea of object
+oriented programming that supports
+
+8
+00:00:30,040 --> 00:00:34,510
+encapsulation, where the implementation
+of a class can be changed
+
+9
+00:00:34,510 --> 00:00:38,990
+without affecting the applications that
+access the class through its methods.
+

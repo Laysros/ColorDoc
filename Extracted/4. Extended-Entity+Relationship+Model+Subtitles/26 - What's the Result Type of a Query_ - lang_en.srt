@@ -1,0 +1,19 @@
+1
+00:00:00,550 --> 00:00:03,510
+The last question in
+this critical reflection
+
+2
+00:00:03,510 --> 00:00:08,830
+about the extended inter-relationship
+model is, what is the result of a query?
+
+3
+00:00:08,830 --> 00:00:13,160
+Remember, data model consists of formal
+list systems to express data structures,
+
+4
+00:00:13,160 --> 00:00:15,100
+constraints and operations.
+

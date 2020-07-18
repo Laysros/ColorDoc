@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:02,295
+So here's a summary of the whole thing.
+
+2
+00:00:02,295 --> 00:00:07,035
+This is the schema we have mapped and this is a summary of what I showed you before.
+
+3
+00:00:07,035 --> 00:00:09,870
+So our relational schema is now this one,
+
+4
+00:00:09,870 --> 00:00:14,070
+represented in graphical form with all the primary keys,
+
+5
+00:00:14,070 --> 00:00:18,330
+all the keys, and all the foreign key relationship types.
+
+6
+00:00:18,330 --> 00:00:23,560
+It is important that each one of these relations is in the proper normal form.
+

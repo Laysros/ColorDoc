@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:06,085
+Now, let's see how you would do an operation corresponding to an algebra Union in SQL.
+
+2
+00:00:06,085 --> 00:00:10,690
+Actually, now, we have gotten so used to algebra being involved in many SQL queries,
+
+3
+00:00:10,690 --> 00:00:13,225
+I'm not even gonna sound that alarm for you anymore.
+
+4
+00:00:13,225 --> 00:00:17,955
+So let's say you want to find all current cities in hometowns without duplicate.
+
+5
+00:00:17,955 --> 00:00:19,200
+How do we do that?
+
+6
+00:00:19,200 --> 00:00:23,410
+Well, we do one query that says select currency from regular user,
+
+7
+00:00:23,410 --> 00:00:26,675
+do another query that says select hometown from regular user,
+
+8
+00:00:26,675 --> 00:00:28,555
+and we say Union between them.
+
+9
+00:00:28,555 --> 00:00:30,295
+Does not get much simpler than that.
+
+10
+00:00:30,295 --> 00:00:34,560
+So basically, here, it's a projection on current city and from the same table,
+
+11
+00:00:34,560 --> 00:00:38,805
+it's a projection on home town and then it's the set Union of the two,
+
+12
+00:00:38,805 --> 00:00:42,850
+and notice in this case here that there are no duplicates.
+
+13
+00:00:42,850 --> 00:00:47,850
+So where as SQL queries in general may return duplicates?
+
+14
+00:00:47,850 --> 00:00:50,610
+The semantics of the Union intersection and
+
+15
+00:00:50,610 --> 00:00:55,315
+set difference operators is that sets are returned.
+
+16
+00:00:55,315 --> 00:00:59,945
+In case you do want to see cities as many times as they occur,
+
+17
+00:00:59,945 --> 00:01:01,575
+here is the way to do that.
+
+18
+00:01:01,575 --> 00:01:03,135
+Instead of saying Union,
+
+19
+00:01:03,135 --> 00:01:07,230
+as you do over there, you say Union All, same query.
+
+20
+00:01:07,230 --> 00:01:09,825
+In this case, here in the Union All result,
+
+21
+00:01:09,825 --> 00:01:11,720
+you will get one, two, three,
+
+22
+00:01:11,720 --> 00:01:14,015
+four, five, six, seven, eight, nine,
+
+23
+00:01:14,015 --> 00:01:16,325
+10 rows in your result,
+
+24
+00:01:16,325 --> 00:01:20,219
+and that will of course include some duplicates like Atlanta,
+
+25
+00:01:20,219 --> 00:01:22,950
+just as hometown, is here three times.
+
+26
+00:01:22,950 --> 00:01:25,695
+So you're going to see Atlanta three times in this result.
+
+27
+00:01:25,695 --> 00:01:28,560
+Union All is what makes that [inaudible].
+

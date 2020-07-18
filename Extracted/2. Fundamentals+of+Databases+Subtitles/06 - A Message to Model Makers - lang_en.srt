@@ -1,0 +1,97 @@
+1
+00:00:00,420 --> 00:00:04,460
+Based on the example of a map,
+here's my message to model makers.
+
+2
+00:00:04,460 --> 00:00:07,240
+A model is a means of communication.
+
+3
+00:00:07,240 --> 00:00:10,020
+The users of a model must have certain
+
+4
+00:00:10,020 --> 00:00:14,570
+knowledge in common in order to be able
+to communicate through that model.
+
+5
+00:00:14,570 --> 00:00:18,140
+So our cover of exams of that
+where the maps of the world,
+
+6
+00:00:18,140 --> 00:00:22,140
+one was that north is up and
+other one is true to scale.
+
+7
+00:00:22,140 --> 00:00:25,050
+Third one is that the colors
+have to be right for
+
+8
+00:00:25,050 --> 00:00:28,230
+us to understand what it is
+that's depicted in the model.
+
+9
+00:00:28,230 --> 00:00:34,690
+Remember that a model only emphasizes
+certain selected aspects of reality.
+
+10
+00:00:34,690 --> 00:00:38,940
+Namely those that are useful for
+the purpose at hand.
+
+11
+00:00:38,940 --> 00:00:44,450
+A model is described in some language on
+the map, we saw a language of symbols,
+
+12
+00:00:44,450 --> 00:00:48,980
+letters, etc.,
+that reflected aspects of reality.
+
+13
+00:00:48,980 --> 00:00:53,110
+We all need to agree on and
+understand what that language is,
+
+14
+00:00:53,110 --> 00:00:56,350
+in order to be able to
+communicate through that model.
+
+15
+00:00:56,350 --> 00:00:58,850
+Also there can be errors on the map.
+
+16
+00:00:58,850 --> 00:01:02,250
+There may be things on the map
+that are simply incorrect,
+
+17
+00:01:02,250 --> 00:01:05,080
+like a road being placed
+in the wrong location.
+
+18
+00:01:05,080 --> 00:01:07,730
+Finally, to enhance
+the model there may be
+
+19
+00:01:07,730 --> 00:01:10,920
+features in it that do
+not exist in reality.
+
+20
+00:01:10,920 --> 00:01:16,175
+So examples of that would be contour
+lines on a mountain, the date line, etc.
+

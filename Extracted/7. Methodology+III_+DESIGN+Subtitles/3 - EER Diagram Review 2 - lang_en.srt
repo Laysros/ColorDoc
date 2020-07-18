@@ -1,0 +1,244 @@
+1
+00:00:00,000 --> 00:00:05,370
+Now, let us concentrate on mapping the portion of the entity relationship diagram that
+
+2
+00:00:05,370 --> 00:00:08,250
+tie regular users to the schools they attended
+
+3
+00:00:08,250 --> 00:00:11,295
+and to the employers that they were employed by.
+
+4
+00:00:11,295 --> 00:00:13,170
+Let us start here at the bottom.
+
+5
+00:00:13,170 --> 00:00:15,155
+The entity type, SchoolType,
+
+6
+00:00:15,155 --> 00:00:20,280
+results in a relation with a single property type namely TypeName,
+
+7
+00:00:20,280 --> 00:00:23,660
+which is the identifying property type of that relation.
+
+8
+00:00:23,660 --> 00:00:27,115
+So, therefore, TypeName in essence will have values
+
+9
+00:00:27,115 --> 00:00:31,190
+that is just a listing of the different kinds of types like high school,
+
+10
+00:00:31,190 --> 00:00:33,515
+middle school, elementary school, etc.
+
+11
+00:00:33,515 --> 00:00:38,065
+The School entity type has identified property type SchoolName.
+
+12
+00:00:38,065 --> 00:00:39,590
+For that entity type,
+
+13
+00:00:39,590 --> 00:00:41,075
+there'll be a relation school,
+
+14
+00:00:41,075 --> 00:00:43,020
+it has SchoolName as a property type,
+
+15
+00:00:43,020 --> 00:00:44,520
+it's the primary key,
+
+16
+00:00:44,520 --> 00:00:49,110
+and then it has type as an additional property because it is
+
+17
+00:00:49,110 --> 00:00:55,145
+the many site of a one to many relationship that many site can point to the SchoolType.
+
+18
+00:00:55,145 --> 00:00:57,510
+So, the type you see here is basically
+
+19
+00:00:57,510 --> 00:01:00,800
+a foreign key pointing to the primary key of school type.
+
+20
+00:01:00,800 --> 00:01:06,295
+The attend relationship type is many-to-many relationship type as you can see.
+
+21
+00:01:06,295 --> 00:01:09,260
+In order to map many-to-many relationship types,
+
+22
+00:01:09,260 --> 00:01:14,260
+we need the identifying property type of each one of the participating entity types.
+
+23
+00:01:14,260 --> 00:01:20,040
+So, we need Email to identify RegularUser and we need SchoolName to identify the School.
+
+24
+00:01:20,040 --> 00:01:24,985
+So, therefore, it's no surprise that for the attend many-to-many relationship type,
+
+25
+00:01:24,985 --> 00:01:28,725
+we will have both the Email and the SchoolName included.
+
+26
+00:01:28,725 --> 00:01:30,480
+What is a little bit different about
+
+27
+00:01:30,480 --> 00:01:33,670
+this mapping is that for each one of these instances,
+
+28
+00:01:33,670 --> 00:01:37,195
+there is a YearGraduated associated with it.
+
+29
+00:01:37,195 --> 00:01:41,160
+One reason for that could be that you might attend, for example,
+
+30
+00:01:41,160 --> 00:01:45,620
+Georgia Tech twice, once for your bachelor's and one for your master's.
+
+31
+00:01:45,620 --> 00:01:47,540
+For each one of those, there will,
+
+32
+00:01:47,540 --> 00:01:50,025
+of course, be a unique YearGraduated.
+
+33
+00:01:50,025 --> 00:01:52,600
+How do we model a multivalue like this?
+
+34
+00:01:52,600 --> 00:01:55,700
+Well, it's a multivalue of that relationship type,
+
+35
+00:01:55,700 --> 00:01:58,650
+so we would need the identifier for the relationship type,
+
+36
+00:01:58,650 --> 00:02:01,065
+which is a combination of these two.
+
+37
+00:02:01,065 --> 00:02:04,200
+We can collapse that mapping all-in-all into
+
+38
+00:02:04,200 --> 00:02:09,260
+a single relation call Attend that has both the School identifier of SchooName,
+
+39
+00:02:09,260 --> 00:02:11,380
+the RegularUser identifier of Email,
+
+40
+00:02:11,380 --> 00:02:15,375
+and then YearGraduated, all of those combined as unique.
+
+41
+00:02:15,375 --> 00:02:19,915
+The employment relationship type is also a many-to-many relationship type,
+
+42
+00:02:19,915 --> 00:02:22,465
+so it will result in a relation called
+
+43
+00:02:22,465 --> 00:02:26,340
+employment that will have the Email of the RegularUser employed,
+
+44
+00:02:26,340 --> 00:02:28,630
+the EmployerName of the Employer,
+
+45
+00:02:28,630 --> 00:02:33,475
+and as before, an attribute for the JobTitle, which is multivalue.
+
+46
+00:02:33,475 --> 00:02:37,605
+So, this is very similar in nature to the relation we just generated here.
+
+47
+00:02:37,605 --> 00:02:39,910
+So, Employment will have Email,
+
+48
+00:02:39,910 --> 00:02:42,740
+EmployerName, and JobTitle as unique.
+
+49
+00:02:42,740 --> 00:02:45,925
+Noticed that for this unique or for this key,
+
+50
+00:02:45,925 --> 00:02:49,865
+SchoolName is a foreign key on SchoolName of School.
+
+51
+00:02:49,865 --> 00:02:51,350
+For this unique key,
+
+52
+00:02:51,350 --> 00:02:54,530
+EmployerName is a foreign key pointing to
+
+53
+00:02:54,530 --> 00:02:57,975
+the primary key EmployerName for the employer relation.
+
+54
+00:02:57,975 --> 00:03:01,350
+Notice that I have indicated the RegularUser table here,
+
+55
+00:03:01,350 --> 00:03:03,400
+although we have previously dealt with that.
+
+56
+00:03:03,400 --> 00:03:06,160
+The reason is that the RegularUser who
+
+57
+00:03:06,160 --> 00:03:10,300
+participates in the Attend relationship and the Employment relationship,
+
+58
+00:03:10,300 --> 00:03:13,660
+those are users who have emails that of course,
+
+59
+00:03:13,660 --> 00:03:16,405
+appear in the RegularUser Email list.
+
+60
+00:03:16,405 --> 00:03:18,945
+So, therefore, Email of Attend and
+
+61
+00:03:18,945 --> 00:03:23,680
+Email of Employment are foreign keys on Email in RegularUser.
+

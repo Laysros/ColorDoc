@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,000
+Kent and Diehr gave us an interesting and funny way
+
+2
+00:00:03,000 --> 00:00:05,685
+to remember the first three of these normal forms.
+
+3
+00:00:05,685 --> 00:00:08,510
+All attributes must depend on the key,
+
+4
+00:00:08,510 --> 00:00:09,960
+gives us first normal form.
+
+5
+00:00:09,960 --> 00:00:12,600
+The whole key, that gives a second reform,
+
+6
+00:00:12,600 --> 00:00:14,490
+and nothing but the key,
+
+7
+00:00:14,490 --> 00:00:16,255
+that gives us third normal form,
+
+8
+00:00:16,255 --> 00:00:17,630
+so help me Codd.
+
+9
+00:00:17,630 --> 00:00:19,120
+With references, of course,
+
+10
+00:00:19,120 --> 00:00:22,800
+to the inventor of relation databases, Ted Codd.
+

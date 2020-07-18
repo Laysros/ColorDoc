@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:04,760
+So, let's take a look at our very first file organization,
+
+2
+00:00:04,760 --> 00:00:06,265
+or rather, in this case,
+
+3
+00:00:06,265 --> 00:00:10,060
+disorganization, because the first one we're going to look at is a heap.
+
+4
+00:00:10,060 --> 00:00:14,580
+A heap is defined as a file of data that is not sorted,
+
+5
+00:00:14,580 --> 00:00:20,040
+so the records sit on a bunch of blocks and there is no sorting among the records.
+
+6
+00:00:20,040 --> 00:00:24,720
+Any record we're looking for in the whole file could sit on any block whatsoever.
+
+7
+00:00:24,720 --> 00:00:27,140
+We saw before that good assumptions,
+
+8
+00:00:27,140 --> 00:00:28,275
+for our example here,
+
+9
+00:00:28,275 --> 00:00:31,080
+would be to have block pointers that are four bytes,
+
+10
+00:00:31,080 --> 00:00:34,375
+four million records with 20 records per block,
+
+11
+00:00:34,375 --> 00:00:36,655
+we need about 200,000 data blocks,
+
+12
+00:00:36,655 --> 00:00:39,970
+and the file size is a total of 800 megs.
+
+13
+00:00:39,970 --> 00:00:41,635
+So, when something is a heap,
+
+14
+00:00:41,635 --> 00:00:45,950
+that basically means that we have to look at the data pages in
+
+15
+00:00:45,950 --> 00:00:48,050
+order to determine whether what we are looking
+
+16
+00:00:48,050 --> 00:00:50,425
+for is going to be in those data pages or not.
+
+17
+00:00:50,425 --> 00:00:55,220
+If there's a grand total of N data pages or N data blocks,
+
+18
+00:00:55,220 --> 00:00:57,230
+then sometimes, we are lucky and
+
+19
+00:00:57,230 --> 00:01:00,050
+the data we are looking for sits on the very first block.
+
+20
+00:01:00,050 --> 00:01:04,105
+Sometimes, we are unlucky and it sits on the very last block.
+
+21
+00:01:04,105 --> 00:01:05,390
+So, on the average,
+
+22
+00:01:05,390 --> 00:01:08,010
+we can expect that we have to look at N over
+
+23
+00:01:08,010 --> 00:01:12,030
+2 data blocks where N is the total number of data blocks.
+
+24
+00:01:12,030 --> 00:01:14,390
+So, with 200 data blocks,
+
+25
+00:01:14,390 --> 00:01:17,020
+if we are going to look at the average half of those,
+
+26
+00:01:17,020 --> 00:01:19,340
+we'll be looking at 100,000 data blocks.
+
+27
+00:01:19,340 --> 00:01:22,445
+If each one caused the default of 10 milliseconds,
+
+28
+00:01:22,445 --> 00:01:28,720
+that's going to cost us 16.6 minutes to look up a record in a heap.
+

@@ -1,0 +1,171 @@
+1
+00:00:00,520 --> 00:00:04,030
+So far all the relationship types
+we have looked at have been binary.
+
+2
+00:00:04,030 --> 00:00:08,200
+We are now going to look at an N-ary
+relationship type with N greater
+
+3
+00:00:08,200 --> 00:00:08,750
+than two.
+
+4
+00:00:08,750 --> 00:00:10,100
+In this case here,
+
+5
+00:00:10,100 --> 00:00:16,020
+the event team member relationship
+type is a ternary relationship type.
+
+6
+00:00:16,020 --> 00:00:21,410
+It relates three entity types,
+regular user, team, and event.
+
+7
+00:00:21,410 --> 00:00:24,170
+The semantics of this
+ternary relationship type
+
+8
+00:00:24,170 --> 00:00:25,760
+is somewhat complicated.
+
+9
+00:00:25,760 --> 00:00:29,290
+Let's try to analyze
+exactly what it means.
+
+10
+00:00:29,290 --> 00:00:33,090
+Let us fix email to be a single value.
+
+11
+00:00:33,090 --> 00:00:35,920
+Let us fix event name
+to be a single value.
+
+12
+00:00:35,920 --> 00:00:40,930
+So now we have a pair of one
+regular user and one event.
+
+13
+00:00:40,930 --> 00:00:46,890
+Because this is many on this one
+here it means that a particular
+
+14
+00:00:46,890 --> 00:00:53,820
+regular user in a particular event
+may participate on many teams.
+
+15
+00:00:53,820 --> 00:00:58,770
+Now let's fix event name and
+let us fix team name.
+
+16
+00:00:58,770 --> 00:01:02,970
+Again, since these are the identifiers,
+event name is going to give us a single
+
+17
+00:01:02,970 --> 00:01:06,320
+event, and team name is
+going to give us a single team.
+
+18
+00:01:06,320 --> 00:01:11,110
+Holding onto that pair, you see
+that there are many regular users.
+
+19
+00:01:12,970 --> 00:01:18,430
+Finally, let's now fix an email,
+and let's fix a team name.
+
+20
+00:01:18,430 --> 00:01:23,990
+So now we have a pair of one
+regular user and one team,
+
+21
+00:01:23,990 --> 00:01:29,440
+and we see here that there are N
+events that that particular
+
+22
+00:01:29,440 --> 00:01:34,450
+regular user being on that
+team may be participating in.
+
+23
+00:01:35,680 --> 00:01:38,160
+So the meaning of an instance
+
+24
+00:01:38,160 --> 00:01:43,210
+of this relationship type event team
+member really is the following.
+
+25
+00:01:43,210 --> 00:01:47,660
+A particular regular user on
+a particular regular team
+
+26
+00:01:47,660 --> 00:01:50,380
+participates in one particular event.
+
+27
+00:01:50,380 --> 00:01:56,410
+The implication of that is,
+that you need email and event name and
+
+28
+00:01:56,410 --> 00:02:03,520
+team name to identify precisely a single
+instance of this relationship type.
+
+29
+00:02:03,520 --> 00:02:07,870
+It's quite rare that you see
+examples of relationship types that
+
+30
+00:02:07,870 --> 00:02:10,050
+are degree higher than two.
+
+31
+00:02:10,050 --> 00:02:13,710
+I think one of the reasons for that is
+that they are difficult to understand,
+
+32
+00:02:13,710 --> 00:02:15,350
+they are difficult to explain.
+
+33
+00:02:15,350 --> 00:02:19,800
+Unfortunately, the problem is,
+that it is not always possible
+
+34
+00:02:19,800 --> 00:02:24,580
+to take an N-ary relationship
+type with N three or greater, and
+
+35
+00:02:24,580 --> 00:02:28,970
+decompose it into a conjunction
+of binary relationships.
+
+36
+00:02:28,970 --> 00:02:30,170
+We'll look at that next.
+

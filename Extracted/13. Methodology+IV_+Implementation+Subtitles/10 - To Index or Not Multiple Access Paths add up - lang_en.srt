@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:03,510
+Now, addressing the issue that multiple access paths
+
+2
+00:00:03,510 --> 00:00:07,910
+really add up is done also by the RegularUser example.
+
+3
+00:00:07,910 --> 00:00:12,070
+So, if you recall back to previous phases of the methodology,
+
+4
+00:00:12,070 --> 00:00:15,920
+there was a pending request from you for someone to be friends,
+
+5
+00:00:15,920 --> 00:00:18,420
+that accesses the RegularUser table.
+
+6
+00:00:18,420 --> 00:00:23,380
+There was also a pending request to you that accesses the RegularUser table.
+
+7
+00:00:23,380 --> 00:00:26,760
+Then, there is the View Profile test which is
+
+8
+00:00:26,760 --> 00:00:30,890
+just a retest and that accesses the RegularUser table.
+
+9
+00:00:30,890 --> 00:00:35,505
+Then, of course, there was an Edit Profile test that updates the regular use information.
+
+10
+00:00:35,505 --> 00:00:38,840
+So, all of these different queries,
+
+11
+00:00:38,840 --> 00:00:41,445
+insertions, deletions to updates and so on,
+
+12
+00:00:41,445 --> 00:00:43,590
+they all affect RegularUser.
+
+13
+00:00:43,590 --> 00:00:47,400
+We need to know the frequencies of each one of these to see what
+
+14
+00:00:47,400 --> 00:00:52,170
+the weight of access on RegularUser is from an overall point of view,
+
+15
+00:00:52,170 --> 00:00:58,240
+and to help guide us as to whether we therefore need additional indexing of RegularUser.
+

@@ -1,0 +1,20 @@
+1
+00:00:00,440 --> 00:00:05,640
+Having now discussed why models might be
+useful for us when we want to examine or
+
+2
+00:00:05,640 --> 00:00:10,610
+manage pieces of reality, let us talk
+about when we want to use a database
+
+3
+00:00:10,610 --> 00:00:13,830
+management system to create and
+use these models and
+
+4
+00:00:13,830 --> 00:00:17,160
+when we might not want to use
+a database management system.
+

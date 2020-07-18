@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:02,410
+So, that's exactly what I've done here.
+
+2
+00:00:02,410 --> 00:00:07,980
+You can see user1 is now repeated three times, and 1985, Seattle,
+
+3
+00:00:07,980 --> 00:00:10,690
+and 27,000 is repeated three times,
+
+4
+00:00:10,690 --> 00:00:15,115
+and it's done to avoid having this be a multi-value,
+
+5
+00:00:15,115 --> 00:00:18,185
+and avoid having this be a multi-value.
+
+6
+00:00:18,185 --> 00:00:20,535
+So this indeed now is a relation,
+
+7
+00:00:20,535 --> 00:00:24,310
+but it is really a relation with many problems in it.
+
+8
+00:00:24,310 --> 00:00:26,685
+So, let us say that in this relation,
+
+9
+00:00:26,685 --> 00:00:30,910
+we want to enforce these three function dependencies that we looked at before.
+
+10
+00:00:30,910 --> 00:00:36,960
+Or an easier way to see what they are is actually to provide a drawing of them like here.
+
+11
+00:00:36,960 --> 00:00:41,365
+So, what we are seeing here is that email will determine current city,
+
+12
+00:00:41,365 --> 00:00:43,155
+birth year, and salary,
+
+13
+00:00:43,155 --> 00:00:48,220
+and the pair of email and interest will determine the since age,
+
+14
+00:00:48,220 --> 00:00:52,020
+and finally we see that birth year will determine salary.
+
+15
+00:00:52,020 --> 00:00:54,910
+So that corresponds to those three functional dependencies.
+
+16
+00:00:54,910 --> 00:00:59,470
+So, with that relation and with these functional dependencies,
+
+17
+00:00:59,470 --> 00:01:02,490
+let's see what kind of trouble we are in.
+

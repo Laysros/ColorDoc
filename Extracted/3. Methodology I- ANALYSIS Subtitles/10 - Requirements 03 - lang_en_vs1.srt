@@ -1,0 +1,97 @@
+1
+00:00:00,440 --> 00:00:02,580
+Immediately after registering,
+
+2
+00:00:02,580 --> 00:00:05,950
+a new user would be sent
+to the edit profile screen.
+
+3
+00:00:05,950 --> 00:00:10,680
+The edit profile screen contains some
+personal information, list of interests,
+
+4
+00:00:10,680 --> 00:00:13,670
+their education, and
+their professional information.
+
+5
+00:00:13,670 --> 00:00:17,240
+The basic personal
+information contains sex,
+
+6
+00:00:17,240 --> 00:00:21,280
+birthday, current city, hometown,
+and a list of interests.
+
+7
+00:00:21,280 --> 00:00:25,690
+Entering the personal information and
+hitting save will save that information.
+
+8
+00:00:25,690 --> 00:00:28,640
+Any number of interests can be added,
+one at a time,
+
+9
+00:00:28,640 --> 00:00:32,290
+by using the add button and
+typing the interest in that field.
+
+10
+00:00:32,290 --> 00:00:36,810
+To add a school,
+the new user uses the drop-down menu and
+
+11
+00:00:36,810 --> 00:00:40,720
+types in the year graduated,
+if applicable, and hit save.
+
+12
+00:00:40,720 --> 00:00:44,820
+Similarly, to add a new job,
+the user enters the information
+
+13
+00:00:44,820 --> 00:00:49,280
+by picking from the drop-down,
+enters the job title, and says save.
+
+14
+00:00:49,280 --> 00:00:54,410
+The edit profile screen, obviously, is
+going to be solved in potentially many
+
+15
+00:00:54,410 --> 00:00:58,980
+types of information being written into
+the database, the person's information,
+
+16
+00:00:58,980 --> 00:01:03,150
+interests, education information and
+profession information.
+
+17
+00:01:03,150 --> 00:01:06,210
+But, notice that there will
+also be information that's
+
+18
+00:01:06,210 --> 00:01:07,540
+read from the database.
+
+19
+00:01:07,540 --> 00:01:11,690
+For example, because the drop down-list
+for school and the drop-down list for
+
+20
+00:01:11,690 --> 00:01:15,170
+employer needs to be consoled in
+the database to populate the screen.

@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:02,490
+Okay, so here's the phone book as a heap.
+
+2
+00:00:02,490 --> 00:00:06,290
+Let's try to see if we can find the phone number of Leomart.
+
+3
+00:00:06,290 --> 00:00:08,330
+Pull a page out of the heap.
+
+4
+00:00:08,330 --> 00:00:10,835
+No, it's not on that page.
+
+5
+00:00:10,835 --> 00:00:13,060
+Pull another page out.
+
+6
+00:00:13,060 --> 00:00:15,780
+No, it's not on that one either.
+
+7
+00:00:15,780 --> 00:00:17,925
+Pull the next one up.
+
+8
+00:00:17,925 --> 00:00:19,890
+No, it's not on that one either.
+
+9
+00:00:19,890 --> 00:00:23,500
+Now sometimes you're lucky when you
+
+10
+00:00:23,500 --> 00:00:28,255
+search in a heap and what you're looking for is on the very first page you pull up.
+
+11
+00:00:28,255 --> 00:00:33,130
+Sometimes you're unlucky and it'll be on the very last page.
+
+12
+00:00:33,130 --> 00:00:37,425
+If you used a phone book a lot and life is long,
+
+13
+00:00:37,425 --> 00:00:39,115
+then on the average,
+
+14
+00:00:39,115 --> 00:00:41,580
+you can be pulling up half the pages from
+
+15
+00:00:41,580 --> 00:00:46,480
+the heap to find what you're looking for. Thank you.
+

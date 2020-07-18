@@ -1,0 +1,64 @@
+1
+00:00:00,490 --> 00:00:02,690
+So let's talk about
+the conceptual schema.
+
+2
+00:00:02,690 --> 00:00:08,029
+The conceptual schema describes all
+conceptually relevant, general,
+
+3
+00:00:08,029 --> 00:00:11,780
+and time-invariant structural
+aspects of reality.
+
+4
+00:00:11,780 --> 00:00:16,129
+It describes nothing related
+to data representation,
+
+5
+00:00:16,129 --> 00:00:19,680
+physically organization, access, or use.
+
+6
+00:00:19,680 --> 00:00:23,240
+Here's an example, you have
+the RegularUser table with Email,
+
+7
+00:00:23,240 --> 00:00:26,910
+BirthDate, Hometown, LastName,
+MaidenName, Sex, and Salary.
+
+8
+00:00:26,910 --> 00:00:30,960
+At the conceptual level,
+the only thing that's visible
+
+9
+00:00:30,960 --> 00:00:34,820
+to the query language is this table and
+the columns in it.
+
+10
+00:00:34,820 --> 00:00:39,631
+So you could for example write a query,
+select Email, BirthDate and MaidenName
+
+11
+00:00:39,631 --> 00:00:44,458
+from regular user, where Sex='F' and
+Salary is greater than 70,000.
+
+12
+00:00:44,458 --> 00:00:48,884
+You cannot in that query include
+anything about how the results
+
+13
+00:00:48,884 --> 00:00:53,740
+are displayed other than in this order,
+or how the data is accessed.
+

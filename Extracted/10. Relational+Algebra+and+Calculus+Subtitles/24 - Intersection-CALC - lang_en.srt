@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:02,730
+Now to intersection, so we're going to use
+
+2
+00:00:02,730 --> 00:00:05,850
+the same example but this time instead we're going to find
+
+3
+00:00:05,850 --> 00:00:13,010
+the cities that are a CurrentCity for some user and a HomeTown for some user.
+
+4
+00:00:13,010 --> 00:00:15,670
+Not necessarily the same user of course.
+
+5
+00:00:15,670 --> 00:00:18,090
+So for a City S to qualify,
+
+6
+00:00:18,090 --> 00:00:24,410
+there must exist a table in RegularUser that has the CurrentCity as that City.
+
+7
+00:00:24,410 --> 00:00:27,720
+It must also be the case that there's
+
+8
+00:00:27,720 --> 00:00:32,480
+a table t in RegularUser that has that City as the HomeTown.
+
+9
+00:00:32,480 --> 00:00:34,275
+So what about San Francisco?
+
+10
+00:00:34,275 --> 00:00:35,465
+Is that going to qualify?
+
+11
+00:00:35,465 --> 00:00:38,975
+Well, San Francisco is certainly a CurrentCity for user four.
+
+12
+00:00:38,975 --> 00:00:43,360
+Is San Francisco also a HomeTown for some user? Yes, it is.
+
+13
+00:00:43,360 --> 00:00:44,640
+It is for user six.
+
+14
+00:00:44,640 --> 00:00:47,150
+So San Francisco is part of the result.
+
+15
+00:00:47,150 --> 00:00:48,575
+What about San Diego?
+
+16
+00:00:48,575 --> 00:00:49,825
+That's a CurrentCity.
+
+17
+00:00:49,825 --> 00:00:54,090
+Well, it's not part of the result because it's not a HomeTown for anyone.
+
+18
+00:00:54,090 --> 00:00:56,685
+How about Las Vegas then? Same thing.
+
+19
+00:00:56,685 --> 00:00:58,390
+It's not a HomeTown for anyone.
+
+20
+00:00:58,390 --> 00:00:59,885
+How about Dallas?
+
+21
+00:00:59,885 --> 00:01:05,120
+Yes, Dallas is part of the result because Dallas is also a HomeTown for someone.
+
+22
+00:01:05,120 --> 00:01:07,200
+In this case actually the same one.
+
+23
+00:01:07,200 --> 00:01:11,280
+So the result is San Francisco and Dallas.
+

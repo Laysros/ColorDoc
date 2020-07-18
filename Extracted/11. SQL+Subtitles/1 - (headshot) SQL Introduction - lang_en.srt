@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:02,110
+So, now we get to SQL.
+
+2
+00:00:02,110 --> 00:00:06,005
+SQL is sort of the lingua franca of databases.
+
+3
+00:00:06,005 --> 00:00:10,065
+Most databases support some form of SQL.
+
+4
+00:00:10,065 --> 00:00:12,430
+Mike Stonebraker also called SQL,
+
+5
+00:00:12,430 --> 00:00:15,190
+the intergalactic data speak some years ago,
+
+6
+00:00:15,190 --> 00:00:17,255
+and that is really still true.
+
+7
+00:00:17,255 --> 00:00:23,255
+Most data sit in relational databases and are accessed through SQL.
+
+8
+00:00:23,255 --> 00:00:29,310
+Although, XML is used quite a lot to describe interfaces and to exchange data,
+
+9
+00:00:29,310 --> 00:00:32,520
+the real data still sit in SQL databases.
+
+10
+00:00:32,520 --> 00:00:35,200
+So, now on to SQL.
+

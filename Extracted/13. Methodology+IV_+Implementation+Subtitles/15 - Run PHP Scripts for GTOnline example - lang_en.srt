@@ -1,0 +1,236 @@
+1
+00:00:00,000 --> 00:00:03,600
+Let me show you how I can run PHP Scripts for some of
+
+2
+00:00:03,600 --> 00:00:07,605
+the tasks in the GT Online example that we have discussed in class.
+
+3
+00:00:07,605 --> 00:00:10,420
+By now, all of us should have either vamp,
+
+4
+00:00:10,420 --> 00:00:14,070
+mamp or lamp stack installed on our local machines.
+
+5
+00:00:14,070 --> 00:00:17,435
+Let us first head to the php my admin page which contains
+
+6
+00:00:17,435 --> 00:00:22,085
+the GTOnline complete database with the tables installed a regular user,
+
+7
+00:00:22,085 --> 00:00:25,600
+user, and friendship which we'll be focusing on in this demo.
+
+8
+00:00:25,600 --> 00:00:27,190
+Now to run PHP scripts,
+
+9
+00:00:27,190 --> 00:00:30,575
+we need to have a local host server running on our machines.
+
+10
+00:00:30,575 --> 00:00:33,600
+For that, I'll next head to the domain lan, the MacBook.
+
+11
+00:00:33,600 --> 00:00:37,640
+For Windows users, you need to go to the command prompt and type run.
+
+12
+00:00:37,640 --> 00:00:44,945
+The command to start the php local host server is php -S localhost: and port number.
+
+13
+00:00:44,945 --> 00:00:46,305
+The port number can be anything,
+
+14
+00:00:46,305 --> 00:00:48,090
+you just need to remember the port number that we have
+
+15
+00:00:48,090 --> 00:00:50,010
+entered and my local host server has
+
+16
+00:00:50,010 --> 00:00:53,715
+been started on the same folder which contains all my PHP Scripts.
+
+17
+00:00:53,715 --> 00:00:56,505
+So gtpe, underscore db,
+
+18
+00:00:56,505 --> 00:00:59,120
+underscore course is the same folder which contains
+
+19
+00:00:59,120 --> 00:01:02,075
+all the PHP scripts that I'm going to run in this demo.
+
+20
+00:01:02,075 --> 00:01:05,070
+Next, I head to the browser and I will first
+
+21
+00:01:05,070 --> 00:01:08,475
+show you the log in page which is the first page in the application.
+
+22
+00:01:08,475 --> 00:01:09,755
+To access the log in page,
+
+23
+00:01:09,755 --> 00:01:12,585
+you need to type localhost:8000.
+
+24
+00:01:12,585 --> 00:01:14,735
+The port number again should be the same port number that
+
+25
+00:01:14,735 --> 00:01:17,890
+we gave by starting the local host server;
+
+26
+00:01:17,890 --> 00:01:21,825
+/login.php and this takes me to the application login page.
+
+27
+00:01:21,825 --> 00:01:24,300
+Now I need to enter the login credentials of
+
+28
+00:01:24,300 --> 00:01:27,090
+a particular user to get into the application.
+
+29
+00:01:27,090 --> 00:01:31,860
+I'll head back to the php my admin page to pick up the details of one particular user.
+
+30
+00:01:31,860 --> 00:01:35,905
+I'll go to the user table and I'll select Michael Bluth for example.
+
+31
+00:01:35,905 --> 00:01:38,840
+I will just copy his email address and remember his password.
+
+32
+00:01:38,840 --> 00:01:40,590
+Heading back to the log in page,
+
+33
+00:01:40,590 --> 00:01:44,780
+I entered the details which were already entered in the database and try logging in.
+
+34
+00:01:44,780 --> 00:01:46,900
+I've been successfully able to log into
+
+35
+00:01:46,900 --> 00:01:50,530
+the user page and I can currently view the profile of Michael Bluth.
+
+36
+00:01:50,530 --> 00:01:53,550
+Now the view profile is also another php page which is running in
+
+37
+00:01:53,550 --> 00:01:57,235
+the background that was accessed from the login.php page.
+
+38
+00:01:57,235 --> 00:02:01,185
+So next I can do a few tasks on this page like viewing the profile,
+
+39
+00:02:01,185 --> 00:02:04,385
+editing the profile, viewing the friends of the user, etc.
+
+40
+00:02:04,385 --> 00:02:09,210
+Let's try making a few changes to the already existing profile of Michael Bluth.
+
+41
+00:02:09,210 --> 00:02:11,820
+For that, I need to go to the edit profile page.
+
+42
+00:02:11,820 --> 00:02:14,730
+Let's quickly head back to the php my admin page and
+
+43
+00:02:14,730 --> 00:02:18,155
+verify the details that are currently existing on that log in page.
+
+44
+00:02:18,155 --> 00:02:21,030
+So it says the date of birth is 1st January,
+
+45
+00:02:21,030 --> 00:02:23,700
+1971 and the current city is New York.
+
+46
+00:02:23,700 --> 00:02:28,550
+So if I head back to the php my admin page and I go back to the regular user table,
+
+47
+00:02:28,550 --> 00:02:32,130
+I can find out that Michael Bluth's date of birth is 1st January,
+
+48
+00:02:32,130 --> 00:02:34,905
+1971 and his current city is New York.
+
+49
+00:02:34,905 --> 00:02:37,755
+So if I go back to the edit profile page and change
+
+50
+00:02:37,755 --> 00:02:41,045
+his current city from New York to San Francisco,
+
+51
+00:02:41,045 --> 00:02:42,570
+next I click "Save".
+
+52
+00:02:42,570 --> 00:02:44,910
+Next, let's see if these changes
+
+53
+00:02:44,910 --> 00:02:47,455
+that we've made have been reflected in the database or not.
+
+54
+00:02:47,455 --> 00:02:51,020
+If you go back to the php my admin page and refresh the page,
+
+55
+00:02:51,020 --> 00:02:53,805
+you can see that the user Michael Bluth,
+
+56
+00:02:53,805 --> 00:02:56,840
+his city, his current city has been updated to San Francisco.
+
+57
+00:02:56,840 --> 00:02:58,875
+Exactly what we did on the application.
+
+58
+00:02:58,875 --> 00:03:01,875
+Similarly, we can also view friends of
+
+59
+00:03:01,875 --> 00:03:06,090
+Michael Bluth and these are the same that I again listed on the database.
+

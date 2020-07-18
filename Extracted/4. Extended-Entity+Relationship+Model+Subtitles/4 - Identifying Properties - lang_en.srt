@@ -1,0 +1,97 @@
+1
+00:00:00,880 --> 00:00:04,280
+Some property types
+are identifying property types.
+
+2
+00:00:04,280 --> 00:00:08,580
+That's shown by underlining
+the name of the property type.
+
+3
+00:00:08,580 --> 00:00:11,330
+Let's look at what that means
+in the instance diagram.
+
+4
+00:00:11,330 --> 00:00:16,149
+So here you have again a user
+with a name leo@gt.edu.
+
+5
+00:00:16,149 --> 00:00:20,970
+Got another user Rocky,
+you got a third user Jim.
+
+6
+00:00:22,530 --> 00:00:26,270
+The constraint that email
+be an identifying property
+
+7
+00:00:26,270 --> 00:00:28,420
+has the following implication.
+
+8
+00:00:28,420 --> 00:00:33,150
+When you point to a particular value,
+like leo@gt.edu,
+
+9
+00:00:33,150 --> 00:00:40,220
+there can be only a single entity
+instance identified by that email value.
+
+10
+00:00:40,220 --> 00:00:45,140
+So what would not be possible is
+that given a value of email here,
+
+11
+00:00:45,140 --> 00:00:48,780
+that this would point to two
+different instances of user.
+
+12
+00:00:48,780 --> 00:00:50,910
+So that's not possible.
+
+13
+00:00:52,230 --> 00:00:56,850
+It is important to understand that
+every single entity instance in
+
+14
+00:00:56,850 --> 00:01:01,780
+the database at any given point in
+time must be uniquely reference-able.
+
+15
+00:01:01,780 --> 00:01:03,020
+It was very easy and
+
+16
+00:01:03,020 --> 00:01:07,410
+very simple to see in this case here
+where you just have one identifying
+
+17
+00:01:07,410 --> 00:01:12,900
+property type that is used to uniquely
+identify the identity instances.
+
+18
+00:01:12,900 --> 00:01:17,210
+Later on we going to see cases
+where multiple property types and
+
+19
+00:01:17,210 --> 00:01:21,190
+even in some situations
+relationship types are needed
+
+20
+00:01:21,190 --> 00:01:25,440
+in order to uniquely reference
+instances of entities.
+

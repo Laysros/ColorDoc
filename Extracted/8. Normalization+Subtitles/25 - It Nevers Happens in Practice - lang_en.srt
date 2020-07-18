@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:02,550
+As illustrated by the Venn diagram,
+
+2
+00:00:02,550 --> 00:00:04,845
+this really never happens in practice.
+
+3
+00:00:04,845 --> 00:00:08,010
+I'm going to show you a proof by experience.
+
+4
+00:00:08,010 --> 00:00:09,990
+Proof has two steps to it.
+
+5
+00:00:09,990 --> 00:00:13,500
+Number one: it never happened to me in 35 years.
+
+6
+00:00:13,500 --> 00:00:16,714
+I've designed a lot of databases in industry,
+
+7
+00:00:16,714 --> 00:00:19,050
+in government, and in the university,
+
+8
+00:00:19,050 --> 00:00:20,675
+and it never happened to me.
+
+9
+00:00:20,675 --> 00:00:22,240
+As a second part of the proof,
+
+10
+00:00:22,240 --> 00:00:25,335
+take a look at one of the bookcases in my office.
+
+11
+00:00:25,335 --> 00:00:29,545
+So, this one bookcase contains data-based textbooks only.
+
+12
+00:00:29,545 --> 00:00:35,235
+Every single one of these textbooks has in it a chapter on database normalization.
+
+13
+00:00:35,235 --> 00:00:37,355
+They will show you first normal form,
+
+14
+00:00:37,355 --> 00:00:39,710
+second normal form, third normal form,
+
+15
+00:00:39,710 --> 00:00:41,430
+and Boyce-Codd normal form.
+
+16
+00:00:41,430 --> 00:00:45,540
+Then coming to the bottom of the right page, it says, "However,
+
+17
+00:00:45,540 --> 00:00:48,390
+there does exist relations that can only be
+
+18
+00:00:48,390 --> 00:00:52,450
+decomposed to third normal form and not Boyce-Codd normal form."
+
+19
+00:00:52,450 --> 00:00:55,080
+With shaking fingers you turned the page to see
+
+20
+00:00:55,080 --> 00:00:57,975
+such an example and they change the example on you.
+
+21
+00:00:57,975 --> 00:00:59,490
+Why is that the case?
+
+22
+00:00:59,490 --> 00:01:03,690
+Because it takes a really sick brain to construct an example like that.
+
+23
+00:01:03,690 --> 00:01:08,830
+So, be confident if you follow the steps and bring relations through first, second,
+
+24
+00:01:08,830 --> 00:01:12,000
+third normal form you will be lucky and you will
+
+25
+00:01:12,000 --> 00:01:16,080
+end up in Boyce-Codd normal form in practice.
+

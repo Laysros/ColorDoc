@@ -1,0 +1,29 @@
+1
+00:00:00,490 --> 00:00:01,740
+In the beginning of the course,
+
+2
+00:00:01,740 --> 00:00:05,650
+I told you that we're going to spend
+a lot of time on data modeling.
+
+3
+00:00:05,650 --> 00:00:09,788
+In order to do data modeling,
+we need data models.
+
+4
+00:00:09,788 --> 00:00:14,570
+The Extended Entity-Relationship Model
+is one data model that is particularly
+
+5
+00:00:14,570 --> 00:00:19,490
+good at helping us fix and
+represent a perception of reality.
+
+6
+00:00:19,490 --> 00:00:22,753
+So now on to
+the Extended Entity-Relationship Model.
+

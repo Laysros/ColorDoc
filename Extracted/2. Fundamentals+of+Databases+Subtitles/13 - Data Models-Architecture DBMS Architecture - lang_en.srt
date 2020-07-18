@@ -1,0 +1,94 @@
+1
+00:00:00,430 --> 00:00:05,050
+In order to do data modeling, we need to
+talk about a tool called a data model.
+
+2
+00:00:05,050 --> 00:00:09,410
+Data models contain formulations to
+allow us to express data structures,
+
+3
+00:00:09,410 --> 00:00:10,880
+constraints, and operations.
+
+4
+00:00:10,880 --> 00:00:13,990
+But there are several
+additional important aspects
+
+5
+00:00:13,990 --> 00:00:16,940
+I want to talk about before we,
+later on in the course,
+
+6
+00:00:16,940 --> 00:00:20,710
+get into details with the two major
+data models we're going to talk about,
+
+7
+00:00:20,710 --> 00:00:25,030
+namely, the extended entity relationship
+model and the relational model.
+
+8
+00:00:25,030 --> 00:00:28,250
+And other important aspect I
+want to briefly talk about,
+
+9
+00:00:28,250 --> 00:00:30,250
+is database architecture.
+
+10
+00:00:30,250 --> 00:00:32,700
+So, it turns out that a database and
+
+11
+00:00:32,700 --> 00:00:36,450
+mode of structure of reality
+act has several layers to it.
+
+12
+00:00:36,450 --> 00:00:38,840
+We want to look at
+what are those layers.
+
+13
+00:00:38,840 --> 00:00:42,900
+We also want to take a look at what
+the architecture of a database
+
+14
+00:00:42,900 --> 00:00:47,060
+management system, to allow us to
+create such a database, would be.
+
+15
+00:00:47,060 --> 00:00:51,110
+Specifically, we will look at
+the ANSI/SPARC 3-Level database
+
+16
+00:00:51,110 --> 00:00:56,010
+architecture, and the corresponding
+database management system architecture.
+
+17
+00:00:56,010 --> 00:00:58,540
+Finally, I want to mention metadata.
+
+18
+00:00:58,540 --> 00:00:59,800
+What it is and
+
+19
+00:00:59,800 --> 00:01:04,670
+why it is so important to make
+everything else happen in a database.
+
+20
+00:01:04,670 --> 00:01:06,390
+And now on to data structures.
+

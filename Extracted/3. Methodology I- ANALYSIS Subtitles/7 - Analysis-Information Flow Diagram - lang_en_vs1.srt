@@ -1,0 +1,141 @@
+1
+00:00:00,410 --> 00:00:04,130
+Here's the notation we're going to
+use for an information flow diagram.
+
+2
+00:00:04,130 --> 00:00:06,430
+The ellipsis represent tasks.
+
+3
+00:00:06,430 --> 00:00:08,620
+The documents represent input and
+
+4
+00:00:08,620 --> 00:00:12,340
+output screens, as you've seen in
+the requirements specification.
+
+5
+00:00:12,340 --> 00:00:15,480
+The arrows represent information flow.
+
+6
+00:00:15,480 --> 00:00:18,100
+Very importantly, information flow.
+
+7
+00:00:18,100 --> 00:00:19,320
+Not control flow.
+
+8
+00:00:19,320 --> 00:00:20,930
+So this is not a flowchart,
+
+9
+00:00:20,930 --> 00:00:25,560
+this is a chart that shows potential
+information flow through the arrows.
+
+10
+00:00:25,560 --> 00:00:29,570
+And then finally, the broken line
+here represents the system boundary.
+
+11
+00:00:29,570 --> 00:00:32,930
+So in this example here,
+we are implementing a system and
+
+12
+00:00:32,930 --> 00:00:36,450
+you can see the boundary of the system
+here is what we're implementing.
+
+13
+00:00:36,450 --> 00:00:41,670
+Inside on that system there is a number
+of tasks, task T1, T2, T3 and T4.
+
+14
+00:00:41,670 --> 00:00:46,600
+There's also a number of documents that
+we use to interact with the system, D1,
+
+15
+00:00:46,600 --> 00:00:48,150
+D2, D3, D4, etc.
+
+16
+00:00:48,150 --> 00:00:51,100
+If you look at document D1,
+
+17
+00:00:51,100 --> 00:00:55,470
+then document D1 is an input
+document to test T1.
+
+18
+00:00:55,470 --> 00:00:59,530
+Test T1 may then interact with
+the database by writing things in
+
+19
+00:00:59,530 --> 00:01:02,470
+the database and
+reading things from the database.
+
+20
+00:01:02,470 --> 00:01:06,920
+Document D2 is both an input and
+an output document.
+
+21
+00:01:06,920 --> 00:01:10,210
+Test T1 will read information from D2,
+
+22
+00:01:10,210 --> 00:01:13,760
+will interact with the database
+potentially writing in the database and
+
+23
+00:01:13,760 --> 00:01:17,940
+reading from the database and
+returning information to document D2.
+
+24
+00:01:17,940 --> 00:01:21,300
+It's possible that a task can
+interact with multiple documents,
+
+25
+00:01:21,300 --> 00:01:22,520
+as you see here.
+
+26
+00:01:22,520 --> 00:01:23,880
+So, as I mentioned before,
+
+27
+00:01:23,880 --> 00:01:28,000
+this is an information flow diagram,
+not a control flow diagram.
+
+28
+00:01:28,000 --> 00:01:31,070
+There are some rules of
+this symbolic language.
+
+29
+00:01:31,070 --> 00:01:33,350
+You never connect two documents.
+
+30
+00:01:33,350 --> 00:01:35,660
+You never connect two tasks.
+
+31
+00:01:35,660 --> 00:01:39,850
+So these are the only ways that the
+document is allowed to be constructed.

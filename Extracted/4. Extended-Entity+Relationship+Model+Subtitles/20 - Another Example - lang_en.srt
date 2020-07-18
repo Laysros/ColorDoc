@@ -1,0 +1,177 @@
+1
+00:00:00,610 --> 00:00:04,560
+What needs to happen is the schools
+attended need to be an entity type as
+
+2
+00:00:04,560 --> 00:00:06,700
+opposed to a relationship type.
+
+3
+00:00:06,700 --> 00:00:10,080
+We call that an objectified
+relationship type.
+
+4
+00:00:10,080 --> 00:00:12,650
+So, schools attended is
+now a relationship type.
+
+5
+00:00:12,650 --> 00:00:16,400
+The GPA property type is a property
+type of that entity type.
+
+6
+00:00:16,400 --> 00:00:20,930
+Now, we need to model the two
+relationship types that are necessary
+
+7
+00:00:20,930 --> 00:00:24,060
+in order to get the same
+functionality or
+
+8
+00:00:24,060 --> 00:00:28,710
+cardinality of the mapping between
+the regular user and school.
+
+9
+00:00:28,710 --> 00:00:32,220
+The way that is done is
+that you introduce two,
+
+10
+00:00:32,220 --> 00:00:34,050
+one to many relationships.
+
+11
+00:00:34,050 --> 00:00:36,860
+One from regular user
+to schools attended and
+
+12
+00:00:36,860 --> 00:00:39,990
+one from school to schools attended.
+
+13
+00:00:39,990 --> 00:00:43,730
+That functionality,
+the two one-to-many relationship type,
+
+14
+00:00:43,730 --> 00:00:46,400
+that meet in the middle,
+is going to result
+
+15
+00:00:46,400 --> 00:00:51,210
+in a many-to-many relationship type
+between regular user and school.
+
+16
+00:00:52,370 --> 00:00:55,870
+So here we have regular user instances.
+
+17
+00:00:55,870 --> 00:00:58,970
+And here we have schools
+attended instances.
+
+18
+00:00:58,970 --> 00:01:03,830
+As you can see,
+a regular user here maps to multiple
+
+19
+00:01:03,830 --> 00:01:08,190
+schools attended via this
+one-to-many relationship type.
+
+20
+00:01:08,190 --> 00:01:10,250
+Here's another example of that.
+
+21
+00:01:10,250 --> 00:01:12,860
+Now let's look at school
+to schools attended.
+
+22
+00:01:12,860 --> 00:01:15,630
+Again, that's a one-to-many
+relationship type.
+
+23
+00:01:15,630 --> 00:01:17,662
+This one maps to one,
+which is one example of many.
+
+24
+00:01:17,662 --> 00:01:22,137
+This one here maps to many.
+
+25
+00:01:22,137 --> 00:01:24,554
+This one here does not map.
+
+26
+00:01:24,554 --> 00:01:28,604
+Now, let's convince ourselves
+that this action, in the end,
+
+27
+00:01:28,604 --> 00:01:33,031
+results in a many-to-many relationship,
+between regular user and
+
+28
+00:01:33,031 --> 00:01:36,130
+school, exactly like we
+were supposed to have.
+
+29
+00:01:36,130 --> 00:01:39,700
+So take a look at this
+particular regular user here,
+
+30
+00:01:39,700 --> 00:01:42,720
+how many schools does that user map to?
+
+31
+00:01:42,720 --> 00:01:46,490
+Well maps to these two
+schools attended and
+
+32
+00:01:46,490 --> 00:01:50,630
+this one maps to that school and
+this one here maps to that school so
+
+33
+00:01:50,630 --> 00:01:54,540
+that means that this one
+maps to multiple schools.
+
+34
+00:01:54,540 --> 00:01:58,260
+Adversely, take a look at
+this particular school here.
+
+35
+00:01:58,260 --> 00:02:02,610
+Here are two of the the instances
+of schools attended, and
+
+36
+00:02:02,610 --> 00:02:05,420
+this one matched to that user,
+this one matched to that user.
+
+37
+00:02:05,420 --> 00:02:09,370
+Thus, this school here maps
+to multiple regular users.
+

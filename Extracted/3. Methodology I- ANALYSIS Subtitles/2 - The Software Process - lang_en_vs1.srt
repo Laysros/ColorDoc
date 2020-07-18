@@ -1,0 +1,48 @@
+1
+00:00:00,440 --> 00:00:02,840
+As you know from your
+software engineering class,
+
+2
+00:00:02,840 --> 00:00:07,470
+a waterfall software process, typically
+consists of the following phases.
+
+3
+00:00:07,470 --> 00:00:13,420
+There's a business process design phase,
+analysis, specification, design,
+
+4
+00:00:13,420 --> 00:00:18,360
+implementation, and then followed by
+testing, operation, and maintenance.
+
+5
+00:00:18,360 --> 00:00:22,500
+And then, of course, there's
+the management of the whole process.
+
+6
+00:00:22,500 --> 00:00:25,440
+All of these phases are needed in
+
+7
+00:00:25,440 --> 00:00:29,010
+a database application
+development methodology also.
+
+8
+00:00:29,010 --> 00:00:32,800
+However, in this course,
+we are only going to look at those that
+
+9
+00:00:32,800 --> 00:00:36,970
+are actually unique for database
+development, and they are analysis,
+
+10
+00:00:36,970 --> 00:00:39,640
+specification, design,
+and implementation.

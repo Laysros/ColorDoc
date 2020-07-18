@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:02,445
+Finally, update anomalies.
+
+2
+00:00:02,445 --> 00:00:05,170
+If you want to update the address for user,
+
+3
+00:00:05,170 --> 00:00:07,425
+too, you're going to have to update it everywhere.
+
+4
+00:00:07,425 --> 00:00:12,995
+If you want to update the salaries that are made by people with birth year 67,
+
+5
+00:00:12,995 --> 00:00:15,810
+you're going to have to remember to do it everywhere.
+

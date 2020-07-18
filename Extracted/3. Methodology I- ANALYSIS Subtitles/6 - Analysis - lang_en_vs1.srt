@@ -1,0 +1,27 @@
+1
+00:00:00,420 --> 00:00:04,110
+Coming back from the first detour where
+you've familiarized yourself with
+
+2
+00:00:04,110 --> 00:00:07,760
+the document that represents
+the customers requirements to this
+
+3
+00:00:07,760 --> 00:00:09,920
+future database application system.
+
+4
+00:00:09,920 --> 00:00:12,080
+We are now ready to do analysis.
+
+5
+00:00:12,080 --> 00:00:15,640
+In the analysis, we are going to
+take the customers requirements and
+
+6
+00:00:15,640 --> 00:00:18,990
+from those we are going to create
+a information flow diagram.

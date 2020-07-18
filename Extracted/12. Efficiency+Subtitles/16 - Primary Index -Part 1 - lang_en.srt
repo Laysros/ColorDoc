@@ -1,0 +1,232 @@
+1
+00:00:00,000 --> 00:00:05,350
+So in addition to sorting the data and being smart about how we search in it,
+
+2
+00:00:05,350 --> 00:00:10,250
+we might want to consider ways of reducing the size of what we're going to search in.
+
+3
+00:00:10,250 --> 00:00:13,320
+That's where the idea of indices comes in.
+
+4
+00:00:13,320 --> 00:00:15,160
+We are going to look at two kinds of indices;
+
+5
+00:00:15,160 --> 00:00:18,250
+primary indices and secondary indices.
+
+6
+00:00:18,250 --> 00:00:21,940
+So, the idea of a primary index is as follows: we
+
+7
+00:00:21,940 --> 00:00:25,870
+have data here at the bottom and the data is sorted in some order.
+
+8
+00:00:25,870 --> 00:00:31,030
+So, the records come here with increasing or decreasing key values.
+
+9
+00:00:31,030 --> 00:00:32,750
+To build a primary index,
+
+10
+00:00:32,750 --> 00:00:35,290
+what we do is we take a look at
+
+11
+00:00:35,290 --> 00:00:40,660
+the first record and pick up the key of that record and make a copy
+
+12
+00:00:40,660 --> 00:00:43,800
+of it in an index block together with a point of
+
+13
+00:00:43,800 --> 00:00:48,980
+that point's back to the block on which the record with that key was the first one.
+
+14
+00:00:48,980 --> 00:00:51,015
+We go to the second block here,
+
+15
+00:00:51,015 --> 00:00:52,660
+look at the first record,
+
+16
+00:00:52,660 --> 00:00:55,155
+pick up the key value, make a copy,
+
+17
+00:00:55,155 --> 00:00:58,330
+insert it in the index together with a pointer back to
+
+18
+00:00:58,330 --> 00:01:02,370
+the block on which that key value was the key value of the first record.
+
+19
+00:01:02,370 --> 00:01:04,485
+Pick up the key value of the second one,
+
+20
+00:01:04,485 --> 00:01:06,650
+insert it with a pointer etc.
+
+21
+00:01:06,650 --> 00:01:09,495
+When that index block is full we continue.
+
+22
+00:01:09,495 --> 00:01:11,650
+So, the index blocks look like this.
+
+23
+00:01:11,650 --> 00:01:16,315
+There's a key value and a pointer to the record where that was the first key value.
+
+24
+00:01:16,315 --> 00:01:18,310
+So, these look like this.
+
+25
+00:01:18,310 --> 00:01:21,040
+There is a key value followed by a pointer
+
+26
+00:01:21,040 --> 00:01:23,920
+to the block where that key value was the first one,
+
+27
+00:01:23,920 --> 00:01:27,940
+then there's the next key value followed by a pointer, etc.
+
+28
+00:01:27,940 --> 00:01:30,100
+So, that's the content of each one of these.
+
+29
+00:01:30,100 --> 00:01:33,530
+When we come to the very last block of data here and we have
+
+30
+00:01:33,530 --> 00:01:36,855
+picked up the key value of the first record and inserted that,
+
+31
+00:01:36,855 --> 00:01:38,650
+we are done building the index.
+
+32
+00:01:38,650 --> 00:01:40,890
+Notice an interesting detail,
+
+33
+00:01:40,890 --> 00:01:44,185
+since we're picking up the key values in sorted order,
+
+34
+00:01:44,185 --> 00:01:49,720
+once we build the index does not even have reason to sort that, it's born sorted.
+
+35
+00:01:49,720 --> 00:01:52,270
+Also, notice that the only element we're
+
+36
+00:01:52,270 --> 00:01:55,175
+picking up from each record actually is the key value,
+
+37
+00:01:55,175 --> 00:01:58,340
+so all the other current city, birthdate,
+
+38
+00:01:58,340 --> 00:02:01,900
+hometown, etc., all of that is not picked up from here.
+
+39
+00:02:01,900 --> 00:02:03,340
+What does that mean?
+
+40
+00:02:03,340 --> 00:02:07,795
+That means that we can fit a whole lot of entries in an index page.
+
+41
+00:02:07,795 --> 00:02:09,400
+As a matter of fact,
+
+42
+00:02:09,400 --> 00:02:12,890
+let's take a look at exactly how many we could fit in there.
+
+43
+00:02:12,890 --> 00:02:18,095
+So, we know that we have 200,000 blocks of data at the bottom level here.
+
+44
+00:02:18,095 --> 00:02:21,155
+We know that a block pointer is four bytes.
+
+45
+00:02:21,155 --> 00:02:24,525
+We know we only want to fill also the index pages,
+
+46
+00:02:24,525 --> 00:02:28,180
+80 percent, so we've got 3,200 bytes to work with.
+
+47
+00:02:28,180 --> 00:02:30,215
+We know that the key value,
+
+48
+00:02:30,215 --> 00:02:32,745
+email is 50 characters,
+
+49
+00:02:32,745 --> 00:02:38,600
+varchar 50, you add the 50 to the four byte pointer size, you get 54.
+
+50
+00:02:38,600 --> 00:02:44,925
+Fifty four divided up into 3,200 is going to give you approximately 60.
+
+51
+00:02:44,925 --> 00:02:46,570
+So, when you look at one of these,
+
+52
+00:02:46,570 --> 00:02:50,035
+you're going to have approximately 60 key values
+
+53
+00:02:50,035 --> 00:02:54,110
+and a corresponding set of pointers that come out from that.
+
+54
+00:02:54,110 --> 00:02:55,660
+That's called the fanout.
+
+55
+00:02:55,660 --> 00:02:58,610
+So, with space being utilized 80 percent,
+
+56
+00:02:58,610 --> 00:03:02,170
+the fanout of this primary index is 60.
+
+57
+00:03:02,170 --> 00:03:04,330
+In other words, you're going to see 60 pointers
+
+58
+00:03:04,330 --> 00:03:08,250
+sticking out of each one of these pointing down to the data lab.
+

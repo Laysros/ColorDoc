@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:02,765
+When building database applications,
+
+2
+00:00:02,765 --> 00:00:07,380
+the physical database design and the resulting efficiency is very important.
+
+3
+00:00:07,380 --> 00:00:10,050
+We may have done an outstanding job, designing,
+
+4
+00:00:10,050 --> 00:00:12,210
+and implementing the database itself,
+
+5
+00:00:12,210 --> 00:00:15,730
+and designing and implementing the applications that run on it.
+
+6
+00:00:15,730 --> 00:00:19,775
+However, if they don't run fast enough to be useful,
+
+7
+00:00:19,775 --> 00:00:21,670
+then it all does not matter.
+
+8
+00:00:21,670 --> 00:00:24,120
+So, let's take a look at some of the tools that are
+
+9
+00:00:24,120 --> 00:00:26,910
+available to physically design the database,
+
+10
+00:00:26,910 --> 00:00:29,375
+organize the data, index it,
+
+11
+00:00:29,375 --> 00:00:31,770
+and get to it fast.
+

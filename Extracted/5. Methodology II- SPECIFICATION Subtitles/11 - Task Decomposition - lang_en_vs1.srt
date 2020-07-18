@@ -1,0 +1,279 @@
+1
+00:00:00,480 --> 00:00:04,500
+Having now addressed the structural
+aspect of the specification,
+
+2
+00:00:04,500 --> 00:00:07,400
+let us look at
+the specification of tasks.
+
+3
+00:00:07,400 --> 00:00:11,120
+So for each one of the tasks we
+identified in the information flow
+
+4
+00:00:11,120 --> 00:00:14,680
+diagram, we need to talk about
+whether that's a single task or
+
+5
+00:00:14,680 --> 00:00:16,660
+whether it should be decomposed.
+
+6
+00:00:16,660 --> 00:00:20,490
+The rules of thumb I'm going to give
+you are based on a deep understanding
+
+7
+00:00:20,490 --> 00:00:24,110
+of the internal workings of
+a database management system.
+
+8
+00:00:24,110 --> 00:00:27,160
+In each one of the cases I'm
+going to give you the rule, and
+
+9
+00:00:27,160 --> 00:00:29,580
+I'm going to tell you
+what it is based on.
+
+10
+00:00:29,580 --> 00:00:33,350
+Later on when you do task decomposition,
+you're going to go through these
+
+11
+00:00:33,350 --> 00:00:35,930
+rules that I'm giving you
+in order to determine
+
+12
+00:00:35,930 --> 00:00:39,570
+whether the particular task you're
+looking at should be decomposed or not.
+
+13
+00:00:39,570 --> 00:00:42,900
+So from a database management
+system perspective, there's a big
+
+14
+00:00:42,900 --> 00:00:47,790
+difference between whether a task just
+is a look up task or whether it actually
+
+15
+00:00:47,790 --> 00:00:51,500
+modifies the database through
+an insertion, deletion, or update.
+
+16
+00:00:51,500 --> 00:00:54,470
+The reason for
+that is that different database locks
+
+17
+00:00:54,470 --> 00:00:58,850
+are needed in order to support lookups
+versus changes to the database.
+
+18
+00:00:58,850 --> 00:01:01,440
+So if many different things take place,
+
+19
+00:01:01,440 --> 00:01:04,680
+then that's a indication that
+the test should be decomposed.
+
+20
+00:01:04,680 --> 00:01:07,190
+The second rule of thumb is based on
+
+21
+00:01:07,190 --> 00:01:10,830
+how big a portion of the database
+is involved in the operation.
+
+22
+00:01:10,830 --> 00:01:12,690
+The bigger the portion is,
+
+23
+00:01:12,690 --> 00:01:16,030
+the harder it is to acquire
+all the logs that are needed
+
+24
+00:01:16,030 --> 00:01:20,530
+in order to support concurrent execution
+of transactions on the database.
+
+25
+00:01:20,530 --> 00:01:23,560
+So if a large number of schema
+constructs are involved,
+
+26
+00:01:23,560 --> 00:01:27,730
+that would make you want to decompose
+the task into smaller tasks
+
+27
+00:01:27,730 --> 00:01:30,170
+using smaller portions of the database.
+
+28
+00:01:30,170 --> 00:01:32,680
+The next rule of thumb is based on what
+
+29
+00:01:32,680 --> 00:01:35,250
+enables the different
+portions of a task.
+
+30
+00:01:35,250 --> 00:01:38,340
+So if some portion of
+a task are enabled,
+
+31
+00:01:38,340 --> 00:01:42,942
+then why not let those proceed instead
+of waiting to later on when there might
+
+32
+00:01:42,942 --> 00:01:47,440
+not be resource available to run those
+tasks that were earlier enabled.
+
+33
+00:01:47,440 --> 00:01:50,140
+The smaller portions of
+a task that can run,
+
+34
+00:01:50,140 --> 00:01:53,140
+the easier it is to schedule the task.
+
+35
+00:01:53,140 --> 00:01:56,460
+The next rule of thumb is
+based on what the frequencies
+
+36
+00:01:56,460 --> 00:01:58,970
+of the things that
+are done by the task are.
+
+37
+00:01:58,970 --> 00:02:03,090
+If the task contains things that are
+done with a high frequency and things
+
+38
+00:02:03,090 --> 00:02:07,610
+that are done with a low frequency,
+it is a good idea to split them apart.
+
+39
+00:02:07,610 --> 00:02:13,040
+The reason is that high frequency
+things, you want to index to run fast.
+
+40
+00:02:13,040 --> 00:02:16,930
+Whereas low frequency things,
+you may not need to index.
+
+41
+00:02:16,930 --> 00:02:20,120
+The next really important
+rule of thumb is related
+
+42
+00:02:20,120 --> 00:02:22,300
+to consistency of the database.
+
+43
+00:02:22,300 --> 00:02:26,650
+Is it really essential that all
+the pieces of a task get done
+
+44
+00:02:26,650 --> 00:02:28,110
+in one transaction?
+
+45
+00:02:28,110 --> 00:02:32,250
+Or is it okay that things get
+spread out a little bit over time?
+
+46
+00:02:32,250 --> 00:02:35,090
+An example of that would be
+transferring money from one
+
+47
+00:02:35,090 --> 00:02:36,720
+bank account to another one.
+
+48
+00:02:36,720 --> 00:02:40,970
+So it is very important that all
+the steps involved are done together.
+
+49
+00:02:40,970 --> 00:02:44,510
+For example, monies must be
+available in the from account.
+
+50
+00:02:44,510 --> 00:02:48,130
+They must be subtracted from
+the balance of the from account, and
+
+51
+00:02:48,130 --> 00:02:50,960
+they must be deposited
+into the to account.
+
+52
+00:02:50,960 --> 00:02:53,820
+All of those things
+must be done together,
+
+53
+00:02:53,820 --> 00:02:57,570
+in order that you do not end up
+with an inconsistent database.
+
+54
+00:02:57,570 --> 00:03:01,005
+The final rule of thumb is based
+on the question of whether
+
+55
+00:03:01,005 --> 00:03:04,420
+a mother task is needed
+to control subtasks.
+
+56
+00:03:04,420 --> 00:03:07,430
+Sometimes you need a mother task,
+sometimes you do not.
+
+57
+00:03:07,430 --> 00:03:10,880
+The banking example I just gave
+you certainly needs a mother task.
+
+58
+00:03:10,880 --> 00:03:14,120
+We're later going to see things
+that may not need a mother task.

@@ -1,0 +1,130 @@
+1
+00:00:00,570 --> 00:00:03,540
+Second we are going to
+talk about property types.
+
+2
+00:00:03,540 --> 00:00:07,300
+Property types
+are represented by ellipses.
+
+3
+00:00:07,300 --> 00:00:09,550
+These ellipses carry names.
+
+4
+00:00:09,550 --> 00:00:12,400
+So for the user entity type we just
+
+5
+00:00:12,400 --> 00:00:16,900
+introduced I have here shown you
+two single valued properties.
+
+6
+00:00:16,900 --> 00:00:19,940
+The fact that this is a single line
+
+7
+00:00:19,940 --> 00:00:24,470
+ellipsis signifies that it
+is a single valued property.
+
+8
+00:00:24,470 --> 00:00:26,490
+The first property here has the name,
+
+9
+00:00:26,490 --> 00:00:30,720
+Email, second property here
+has the name, Password.
+
+10
+00:00:30,720 --> 00:00:33,110
+So let us look at the instance diagram.
+
+11
+00:00:33,110 --> 00:00:36,370
+So here you see there
+are three instances of user.
+
+12
+00:00:36,370 --> 00:00:41,710
+And the first user is Leo and
+that user has the password qwerty.
+
+13
+00:00:41,710 --> 00:00:45,220
+The second user is Rocky,
+has the password Lydia.
+
+14
+00:00:45,220 --> 00:00:50,138
+And the last user is Jim who
+has the password Fido123.
+
+15
+00:00:50,138 --> 00:00:52,730
+So what are property values?
+
+16
+00:00:52,730 --> 00:00:54,440
+They can take many forms.
+
+17
+00:00:54,440 --> 00:00:57,330
+They can be lexical,
+as you can see here,
+
+18
+00:00:57,330 --> 00:01:00,210
+we've used letters to represent them.
+
+19
+00:01:01,250 --> 00:01:05,820
+They could be any other form
+of visible element, I mean,
+
+20
+00:01:05,820 --> 00:01:08,540
+it could be a picture of a user.
+
+21
+00:01:08,540 --> 00:01:10,594
+They could be audible.
+
+22
+00:01:10,594 --> 00:01:14,930
+In other words, you can say what they
+are without writing them down, without
+
+23
+00:01:14,930 --> 00:01:19,790
+showing a picture, but it's just the
+audible, the sound of it that's used.
+
+24
+00:01:19,790 --> 00:01:24,880
+It's interesting to see that,
+whereas the instances of user
+
+25
+00:01:24,880 --> 00:01:29,980
+are just surrogates, just representing
+user, when you look at values,
+
+26
+00:01:29,980 --> 00:01:34,300
+for example, of Email,
+not only is it a thing in and
+
+27
+00:01:34,300 --> 00:01:38,210
+by itself, but it's actually
+a thing that names something.
+
+28
+00:01:38,210 --> 00:01:41,030
+In this case,
+it actually names the password.
+

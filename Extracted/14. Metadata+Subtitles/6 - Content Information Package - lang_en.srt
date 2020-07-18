@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:02,960
+The content information is just one of
+
+2
+00:00:02,960 --> 00:00:06,605
+four collections of metadata that's needed in each one
+
+3
+00:00:06,605 --> 00:00:09,050
+of the three information packages that are
+
+4
+00:00:09,050 --> 00:00:12,920
+prepared during the archival of digital information.
+
+5
+00:00:12,920 --> 00:00:17,505
+Before I proceed with the presentation of the details of the content information,
+
+6
+00:00:17,505 --> 00:00:20,330
+let me share with you what my real intent is.
+
+7
+00:00:20,330 --> 00:00:23,915
+My intent is not really to make you understand
+
+8
+00:00:23,915 --> 00:00:27,755
+all the details of this and make you remember all the details of this.
+
+9
+00:00:27,755 --> 00:00:32,150
+My intent merely is to share with you the massive amount
+
+10
+00:00:32,150 --> 00:00:36,695
+of metadata that is needed for long-term archival of digital data.
+
+11
+00:00:36,695 --> 00:00:38,505
+Okay. So, here we go.
+
+12
+00:00:38,505 --> 00:00:43,155
+The first part of the content information is the content data object.
+
+13
+00:00:43,155 --> 00:00:48,005
+The content data object is the bit stream which is being preserved.
+
+14
+00:00:48,005 --> 00:00:53,785
+The representation information consists of structural metadata and semantic metadata.
+
+15
+00:00:53,785 --> 00:00:57,320
+The structure of metadata expresses what the data formats
+
+16
+00:00:57,320 --> 00:01:00,780
+and data structures are in the data that's being preserved.
+
+17
+00:01:00,780 --> 00:01:05,540
+The semantics expresses the meaning with English names and prose,
+
+18
+00:01:05,540 --> 00:01:10,010
+and so on, as to what the data that's being preserved really means.
+
+19
+00:01:10,010 --> 00:01:15,320
+The content data object description is a human readable data structure description.
+
+20
+00:01:15,320 --> 00:01:19,550
+It contains the structural types such as whether things are images,
+
+21
+00:01:19,550 --> 00:01:23,770
+sound, text, web documents, executables, etc.
+
+22
+00:01:23,770 --> 00:01:25,410
+There's a file description.
+
+23
+00:01:25,410 --> 00:01:29,560
+There's information like access inhibitors, encryption, watermarks,
+
+24
+00:01:29,560 --> 00:01:33,400
+etc, access facilitators like time markers,
+
+25
+00:01:33,400 --> 00:01:34,920
+lengths, and so on.
+
+26
+00:01:34,920 --> 00:01:40,035
+The second part of the representation information is environment descriptions.
+
+27
+00:01:40,035 --> 00:01:41,805
+It consists of two things;
+
+28
+00:01:41,805 --> 00:01:44,770
+software environment and hardware environment.
+
+29
+00:01:44,770 --> 00:01:49,470
+The operating system information includes things such as the operating system name,
+
+30
+00:01:49,470 --> 00:01:51,765
+the version of it, the location of it,
+
+31
+00:01:51,765 --> 00:01:53,540
+and the documentation of it.
+
+32
+00:01:53,540 --> 00:01:56,110
+Then, there's the rendering programs.
+
+33
+00:01:56,110 --> 00:02:01,485
+What kind of transformation process necessary to allow rendering of the data object?
+
+34
+00:02:01,485 --> 00:02:03,925
+What's the transformation engine?
+
+35
+00:02:03,925 --> 00:02:05,970
+Any parameters needed?
+
+36
+00:02:05,970 --> 00:02:07,345
+What's the input format?
+
+37
+00:02:07,345 --> 00:02:08,560
+The output format?
+
+38
+00:02:08,560 --> 00:02:10,800
+Location of the rendering program?
+
+39
+00:02:10,800 --> 00:02:13,840
+Documentation for it, etc, etc, etc.
+
+40
+00:02:13,840 --> 00:02:19,135
+Metadata about the hardware environment includes location of it, documentation of it.
+
+41
+00:02:19,135 --> 00:02:22,585
+It includes which computation resources are needed,
+
+42
+00:02:22,585 --> 00:02:25,280
+processor requirements, memory requirements,
+
+43
+00:02:25,280 --> 00:02:28,970
+documentation, the storage requirements, and finally,
+
+44
+00:02:28,970 --> 00:02:34,480
+which peripherals are required and where's the documentation for those peripherals.
+

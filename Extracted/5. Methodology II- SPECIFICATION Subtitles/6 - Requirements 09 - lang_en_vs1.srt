@@ -1,0 +1,72 @@
+1
+00:00:00,480 --> 00:00:04,720
+Let's look at the two screens that are
+used to request and accept friendships.
+
+2
+00:00:04,720 --> 00:00:09,600
+So a particular user can request
+multiple other users to be friends.
+
+3
+00:00:09,600 --> 00:00:14,420
+For each one of those requests, there is
+an instance of the request relationship.
+
+4
+00:00:14,420 --> 00:00:18,764
+So one regular user may have requested
+several different friendships.
+
+5
+00:00:18,764 --> 00:00:20,920
+In the pending request here,
+
+6
+00:00:20,920 --> 00:00:24,610
+the list of people who have
+requested to be friends with you.
+
+7
+00:00:24,610 --> 00:00:28,720
+Here is the list of people that
+you have requested as friends.
+
+8
+00:00:28,720 --> 00:00:35,317
+When a user accepts a request, that adds
+an instance to the accept relationship.
+
+9
+00:00:35,317 --> 00:00:38,540
+So a particular regular user
+may have accepted requests for
+
+10
+00:00:38,540 --> 00:00:41,340
+friendships from multiple
+different users.
+
+11
+00:00:41,340 --> 00:00:45,930
+The date connected records the date
+that the invitation was accepted.
+
+12
+00:00:45,930 --> 00:00:49,640
+Notice in this requirement it's very
+interesting that friendship here
+
+13
+00:00:49,640 --> 00:00:51,500
+is not always reciprocal.
+
+14
+00:00:51,500 --> 00:00:53,710
+Just because Emily is
+a friend with Sarah,
+
+15
+00:00:53,710 --> 00:00:57,500
+does not necessarily imply that
+Sarah is a friend with Emily.

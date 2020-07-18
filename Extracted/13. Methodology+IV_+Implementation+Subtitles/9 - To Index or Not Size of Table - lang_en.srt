@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:03,020
+First, let's consider the size of the table.
+
+2
+00:00:03,020 --> 00:00:05,720
+So, I'm using the example here of RegularUser,
+
+3
+00:00:05,720 --> 00:00:07,710
+and these are some of the attributes.
+
+4
+00:00:07,710 --> 00:00:10,455
+So, we have an Email which is a varchar(50),
+
+5
+00:00:10,455 --> 00:00:13,350
+we have Sex which is a char(1),
+
+6
+00:00:13,350 --> 00:00:15,540
+Birthdate is a datetime type.
+
+7
+00:00:15,540 --> 00:00:19,270
+CurrentCity and Hometown are both varchar(50)s.
+
+8
+00:00:19,270 --> 00:00:23,940
+So, the size of a record in this table is 50 times 3 is a 150,
+
+9
+00:00:23,940 --> 00:00:27,095
+eight for datetime and one for Sex.
+
+10
+00:00:27,095 --> 00:00:31,400
+So, that gives you a grand total of 159 bytes as record size.
+
+11
+00:00:31,400 --> 00:00:34,435
+Second, let's assume our block size is 4k.
+
+12
+00:00:34,435 --> 00:00:38,250
+Different database management systems come with different defaults.
+
+13
+00:00:38,250 --> 00:00:39,920
+For highly formatted data,
+
+14
+00:00:39,920 --> 00:00:42,080
+a lower block size is often used.
+
+15
+00:00:42,080 --> 00:00:44,210
+If you have large objects and tables,
+
+16
+00:00:44,210 --> 00:00:46,915
+then normally a higher block size is used.
+
+17
+00:00:46,915 --> 00:00:50,510
+Also, we typically do not fill all blocks completely
+
+18
+00:00:50,510 --> 00:00:54,790
+because it's going to cost a lot of overflow when we insert.
+
+19
+00:00:54,790 --> 00:00:58,275
+Typical fill is somewhere between two-thirds,
+
+20
+00:00:58,275 --> 00:01:01,035
+80% is probably a fairly high number,
+
+21
+00:01:01,035 --> 00:01:03,060
+but let's assume 80% here.
+
+22
+00:01:03,060 --> 00:01:09,390
+Now, since the block size is 4k and since it's 80% full, which is 3.2k,
+
+23
+00:01:09,390 --> 00:01:11,125
+divide that by a 160,
+
+24
+00:01:11,125 --> 00:01:16,760
+and you end up with an approximate number of 20 records per block in this organization.
+
+25
+00:01:16,760 --> 00:01:20,090
+Let's say that we got 4 million regular users,
+
+26
+00:01:20,090 --> 00:01:22,295
+so the number of records is 4 million.
+
+27
+00:01:22,295 --> 00:01:23,540
+What does that mean?
+
+28
+00:01:23,540 --> 00:01:27,470
+Well, if we can fit 20 records per block and we got four million,
+
+29
+00:01:27,470 --> 00:01:32,300
+that means that we'll have approximately 200,000 blocks to store the RegularUser table.
+
+30
+00:01:32,300 --> 00:01:37,105
+That also means the total table size is going to be 800 megabytes, approximately.
+
+31
+00:01:37,105 --> 00:01:40,295
+So, 800 megabytes may not sound like much.
+
+32
+00:01:40,295 --> 00:01:43,900
+Some computers come with a main memory that is larger than that.
+
+33
+00:01:43,900 --> 00:01:46,715
+But remember, this is only one table in the database;
+
+34
+00:01:46,715 --> 00:01:49,045
+there may be many, many tables in the database.
+
+35
+00:01:49,045 --> 00:01:51,530
+So, no one says that we are going to have the luxury
+
+36
+00:01:51,530 --> 00:01:54,110
+of always keeping this table in memory.
+
+37
+00:01:54,110 --> 00:01:56,780
+So, in general, you need to consider that
+
+38
+00:01:56,780 --> 00:02:00,490
+major parts of tables are stored on disk and need to be brought up.
+
+39
+00:02:00,490 --> 00:02:02,440
+So, even in this case here,
+
+40
+00:02:02,440 --> 00:02:06,530
+where we only have 200,000 blocks in the RegularUser table,
+
+41
+00:02:06,530 --> 00:02:09,360
+if we make the assumption that a page fault
+
+42
+00:02:09,360 --> 00:02:12,545
+on the average is going to take a hundredths of a second,
+
+43
+00:02:12,545 --> 00:02:15,930
+then to scan 200,000 blocks is going to
+
+44
+00:02:15,930 --> 00:02:19,470
+cost you 200,000 times one hundredths of a second.
+
+45
+00:02:19,470 --> 00:02:22,870
+That's about 33 minutes to scan the block
+
+46
+00:02:22,870 --> 00:02:27,560
+if it's not clustered and/or indexed appropriately.
+

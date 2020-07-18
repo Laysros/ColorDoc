@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:05,010
+The fourth constructor operator in the relational algebra is Cartesian product.
+
+2
+00:00:05,010 --> 00:00:10,685
+A Cartesian product simply combines every single tuple into two operands.
+
+3
+00:00:10,685 --> 00:00:13,350
+So, every single regular user tuple will be
+
+4
+00:00:13,350 --> 00:00:16,620
+combined with every single user interest tuple.
+
+5
+00:00:16,620 --> 00:00:19,965
+For example, here, you have user four.
+
+6
+00:00:19,965 --> 00:00:23,415
+User four is going to be combined with every single one of these.
+
+7
+00:00:23,415 --> 00:00:25,235
+For example, this one,
+
+8
+00:00:25,235 --> 00:00:28,545
+as you see, that combination appears here.
+
+9
+00:00:28,545 --> 00:00:33,695
+You might wonder what the usefulness of such a combination would be.
+
+10
+00:00:33,695 --> 00:00:38,520
+After all, there were no comparison rules that would decide when
+
+11
+00:00:38,520 --> 00:00:43,445
+two tuples in the operands would be combined in the result, everything is combined.
+
+12
+00:00:43,445 --> 00:00:46,480
+So, what could that be useful for?
+

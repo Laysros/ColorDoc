@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:03,865
+Second set based operator intersection.
+
+2
+00:00:03,865 --> 00:00:05,730
+Here's an example in English.
+
+3
+00:00:05,730 --> 00:00:11,625
+Find all cities that are a current city for someone and a hometown for someone.
+
+4
+00:00:11,625 --> 00:00:14,165
+So, showing that at a Venn diagram,
+
+5
+00:00:14,165 --> 00:00:15,785
+you're looking at the following,
+
+6
+00:00:15,785 --> 00:00:18,535
+say these are the current cities,
+
+7
+00:00:18,535 --> 00:00:20,225
+these are the hometowns,
+
+8
+00:00:20,225 --> 00:00:24,635
+and since it says both conditions must be satisfied,
+
+9
+00:00:24,635 --> 00:00:31,040
+we're looking for the tuples that satisfy the condition in this intersection.
+
+10
+00:00:31,040 --> 00:00:33,320
+The query is formulated as follows.
+
+11
+00:00:33,320 --> 00:00:36,080
+Take regular user project on current city,
+
+12
+00:00:36,080 --> 00:00:40,170
+take regular user project on hometown and do the intersection.
+
+13
+00:00:40,170 --> 00:00:41,680
+So, take a look at the result.
+
+14
+00:00:41,680 --> 00:00:44,770
+So, the projection on current city gives you San Francisco,
+
+15
+00:00:44,770 --> 00:00:47,730
+San Diego, Las Vegas and Dallas.
+
+16
+00:00:47,730 --> 00:00:50,675
+The projection on hometown gives you Atlanta,
+
+17
+00:00:50,675 --> 00:00:53,490
+San Francisco, Atlanta and Dallas.
+
+18
+00:00:53,490 --> 00:00:55,685
+Except of course, Atlanta is not repeated.
+
+19
+00:00:55,685 --> 00:00:59,275
+Doing the intersection of those will yield the following result.
+
+20
+00:00:59,275 --> 00:01:03,420
+San Francisco is part of the result because it appears both places,
+
+21
+00:01:03,420 --> 00:01:07,255
+San Diego is not because it doesn't appear in this,
+
+22
+00:01:07,255 --> 00:01:10,620
+Las Vegas is not because it doesn't appear here,
+
+23
+00:01:10,620 --> 00:01:12,420
+Dallas appears over here,
+
+24
+00:01:12,420 --> 00:01:14,045
+so that's part of the result.
+
+25
+00:01:14,045 --> 00:01:16,680
+So, the result is this set.
+

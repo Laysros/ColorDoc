@@ -1,0 +1,94 @@
+1
+00:00:00,460 --> 00:00:03,440
+Constraints represent rules that cannot
+
+2
+00:00:03,440 --> 00:00:06,930
+be expressed by the data
+structures we just looked at.
+
+3
+00:00:06,930 --> 00:00:09,040
+Let me give you some examples.
+
+4
+00:00:09,040 --> 00:00:14,560
+First, we might want emails to be unique
+as they are in this example here.
+
+5
+00:00:14,560 --> 00:00:19,550
+That would allow us to think about
+emails as representing unique
+
+6
+00:00:19,550 --> 00:00:21,020
+regular users.
+
+7
+00:00:21,020 --> 00:00:25,915
+So for each user out in the real
+world there's a corresponding row
+
+8
+00:00:25,915 --> 00:00:27,431
+in this table here.
+
+9
+00:00:27,431 --> 00:00:33,200
+For example this one user3,
+born in 1967, hometown Portland,
+
+10
+00:00:33,200 --> 00:00:38,306
+salary 12,000,
+represents a unique user in reality.
+
+11
+00:00:38,306 --> 00:00:42,167
+It wouldn't make sense to allow
+emails to be null in this case
+
+12
+00:00:42,167 --> 00:00:46,090
+because that really doesn't
+represent anything.
+
+13
+00:00:46,090 --> 00:00:48,660
+We might also have
+a constraint that says that
+
+14
+00:00:48,660 --> 00:00:52,740
+birth date must be after
+the first day of 1900.
+
+15
+00:00:52,740 --> 00:00:57,650
+Finally, we might have a constraint
+that says that hometown must be a city
+
+16
+00:00:57,650 --> 00:00:59,370
+in the United States.
+
+17
+00:00:59,370 --> 00:01:04,739
+Notice that none of these constraints
+are expressed by the table structure or
+
+18
+00:01:04,739 --> 00:01:08,552
+the data types that the column
+values are pulled from.
+
+19
+00:01:08,552 --> 00:01:13,130
+That's why I'm saying that constraints
+express rules that are not
+
+20
+00:01:13,130 --> 00:01:15,950
+expressed by the data structures alone.
+

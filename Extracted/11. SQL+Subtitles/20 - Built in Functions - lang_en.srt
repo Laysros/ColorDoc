@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:03,060
+To continue talking about functionality,
+
+2
+00:00:03,060 --> 00:00:06,110
+which is very useful in real life databases,
+
+3
+00:00:06,110 --> 00:00:09,155
+let's consider the concept of built-in functions.
+
+4
+00:00:09,155 --> 00:00:12,130
+So, count, sum, average, minimum,
+
+5
+00:00:12,130 --> 00:00:15,590
+and maximum are all examples of built-in functions.
+
+6
+00:00:15,590 --> 00:00:17,005
+Let's take a look at one.
+
+7
+00:00:17,005 --> 00:00:20,085
+Let's say, I want to count the number of RegularUser's.
+
+8
+00:00:20,085 --> 00:00:23,885
+In other words, count how many RegularUser's there are.
+
+9
+00:00:23,885 --> 00:00:26,025
+In SQL, that's written as follows,
+
+10
+00:00:26,025 --> 00:00:28,915
+SELECT count everything from RegularUser.
+
+11
+00:00:28,915 --> 00:00:30,840
+So, the semantics is as follows,
+
+12
+00:00:30,840 --> 00:00:32,550
+we've got user 1, 2, 3,
+
+13
+00:00:32,550 --> 00:00:34,575
+4, 6, 8 and 9.
+
+14
+00:00:34,575 --> 00:00:36,410
+That's a total of seven users.
+
+15
+00:00:36,410 --> 00:00:41,275
+So, the result here is a table with a single column,
+
+16
+00:00:41,275 --> 00:00:42,665
+and a single row,
+
+17
+00:00:42,665 --> 00:00:49,020
+and the number seven in it reflecting that there are seven rows in the RegularUser table.
+
+18
+00:00:49,020 --> 00:00:51,905
+Let's look at a second example, max.
+
+19
+00:00:51,905 --> 00:00:57,255
+Let's say, we want to find Email and BirthYear for the youngest Female RegularUser.
+
+20
+00:00:57,255 --> 00:00:58,530
+It would look like this.
+
+21
+00:00:58,530 --> 00:01:03,730
+Find Email and max(BirthYear) from RegularUser where Sex equals Female.
+
+22
+00:01:03,730 --> 00:01:08,295
+So, let's take a look here at BirthYear and let's find out what the max(BirthYear) is.
+
+23
+00:01:08,295 --> 00:01:17,180
+See '85. '69? No. '67? No. '88 is younger than '85. '88, '68, '88.
+
+24
+00:01:17,180 --> 00:01:22,430
+So, turns out that there are three users that have birth year '88.
+
+25
+00:01:22,430 --> 00:01:26,400
+Two of those are females, user6 and user9.
+
+26
+00:01:26,400 --> 00:01:31,200
+So, the result is user6 '88, user9 '88.
+

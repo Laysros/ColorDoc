@@ -1,0 +1,155 @@
+1
+00:00:00,430 --> 00:00:04,760
+The database application development
+methodology was specifically designed
+
+2
+00:00:04,760 --> 00:00:07,890
+for applications that
+are supported by databases,
+
+3
+00:00:07,890 --> 00:00:12,340
+it will not work in general for
+software development projects.
+
+4
+00:00:12,340 --> 00:00:13,980
+Furthermore, in order for
+
+5
+00:00:13,980 --> 00:00:18,100
+the methodology to work certain
+assumptions must hold true.
+
+6
+00:00:18,100 --> 00:00:20,010
+The assumptions are as follows.
+
+7
+00:00:20,010 --> 00:00:23,120
+We assume that business
+processes are well designed.
+
+8
+00:00:23,120 --> 00:00:26,110
+We assume that all documents are known.
+
+9
+00:00:26,110 --> 00:00:27,850
+We assume that tasks are known.
+
+10
+00:00:27,850 --> 00:00:31,560
+We assume that the system boundary
+is known, and we assume that
+
+11
+00:00:31,560 --> 00:00:36,030
+one database schema unifying all views
+can be designed for the database.
+
+12
+00:00:36,030 --> 00:00:39,530
+Documents represent
+anything that's input to or
+
+13
+00:00:39,530 --> 00:00:43,120
+output from the applications
+that run on the database.
+
+14
+00:00:43,120 --> 00:00:48,285
+The tasks represent the processing that
+takes place using those input documents,
+
+15
+00:00:48,285 --> 00:00:50,735
+and generating those output documents,
+and
+
+16
+00:00:50,735 --> 00:00:53,795
+appropriately updating
+the database in the process.
+
+17
+00:00:53,795 --> 00:00:58,095
+If we cannot create a database
+scheme that unifies all the views,
+
+18
+00:00:58,095 --> 00:01:00,320
+then the methodology fails.
+
+19
+00:01:00,320 --> 00:01:05,010
+Anyone who has been associated with
+a database development project
+
+20
+00:01:05,010 --> 00:01:08,430
+knows that this is
+an incredibly difficult task.
+
+21
+00:01:08,430 --> 00:01:11,230
+In an organization there
+are many many different
+
+22
+00:01:11,230 --> 00:01:13,090
+interests that need to be unified.
+
+23
+00:01:13,090 --> 00:01:15,040
+People may have different goals.
+
+24
+00:01:15,040 --> 00:01:17,230
+There may be power struggles involved.
+
+25
+00:01:17,230 --> 00:01:20,510
+There might be company
+politics involved, etc.
+
+26
+00:01:20,510 --> 00:01:25,250
+Without a doubt, this is the most
+difficult part of the whole process.
+
+27
+00:01:25,250 --> 00:01:28,990
+You might ask the questions, if it's
+that difficult, is that a problem with
+
+28
+00:01:28,990 --> 00:01:32,440
+the methodology or
+is it a problem with the organization?
+
+29
+00:01:32,440 --> 00:01:35,560
+It is always a problem
+with the organization.
+
+30
+00:01:35,560 --> 00:01:38,420
+One definition of an organization
+
+31
+00:01:38,420 --> 00:01:42,960
+is that it's an entity created
+to pursue a shared set of goals.
+
+32
+00:01:42,960 --> 00:01:46,260
+So if the organization
+cannot successfully arrive
+
+33
+00:01:46,260 --> 00:01:50,460
+at such a unifying view, then it's
+a problem with the organization.

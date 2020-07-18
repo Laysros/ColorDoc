@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:04,080
+The last thing to consider in the data first portion of
+
+2
+00:00:04,080 --> 00:00:08,700
+the implementation phase is whether we need to index any tables or not.
+
+3
+00:00:08,700 --> 00:00:12,055
+First, I'll show you how to compute the size of a table.
+
+4
+00:00:12,055 --> 00:00:17,880
+Second, a single table can be in the access paths of multiple queries and updates.
+
+5
+00:00:17,880 --> 00:00:21,170
+Third, the relative frequencies or reads and
+
+6
+00:00:21,170 --> 00:00:25,035
+or writes will affect our decision of whether to index or not.
+
+7
+00:00:25,035 --> 00:00:29,380
+Next, it could be that the table is already appropriately indexed.
+
+8
+00:00:29,380 --> 00:00:32,310
+Some database management systems like MySQL,
+
+9
+00:00:32,310 --> 00:00:33,615
+don't give you a choice.
+
+10
+00:00:33,615 --> 00:00:36,305
+Sometimes that's good, sometimes it's bad.
+
+11
+00:00:36,305 --> 00:00:42,080
+Finally, I'm going to give you some general advice of when to index and when not to.
+

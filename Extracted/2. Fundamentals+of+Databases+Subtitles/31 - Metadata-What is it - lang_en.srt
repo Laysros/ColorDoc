@@ -1,0 +1,68 @@
+1
+00:00:00,540 --> 00:00:04,870
+Metadata is essential for
+making everything happen in a database.
+
+2
+00:00:04,870 --> 00:00:07,830
+One distinguish between
+two kinds of metadata.
+
+3
+00:00:07,830 --> 00:00:11,300
+One is systems metadata,
+the other one is business metadata.
+
+4
+00:00:11,300 --> 00:00:14,420
+Systems metadata includes
+where the data came from,
+
+5
+00:00:14,420 --> 00:00:19,200
+how it was changed, how it's stored,
+how it was mapped, who owns it,
+
+6
+00:00:19,200 --> 00:00:24,460
+who has the right to access it, how has
+it been used, and usage statistics?
+
+7
+00:00:24,460 --> 00:00:28,940
+Business metadata includes, which data
+is available, where is it located,
+
+8
+00:00:28,940 --> 00:00:33,660
+what does it mean, how can I access it,
+are there any predefined reports,
+
+9
+00:00:33,660 --> 00:00:36,670
+predefined queries and
+our current list of data.
+
+10
+00:00:36,670 --> 00:00:41,540
+Systems metadata is absolutely critical
+to make a database management system
+
+11
+00:00:41,540 --> 00:00:46,340
+work and business metadata is
+absolutely critical for businesses for
+
+12
+00:00:46,340 --> 00:00:48,810
+example, in data warehouse application.
+
+13
+00:00:48,810 --> 00:00:51,980
+Late in this course we going to
+talk about metadata and
+
+14
+00:00:51,980 --> 00:00:54,550
+the use offered in data archival.
+

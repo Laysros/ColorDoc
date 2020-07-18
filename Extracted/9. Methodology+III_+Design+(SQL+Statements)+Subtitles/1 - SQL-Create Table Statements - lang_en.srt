@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:02,340
+The next step of the design phase,
+
+2
+00:00:02,340 --> 00:00:07,315
+is to now take this graphical representation of the relations that resulted from mapping,
+
+3
+00:00:07,315 --> 00:00:09,510
+the extended into relationship diagram,
+
+4
+00:00:09,510 --> 00:00:15,285
+together with a format specifications that we created earlier and combined those two,
+
+5
+00:00:15,285 --> 00:00:20,425
+in create table statements that actually define these relations in SQL.
+
+6
+00:00:20,425 --> 00:00:24,180
+Here's the create table statement for the first one of the relations.
+
+7
+00:00:24,180 --> 00:00:27,590
+The user relation, the email is a varchar (50),
+
+8
+00:00:27,590 --> 00:00:29,975
+it is not allowed to be null. Why not?
+
+9
+00:00:29,975 --> 00:00:32,270
+Because you are going to participate in the primary key.
+
+10
+00:00:32,270 --> 00:00:33,835
+Then we have, first name,
+
+11
+00:00:33,835 --> 00:00:39,480
+last name and password these are all varchar (50)s. They are also not allowed to
+
+12
+00:00:39,480 --> 00:00:45,240
+be null but that's because we insist on collecting all that information from every user.
+
+13
+00:00:45,240 --> 00:00:48,345
+The primary key of this relation is email.
+
+14
+00:00:48,345 --> 00:00:51,330
+The SQL syntax for this is simply as stated.
+
+15
+00:00:51,330 --> 00:00:54,030
+Notice that these statements end in a semi colon.
+
+16
+00:00:54,030 --> 00:00:57,405
+So, this is the SQL that will set up this structure,
+
+17
+00:00:57,405 --> 00:01:01,020
+with a data format specified inside the database.
+
+18
+00:01:01,020 --> 00:01:03,260
+Now let's look at the regular user table,
+
+19
+00:01:03,260 --> 00:01:04,800
+it has five attributes;
+
+20
+00:01:04,800 --> 00:01:06,305
+email, birth date, sex,
+
+21
+00:01:06,305 --> 00:01:07,650
+currency and home hometown,
+
+22
+00:01:07,650 --> 00:01:09,930
+email is a varchar (50),
+
+23
+00:01:09,930 --> 00:01:11,115
+it can't be null,
+
+24
+00:01:11,115 --> 00:01:13,840
+because I intend to set it to be the primary key.
+
+25
+00:01:13,840 --> 00:01:18,175
+The property type sex is a single character initially set to null,
+
+26
+00:01:18,175 --> 00:01:20,425
+birth date is order type,
+
+27
+00:01:20,425 --> 00:01:23,435
+date time and initially set to the value null,
+
+28
+00:01:23,435 --> 00:01:25,030
+current city and hometown,
+
+29
+00:01:25,030 --> 00:01:27,415
+are varchar (50)s also set to null.
+
+30
+00:01:27,415 --> 00:01:30,765
+Primary key is email and notice the email of
+
+31
+00:01:30,765 --> 00:01:35,460
+the regular user of course is a foreign key on email of user.
+
+32
+00:01:35,460 --> 00:01:40,555
+So, foreign key email references the email in the user table,
+
+33
+00:01:40,555 --> 00:01:42,910
+direct modeling this relationship.
+
+34
+00:01:42,910 --> 00:01:45,530
+The admin user relation is very simple,
+
+35
+00:01:45,530 --> 00:01:47,375
+email is the primary key,
+
+36
+00:01:47,375 --> 00:01:50,850
+lastlogin is the only attribute initially set to null.
+
+37
+00:01:50,850 --> 00:01:56,370
+The primary key is also a foreign key pointing to email in the user table.
+
+38
+00:01:56,370 --> 00:02:02,550
+So, email in admin user is a foreign key and it references email in the user table.
+
+39
+00:02:02,550 --> 00:02:07,785
+Finally, the interest table has two attributes email and interests.
+
+40
+00:02:07,785 --> 00:02:10,330
+The primary key consists of both,
+
+41
+00:02:10,330 --> 00:02:12,065
+so none of them can be null.
+
+42
+00:02:12,065 --> 00:02:18,165
+Email in addition is a foreign key that points to the email of regular user.
+
+43
+00:02:18,165 --> 00:02:20,690
+Why not to the email of user?
+
+44
+00:02:20,690 --> 00:02:21,810
+Well, the reason is,
+
+45
+00:02:21,810 --> 00:02:25,375
+that it's only the regular users that actually have interests,
+
+46
+00:02:25,375 --> 00:02:27,400
+admin users do not.
+

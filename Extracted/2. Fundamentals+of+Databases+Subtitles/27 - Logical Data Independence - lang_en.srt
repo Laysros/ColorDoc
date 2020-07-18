@@ -1,0 +1,53 @@
+1
+00:00:00,540 --> 00:00:03,380
+Logical data independence
+is a measure of
+
+2
+00:00:03,380 --> 00:00:07,670
+how much you can change the conceptual
+schema without changing the applications
+
+3
+00:00:07,670 --> 00:00:10,690
+that run on the database
+over the external schema.
+
+4
+00:00:10,690 --> 00:00:13,210
+It is more difficult to provide logical
+
+5
+00:00:13,210 --> 00:00:17,240
+data independence than it is to
+provide physical data independence.
+
+6
+00:00:17,240 --> 00:00:21,190
+The reason is that the external
+schemata against which the applications
+
+7
+00:00:21,190 --> 00:00:21,980
+are written.
+
+8
+00:00:21,980 --> 00:00:26,420
+Those external schemata are logically
+derived from the conceptual schema.
+
+9
+00:00:26,420 --> 00:00:31,320
+So needless to say if you have
+an application that accesses a table
+
+10
+00:00:31,320 --> 00:00:36,190
+in an external schema and you go
+change that table in the conceptual
+
+11
+00:00:36,190 --> 00:00:39,900
+schema then it is plausible that
+the application will be effected.
+

@@ -1,0 +1,28 @@
+1
+00:00:00,460 --> 00:00:04,010
+Next is the concept of Keys and
+Identifiers.
+
+2
+00:00:04,010 --> 00:00:06,360
+Keys are uniqueness constraints.
+
+3
+00:00:06,360 --> 00:00:07,440
+If, for example,
+
+4
+00:00:07,440 --> 00:00:12,400
+we decide to make email the primary
+key of the RegularUser table,
+
+5
+00:00:12,400 --> 00:00:17,530
+that means that there won't be any
+duplicate email addresses in this table.
+
+6
+00:00:17,530 --> 00:00:23,470
+That means that email could be used
+to uniquely identify regular users.
+

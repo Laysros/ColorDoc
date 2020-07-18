@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:05,020
+Let's finally look at how to add and delete employers for particular regular user.
+
+2
+00:00:05,020 --> 00:00:07,970
+On the screen, we will have identified
+
+3
+00:00:07,970 --> 00:00:11,325
+the EmployerName and JobTitle that need to be deleted.
+
+4
+00:00:11,325 --> 00:00:14,865
+The following SQL statement will do the deletion.
+
+5
+00:00:14,865 --> 00:00:18,870
+Delete from employment where the Email matches that of
+
+6
+00:00:18,870 --> 00:00:21,415
+the current user and the EmployerName is
+
+7
+00:00:21,415 --> 00:00:24,730
+that on the screen and the JobTitle is that on the screen.
+
+8
+00:00:24,730 --> 00:00:27,660
+If we are adding a new job where the value of
+
+9
+00:00:27,660 --> 00:00:32,250
+the EmployerName and JobTitle are given in the text fields on the screen,
+
+10
+00:00:32,250 --> 00:00:36,065
+then the following statement will do that addition of the job.
+
+11
+00:00:36,065 --> 00:00:40,690
+Insert into Employment, Email, EmployerName, and JobTitle,
+
+12
+00:00:40,690 --> 00:00:43,690
+where the values are the Email of the current user,
+
+13
+00:00:43,690 --> 00:00:46,175
+the EmployerName written in the text box,
+
+14
+00:00:46,175 --> 00:00:48,720
+and the JobTitle written in the text box.
+
+15
+00:00:48,720 --> 00:00:50,590
+To update an existing job,
+
+16
+00:00:50,590 --> 00:00:56,020
+we will assume that the application manages OldEmployerName and OldJobTitle.
+
+17
+00:00:56,020 --> 00:00:58,900
+The following update employment statement will
+
+18
+00:00:58,900 --> 00:01:02,350
+replace the old values by the two new values.
+
+19
+00:01:02,350 --> 00:01:06,980
+So, update employment, set EmployerName to the new one,
+
+20
+00:01:06,980 --> 00:01:09,135
+set JobTitle to the new one,
+
+21
+00:01:09,135 --> 00:01:11,625
+where the Email is that of the current user,
+
+22
+00:01:11,625 --> 00:01:15,035
+and the EmployerName currently is the OldEmployerName,
+
+23
+00:01:15,035 --> 00:01:18,580
+and the JobTitle currently the OldJobTitle.
+

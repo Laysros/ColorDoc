@@ -1,0 +1,33 @@
+1
+00:00:00,640 --> 00:00:03,670
+I believe in learning by example,
+and learning by doing.
+
+2
+00:00:04,770 --> 00:00:07,890
+That's why there are two parallel
+activities in the course.
+
+3
+00:00:07,890 --> 00:00:10,650
+One is an example,
+the other one is the project.
+
+4
+00:00:12,090 --> 00:00:15,540
+As the example,
+we are going to use GTOnline.
+
+5
+00:00:15,540 --> 00:00:20,040
+That's a lite social networking site,
+for networking socialites.
+
+6
+00:00:20,040 --> 00:00:24,949
+It is a simple networking application
+that provides features similar to
+
+7
+00:00:24,949 --> 00:00:27,208
+those in Facebook and LinkedIn.

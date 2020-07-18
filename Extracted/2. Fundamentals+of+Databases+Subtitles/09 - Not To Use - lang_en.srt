@@ -1,0 +1,112 @@
+1
+00:00:00,450 --> 00:00:03,070
+In spite of the great
+functionality supported by
+
+2
+00:00:03,070 --> 00:00:06,650
+database management systems,
+there are some aspects you want to
+
+3
+00:00:06,650 --> 00:00:10,590
+consider before you decide to use
+a database management system.
+
+4
+00:00:10,590 --> 00:00:14,100
+First, the initial investment
+in hardware, software and
+
+5
+00:00:14,100 --> 00:00:15,840
+training are very high.
+
+6
+00:00:15,840 --> 00:00:20,630
+Some database management systems
+are as big as operating systems.
+
+7
+00:00:20,630 --> 00:00:25,690
+The hardware that's needed to run large
+software systems like that is expensive.
+
+8
+00:00:25,690 --> 00:00:30,630
+The amount of time that you put into
+learning how to learn databases well
+
+9
+00:00:30,630 --> 00:00:31,860
+is considerable.
+
+10
+00:00:31,860 --> 00:00:35,934
+It might also be the case that
+the generality that database management
+
+11
+00:00:35,934 --> 00:00:38,730
+software provides you
+with is not needed.
+
+12
+00:00:38,730 --> 00:00:40,420
+Let me give you some examples.
+
+13
+00:00:40,420 --> 00:00:45,160
+There's substantial overhead for
+security, concurrency control, and
+
+14
+00:00:45,160 --> 00:00:47,420
+recovery in a database system.
+
+15
+00:00:47,420 --> 00:00:50,110
+Maybe you don't need
+that level of security.
+
+16
+00:00:50,110 --> 00:00:53,760
+Maybe you don't need a large
+set of concurrent users.
+
+17
+00:00:53,760 --> 00:00:56,350
+Maybe recovery is not that important.
+
+18
+00:00:56,350 --> 00:01:00,100
+Maybe you don't need data
+independence because your data and
+
+19
+00:01:00,100 --> 00:01:02,560
+your applications are simple and stable.
+
+20
+00:01:02,560 --> 00:01:06,570
+Maybe you have an application with
+serious real time requirements.
+
+21
+00:01:06,570 --> 00:01:10,630
+If the database management system
+can't run fast enough to meet those,
+
+22
+00:01:10,630 --> 00:01:11,708
+then it's useless.
+
+23
+00:01:11,708 --> 00:01:15,250
+Again maybe multiuser
+access is not needed, so
+
+24
+00:01:15,250 --> 00:01:17,580
+concurrency control is not needed
+

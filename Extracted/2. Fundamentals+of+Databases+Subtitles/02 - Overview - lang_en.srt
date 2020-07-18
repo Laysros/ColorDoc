@@ -1,0 +1,40 @@
+1
+00:00:00,410 --> 00:00:04,250
+In this lesson we are going to
+provide a high level overview of what
+
+2
+00:00:04,250 --> 00:00:05,689
+a database is.
+
+3
+00:00:05,689 --> 00:00:09,960
+We are going to define a database
+as a model of reality.
+
+4
+00:00:09,960 --> 00:00:12,340
+That raises two important questions.
+
+5
+00:00:12,340 --> 00:00:15,620
+First question is why use models at all?
+
+6
+00:00:15,620 --> 00:00:17,890
+What is so special about models?
+
+7
+00:00:17,890 --> 00:00:19,670
+And the second questions is so
+
+8
+00:00:19,670 --> 00:00:24,270
+if we do want to use models,
+when exactly is it that we would like to
+
+9
+00:00:24,270 --> 00:00:28,040
+use a Database Management System
+to create such a model?
+

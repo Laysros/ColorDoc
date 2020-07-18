@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:04,755
+A similar concept called dependency loss happens as follows.
+
+2
+00:00:04,755 --> 00:00:08,455
+So again, look at the regular user table and split it up
+
+3
+00:00:08,455 --> 00:00:12,500
+as we did before in these two alternative tables.
+
+4
+00:00:12,500 --> 00:00:15,640
+Remember, there were a set of functional dependencies that we wanted
+
+5
+00:00:15,640 --> 00:00:18,810
+to enforce on this original table here.
+
+6
+00:00:18,810 --> 00:00:22,260
+When all the information is together in the original table,
+
+7
+00:00:22,260 --> 00:00:24,545
+it is possible to enforce them.
+
+8
+00:00:24,545 --> 00:00:29,410
+However, when we start decomposing the table into additional tables,
+
+9
+00:00:29,410 --> 00:00:34,095
+we may lose the ability to enforce the functional dependencies within a single table.
+
+10
+00:00:34,095 --> 00:00:36,250
+I have two examples of that here.
+
+11
+00:00:36,250 --> 00:00:41,235
+One example is that we had a functional dependency from email to salary,
+
+12
+00:00:41,235 --> 00:00:46,435
+since email and salary do not appear together in any of these two new tables,
+
+13
+00:00:46,435 --> 00:00:48,590
+we can't enforce it within a table.
+
+14
+00:00:48,590 --> 00:00:51,495
+Similarly, birth year determines salary,
+
+15
+00:00:51,495 --> 00:00:54,250
+since the two do not coexist in a table,
+
+16
+00:00:54,250 --> 00:00:56,380
+we cannot enforce them in a table.
+
+17
+00:00:56,380 --> 00:00:59,050
+This is called dependency loss.
+

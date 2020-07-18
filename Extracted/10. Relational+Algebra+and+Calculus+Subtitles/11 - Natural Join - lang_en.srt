@@ -1,0 +1,172 @@
+1
+00:00:00,000 --> 00:00:02,310
+Now, let's look at natural join,
+
+2
+00:00:02,310 --> 00:00:05,470
+the first one of our constructor operators.
+
+3
+00:00:05,470 --> 00:00:09,815
+So, I'm going to be combining two relations to answer the following query.
+
+4
+00:00:09,815 --> 00:00:12,040
+Find E-mail, Year, Sex,
+
+5
+00:00:12,040 --> 00:00:15,990
+and Event when the (Birth)Year of the RegularUser is
+
+6
+00:00:15,990 --> 00:00:20,785
+the same one as the (Event)Year of the Major60sEvents.
+
+7
+00:00:20,785 --> 00:00:23,335
+So, the algebra query looks like this,
+
+8
+00:00:23,335 --> 00:00:27,980
+take RegularUser, natural join Major60sEvents.
+
+9
+00:00:27,980 --> 00:00:29,670
+Take a look at the two relations,
+
+10
+00:00:29,670 --> 00:00:32,095
+here's the RegularUser relation,
+
+11
+00:00:32,095 --> 00:00:35,310
+it has E-mail, Year, and Sex.
+
+12
+00:00:35,310 --> 00:00:39,905
+Here's the Major60sEvents, it has Year and Event.
+
+13
+00:00:39,905 --> 00:00:42,780
+What natural join does in combining
+
+14
+00:00:42,780 --> 00:00:46,940
+these two tables is it looks at which attribute names are the same.
+
+15
+00:00:46,940 --> 00:00:53,735
+In this case, Year appears in both tables and no other attributes have the same name.
+
+16
+00:00:53,735 --> 00:00:58,000
+Therefore, the natural join operation is going to compare tuples from
+
+17
+00:00:58,000 --> 00:01:00,560
+the RegularUser relation with tuples from
+
+18
+00:01:00,560 --> 00:01:05,070
+the Major60sEvents relation and see if the year is the same.
+
+19
+00:01:05,070 --> 00:01:07,195
+So, let's see what the result is going to be.
+
+20
+00:01:07,195 --> 00:01:10,620
+So, user1 is born in 1985,
+
+21
+00:01:10,620 --> 00:01:15,465
+none of these Major60sEvents happened in 1985.
+
+22
+00:01:15,465 --> 00:01:18,750
+So, user1 is not going to contribute to the result.
+
+23
+00:01:18,750 --> 00:01:21,030
+Let's take a look at user2,
+
+24
+00:01:21,030 --> 00:01:23,570
+user2 was born in 69.
+
+25
+00:01:23,570 --> 00:01:25,690
+What happened in 69?
+
+26
+00:01:25,690 --> 00:01:28,805
+Well, we had the Moon Landing happened in 69.
+
+27
+00:01:28,805 --> 00:01:33,850
+So, user2, born in 69, sex, Male,
+
+28
+00:01:33,850 --> 00:01:40,485
+that comes from this tuple is combined with the Moon Landing tuple which appears here.
+
+29
+00:01:40,485 --> 00:01:44,365
+Notice that Year is only recorded one time.
+
+30
+00:01:44,365 --> 00:01:47,200
+User3 is born in 67.
+
+31
+00:01:47,200 --> 00:01:49,710
+User3, born in 67,
+
+32
+00:01:49,710 --> 00:01:54,050
+matches the Year that the Alabama song was recorded by The Doors.
+
+33
+00:01:54,050 --> 00:01:56,385
+So, those two tuples get combined.
+
+34
+00:01:56,385 --> 00:01:59,450
+User8, born in 68,
+
+35
+00:01:59,450 --> 00:02:02,900
+matches a number of events: Bloody Sunday,
+
+36
+00:02:02,900 --> 00:02:06,160
+the MLK assassination, and the Tet offensive.
+
+37
+00:02:06,160 --> 00:02:08,260
+So, all of those get combined.
+
+38
+00:02:08,260 --> 00:02:11,465
+So, here were some of the properties of a natural join.
+
+39
+00:02:11,465 --> 00:02:16,985
+First of all, it matches values of attributes with the same names and only those.
+
+40
+00:02:16,985 --> 00:02:20,465
+It keeps only one copy of the join attribute.
+
+41
+00:02:20,465 --> 00:02:24,690
+It's called an inner join because only the tuples that actually
+
+42
+00:02:24,690 --> 00:02:28,840
+appear in the relation and match will appear in the result.
+
+43
+00:02:28,840 --> 00:02:33,320
+Those that have no matches will not appear in the result.
+

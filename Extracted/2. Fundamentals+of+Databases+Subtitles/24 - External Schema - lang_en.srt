@@ -1,0 +1,89 @@
+1
+00:00:00,480 --> 00:00:02,760
+Now let's talk about external schemata.
+
+2
+00:00:02,760 --> 00:00:07,360
+So an external schema describes part of
+the information in the conceptual schema
+
+3
+00:00:07,360 --> 00:00:11,160
+in a form that's convenient to
+a particular user group's view.
+
+4
+00:00:11,160 --> 00:00:14,680
+It is logically derived
+from the conceptual schema.
+
+5
+00:00:14,680 --> 00:00:19,670
+Here's an example of a virtual table
+that exists in an external schema.
+
+6
+00:00:19,670 --> 00:00:24,680
+The name of the virtual table,
+or the view, is HighPayFemales.
+
+7
+00:00:24,680 --> 00:00:28,440
+It is defined as the result
+of the following query.
+
+8
+00:00:28,440 --> 00:00:33,450
+The query selects some of the columns
+of the conceptual schema table,
+
+9
+00:00:33,450 --> 00:00:35,590
+so it selects email, maiden name,
+
+10
+00:00:35,590 --> 00:00:39,540
+current city, from regular user,
+where the city equals female and
+
+11
+00:00:39,540 --> 00:00:43,660
+the salary is greater than 70K,
+and it orders it by maiden name.
+
+12
+00:00:43,660 --> 00:00:48,070
+The create view statement
+creates the virtual table
+
+13
+00:00:48,070 --> 00:00:51,110
+HighPayFemales in the external schema.
+
+14
+00:00:51,110 --> 00:00:54,950
+So in other words,
+the virtual table here has attributes,
+
+15
+00:00:54,950 --> 00:00:59,890
+email, maiden name and current city,
+and the name HighPayFemales.
+
+16
+00:00:59,890 --> 00:01:01,360
+It's a virtual table.
+
+17
+00:01:01,360 --> 00:01:03,870
+It's a view into the database.
+
+18
+00:01:03,870 --> 00:01:05,880
+It never really exists.
+
+19
+00:01:05,880 --> 00:01:08,710
+It's just a view or
+a window into the database.
+

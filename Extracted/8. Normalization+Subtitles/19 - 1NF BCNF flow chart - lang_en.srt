@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:03,820
+So, let's take a look at how we can work through normal forms,
+
+2
+00:00:03,820 --> 00:00:07,050
+and of course we'll continue with the example we've been using.
+
+3
+00:00:07,050 --> 00:00:10,385
+Here you have the function dependency diagram,
+
+4
+00:00:10,385 --> 00:00:12,345
+for our example database.
+
+5
+00:00:12,345 --> 00:00:14,275
+You have a relation which says,
+
+6
+00:00:14,275 --> 00:00:15,755
+email and interest in it.
+
+7
+00:00:15,755 --> 00:00:19,540
+Has current city, BirthYear, salary and SinceAge.
+
+8
+00:00:19,540 --> 00:00:21,865
+Function dependence are as follows;
+
+9
+00:00:21,865 --> 00:00:25,915
+email and interest together determines SinceAge,
+
+10
+00:00:25,915 --> 00:00:30,280
+and email alone determines current city, BirthYear, and salary.
+
+11
+00:00:30,280 --> 00:00:31,680
+In addition to that,
+
+12
+00:00:31,680 --> 00:00:34,740
+salary is also determined by BirthYear.
+
+13
+00:00:34,740 --> 00:00:38,310
+So, let's take the first step in decomposing that relation.
+
+14
+00:00:38,310 --> 00:00:39,900
+So, what I want to do is,
+
+15
+00:00:39,900 --> 00:00:44,970
+I want to isolate function dependencies that have different left hand sides.
+
+16
+00:00:44,970 --> 00:00:46,260
+So, as you see here,
+
+17
+00:00:46,260 --> 00:00:50,250
+since email and interest together determines SinceAge,
+
+18
+00:00:50,250 --> 00:00:53,315
+that's a good form of dependency to split out.
+
+19
+00:00:53,315 --> 00:00:55,625
+When you split out that function dependency,
+
+20
+00:00:55,625 --> 00:00:58,875
+you actually also see that at least this portion
+
+21
+00:00:58,875 --> 00:01:02,995
+of the decomposed relation is in boyce-codd normal form.
+
+22
+00:01:02,995 --> 00:01:05,565
+Why is that? Because the only determinant
+
+23
+00:01:05,565 --> 00:01:08,370
+of these three is the pay of email and interest,
+
+24
+00:01:08,370 --> 00:01:12,090
+and they will have to be a candidate key to enforce that functional dependency.
+
+25
+00:01:12,090 --> 00:01:14,355
+What else remains then is,
+
+26
+00:01:14,355 --> 00:01:20,750
+that we need to represent that email determines current city, BirthYear, and salary.
+
+27
+00:01:20,750 --> 00:01:24,555
+That's BirthYear by itself determines salary.
+
+28
+00:01:24,555 --> 00:01:26,980
+What form is this relation in?
+
+29
+00:01:26,980 --> 00:01:30,780
+Well, it is certainly in second normal reform because all of
+
+30
+00:01:30,780 --> 00:01:35,695
+these attributes fully depend on the key, namely email.
+
+31
+00:01:35,695 --> 00:01:38,995
+But unfortunately, there are transitive dependencies.
+
+32
+00:01:38,995 --> 00:01:42,450
+Email determines BirthYear, which in turn determines salary
+
+33
+00:01:42,450 --> 00:01:46,260
+resulting in the forced dependency from email to salary.
+
+34
+00:01:46,260 --> 00:01:48,970
+So, this is not a third normal formulation.
+
+35
+00:01:48,970 --> 00:01:55,890
+So, let us transform this piece of it and let us isolate out email and current city,
+
+36
+00:01:55,890 --> 00:01:57,575
+and BirthYear by itself.
+
+37
+00:01:57,575 --> 00:01:59,815
+So, you have the first relation here as,
+
+38
+00:01:59,815 --> 00:02:02,790
+email form determines current city and BirthYear.
+
+39
+00:02:02,790 --> 00:02:05,765
+What remains then is BirthYear and salary,
+
+40
+00:02:05,765 --> 00:02:07,360
+that you represent by itself.
+
+41
+00:02:07,360 --> 00:02:09,720
+So, what normal form are these relations in?
+
+42
+00:02:09,720 --> 00:02:14,290
+Well, there are no transitive dependencies outside of the key,
+
+43
+00:02:14,290 --> 00:02:16,470
+the email attribute here.
+
+44
+00:02:16,470 --> 00:02:18,970
+Therefore, this is certainly in third normal reform.
+
+45
+00:02:18,970 --> 00:02:21,250
+It is also in Boyce-Codd Normal Form,
+
+46
+00:02:21,250 --> 00:02:24,659
+because the only determinant in this relation is email,
+
+47
+00:02:24,659 --> 00:02:26,970
+and email of course is going to have to be the key to
+
+48
+00:02:26,970 --> 00:02:29,310
+enforce those two forms of dependencies.
+
+49
+00:02:29,310 --> 00:02:32,020
+So, this relation is now in Boyce-Codd Normal Form.
+
+50
+00:02:32,020 --> 00:02:35,355
+This relation is of course also in Boyce-Codd Normal Form.
+
+51
+00:02:35,355 --> 00:02:39,780
+There's no opportunity even for transitive dependencies outside of the key,
+
+52
+00:02:39,780 --> 00:02:42,615
+because there's only one attribute outside of the key.
+
+53
+00:02:42,615 --> 00:02:45,840
+So, this one is in Boyce-Codd Normal Form.
+

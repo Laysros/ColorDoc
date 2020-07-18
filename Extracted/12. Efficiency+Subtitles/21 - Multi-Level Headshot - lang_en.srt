@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:06,135
+So, in a binary search the idea was to cut the search space in two every single time.
+
+2
+00:00:06,135 --> 00:00:09,735
+So, I cut it in two here so it's in half of the space,
+
+3
+00:00:09,735 --> 00:00:11,065
+cut that in two,
+
+4
+00:00:11,065 --> 00:00:13,265
+search in the half the space.
+
+5
+00:00:13,265 --> 00:00:18,480
+The idea of a multilevel index is that the multilevel index will allow
+
+6
+00:00:18,480 --> 00:00:23,210
+us to cut the search space into much smaller pieces in each step.
+
+7
+00:00:23,210 --> 00:00:25,675
+So, using the multilevel index,
+
+8
+00:00:25,675 --> 00:00:27,975
+I can illustrate as follows.
+
+9
+00:00:27,975 --> 00:00:29,420
+You basically take the book,
+
+10
+00:00:29,420 --> 00:00:34,000
+but instead of cutting in two you cut magically,
+
+11
+00:00:34,000 --> 00:00:37,965
+you cut in much smaller pieces like this.
+
+12
+00:00:37,965 --> 00:00:43,305
+Then, one of the pieces is going to qualify for continued search.
+
+13
+00:00:43,305 --> 00:00:46,430
+Let's say that that piece is this piece.
+
+14
+00:00:46,430 --> 00:00:48,930
+So see, we don't have half the book left,
+
+15
+00:00:48,930 --> 00:00:51,135
+we only have a tiny fraction left.
+
+16
+00:00:51,135 --> 00:00:54,225
+So, that piece needs to be cut down again.
+
+17
+00:00:54,225 --> 00:00:58,355
+We used the index at the next level and magically,
+
+18
+00:00:58,355 --> 00:01:00,810
+we cut it into smaller pieces.
+
+19
+00:01:00,810 --> 00:01:06,520
+Drop all of them except for one and we continue the search with that one.
+
+20
+00:01:06,520 --> 00:01:10,445
+So, continuing to search for that one, again,
+
+21
+00:01:10,445 --> 00:01:13,590
+we cut it in smaller pieces, and eventually,
+
+22
+00:01:13,590 --> 00:01:17,665
+we end up with a piece that may just be a single page.
+
+23
+00:01:17,665 --> 00:01:21,745
+The key value we are looking for is on that page,
+
+24
+00:01:21,745 --> 00:01:24,100
+if it's in the database at all.
+
+25
+00:01:24,100 --> 00:01:28,840
+So, that illustrates what a multilevel index does for us.
+

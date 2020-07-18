@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:03,175
+Let's see how we do the left outer JOIN in SQL.
+
+2
+00:00:03,175 --> 00:00:05,950
+So, the example we used was find email, birth year,
+
+3
+00:00:05,950 --> 00:00:08,490
+and salary for regular users who have a salary by
+
+4
+00:00:08,490 --> 00:00:12,115
+combining regular user data and year's salary data,
+
+5
+00:00:12,115 --> 00:00:17,940
+but return email and birth even when the regular user has no salary.
+
+6
+00:00:17,940 --> 00:00:22,425
+It's called an outer JOIN because as opposed to an inner JOIN,
+
+7
+00:00:22,425 --> 00:00:26,730
+the only tuples from a regular user and year salary that would
+
+8
+00:00:26,730 --> 00:00:31,240
+be combined are those that actually match up on the JOIN condition.
+
+9
+00:00:31,240 --> 00:00:33,655
+So, here's how you write that query in SQL.
+
+10
+00:00:33,655 --> 00:00:40,600
+Select email regularuser.BirthYear,Salary from regular user left outer JOIN year salary.
+
+11
+00:00:40,600 --> 00:00:44,460
+Notice again, that algebra has snogged into this query.
+
+12
+00:00:44,460 --> 00:00:49,460
+You get user1 here combined through matching years.
+
+13
+00:00:49,460 --> 00:00:55,305
+The first table you get user2 combined through the 69 for this result.
+
+14
+00:00:55,305 --> 00:01:01,265
+You get user3 matching 67 to give the third row in the result.
+
+15
+00:01:01,265 --> 00:01:03,180
+But, now look, user4,
+
+16
+00:01:03,180 --> 00:01:04,770
+six, eight, and nine,
+
+17
+00:01:04,770 --> 00:01:08,410
+the years do not match birth year of year salary.
+
+18
+00:01:08,410 --> 00:01:11,775
+So therefore, for those four last tuples,
+
+19
+00:01:11,775 --> 00:01:15,630
+we do get user4 and 88,
+
+20
+00:01:15,630 --> 00:01:18,150
+but there is no salary to match a doc with.
+
+21
+00:01:18,150 --> 00:01:22,040
+So, in each one of those cases a null value is put in.
+

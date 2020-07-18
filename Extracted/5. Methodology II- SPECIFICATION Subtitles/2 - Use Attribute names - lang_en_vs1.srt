@@ -1,0 +1,50 @@
+1
+00:00:00,470 --> 00:00:02,300
+From the edit profile screen,
+
+2
+00:00:02,300 --> 00:00:05,590
+we see that several additional
+attributes are needed.
+
+3
+00:00:05,590 --> 00:00:08,220
+Sex, Birthdate, Current City, and
+
+4
+00:00:08,220 --> 00:00:11,530
+Hometown, are all single
+value property types.
+
+5
+00:00:11,530 --> 00:00:16,370
+Interests is a multi-value property type
+modeled here by the double ellipses.
+
+6
+00:00:16,370 --> 00:00:19,230
+Notice that I'm very, very careful
+
+7
+00:00:19,230 --> 00:00:24,300
+to use the names that are provided
+on the documents in my EER diagram.
+
+8
+00:00:24,300 --> 00:00:29,620
+That way, I tie the diagram very,
+very closely to the real world.
+
+9
+00:00:29,620 --> 00:00:34,352
+The idea is that the entity relationship
+diagram really becomes a high
+
+10
+00:00:34,352 --> 00:00:36,206
+quality model of reality.
+
+11
+00:00:36,206 --> 00:00:40,230
+Reality represented by the documents
+that people of the application use.

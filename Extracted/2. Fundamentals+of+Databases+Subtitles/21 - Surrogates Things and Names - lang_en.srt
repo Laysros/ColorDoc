@@ -1,0 +1,290 @@
+1
+00:00:00,490 --> 00:00:02,330
+Everything is a thing, and
+
+2
+00:00:02,330 --> 00:00:06,840
+some things are just that, things,
+let me give you some examples.
+
+3
+00:00:06,840 --> 00:00:08,830
+So there's the pen I'm using here,
+
+4
+00:00:08,830 --> 00:00:11,460
+that's a thing it's not a name for
+anything.
+
+5
+00:00:11,460 --> 00:00:15,260
+There's the tablet I'm doing
+the reporting on here, that's a thing,
+
+6
+00:00:15,260 --> 00:00:16,570
+not a name for anything.
+
+7
+00:00:16,570 --> 00:00:19,588
+There's the camera that's being
+used to record the hand and
+
+8
+00:00:19,588 --> 00:00:22,890
+the writing, that's a thing,
+not a name for anything.
+
+9
+00:00:22,890 --> 00:00:27,880
+But then, there are some things that
+also are names of things, when I say
+
+10
+00:00:27,880 --> 00:00:32,910
+names, I mean names in a very general
+sense, let me give you some examples.
+
+11
+00:00:32,910 --> 00:00:38,840
+The text string Leo is a thing,
+but it is also my first name,
+
+12
+00:00:38,840 --> 00:00:45,990
+the text string GTo1 is a text string,
+which is the name on my license tag.
+
+13
+00:00:45,990 --> 00:00:51,240
+And the text string 49 is a thing
+which is the name of my age.
+
+14
+00:00:51,240 --> 00:00:55,330
+Let's say we have a set of
+regular users in reality and
+
+15
+00:00:55,330 --> 00:00:58,830
+we would like to record email and
+name and address for them.
+
+16
+00:00:58,830 --> 00:01:03,740
+So we create a table in the database
+with the columns email,
+
+17
+00:01:03,740 --> 00:01:05,540
+name, and address.
+
+18
+00:01:05,540 --> 00:01:09,590
+Now let's take a look at one of
+the rows in that table, the user one,
+
+19
+00:01:09,590 --> 00:01:12,010
+Lisa Smith, lives in Roswell.
+
+20
+00:01:12,010 --> 00:01:17,020
+Now if you look at the database a couple
+of days later, it may say user one,
+
+21
+00:01:17,020 --> 00:01:20,270
+Lisa Jones, live in Roswell,
+what happened?
+
+22
+00:01:20,270 --> 00:01:24,945
+Is that the same User, yes it
+probably is, Lisa probably just got
+
+23
+00:01:24,945 --> 00:01:30,175
+married to Mr. Jones and she changed her
+last name, but it's still the same Lisa.
+
+24
+00:01:30,175 --> 00:01:35,387
+Couple of days later you take a look
+again it says user one, Lisa Jones,
+
+25
+00:01:35,387 --> 00:01:38,707
+but now the address is
+Atlanta instead of Roswell.
+
+26
+00:01:38,707 --> 00:01:40,377
+Is it still the same Lisa?
+
+27
+00:01:40,377 --> 00:01:45,312
+It probably is, she probably decided to
+move to Atlanta with her new husband,
+
+28
+00:01:45,312 --> 00:01:46,478
+Mr. Jones.
+
+29
+00:01:46,478 --> 00:01:51,430
+Few days later, you look in
+the database, and it says user two,
+
+30
+00:01:51,430 --> 00:01:53,708
+Lisa Jones Atalanta.
+
+31
+00:01:53,708 --> 00:01:58,908
+Now is that the same Lisa or is that
+a different Lisa who lives in Atlanta?
+
+32
+00:01:58,908 --> 00:02:01,068
+That's a difficult question to answer,
+
+33
+00:02:01,068 --> 00:02:04,896
+this type of representation is
+called Name-Base representation.
+
+34
+00:02:04,896 --> 00:02:07,298
+In a Name-Base representation,
+
+35
+00:02:07,298 --> 00:02:11,950
+you are what is known about you,
+no more, no less.
+
+36
+00:02:11,950 --> 00:02:15,500
+Now let's consider an alternative
+way of doing this, so
+
+37
+00:02:15,500 --> 00:02:19,870
+we have regular users, we would like
+to record email, name, and address.
+
+38
+00:02:19,870 --> 00:02:24,010
+However, this time, instead of just
+having the three columns, email, name,
+
+39
+00:02:24,010 --> 00:02:28,850
+and address, in the regular user table,
+we add an extra column, user, for
+
+40
+00:02:28,850 --> 00:02:32,250
+system generated unique identifiers.
+
+41
+00:02:32,250 --> 00:02:35,410
+These are also called surrogates,
+they represent,
+
+42
+00:02:35,410 --> 00:02:39,590
+inside the system, they represent
+the users out in the real world.
+
+43
+00:02:39,590 --> 00:02:45,140
+So for each instance of user out in
+the real world, you have a surrogate or
+
+44
+00:02:45,140 --> 00:02:49,710
+substance inside the database to
+represent that user in the real world,
+
+45
+00:02:49,710 --> 00:02:51,990
+now, let's reconsider then Lisa.
+
+46
+00:02:51,990 --> 00:02:55,160
+You have an identifier for
+Lisa, a surrogate for
+
+47
+00:02:55,160 --> 00:03:00,240
+Lisa, that surrogate never changes then,
+you have her email user one,
+
+48
+00:03:00,240 --> 00:03:04,270
+Lisa Smith or Lisa Jones,
+Roswell or Atlanta.
+
+49
+00:03:04,270 --> 00:03:08,600
+In every single case you can decide
+whether the user is the same by
+
+50
+00:03:08,600 --> 00:03:13,130
+determining whether the internal system
+generated surrogate is the same or not.
+
+51
+00:03:13,130 --> 00:03:15,135
+You can ask, is this the same user?
+
+52
+00:03:15,135 --> 00:03:18,235
+This even allows email to be changed and
+
+53
+00:03:18,235 --> 00:03:22,485
+you to be able to recognize whether or
+not it is the same user.
+
+54
+00:03:22,485 --> 00:03:26,915
+So the problem with this representation
+here in the name-base representation
+
+55
+00:03:26,915 --> 00:03:30,605
+is that a thing is what
+we know about it and
+
+56
+00:03:30,605 --> 00:03:34,885
+we have used here something to
+identify things out in reality.
+
+57
+00:03:34,885 --> 00:03:38,930
+But email can change,
+Social Security Numbers can change.
+
+58
+00:03:38,930 --> 00:03:42,560
+In this representation here,
+the surrogate-base representation,
+
+59
+00:03:42,560 --> 00:03:47,230
+it recognizes that regardless of
+what we know about something and
+
+60
+00:03:47,230 --> 00:03:50,770
+what the values are,
+the thing still exists.
+
+61
+00:03:50,770 --> 00:03:53,690
+[FOREIGN] as Kant stated.
+

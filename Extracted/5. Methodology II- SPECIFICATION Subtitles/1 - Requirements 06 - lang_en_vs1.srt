@@ -1,0 +1,101 @@
+1
+00:00:00,470 --> 00:00:03,950
+Let's first look at these two documents,
+the login screen and
+
+2
+00:00:03,950 --> 00:00:05,330
+the registration screen.
+
+3
+00:00:05,330 --> 00:00:08,650
+And here's one of the requirements
+from the customer from whom we're
+
+4
+00:00:08,650 --> 00:00:09,910
+building the application.
+
+5
+00:00:09,910 --> 00:00:15,160
+The requirement says all users
+are uniquely identified by his or
+
+6
+00:00:15,160 --> 00:00:17,850
+her email address,
+what does that tell us?
+
+7
+00:00:17,850 --> 00:00:21,310
+Well, it tells us that there's
+an entity type of users and
+
+8
+00:00:21,310 --> 00:00:24,860
+that users are identified
+by email addresses.
+
+9
+00:00:24,860 --> 00:00:28,890
+It also tells us something about the
+processes, namely that email address and
+
+10
+00:00:28,890 --> 00:00:32,110
+password in combination will
+log the user into the system.
+
+11
+00:00:32,110 --> 00:00:35,960
+That means there also is
+an attribute of password.
+
+12
+00:00:35,960 --> 00:00:40,270
+So the first piece of the extended
+entity relationship diagram
+
+13
+00:00:40,270 --> 00:00:45,130
+models users as an entity type,
+with attributes email and
+
+14
+00:00:45,130 --> 00:00:49,610
+password, where email is a unique
+identifier for the user, and
+
+15
+00:00:49,610 --> 00:00:52,900
+therefore we have underlined it
+as an identifying attribute.
+
+16
+00:00:52,900 --> 00:00:57,040
+On the registration screen we also
+have a first name and a last name.
+
+17
+00:00:57,040 --> 00:01:02,250
+I've chose to include a composite
+attribute name that has first and
+
+18
+00:01:02,250 --> 00:01:04,305
+last name as components.
+
+19
+00:01:04,305 --> 00:01:09,025
+Strictly speaking, this actually
+models this situation here, where
+
+20
+00:01:09,025 --> 00:01:14,115
+there's a name field which is composite
+consisting of first name and last name.
+
+21
+00:01:14,115 --> 00:01:16,285
+I have chosen to specify
+it like this though.

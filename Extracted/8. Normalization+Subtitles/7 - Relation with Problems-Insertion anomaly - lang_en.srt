@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:04,430
+A second problem is that of insertion anomalies.
+
+2
+00:00:04,430 --> 00:00:07,010
+So, let's say we insert a new user,
+
+3
+00:00:07,010 --> 00:00:09,050
+like user nine into the database,
+
+4
+00:00:09,050 --> 00:00:14,310
+with the user nine information of birth year and current city and salary.
+
+5
+00:00:14,310 --> 00:00:17,575
+Then, if that user right now doesn't have any interest,
+
+6
+00:00:17,575 --> 00:00:20,220
+we would have to insert null values here.
+
+7
+00:00:20,220 --> 00:00:24,300
+Let's say that we would like to insert the information into a database that
+
+8
+00:00:24,300 --> 00:00:29,290
+people that have birth year 1970 make 42,000.
+
+9
+00:00:29,290 --> 00:00:34,410
+Then, we would have to insert null values in all these places if there's currently not
+
+10
+00:00:34,410 --> 00:00:40,080
+someone among the regular users that is born in 1970.
+
